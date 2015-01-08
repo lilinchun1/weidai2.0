@@ -1,0 +1,51 @@
+@charset "utf-8";
+/**
+ * Created with IntelliJ IDEA. 
+ * User: llc 
+ * Date: 2015/1/6 
+ * Time: 11:59 
+ * To change this template use File | Settings | File Templates. 
+ */
+
+button{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 0 none;
+  border-radius: 2px;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+}
+
+/*全宽实心按钮 高75*/
+%btn-100{
+  width: 100%;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+}
+
+/*提示框实心按钮 高55*/
+%btn-s{
+  width: 3.55rem;
+  height: 1.375rem;
+  line-height: 1.375rem;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+}
+
+/*空心按钮*/
+%btn-k{
+  width: 3.7rem;
+  height: 1.35rem;
+  line-height: 1.35rem;
+  text-align: center;
+  border: 1px solid $border-color;
+  color: #999;
+  font-size: $fz12;
+  background-color: transparent;
+  display: block;
+}

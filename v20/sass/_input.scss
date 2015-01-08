@@ -1,0 +1,103 @@
+@charset "utf-8";
+/**
+ * Created with IntelliJ IDEA. 
+ * User: llc 
+ * Date: 2015/1/6 
+ * Time: 11:09 
+ * To change this template use File | Settings | File Templates. 
+ */
+
+/*input输入框*/
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+textarea{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-radius: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+}
+
+%input-text {
+  height: 1.3rem;
+  border: 1px solid $border-color;
+  font-size: $fz14;
+  text-indent: .4rem;
+  display: block;
+}
+
+
+/*textarea 文本框*/
+%input-textarea {
+  border: 1px solid $border-color;
+  font-size: $fz14;
+  text-indent: .4rem;
+  display: block;
+}
+
+/*checkbox */
+input[type="checkbox"] {
+  width: 12px;
+  height: 12px;
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input[type="checkbox"]:checked {
+  background: image-url("checked.png") 0 0 no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+
+/*select 下拉框*/
+.m-select-wrap {
+  position: relative;
+  display: block;
+  height: 1.3rem;
+  overflow: hidden;
+  border: 1px solid $border-color;
+  background: #fff;
+  .m-select-draw-con {
+    position: absolute;
+    z-index: 2;
+    width: 120%;
+    height: 1.3rem;
+    color: $font-color999;
+    text-indent: .4rem;
+    background-color: transparent;
+    border: 0 none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  }
+  .m-logo {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 1.3rem;
+    height: 1.3rem;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-left: 1px solid $border-color;
+  }
+  .m-icon-arrow-down {
+    color: #bcbcbd;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 1.3rem;
+  }
+}
