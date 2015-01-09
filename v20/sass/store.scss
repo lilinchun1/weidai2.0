@@ -365,9 +365,68 @@
 .search-list-con{
   width: 100%;
   li{
+    padding: 0 .5rem;
     width: 100%;
-    height: 1.95rem;
+    height: 3rem;
     border-bottom: 1px solid $border-color;
+    h2{
+      color: #333333;
+    }
+    p{
+      font-size: $fz12;
+      a{
+        padding-right: .3rem;
+        color: $font-color999;
+      }
+    }
   }
 }
 /*-----------------------search-list.html end----------------------*/
+
+/*-----------------------about-us.html start----------------------*/
+.about-us-wrap{
+  background-color: $bg-color;
+  p{
+    padding: .7em 0;
+    text-indent: 2em;
+  }
+  img{
+    padding: .7em 0;
+    width: 100%;
+  }
+}
+/*-----------------------about-us.html end----------------------*/
+
+/*-----------------------contact-us.html----------------------*/
+.contact-tt{
+  height: 1.75rem;
+  line-height: 1.75rem;
+  font-size: $fz16;
+  color: $font-color333;
+  border-bottom: 1px solid $border-color;
+}
+.contact-us-wrap{
+  p{
+    padding: .375rem 0;
+    color: $font-color666;
+    span{
+      width: 11.5rem;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  .contact-us-input,
+  .contact-us-textarea{
+    margin-top: .45rem;
+  }
+  .contact-us-input{
+    height: 1.75rem;
+    line-height: 1.75rem;
+  }
+  .contact-us-btn{
+    margin-top: .45rem;
+    margin-bottom: 1rem;
+    background-color: $red;
+  }
+}
+/*-----------------------contact-us.html----------------------*/
