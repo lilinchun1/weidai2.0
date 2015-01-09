@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>店铺首页</title>
+<link rel="stylesheet" href="../v20/css/store.css"/>
+</head>
+<body>
+<div class="g-wrap shop-index-wrap">
+    <header class="shop-index-head">
+        <img class="shop-logo" src="../v20/img/test_img/head-pic.jpg" alt=""/>
+        <h2>优衣库旗舰店</h2>
+        <div class="icon-gz">
+            <a href="">
+                <p>&#xf614;</p><!--点击后内容变成 &#xf615;-->
+                <p>收藏</p>
+            </a>
+        </div>
+        <div class="icon-gz">
+            <a href="">
+                <p>&#xf620;</p><!--点击后内容变成 &#xf621;-->
+                <p>关注</p>
+            </a>
+        </div>
+    </header>
+    <section class="shop-banner">
+        <div class="slide" id="slide3">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="../v20/img/test_img/banner.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../v20/img/test_img/banner.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../v20/img/test_img/banner.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../v20/img/test_img/banner.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class="dot">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <section class="shop-index-tool">
+        <input class="shop-index-search icon-search" type="text" placeholder="&#xf638;&nbsp;搜索商品名称"/>
+        <ul class="shop-index-list">
+            <li>
+                <div class="icon-tool">
+                    &#xf646;
+                </div>
+                <p>最新单品</p>
+            </li>
+            <li>
+                <div class="icon-tool">
+                    &#xf62b;
+                </div>
+                <p>新人礼包</p>
+            </li>
+            <li>
+                <div class="icon-tool">
+                    &#xf63e;
+                </div>
+                <p>我要代理</p>
+            </li>
+            <li>
+                <div class="icon-tool">
+                    &#xf608;
+                </div>
+                <p>购物攻略</p>
+            </li>
+        </ul>
+    </section>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+<script src="../v20/js/zepto.min.js"></script>
+<script src="../v20/js/swipeSlide.min.js"></script>
+<script>
+    $(function () {
+        $('#slide3').swipeSlide({
+            continuousScroll: true,
+            speed: 3000,
+            transitionType: 'cubic-bezier(0.22, 0.69, 0.72, 0.88)'
+        }, function (i) {
+            $('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+        });
+    });
+</script>
+</html>

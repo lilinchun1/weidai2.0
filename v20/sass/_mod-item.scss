@@ -142,6 +142,9 @@
   text-align: center;
   color: #ccc;
   font-size: $fz12;
+  span{
+    color: $blue;
+  }
 }
 /*底部导航*/
 .m-footer-nav{

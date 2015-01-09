@@ -1,0 +1,165 @@
+@charset "utf-8";
+/**
+ * Created with IntelliJ IDEA. 
+ * User: llc 
+ * Date: 2015/1/9 
+ * Time: 9:26 
+ * To change this template use File | Settings | File Templates. 
+ */
+
+@import "var";
+@import "rest";
+@import "input";
+@import "btns";
+@import "alert";
+@import "mod-item";
+
+/*-----------------------faq-list.html start----------------------*/
+.faq-list{
+  margin-top: .25rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  overflow: hidden;
+  li{
+    height: 1.85rem;
+    border-bottom: 1px dotted $border-color;
+    line-height: 1.85rem;
+  }
+  span{
+    margin-top: .7rem;
+    margin-right: .4rem;
+    float: left;
+    width: .075rem;
+    height: .425rem;
+    background: $red;
+  }
+  a{
+    display: block;
+    color: $font-color333;
+  }
+}
+/*-----------------------faq-list.html end----------------------*/
+
+/*-----------------------shop-index.html start----------------------*/
+.shop-index-wrap{
+  background: $bg-color;
+}
+.shop-index-head{
+  height: 1.55rem;
+  border: 1px solid $border-color;
+  .shop-logo{
+    float: left;
+    margin: .2rem .6rem 0 .3rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 1.1rem;
+    border: 1px solid #fff;
+  }
+  h2{
+    float: left;
+    height: 1.55rem;
+    line-height: 1.55rem;
+    color: $font-color333;
+  }
+  .icon-gz,
+  .icon-sc{
+    float: right;
+    margin-top: .15rem;
+    width: 2.05rem;
+    height: 1.55rem;
+    text-align: center;
+    a{
+      display: block;
+    }
+    p{
+      font-size: .6rem;
+      &:nth-of-type(1){
+        color: $red;
+      }
+    }
+  }
+}
+.shop-banner{
+  margin-top: .075rem;
+  height: 7rem;
+}
+.slide
+{
+  position:relative;
+  width:100%;
+  margin:0 auto;
+}
+
+.slide:after
+{
+  content:'';
+  display:block;
+  width:100%;
+  padding-top:43%;
+}
+
+.slide ul
+{
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+}
+
+.slide li
+{
+  list-style:none;
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+}
+
+.slide li img
+{
+  width:100%;
+  display:block;
+  border:none;
+  margin:0 auto;
+}
+
+.slide .dot
+{
+  position:absolute;
+  left:50%;
+  margin-left:-1.075rem;
+  bottom: .3rem;
+  font-size:0;
+}
+
+.slide .dot span
+{
+  margin-right: .2rem;
+  float: left;
+  width:.3rem;
+  height:.3rem;
+  background:#721019;
+  border-radius:.6rem;
+  border: 1px solid $border-color;
+}
+tool
+.slide .dot .cur
+{
+  border: 0 none;
+  background-color:#fe2171;
+}
+.shop-index-wrap .shop-index-search{
+  position: relative;
+  margin-top: .7rem;
+  @extend %wrap-600;
+  height: 1.1rem;
+  line-height: 1.1rem;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  display: block;
+  font-size: $fz12;
+  font-family: 'icomoon';
+  text-indent: .3rem;
+}
+
+/*-----------------------shop-index.html end----------------------*/
