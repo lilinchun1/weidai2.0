@@ -101,3 +101,32 @@ input[type="checkbox"]:checked {
     line-height: 1.3rem;
   }
 }
+
+/*搜索框*/
+
+.search-wrap{
+  height: 2.425rem;
+  border: 1px solid $border-color;
+  overflow: hidden;
+  .search-input{
+    float: left;
+    margin: .5rem 0 0 .6rem;
+    width: 13.4rem;
+    height: 1.5rem;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    text-indent: .4rem;
+  }
+  .ico-search-btn{
+    margin-top: .5rem;
+    float: right;
+    width: 1.9rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: #aaaaaa;
+    background-color: transparent;
+    font-family: 'icomoon';
+    font-size: 1rem;
+  }
+}

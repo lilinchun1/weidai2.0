@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>分类搜索</title>
+<link rel="stylesheet" href="../v20/css/store.css"/>
+</head>
+<body>
+<div class="g-wrap search-list-wrap">
+    <div class="search-wrap">
+        <input class="search-input" type="text" placeholder="搜索商品类型"/>
+        <button type="button" class="ico-search-btn">&#xf639;</button>
+    </div>
+    <ul class="search-list-con">
+        <li>
+            <h2>洗 护</h2>
+        </li>
+    </ul>
+    <!-------------底部导航 开始------------------>
+    <nav class="m-footer-nav">
+        <a href="">店铺首页</a>
+        <a href="">会员中心</a>
+        <a href="">品牌介绍</a>
+    </nav>
+    <!-------------底部导航 结束------------------>
+
+    <!-------------底部 开始------------------>
+    <footer class="m-footer">
+        © <span>微代</span> 技术支持
+    </footer>
+    <!-------------底部 结束------------------>
+    <!-------------底部按钮 开始------------------>
+    <div class="m-footer-btn">
+        <div class="m-footer-btn-item active-footer-btn">
+            <a href="">
+                <div class="icon-a">
+                    &#xf61b;
+                </div>
+                <p>
+                    首 页
+                </p>
+            </a>
+        </div>
+        <div class="m-footer-btn-item">
+            <a href="">
+                <div class="icon-a">
+                    &#xf639;
+                </div>
+                <p>
+                    分类搜索
+                </p>
+            </a>
+        </div>
+        <div class="m-footer-btn-item">
+            <a href="">
+                <div class="icon-a">
+                    &#xf626;
+                </div>
+                <p>
+                    用户中心
+                </p>
+            </a>
+        </div>
+        <div class="m-footer-btn-item">
+            <a href="">
+                <div class="icon-a">
+                    &#xf60b;
+                </div>
+                <p>
+                    购物车
+                </p>
+            </a>
+        </div>
+    </div>
+    <!-------------底部按钮 结束------------------>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>
