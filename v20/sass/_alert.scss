@@ -55,7 +55,7 @@
 
 /*alert1 文字提示*/
 .m-alert1{
-  display: block;
+  display: none;
   position: fixed;
   z-index: 9;
   top: 40%;
@@ -199,5 +199,55 @@
   }
   .alert-affirm-info{
     padding: .4rem 0;
+  }
+}
+
+/*alert6 shop-show-alert*/
+.m-shop-show-alert{
+  position: fixed;
+  bottom: 2.5rem;
+  z-index: 9;
+  width: 100%;
+  min-height: 13.25rem;
+  background: #f8f8f8;
+}
+.show-alert-con{
+  @extend %wrap-600;
+  .show-alert-info{
+    height: 3.8rem;
+    border-bottom: 1px solid $border-color;
+    span{
+      margin-top: .35rem;
+      margin-right: .55rem;
+      padding: .1rem;
+      float: left;
+      width: 2.95rem;
+      height: 2.95rem;
+      border: 1px solid $border-color;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      img{
+        width: 100%;
+      }
+    }
+    h2{
+      padding-top: .6rem;
+      font-size: $fz18;
+      color: $red;
+    }
+    p{
+      font-size: $fz12;
+      color: $font-color999;
+    }
+  }
+  .show-alert-guige{
+    padding: .9rem 0;
+    overflow: hidden;
+    border-bottom: 1px solid $border-color;
+    label{
+      float: left;
+      width: 2.15rem;
+    }
   }
 }
