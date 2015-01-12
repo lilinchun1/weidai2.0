@@ -560,7 +560,7 @@
   }
 }
 .guess-list{
-  padding: .45rem 0 0 .5rem;
+  padding: .45rem 0 .45rem .5rem;
   width: 100%;
   overflow: hidden;
   li{
@@ -618,4 +618,38 @@
     }
   }
 }
+.shop-show-tab{
+  width: 100%;
+  overflow: hidden;
+  .m-tab-head{
+    li{
+      width: 33.3%;
+    }
+  }
+  .active-tab a{
+    color: $red;
+  }
+  .show-tab-con{
+    width: 100%;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+    p{
+      @extend %wrap-600;
+      margin: .3rem auto;
+      text-indent: 2em;
+    }
+  }
+}
+.shop-show-btn{
+  margin: 1rem auto;
+  width: 8.75rem;
+  height: 1.25rem;
+  background-color: transparent;
+  border: 1px solid $red;
+  display: block;
+  color: $red;
+}
+
 /*-----------------------shop-show.html end----------------------*/

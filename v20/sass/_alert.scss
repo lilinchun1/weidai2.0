@@ -143,6 +143,7 @@
 .m-alert-affirm{
   display: none;
   position: fixed;
+  z-index: 9;
   top: 30%;
   left: 50%;
   margin-left: -4.25rem;
@@ -175,6 +176,7 @@
 .m-alert-submit{
   display: none;
   position: fixed;
+  z-index: 9;
   top: 30%;
   left: 50%;
   margin-left: -4.25rem;
