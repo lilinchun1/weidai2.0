@@ -456,3 +456,21 @@
 
 /*-----------------------comment-list.html end----------------------*/
 
+/*-----------------------shop-show.html start----------------------*/
+.shop-tw{
+  width: 100%;
+  overflow: hidden;
+  .shop-tw-pic{
+    max-height: 16rem;
+    img{
+      width: 100%;
+    }
+  }
+  .shop-tw-info{
+    @extend %wrap-600;
+    p{
+      border-bottom: 1px d #000;
+    }
+  }
+}
+/*-----------------------shop-show.html end----------------------*/

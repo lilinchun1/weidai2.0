@@ -139,3 +139,61 @@
     font-size: $fz12;
   }
 }
+
+/*alert4 yes or no*/
+.m-alert-affirm{
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-left: -4.25rem;
+  padding: .55rem;
+  width: 8.5rem;
+  background: rgba(0,0,0,0.8);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  p{
+    color: #ffffff;
+  }
+  .icon-affirm{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .bgccc{
+    background: #cccccc;
+  }
+  .m-button-s{
+    display: inline;
+  }
+  .alert-affirm-info{
+    padding: .4rem 0;
+  }
+}
+
+/*alert5 submit*/
+.m-alert-submit{
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  margin-left: -4.25rem;
+  padding: .55rem;
+  width: 8.5rem;
+  background: rgba(0,0,0,0.8);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  p{
+    color: #ffffff;
+  }
+  .icon-submit{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .m-button-s{
+    margin: 0 auto;
+  }
+  .alert-affirm-info{
+    padding: .4rem 0;
+  }
+}

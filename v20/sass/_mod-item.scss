@@ -270,14 +270,15 @@
 
 /*店铺头部*/
 .shop-index-head{
+  padding: .4rem 0;
   height: 1.55rem;
   border: 1px solid $border-color;
   .shop-logo{
     float: left;
-    margin: .2rem .6rem 0 .3rem;
-    width: 1.1rem;
-    height: 1.1rem;
-    border-radius: 1.1rem;
+    margin: 0 .6rem 0 .3rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
     border: 1px solid #fff;
   }
   h2{
@@ -291,7 +292,7 @@
     float: right;
     margin-top: .15rem;
     width: 2.05rem;
-    height: 1.55rem;
+    //height: 1.55rem;
     text-align: center;
     a{
       display: block;
@@ -302,5 +303,8 @@
         color: $red;
       }
     }
+  }
+  .icon-sc{
+    border-left: 1px solid $border-color;
   }
 }
