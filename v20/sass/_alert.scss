@@ -55,15 +55,14 @@
 
 /*alert1 文字提示*/
 .m-alert1{
-  display: none;
+  display: block;
   position: fixed;
   z-index: 9;
   top: 40%;
   left: 50%;
   margin-left: -4.5rem;
+  padding: .5rem 0;
   width: 9rem;
-  height: 3.15rem;
-  line-height: 3.15rem;
   color: #ffffff;
   text-align: center;
   border-radius: 2px;
@@ -155,6 +154,7 @@
   box-sizing: border-box;
   p{
     color: #ffffff;
+    text-align: center;
   }
   .icon-affirm{
     text-align: center;
@@ -173,6 +173,7 @@
 
 /*alert5 submit*/
 .m-alert-submit{
+  display: none;
   position: fixed;
   top: 30%;
   left: 50%;
@@ -185,6 +186,7 @@
   box-sizing: border-box;
   p{
     color: #ffffff;
+    text-align: center;
   }
   .icon-submit{
     text-align: center;
