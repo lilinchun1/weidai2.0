@@ -20,7 +20,6 @@ body {
   margin: 0;
   font-size: .7rem;
   line-height: 1.5;
-  color: $font-color333;
   background-color: white;
   height: 100%;
   overflow-x: hidden;
@@ -242,16 +241,21 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   //font-size: .7rem;
 }
 
+
+/*-----------------------wrap-640px----------------------*/
 %wrap-640{
   margin: 0 auto;
   width: 16rem;
   overflow: hidden;
 }
+/*-----------------------wrap 600px----------------------*/
 %wrap-600{
   margin: 0 auto;
   width: 15rem;
   overflow: hidden;
 }
+
+
 @font-face {
   font-family: 'icomoon';
   src:url('../img/fonts/icomoon.eot?');

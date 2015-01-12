@@ -244,3 +244,20 @@
     color: $red;
   }
 }
+
+/*星星评级*/
+.star-level{
+  padding: 0 .4rem;
+  float: left;
+  width: 4rem;
+  li{
+    float: left;
+    height: 1.75rem;
+    line-height: 1.75rem;
+    border-bottom: 0 none;
+    color: #dddddd;
+  }
+  .icon-start-active{
+    color: $orange;
+  }
+}
