@@ -631,6 +631,7 @@
     color: $red;
   }
   .show-tab-con{
+    display: none;
     width: 100%;
     overflow: hidden;
     img{
@@ -688,6 +689,12 @@
   .search-list-r{
     margin: .65rem .5rem 0 0;
     float: right;
+  }
+  .search-list-sort-con{
+    min-width: 4rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
   }
 }
 /*-----------------------search-list-b end----------------------*/
