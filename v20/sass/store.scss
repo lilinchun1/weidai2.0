@@ -719,6 +719,7 @@
         font-size: $fz12;
       }
       i{
+        float: left;
         padding-left: 1.6rem;
         padding-right: .75rem;
         color: $font-color999;
@@ -751,3 +752,93 @@
   background-color: $orange;
 }
 /*-----------------------search-list-b end----------------------*/
+
+/*-----------------------search-list start----------------------*/
+.search-list-two{
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 1rem;
+  li{
+    float: left;
+    margin: .5rem 0 0 .5rem;
+    padding-bottom: .225rem;
+    width: 7.25rem;
+    overflow: hidden;
+    border: 1px solid $border-color;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .search-pic{
+    position: relative;
+    margin: .25rem;
+    width: 6.7rem;
+    height: 6.7rem;
+    img{
+      width: 100%;
+    }
+    .price{
+      position: absolute;
+      left: 0;
+      bottom: .25rem;
+      min-width: 5.25rem;
+      height: .8rem;
+      line-height: .8rem;
+      background: #ffffff;
+      em{
+        position: relative;
+        padding: 0 .2rem;
+        float: left;
+        background: $red;
+        font-size: $fz12;
+        color: #ffffff;
+        &:after{
+          content: "";
+          position: absolute;
+          right: -.8rem;
+          top: 0;
+          border: .4rem solid transparent;
+          border-top: .4rem solid $red;
+          border-left: .4rem solid $red;
+        }
+      }
+      span{
+        font-size: .5rem;
+      }
+      i{
+        float: left;
+        font-size: .5rem;
+        padding-left: .8rem;
+        padding-right: .2rem;
+        color: $font-color999;
+      }
+    }
+  }
+  h2{
+    border-top: 1px solid $border-color;
+    padding: .2rem .225rem;
+    height: 2rem;
+    overflow: hidden;
+    a{
+      color: $font-color333;
+    }
+  }
+}
+.search-b-btn{
+  padding: 0;
+  width: 3rem;
+  height: 1rem;
+  color: #ffffff;
+  font-size: $fz12;
+}
+.search-btn-l{
+  margin-left: .4em;
+  float: left;
+  background-color: $red;
+}
+.search-btn-r{
+  margin-right: .4em;
+  float: right;
+  background-color: $orange;
+}
+/*-----------------------search-list start----------------------*/
