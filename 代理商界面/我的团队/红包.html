@@ -1,0 +1,96 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no">
+    <title>红包列表</title>
+    <link rel="stylesheet" href="http://js.exweixin.com/wd/hd/20141225/css/redpacket.css?v20141215"/>
+</head>
+<body>
+<div class="index-wrap" id="index-wrap">
+    <img src="http://js.exweixin.com/wd/hd/20141225/img/list.gif?v20141215" alt=""/>
+    <div class="info-wrap">
+        <h1>已发出<span>327</span>个红包</h1>
+        <p class="money">5.0<i>元</i></p>
+        <p class="info-con">红包已放进<b>我的收入</b>中&nbsp;&nbsp;&nbsp;<b onclick="location.href='http://wdts.wedai.net/wedai/wap/index.php?act=agent_income&op=income'">前往</b>></p>
+        <button class="info-btn huoban-btn" type="button" onclick="getShare();"></button>
+    </div>
+  
+             <p class="list-none-info">您还没有活动伙伴的红包~</p>
+           <div class="wd-logo list-wd-logo"><img src="http://js.exweixin.com/wd/hd/20141225/img/wd-logo.png?v20141215" alt=""/></div>
+    
+</div>
+ 
+<div class="share-wrap" id="share-wrap" style="display: none;" onclick="document.getElementById('share-wrap').style.display='none';">
+    <img src="http://js.exweixin.com/wd/hd/20141225/img/share-bg.png?v20141215" alt="" class="share-bg"/>
+</div>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/common.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/zepto.min.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/notification.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript">
+function getShare(){
+	$("#share-wrap").show();
+}
+</script>
+<script type="text/javascript">
+var title = ["易享微代千万红包全民抢，100%get！","就知道你花光一生的运气来认识我，送你个红包回回血吧！","我不勾引你！红包就在那，你自己看着办吧！","别说我没告诉你，点进来，微代红包100% get！","就算你再豪，这里有100%get的红包你能错过吗？"]; 
+var title_s = title[Math.floor(Math.random()*title.length)]; 
+var content_s = title[Math.floor(Math.random()*title.length)]; 
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+	window.shareData = {
+		"imgUrl": "http://img.exweixin.com/wd/v12/img/share_logored.jpg",
+		"timeLineLink": "http://wdts.wedai.net/wedai/red_packet/index.php?act=index&op=index&parent_id=1123",
+		"sendFriendLink": "http://wdts.wedai.net/wedai/red_packet/index.php?act=index&op=index&parent_id=1123",
+		"weiboLink": "http://wdts.wedai.net/wedai/red_packet/index.php?act=index&op=index&parent_id=1123",
+		"tTitle": title_s,
+		"tContent": content_s,
+		"fTitle": title_s,
+		"fContent": content_s,
+		"wContent": content_s
+	};
+	// 发送给好友
+	WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+		WeixinJSBridge.invoke('sendAppMessage', {
+			"img_url": window.shareData.imgUrl,
+			"img_width": "640",
+			"img_height": "640",
+			"link": window.shareData.sendFriendLink,
+			"desc": window.shareData.fContent,
+			"title": window.shareData.fTitle
+		}, function (res) {
+			_report('send_msg', res.err_msg);
+		})
+	});
+
+	// 分享到朋友圈
+	WeixinJSBridge.on('menu:share:timeline', function (argv) {
+		WeixinJSBridge.invoke('shareTimeline', {
+			"img_url": window.shareData.imgUrl,
+			"img_width": "640",
+			"img_height": "640",
+			"link": window.shareData.timeLineLink,
+			"desc": window.shareData.tContent,
+			"title": window.shareData.tTitle
+		}, function (res) {
+			_report('timeline', res.err_msg);
+		});
+	});
+
+	// 分享到微博
+	WeixinJSBridge.on('menu:share:weibo', function (argv) {
+		WeixinJSBridge.invoke('shareWeibo', {
+			"content": window.shareData.wContent,
+			"url": window.shareData.weiboLink,
+		}, function (res) {
+			_report('weibo', res.err_msg);
+		});
+	});
+}, false);
+</script>
+</body>
+</html>

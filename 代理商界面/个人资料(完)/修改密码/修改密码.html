@@ -1,0 +1,175 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection">
+<meta name="format-detection" content="telephone=no">
+<title>修改密码</title>
+<link rel="stylesheet" href="http://js.exweixin.com/wd/v12/css/index.css?v20141215"/>
+</head>
+<body>
+<div class="box-wrap2   h100p">
+  <section class="change-bank-wrap">
+    <p></p>
+    <p><input class="apply-cash-input " type="password" name="password" id="password" placeholder="请填写当前密码" /></p>
+    <p><input class="apply-cash-input " type="password" name="pwd1" id="pwd1" placeholder="请设置6-16位新密码" /></p>
+    <p><input class="apply-cash-input " type="password" name="pwd2" id="pwd2" placeholder="请重新输入一遍新密码" /></p>
+    <button type="button" class="draw-money-btn change-bank-btn-qd disable" id="J_submit">确 定</button>
+  </section>
+     <div class="overlay" id="J_overlay" style="display:none;z-index:999"></div>
+     <div class="alert2" id="con1" style="display:none;z-index:999"> 
+	     <p>
+          <img class="alert2-logo-right" id="J-alt-pic" src="http://js.exweixin.com/wd/v12/img/alert-logo-right.png?v20141215" alt=""/>
+	     </p>
+         <p id="J-alt-con">
+            
+         </p>
+		<button type="button" class="alert2-btn" id="J_btn" >确认</button>
+    </div>
+     <footer class="foot">
+        易享科技出品
+    </footer>
+</div>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/config.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/common.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/zepto.min.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/notification.js?v20141215" charset="utf-8"></script>
+ <script type="text/javascript">
+var title = ["易享微代千万红包全民抢，100%get！","就知道你花光一生的运气来认识我，送你个红包回回血吧！","我不勾引你！红包就在那，你自己看着办吧！","别说我没告诉你，点进来，微代红包100% get！","就算你再豪，这里有100%get的红包你能错过吗？"]; 
+var title_s = title[Math.floor(Math.random()*title.length)]; 
+var content_s = title[Math.floor(Math.random()*title.length)]; 
+window.shareData = {
+		"imgUrl": "http://img.exweixin.com/wd/v12/img/share_logored.jpg",
+		"timeLineLink": "http://wdts.wedai.net/wedai/red_packet/index.php?act=index&op=index&parent_id=1123",
+		"sendFriendLink": "http://wdts.wedai.net/wedai/red_packet/index.php?act=index&op=index&parent_id=1123",
+		"weiboLink": "http://wdts.wedai.net/wedai/red_packet/index.php?act=index&op=index&parent_id=1123",
+		"tTitle": title_s,
+		"tContent": content_s,
+		"fTitle": title_s,
+		"fContent": content_s,
+		"wContent": content_s
+	};
+function onBridgeReady(){
+	// 发送给好友
+	WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+		WeixinJSBridge.invoke('sendAppMessage', {
+			"img_url": window.shareData.imgUrl,
+			"img_width": "640",
+			"img_height": "640",
+			"link": window.shareData.sendFriendLink,
+			"desc": window.shareData.fContent,
+			"title": window.shareData.fTitle
+		}, function (res) {
+			_report('send_msg', res.err_msg);
+		})
+	});
+
+	// 分享到朋友圈
+	WeixinJSBridge.on('menu:share:timeline', function (argv) {
+		WeixinJSBridge.invoke('shareTimeline', {
+			"img_url": window.shareData.imgUrl,
+			"img_width": "640",
+			"img_height": "640",
+			"link": window.shareData.timeLineLink,
+			"desc": window.shareData.tContent,
+			"title": window.shareData.tTitle
+		}, function (res) {
+			_report('timeline', res.err_msg);
+		});
+	});
+
+	// 分享到微博
+	WeixinJSBridge.on('menu:share:weibo', function (argv) {
+		WeixinJSBridge.invoke('shareWeibo', {
+			"content": window.shareData.wContent,
+			"url": window.shareData.weiboLink,
+		}, function (res) {
+			_report('weibo', res.err_msg);
+		});
+	});
+}
+
+function _report(v,s){}
+
+//分享
+if (typeof WeixinJSBridge == "undefined"){
+    if( document.addEventListener ){
+        document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+    }else if (document.attachEvent){
+        document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+        document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+    }
+}else{
+    onBridgeReady();
+}
+</script><script type="text/javascript">
+$(function(){
+	$("#password,#pwd1,#pwd2").on('input',function(e) {
+        var pwd=$("#password").val(),pwd1=$("#pwd1").val(),pwd2=$("#pwd2").val();
+		if(pwd && pwd1 && pwd2){
+			$("#J_submit").prop("disabled", false).removeClass("disable");
+		}else{
+			$("#J_submit").prop("disabled", true).addClass("disable");
+		}
+    });
+
+	$("#J_submit").on(touchMethod, function(e){
+		if($(this).hasClass("disable")){
+			return;
+		}
+
+		var newpwd=$("#password").val(),pwd1=$("#pwd1").val(),pwd2=$("#pwd2").val();
+		if(pwd1.length<6 || pwd1.length>16){
+			floatNotify.simple("新密码长度不在6~16位之间");
+		}else if(pwd1!=pwd2){
+			floatNotify.simple("新密码两次填写不一致");
+		}else{
+			$.post("index.php?act=personal_center&op=updatePwd", {'password':newpwd,'pwd1':pwd1,'pwd2':pwd2}, function(result){
+				var data = result.datas;
+				if(data.error){
+					floatNotify.simple(data.error);
+				}else{
+				 altBox("密码修改成功",2,"index.php?act=personal_center&op=index"	);		
+				}
+			}, 'json');
+		}
+	});
+});
+function altBox(txt, logo,Ourl) {
+    var overlay = document.getElementById("J_overlay");
+    var con1 = document.getElementById("con1");
+    var btn = document.getElementById("J_btn");
+    var altCon = document.getElementById("J-alt-con");
+    var altPic = document.getElementById("J-alt-pic");
+    var scrolltop = document.body.clientHeight;
+    //var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+    altCon.textContent=altCon.innerText = txt;
+    switch (logo) {
+        case 1:
+            altPic.className = "alert-logo";
+            break;
+        case 2:
+            altPic.className = "alert2-logo-right";
+            break;
+    }
+    
+    overlay.style.display = "block";
+    con1.style.display = "block";
+    overlay.style.height = document.body.clientHeight + scrolltop + 'px';
+    btn.onclick = function () {
+        //alert("22222222");
+        overlay.style.display = "none";
+        con1.style.display = "none";
+        if(Ourl){
+            window.location.href = Ourl;
+        }
+    };
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection">
+<meta name="format-detection" content="telephone=no">
+<title>我的银行卡</title>
+<link rel="stylesheet" href="http://js.exweixin.com/wd/v12/css/index.css?v20141215"/>
+</head>
+<body>
+<div class="box-wrap wrap-bg h100p">
+    <section class="my-bank-wrap">
+        <div class="bank-logo"><img src="http://js.exweixin.com/wd/v12/img/gs-logo.jpg" alt=""/></div>
+        <p>
+            <em>尹慧颖</em>
+        </p>
+
+        <p>
+            <em>中国工商银行</em>  储蓄卡
+        </p>
+         
+        <p>
+            
+           ***************1111        </p>
+            </section>
+    <div class="bank-item-btn">
+              
+        <button type="button" class="draw-money-btn" onclick="modify();">修改银行卡</button>
+		<em>申请提现后的账户无法修改银行卡信息，如需修改请在申请前完成！</em>
+            </div>
+    <footer class="foot">
+        易享科技出品
+    </footer>
+</div>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/config.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/common.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/zepto.min.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/notification.js?v20141215" charset="utf-8"></script>
+<script>
+    window.onload = function () {
+        var obox = document.getElementById("J-my-bank-alert");
+        obox.onclick = function () {
+            obox.style.display = "none";
+        }
+    }
+    function modify(){
+    	$.post("index.php?act=agent_income&op=modifyCard", function(result){
+			var data = result.datas;
+			if(data.error){
+				floatNotify.simple(data.error);
+			}else{
+		     	setTimeout('window.location.href="index.php?act=agent_income&op=checkCard";', 1000)
+			}
+		}, 'json');   
+           
+	   }
+</script>
+</body>
+</html>html>

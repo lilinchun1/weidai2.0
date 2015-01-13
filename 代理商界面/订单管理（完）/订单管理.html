@@ -1,0 +1,274 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection">
+<meta name="format-detection" content="telephone=no">
+<title>订单管理</title>
+<link rel="stylesheet" href="http://js.exweixin.com/wd/v12/css/index.css?v20141215"/>
+<link rel="stylesheet" href="http://js.exweixin.com/wd/v12/css/gl-index.css?v20141215" >
+</head>
+<body>
+      <ul class="order-top" id="sign">
+        <li class="r-b r-h" data-sign="0" ontouchstart="li(this)" id="all-order"><a href="javascript:void(0);">全 部(<span>0</span>)</a></li>
+        <li class="r-b" data-sign="10" ontouchstart="li(this)" id="no-payment"><a href="javascript:void(0);">待付款(<span>0</span>)</a></li>
+        <li class="r-b" data-sign="20" ontouchstart="li(this)" id="no-delivery"><a href="javascript:void(0);">待发货(<span>0</span>)</a></li>
+        <li class="" data-sign="30" ontouchstart="li(this)" id="realy-delivery"><a href="javascript:void(0);">已发货(<span>0</span>)</a></li> 
+      </ul>
+    <div id="more_goods">
+     <li><div class="order-l-b" id="_69"><h4>订单号：<i>6000000000006901</i> <span>已关闭</span></h4><div class="shopping-listing"><a href="http://wdts.wedai.net/wedai/wap/index.php?act=agent_detail&order_id=69"><div class="shopping-listing-box" style="-webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1);"><div class="slb-l"><img src="http://wdts.wedai.net/wedai/data/upload/shop/store/goods/1/1_04727296984291916_60.jpg"></div><div class="slb-c"><p class="slb-c-tt"><span>【包邮】</span>大连特产海鲜 半岛小渔村多种口味 即食休闲零食 大礼包一 900g/包</p><p>规格：900g/包</p></div><div class="slb-r"><p>￥68.00</p><p>×1</p></div></div></a></div><div class="order-payment">实付款：<span>￥68.00</span><i>共计1件 </i></div><div class="order-button"><input type="button" value="删除订单" onclick="cancel_order(69)" class="gl-btn-k1"></div></div></li><li><div class="order-l-b" id="_61"><h4>订单号：<i>6000000000006101</i> <span>已关闭</span></h4><div class="shopping-listing"><a href="http://wdts.wedai.net/wedai/wap/index.php?act=agent_detail&order_id=61"><div class="shopping-listing-box" style="-webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1);"><div class="slb-l"><img src="http://wdts.wedai.net/wedai/data/upload/shop/store/goods/1/1_04727296984291916_60.jpg"></div><div class="slb-c"><p class="slb-c-tt"><span>【包邮】</span>大连特产海鲜 半岛小渔村多种口味 即食休闲零食 大礼包一 900g/包</p><p>规格：900g/包</p></div><div class="slb-r"><p>￥68.00</p><p>×1</p></div></div></a></div><div class="order-payment">实付款：<span>￥68.00</span><i>共计1件 </i></div><div class="order-button"><input type="button" value="删除订单" onclick="cancel_order(61)" class="gl-btn-k1"></div></div></li><li><div class="order-l-b" id="_47"><h4>订单号：<i>6000000000004701</i> <span>已关闭</span></h4><div class="shopping-listing"><a href="http://wdts.wedai.net/wedai/wap/index.php?act=agent_detail&order_id=47"><div class="shopping-listing-box" style="-webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1);"><div class="slb-l"><img src="http://wdts.wedai.net/wedai/data/upload/shop/store/goods/1/1_04727309674684359_60.jpg"></div><div class="slb-c"><p class="slb-c-tt"><span>【包邮】</span>绿尚渔府 海鲜礼盒 超值套餐D 节日送亲朋 送父母的首选 礼盒</p><p>规格：礼盒</p></div><div class="slb-r"><p>￥998.00</p><p>×1</p></div></div></a></div><div class="order-payment">实付款：<span>￥998.00</span><i>共计1件 </i></div><div class="order-button"><input type="button" value="删除订单" onclick="cancel_order(47)" class="gl-btn-k1"></div></div></li><li><div class="order-l-b" id="_43"><h4>订单号：<i>6000000000004301</i> <span>已完成</span></h4><div class="shopping-listing"><a href="http://wdts.wedai.net/wedai/wap/index.php?act=agent_detail&order_id=43"><div class="shopping-listing-box" style="-webkit-transform-origin: 0px 0px; opacity: 1; -webkit-transform: scale(1, 1);"><div class="slb-l"><img src="http://wdts.wedai.net/wedai/data/upload/shop/store/goods/1/1_04727478204311516_60.jpg"></div><div class="slb-c"><p class="slb-c-tt"><span>【包邮】</span>测试1</p><p>规格：null</p></div><div class="slb-r"><p>￥1.00</p><p>×1</p></div></div></a></div><div class="order-payment">实付款：<span>￥1.00</span><i>共计1件 </i></div><div class="order-button"><input type="button" value="删除订单" onclick="cancel_order(43)" class="gl-btn-k1"><a href="http://wdts.wedai.net/wedai/wap/index.php?act=deliver&order_id=43"><input type="button" value="查看物流" class="gl-btn-k1"></a></div></div></li></div>
+    </div>
+    <div class="add-more">
+			
+	</div>
+    <footer class="foot"> 易享科技出品 </footer>	
+<!--侧边栏 开始-->
+<div class="aside-item">
+    <div>
+        <img class="aside-item-icon" src="http://js.exweixin.com/wd/v12/img/iconfont-up.png?v20141215" alt=""/>
+    </div>
+</div>    
+<!--侧边栏 结束-->  
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/config.js?v20141215" charset="utf-8"></script>  
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/common.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/zepto.min.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/notification.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript"> 
+var itemHtml = "";
+var more = 0;
+var sign = 0;
+var pageCount=1;
+//计数
+var list_con=1;
+//获取sign值
+function li(list){
+	if($(list).attr("data-sign")!=list_con){
+		list_con=$(list).attr("data-sign");
+		$(".order-top li").attr("ontouchstart","");
+		$(list).addClass("r-h").siblings().removeClass("r-h");
+		$("#more_goods li").hide();
+		sign=$(list).data('sign');
+		getPageList(1,sign);
+	}
+}
+//滑动加载更多
+$(window).scroll(function () {
+	var scrollTop = $(this).scrollTop();
+    var scrollHeight = $(document).height();
+    var windowHeight = $(this).height();
+     if (scrollTop + windowHeight >= scrollHeight && more<=pageCount) {
+ 	   getPageList(more,sign);
+     }
+});
+$(function(){
+	$('.aside-item').attr("style","top:70%");
+	$('.aside-item').hide();
+		//初始加载
+	getPageList(1,0);
+});		
+//置顶
+$(".aside-item").css("top",window.screen.availHeight/2-100+"px");
+$(window).scroll(function() {		
+		if($(window).scrollTop() >= 500){
+			$('.aside-item').show(); 
+		}else{    
+			$('.aside-item').hide();    
+		}  
+});
+$('.aside-item div').eq(0).click(function(){
+		$("html,body").scrollTop(0);
+});
+  function indent_wrap(list){
+	   //alert(1);	   	   	   	   
+		var classes = $(list).parent().attr('class');
+		if (classes == "order-dd-button1") {
+			$(list).parent().parent().find(".shopping-listing-box").show();
+			$(list).parent().removeClass();
+			$(list).parent().addClass("order-dd-button2");
+		}else if(classes == "order-dd-button2"){
+			$(list).parent().parent().find(".shopping-listing-box").hide();
+			$(list).parent().parent().find(".shopping-listing-box").first().show();
+			$(list).parent().removeClass();
+			$(list).parent().addClass("order-dd-button1");
+		}
+  }
+
+	//qinwei
+	function cancel_order(id){
+		var url='index.php?act=agent_order&op=cancel_order&order_id='+id;
+		$.getJSON(url,function (result) {
+			var data = result.datas;
+			if(data.status){
+				$("#_"+id).hide("slow");
+				setTimeout(function(){
+				  $("#more_goods").html("");
+				  $("#all-order a span").html("0");
+				  $("#no-payment a span").html("0");
+				  $("#no-delivery a span").html("0");
+				  $("#realy-delivery a span").html("0"); 
+				  getPageList(1,0);
+				},2000)
+				
+			}else{
+				floatNotify.simple("删除失败");
+			}
+		})										 
+		
+	}
+	//qinwei
+	function getPageList(page,state){
+		var url='index.php?act=agent_order&op=more&state='+state;
+		var all_order = $("#all-order a span").text();
+		var no_payment = $("#no-payment a span").text();
+		var no_delivery=$("#no-delivery a span").text();
+		var realy_delivery=$("#realy-delivery a span").text();
+		if(all_order==0 && no_payment==0 && no_delivery==0 && realy_delivery==0){
+			$(".add-more").html("");     
+		}else{
+			$(".add-more").html('<img src="http://js.exweixin.com/wd/v12/img/load.gif" alt="" class="add-gif"/> 正在加载...');
+		}
+		
+		$.get(url, {'curpage':page}, function (result) {	
+			var data = result.datas;
+		if(data.status){
+
+			var count_num = data.count_num;
+			$("#all-order a span").html(count_num.count_0);
+			$("#no-payment a span").html(count_num.count_10);
+			$("#no-delivery a span").html(count_num.count_20);
+			$("#realy-delivery a span").html(count_num.count_30);
+			$.each(data.new_order_group_list,function(key,val){
+				$.each(val['order_list'],function(m_key,m_val){
+					var count_num = 0;
+					var count_order = 0;
+					itemHtml='<li><div class="order-l-b" id="_'+m_val['order_id']+'">';
+					itemHtml +='<h4>';
+					itemHtml +='订单号：<i>'+m_val['order_sn']+'</i> <span>'+m_val['class']+'</span></h4>';
+					itemHtml +='<div class="shopping-listing">';
+						$.each(m_val['extend_order_goods'],function(v_key,v_val){
+							count_num = parseInt(v_val['goods_num'])+parseInt(count_num);
+							count_order = parseInt(count_order)+1;
+							itemHtml +='<a href="?act=agent_detail&order_id='+m_val['order_id']+'"><div class="shopping-listing-box"><div class="slb-l"><img src="'+v_val['goods_image_url']+'"/></div><div class="slb-c"><p class="slb-c-tt"><span>【包邮】</span>'+v_val['goods_name']+'</p><p>规格：'+v_val['norms']+'</p></div><div class="slb-r"><p>￥'+v_val['goods_price']+'</p><p>×'+v_val['goods_num']+'</p></div></div></a>';
+						 })
+					itemHtml +='</div><div class="order-payment">实付款：<span>￥'+m_val['order_amount']+'</span><i>共计'+count_num+'件 </i></div>';
+					
+					if(count_order>1){
+						itemHtml +='<div class="order-dd-button1"><a href="javascript:void(0);" onclick="indent_wrap(this)"></a></div>';
+					} 
+					
+					if(m_val['order_state'] ==0 || +m_val['order_state']  >= 30){
+						itemHtml +='<div class="order-button" >';
+					}else{
+						itemHtml +='<div >';
+					}
+					
+					if(m_val['order_state'] == 0 || m_val['order_state'] == 40){
+						itemHtml +='<input type="button" value="删除订单" onClick="cancel_order('+m_val['order_id']+')" class="gl-btn-k1">';    
+					}
+					if(m_val['order_state'] >= 30){
+						itemHtml +='<a href="index.php?act=deliver&order_id='+m_val['order_id']+'"><input type="button" value="查看物流" class="gl-btn-k1"></a>';    
+					}
+				   itemHtml +='</div></li>'
+					   	
+				})
+				$('#more_goods').append(itemHtml);	
+				  
+			});
+			 
+		}else{
+			itemHtml='<li><div class="collection-none"><img src="http://js.exweixin.com/wd/v12/img/icon/bg-none.png?v20141215"><p>暂时没有订单！</p></div></li>';
+		    $('#more_goods').append(itemHtml);
+		    $(".add-more").html("");
+		} 
+		pageCount=data.page_count;
+	    more = page+1;
+	    $(".order-top li").attr("ontouchstart","li(this)");
+	    var leng=$(".shopping-listing").length;
+	    $('.shopping-listing').find(".shopping-listing-box").hide();
+	    for(var i=0;i<=leng;i++){
+	        $('.shopping-listing').eq(i).find(".shopping-listing-box").first().show();
+	    }
+	    
+ 	     if(page==pageCount){
+ 	         $(".add-more").html("");
+ 	         
+ 	     } 
+			
+	},'json');
+}
+
+</script>
+<script type="text/javascript">
+var title = ["易享微代千万红包全民抢，100%get！","就知道你花光一生的运气来认识我，送你个红包回回血吧！","我不勾引你！红包就在那，你自己看着办吧！","别说我没告诉你，点进来，微代红包100% get！","就算你再豪，这里有100%get的红包你能错过吗？"]; 
+var title_s = title[Math.floor(Math.random()*title.length)]; 
+var content_s = title[Math.floor(Math.random()*title.length)]; 
+window.shareData = {
+		"imgUrl": "http://img.exweixin.com/wd/v12/img/share_logored.jpg",
+		"timeLineLink": "http://wdts.wedai.net/wedai/red_packet/index.php?act=index&op=index&parent_id=1123",
+		"sendFriendLink": "http://wdts.wedai.net/wedai/red_packet/index.php?act=index&op=index&parent_id=1123",
+		"weiboLink": "http://wdts.wedai.net/wedai/red_packet/index.php?act=index&op=index&parent_id=1123",
+		"tTitle": title_s,
+		"tContent": content_s,
+		"fTitle": title_s,
+		"fContent": content_s,
+		"wContent": content_s
+	};
+function onBridgeReady(){
+	// 发送给好友
+	WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+		WeixinJSBridge.invoke('sendAppMessage', {
+			"img_url": window.shareData.imgUrl,
+			"img_width": "640",
+			"img_height": "640",
+			"link": window.shareData.sendFriendLink,
+			"desc": window.shareData.fContent,
+			"title": window.shareData.fTitle
+		}, function (res) {
+			_report('send_msg', res.err_msg);
+		})
+	});
+
+	// 分享到朋友圈
+	WeixinJSBridge.on('menu:share:timeline', function (argv) {
+		WeixinJSBridge.invoke('shareTimeline', {
+			"img_url": window.shareData.imgUrl,
+			"img_width": "640",
+			"img_height": "640",
+			"link": window.shareData.timeLineLink,
+			"desc": window.shareData.tContent,
+			"title": window.shareData.tTitle
+		}, function (res) {
+			_report('timeline', res.err_msg);
+		});
+	});
+
+	// 分享到微博
+	WeixinJSBridge.on('menu:share:weibo', function (argv) {
+		WeixinJSBridge.invoke('shareWeibo', {
+			"content": window.shareData.wContent,
+			"url": window.shareData.weiboLink,
+		}, function (res) {
+			_report('weibo', res.err_msg);
+		});
+	});
+}
+
+function _report(v,s){}
+
+//分享
+if (typeof WeixinJSBridge == "undefined"){
+    if( document.addEventListener ){
+        document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+    }else if (document.attachEvent){
+        document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+        document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+    }
+}else{
+    onBridgeReady();
+}
+</script></body>
+</html>

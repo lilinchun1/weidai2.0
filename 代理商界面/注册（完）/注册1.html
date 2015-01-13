@@ -1,0 +1,335 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection">
+<meta name="format-detection" content="telephone=no">
+<title>注册</title>
+<link rel="stylesheet" href="http://js.exweixin.com/wd/v12/css/index.css?v20141215"/>
+</head>
+<body>
+<div class="box-wrap">
+<form>
+    <section class="register-wrap">
+        <div class="register-item" id="D_mobile">
+            <div class="input-wrap">
+                <input class="register-input" type="tel" id="mobile"  placeholder="请输入你的手机号"/>
+            </div>
+
+            <div class="register-yanzheng">
+                <div class="input-wrap input-wrap2">
+                    <input class="register-input" type="tel" id="smscode" placeholder="请输入验证码"/>
+                </div>
+                <button type="button" class="register-btn register-btn2" id="J_smscode" autofocus>获取验证码</button>
+            </div>
+
+            <div class="input-wrap">
+                <input class="register-input" type="password" id="password" placeholder="请设置6-16位密码"/>
+            </div>
+
+            <div class="input-wrap">
+                <input class="register-input" type="password" id="password2" placeholder="请重新输入一遍"/>
+            </div>
+
+            <p class="font-color-red">
+                设置密码后，可以使用手机号+密码登录
+            </p>
+
+            <p>
+                <button type="button" class="register-btn4" id="J_next">下一步</button>
+            </p>
+
+            <p>
+                <input type="checkbox" class="input-ck" id="J_agreed" checked/>
+                阅读并同意<a href="javascript:void(0);" class="font-yellow" id="J_openterm" >服务协议</a>
+            </p>
+        </div>
+        <div class="register-item" id="D_term" style="display:none">
+           <h2>服务协议</h2>
+            <p>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大连新玉麟海洋珍品有限公司通过海参产业链的整合，构建了中国海参私有采捕基地、中国大规模的海参苗种繁育基地和中国海参鲜、精、深加工基地，构筑起“品质全保障”链条，实现了苗种保障纯正、资源保障原料、专家保障科技、生产保障品质、终端保障品牌的前后端互相支撑模式。
+            </p>
+            <p>
+               	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国家大连紫海胆良种场、辽宁省海洋生物工程技术研究中心、国家健康养殖示范场等均在这里建立。通过了ISO9001质量管理系认证、ISO14001环境管理体系认证，ISO22000食品安全管理体系认证。
+            </p>
+            <p>
+              	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;大连新玉麟海洋珍品有限公司通过海参产业链的整合，构建了中国海参私有采捕基地、中国大规模的海参苗种繁育基地和中国海参鲜、精、深加工基地，构筑起“品质全保障”链条，实现了苗种保障纯正、资源保障原料、专家保障科技、生产保障品质、终端保障品牌的前后端互相支撑模式。
+            </p>
+            <p>
+              	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国家大连紫海胆良种场、辽宁省海洋生物工程技术研究中心、国家健康养殖示范场等均在这里建立。通过了ISO9001质量管理系认证、ISO14001环境管理体系认证，ISO22000食品安全管理体系认证。
+            </p>
+            <p>
+                <button type="button" class="register-btn4" id="J_closeterm">确定</button>
+            </p>
+        </div>
+        <div class="register-item" id="D_regist" style="display:none">
+            <div class="select-wrap register-select">
+                <select class="select-draw-con" id="province_id" title="省" onchange="selectArea('city_id', this.options[this.selectedIndex].value)">
+                    <option value="">-省-</option>
+                </select>
+                <div class="logo">
+                    <span></span>
+                </div>
+            </div>
+            <div class="select-wrap register-select">
+                <select class="select-draw-con" id="city_id" title="市" onchange="selectArea('area_id', this.options[this.selectedIndex].value)">
+                     <option value="">-市-</option>
+                </select>
+                <div class="logo">
+                    <span></span>
+                </div>
+            </div>
+            <div class="select-wrap register-select">
+                <select class="select-draw-con"  id="area_id" title="区">
+                    <option value="">-区-</option>
+                </select>
+                <div class="logo">
+                    <span></span>
+                </div>
+            </div>
+            <div class="input-wrap">
+                <input class="register-input" type="text" id="truename"  placeholder="请输入您的真实姓名"/>
+            </div>
+
+            <div class="input-wrap">
+                <input class="register-input" type="text" id="idcard"  placeholder="请输入您的身份证号"/>
+            </div>
+
+            <div class="input-wrap">
+                <input class="register-input" type="text" id="idcard2"  placeholder="请重新输入您的身份证号"/>
+            </div>
+
+            <p class="font-color-red">
+                	请如实填写真实姓名和身份证号，否则将无法提现！
+            </p>
+
+            <p>
+                <button type="button" class="register-btn4" id="J_regist">确定提交</button>
+            </p>
+        </div>
+        <footer class="foot">
+            	易享科技出品
+        </footer>
+    </section>
+</form>
+</div>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/config.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/common.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/zepto.min.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/notification.js?v20141215" charset="utf-8"></script>
+<script>
+function disableItem(obj){
+	$("#"+obj).prop("disabled", true).addClass("disable");
+}
+function enableItem(obj, html){
+	$("#"+obj).prop("disabled", false).removeClass("disable");
+}
+/**
+ *	发送短信验证码
+ */
+function sendSmsCode(phone){
+	var regMobile=/^0?1(3|5|8)\d{9}$/;
+	if(phone == ""){
+		floatNotify.simple("手机号不能为空");
+	}else if(!regMobile.test(phone)){
+		floatNotify.simple("手机号格式错误");
+	}else{
+		//防止重发
+		disableItem("J_smscode");
+
+		$.post("?act=front&op=check_mobile", {mobile:phone}, function(result){
+			var data = result.datas;
+			if(data.exist){
+				enableItem("J_smscode");
+				floatNotify.simple("手机号已存在");
+			}else{
+				//发送短信号码
+				$.post("?act=front&op=send_sms", {mobile:phone}, function(result){
+					var data = result.datas;
+					if(data.status){ //发送成功
+						floatNotify.simple("发送成功请查收");
+						disableItem("J_smscode");
+
+						var seed  = 60, timer = setInterval(function(){
+							seed --;
+							$("#J_smscode").html(seed + "秒后重发");
+							if(seed<=0){
+								enableItem("J_smscode");
+								$("#J_smscode").html("重获验证码");
+								clearInterval(timer);
+							}
+						}, 1000);
+					}else{
+						enableItem("J_smscode");
+						floatNotify.simple("发送失败请重试");
+					}
+				}, 'json');
+			}
+		},'json');
+	}
+}
+
+/**
+ *	校验提交表单
+ */
+function checkMobileForm(step, callbcak){
+
+	//地区信息
+	var areainfo = "", s, o = ['province_id', 'city_id', 'area_id'];
+	$.each(o, function(i, item){
+		s = document.getElementById(item);
+		areainfo += " " + s.options[s.selectedIndex].text;
+	});
+
+	var post = {
+		mobile      : $("#mobile").val(),
+		smscode     : $("#smscode").val(),
+		password    : $("#password").val(),
+		password2	: $("#password2").val(),
+		province_id : $("#province_id").val(),
+		city_id     : $("#city_id").val(),
+		area_id     : $("#area_id").val(),
+		areainfo	: areainfo,
+		truename    : $("#truename").val(),
+		shopname    : $("#truename").val()+"的小店",
+		idcard      : $("#idcard").val(),
+		idcard2     : $("#idcard2").val()
+	};
+	var regMobile = /^0?1(3|5|8)\d{9}$/;
+	var error     = '';
+
+	if(step == 1){
+		var btnObject = "J_next";
+		if(post.mobile == ""){
+			error = "手机号不能为空";
+		}else if(!regMobile.test(post.mobile)){
+			error = "手机号格式错误";
+		}else if(post.smscode == ""){
+			error = "验证码不能为空";
+		}else if(post.password == ""){
+			error = "密码不能为空";
+		}else if(post.password.length <6 || post.password.length>16){
+			error = "密码为6-16字符";
+		}else if(post.password != post.password2){
+			error = "两次密码不相同";
+		}else{
+			error = "";
+		}
+	}else{
+		var btnObject = "J_regist";
+		if(!(post.province_id && post.city_id && post.area_id)){
+			error = "地区没有选择";
+		}else if(post.truename == ""){
+			error = "真实姓名不能为空";
+		}else if(post.idcard == ""){
+			error = "身份证不能为空";
+		}else if(!(post.idcard.length == 15 || post.idcard.length == 18)){
+			error = "身份证格式错误";
+		}else if(post.idcard != post.idcard2){
+			error = "两次输入不相同";
+		}else{
+			error = "";
+		}
+	}
+
+	if(error){
+		enableItem(btnObject);
+		floatNotify.simple(error);
+	}else{
+		disableItem(btnObject);
+		$.post("?act=front&op=agent_doregist&step="+step, post, function(result){
+			var data = result.datas;
+			if(data.error){
+				enableItem(btnObject);
+				floatNotify.simple(data.error);
+			}else{
+				disableItem(btnObject);
+				callbcak(result);
+			}
+		}, 'json');
+	}
+}
+
+/**
+ *	获取区域数据
+ */
+function selectArea(obj_id, pid){
+	$.get("?act=front&op=get_area&pid="+parseInt(pid), function(result){
+		var list = result.datas, s='<option value="">-' +$("#"+obj_id).attr("title")+ '-</option>';
+		for(i in list){
+			s += '<option value="' +list[i].id+ '">' +list[i].name+ '</option>';
+		}
+		$("#"+obj_id).html(s);
+	}, 'json');
+}
+
+$(function(){
+	setTimeout(function(){
+		$(".shuoming").css({'height':$(window).height()*0.55+'px','overflow-x':'hidden','overflow-y':'auto'});
+	}, 300);//android延时
+
+	$("#J_agreed").change(function(){
+		if(this.checked){
+			enableItem("J_next");
+		}else{
+			disableItem("J_next");
+		}
+	});
+
+	$("#J_apply").on(touchMethod, function(e){
+		 $("#D_mobile").show();
+		 $("#D_regist").hide();
+	});
+
+	$("#J_next").on(touchMethod, function(e){
+		 if(!$(this).hasClass("disable")){
+			 checkMobileForm(1, function(result){
+				 $("#D_mobile").hide();
+				 $("#D_regist").show();
+
+				 selectArea("province_id", 0);
+			 });
+		 }
+	});
+
+	$("#J_regist").on(touchMethod, function(e){
+		if(!$(this).hasClass("disable")){
+			checkMobileForm(2, function(result){
+				floatNotify.simple("注册成功");
+
+				var data = result.datas;
+				addcookie("mb_user_token", data.key, 99999);
+				addcookie("mb_user_agent", data.member_id, 99999);
+				location.href="?act=agent";
+			});
+		}
+	});
+
+	$("#J_openterm").on(touchMethod, function(e){
+		$("#D_mobile").hide();
+		$("#D_term").show();
+	});
+
+	$("#J_closeterm").on(touchMethod, function(e){
+		$("#D_mobile").show();
+		$("#D_term").hide();
+	});
+
+	$("#J_smscode").on(touchMethod, function(e){
+		if($(this).hasClass("disable")){
+			floatNotify.simple("验证码已发送，请稍后再试");
+		}else{
+			sendSmsCode($("#mobile").val());
+		}
+	});
+});
+</script>
+<!-- 站长统计功能 
+<script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F921b4696aec0527b77e8a3edc6d65da1' type='text/javascript'%3E%3C/script%3E"));</script>
+-->
+</body>
+</html>

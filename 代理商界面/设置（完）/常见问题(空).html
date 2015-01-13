@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection">
+<meta name="format-detection" content="telephone=no">
+<title>常见问题</title>
+<link rel="stylesheet" href="http://js.exweixin.com/wd/v12/css/index.css?v20141215"/>
+<link rel="stylesheet" href="http://js.exweixin.com/wd/v12/css/gl-index.css?v20141215" >
+</head>
+<body>
+<div class="box-wrap2 wrap-bg">
+    <section class="faq-wrap">
+<ul class="faq-list">
+<div class="indent-state indent-show-none">暂无常见问题</div></ul>
+<div class="add-more" style="display: none;"></div>
+    </section>
+    <footer class="foot fixb"> 易享科技出品 </footer>
+</div>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/config.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/common.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/zepto.min.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/notification.js?v20141215" charset="utf-8"></script>	
+<script type="text/javascript">
+var html = "";
+var more = 0;
+var pageCount=1;
+getPageList(1);
+
+//滑动加载更多
+$(window).scroll(function () {
+	var scrollTop = $(this).scrollTop();
+    var scrollHeight = $(document).height();
+    var windowHeight = $(this).height();
+     if (scrollTop + windowHeight >= scrollHeight && more<=pageCount) {
+ 	   getPageList(more);
+     }
+});
+function getPageList(page){
+	var dateFormat = "";
+	$(".add-more").hide();
+	$.get("?act=document&op=articleAjax&ac_code=faq&curpage="+page, function(result){
+		$(".add-more").html('<img src="http://js.exweixin.com/wd/v12/img/load.gif?v20141215" alt="" class="add-gif"/> 正在加载...'); 
+		var data = result.datas;
+		if(data.status){
+			var len = data.article_list.length;
+			for(var i=0;i<len;i++){
+				html += '<li><a href="index.php?act=document&op=detail_default&article_id='+data.article_list[i]['article_id']+'">'+data.article_list[i]['article_title']+'</a></li>'
+				}
+		}else{
+			html +='<div class="indent-state indent-show-none">暂无常见问题</div>';
+			$(".add-more").html("");
+	    }
+	$(".faq-list").append(html);
+	html = "";
+	pageCount=data.totalPage;
+	more = page+1;
+	 if(page==pageCount){
+	         $(".add-more").html("");
+	         
+	     } 
+	}, 'json');
+}
+</script>
+<!-- zhangxuanliang 2014-9-24 修改 站长统计功能
+  <script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F921b4696aec0527b77e8a3edc6d65da1' type='text/javascript'%3E%3C/script%3E"));</script>
+ zhangxuanliang 2014-9-24 修改 end -->
+</body>
+</html>

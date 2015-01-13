@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)http://wdts.wedai.net/wedai/wap/index.php?act=document&op=article&ac_code=strategy -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection">
+<meta name="format-detection" content="telephone=no">
+<title>新手宝典</title>
+<link rel="stylesheet" href="http://js.exweixin.com/wd/v12/css/index.css?v20141215">
+<link rel="stylesheet" href="http://js.exweixin.com/wd/v12/css/gl-index.css?v20141215">
+</head>
+<body><div class="loading" id="J_loading" style="display: none; z-index: 9999;"><div class="load-gif"><img src="./新手宝典_files/load.gif" alt=""></div><p>正在加载...</p></div>
+<div class="box-wrap wrap-bg">
+    <section class="faq-wrap">
+<ul class="faq-list">
+<li><a href="http://wdts.wedai.net/wedai/wap/index.php?act=document&op=detail_default&article_id=11">如何查看团队的业绩？</a></li><li><a href="http://wdts.wedai.net/wedai/wap/index.php?act=document&op=detail_default&article_id=10">如何快速组建自己的团队？</a></li><li><a href="http://wdts.wedai.net/wedai/wap/index.php?act=document&op=detail_default&article_id=9">如何将佣金提现？</a></li><li><a href="http://wdts.wedai.net/wedai/wap/index.php?act=document&op=detail_default&article_id=8">怎样迅速推广店铺实现盈利？</a></li><li><a href="http://wdts.wedai.net/wedai/wap/index.php?act=document&op=detail_default&article_id=7">如何快速升级，获取更多佣金？</a></li><li><a href="http://wdts.wedai.net/wedai/wap/index.php?act=document&op=detail_default&article_id=6">如何快速了解系统功能？</a></li></ul>
+<div class="add-more"></div>       
+   	    <footer class="foot">
+                                   易享科技出品
+        </footer>
+    </section>
+</div>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/config.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/common.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/zepto.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/notification.js" charset="utf-8"></script>			
+<script type="text/javascript">
+var html = "";
+var more = 0;
+var pageCount=1;
+getPageList(1);
+
+$(window).scroll(function () {
+	var scrollTop = $(this).scrollTop();
+    var scrollHeight = $(document).height();
+    var windowHeight = $(this).height();
+     if (scrollTop + windowHeight >= scrollHeight && more<=pageCount) {
+ 	   getPageList(more);
+     }
+});
+function getPageList(page){
+	var dateFormat = "";
+	$.get("?act=document&op=articleAjax&ac_code=strategy&curpage="+page, function(result){
+		$(".add-more").html('<img src="http://js.exweixin.com/wd/v12/img/load.gif?v20141215" alt="" class="add-gif"/> 正在加载...'); 
+		var data = result.datas;
+		if(data.status){
+			var len = data.article_list.length;
+			for(var i=0;i<len;i++){
+				html += '<li><a href="index.php?act=document&op=detail_default&article_id='+data.article_list[i]['article_id']+'">'+data.article_list[i]['article_title']+'</a></li>'
+				}
+		}else{
+			html +='<div class="indent-state indent-show-none">暂无记录</div>';  
+			$(".add-more").html("");
+		}
+	$(".faq-list").append(html);
+	html = "";
+	more = page+1;
+	pageCount=data.totalPage;
+		if(page==pageCount){
+	        $(".add-more").html("");
+	        
+	    } 
+	}, 'json');
+}
+</script>
+
+
+</body></html>

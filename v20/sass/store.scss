@@ -656,5 +656,38 @@
 /*-----------------------shop-show.html end----------------------*/
 
 /*-----------------------search-list-b start----------------------*/
-
+.search-list-b-wrap{
+  .search-wrap{
+    background: #f2f2f2;
+  }
+}
+.search-list-sort{
+  height: 2.25rem;
+  border-bottom: 1px solid $border-color;
+  background: #f9f9f9;
+  .search-list-l,
+  .search-list-r{
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    background: linear-gradient(180deg,#fefefe,#e8e8e8);
+    color: $font-color999;
+    text-align: center;
+  }
+  .search-list-l{
+    margin: .65rem 0 0 .5rem;
+    padding-top: .2rem;
+    float: left;
+    line-height: .2rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .search-list-r{
+    margin: .65rem .5rem 0 0;
+    float: right;
+  }
+}
 /*-----------------------search-list-b end----------------------*/

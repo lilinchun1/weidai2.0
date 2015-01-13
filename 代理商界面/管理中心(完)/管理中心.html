@@ -1,0 +1,345 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no">
+    <title>管理中心</title>
+    <link rel="stylesheet" href="http://js.exweixin.com/wd/v12/css/gl-index.css?v20141215"/>
+</head>
+<body class="main-bg">
+    <div class="main">
+        <!--管理中心头部-->
+        <div class="main-header" >
+            <div class="main-header-s">
+                <div class="header-top">
+		               <a href="?act=document&op=article&ac_code=message" >
+                        <span>
+                    	        <img  src="http://js.exweixin.com/wd/v12/img/main-gear.png?v20141215" >
+                               <i class="index-number-head" id="J_noticeMsg" style="display:none">0</i>
+                        </span>
+        		       </a>
+                    <h1>张轩亮的小店</h1>
+		               <a href="?act=document" >
+                        <span>
+                	            <img  src="http://js.exweixin.com/wd/v12/img/main-email.png?v20141215" >
+                        </span>
+        		       </a>
+                </div>
+                <div class="header-photo">
+                  <a href="?act=personal_center&op=index" >
+                    	<img src="http://wx.qlogo.cn/mmopen/Tj4wlHdTpyIwfpHKozeJFvAYfBqiccC2p1OkgiarBwl1oR1tDBXRxEuez985BARZ9WGbLicoXGKHcRKKGoKdStH98FjnicBq2Rt3/132">
+                       <div class="header-lv lv1"></div> 
+                  </a>  
+                </div>
+            </div>
+        </div>
+        <!--管理中心数据 begin-->
+            <ul class="main-data">
+                <li class="md-r">
+                    <b>1.00</b>
+                    <p>我的业绩</p>
+                </li>
+                <li class="md-r">
+                    <b>0.00</b>
+                    <p>团队业绩</p>
+                </li>
+                <li>
+                    <b>11.90</b>
+                    <p>我的收入</p>
+                </li>
+
+            </ul>
+        <!--管理中心数据 end-->
+        <!--管理中心6个模块 begin-->
+        <div class="main-box">
+            <!--我的店铺 begin-->
+            <div class="main-box-ms">
+                    <a href="?act=agent_index" >
+                    <span class="main-box-ms1">
+                    <img src="http://js.exweixin.com/wd/v12/img/dls-icon1.png?v20141215">
+                    </span>
+                    <p>我的店铺</p>
+                    </a>
+            </div>
+
+            <div class="main-box-ms">
+             <a href="?act=agent_order" id="J_order" >
+                    <span class="main-box-ms2">
+                    <img src="http://js.exweixin.com/wd/v12/img/dls-icon2.png?v20141215">
+                    </span>
+                <p>订单管理</p>
+                <i class="index-number" id="J_noticeOrder"  style="display:none">0</i>
+             </a>
+            </div>
+
+            <div class="main-box-ms">
+             <a href="?act=agent_income&op=income" id="J_income" >
+                    <span class="main-box-ms3">
+                    <img src="http://js.exweixin.com/wd/v12/img/dls-icon3.png?v20141215">
+                    </span>
+                <p>我的收入</p>
+                <i class="index-number" id="J_noticeIncome" style="display:none">0</i>
+             </a> 
+            </div>
+
+            <div class="main-box-ms">
+             <a href="?act=agent&op=team_index" id="J_team" >
+                    <span class="main-box-ms4">
+                    <img src="http://js.exweixin.com/wd/v12/img/dls-icon4.png?v20141215">
+                    </span>
+                <p>我的团队</p>
+                <i class="index-number" id="J_noticeTeam" style="display:none">0</i>
+             </a>  
+            </div>
+
+            <div class="main-box-ms">
+             <a href="?act=document&op=article&ac_code=strategy">
+                    <span class="main-box-ms5">
+                    <img src="http://js.exweixin.com/wd/v12/img/dls-icon5.png?v20141215">
+                    </span>
+                <p>新手宝典</p>
+                <i class="index-number" style="display:none">0</i>
+             </a>   
+            </div>
+
+            <div class="main-box-ms">
+             <a href="?act=red_agent&op=list_red" >
+                    <span class="main-box-ms6">
+                    <!--  <img src="http://js.exweixin.com/wd/v12/img/dls-icon6.png?v20141215">-->
+                    </span>
+                <p>最新活动</p>
+             </a>   
+            </div>
+            <!--我的店铺 begin-->
+        </div>
+        <!--管理中心6个模块 end-->
+    </div>
+    <!--footer 部位-->
+    <footer class="footer">
+        易享科技出品
+    </footer>   
+<!--顶部提示框 开始-->
+<div class="my-bank-alert" id="J-my-bank-alert" style="display: none">
+    <p><a href="http://mp.weixin.qq.com/s?__biz=MzAxMDA0ODc4Ng==&mid=201882082&idx=1&sn=03c2308f1816c6cb816f6060f5afacde#rd" id="alt"><span>请点此关注微代公众号，管理店铺</span><img src="http://js.exweixin.com/wd/v12/img/arrow4.png?v20141215"></a>  </p>
+    <div class="close" onclick="$(this).parent().hide()">×</div>
+</div>
+<!--顶部提示框 结束-->    
+<!-- 双12 zyt -->
+<!--<style type="text/css">
+.pop1{width:100%;height:100%;position:fixed;top:0px;left:0px;z-index:999999999;background:url('http://wdts.wedai.net/weka/double_twelve/img/gl.png?1416552228') no-repeat rgba(0,0,0,0.7);background-size:100%}
+</style>-->
+<!-- 双12 zyt -->
+<!--双12浮层 -->
+    <!--<div id="pop-up" onclick="document.getElementById('pop-up').style.display='none';">
+        <div class="pop1"></div>
+    </div>-->
+<!--双12浮层 -->
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/config.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/common.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/zepto.min.js?v20141215" charset="utf-8"></script>
+<script type="text/javascript" src="http://wdts.wedai.net/wedai/wap/index.php?act=state&op=addState&agent_id=97&page=agent_admin&page_id=1&event=agent_admin"></script>
+<script>
+var Notice = {
+	defaultNotice : {
+		view_msgid  : "",
+		time_team   : "0",
+		time_order  : "0",
+		time_income : "0"
+	},
+	init: function(){
+		var _this = this;
+		_this.getData(_this.update);
+
+		//红点
+		$("#J_order,#J_team,#J_income").click(function(e){
+			e.preventDefault();
+			var type = this.id.replace("J_", "time_");
+			_this.setPoint(type, this.href);
+		});
+	},
+	merge: function(notice){
+		var result = this.defaultNotice;
+		for(var key in result){
+			if(notice[key])
+				result[key] = notice[key];
+		}
+		return result;
+	},
+ 	getData: function(cb){
+		var notice = getstorage("notice"), _this = this;
+		if(notice == undefined){
+			$.get("?act=statist&op=getNotice&uid=97&keys=view_msgid,time_team,time_order,time_income", function(result){
+				var json = result.datas;
+				if(json.status){
+					notice = _this.merge(json.data);
+				}else{
+					notice = _this.defaultNotice;
+				}
+				setstorage("notice", JSON.stringify(notice));
+
+				cb.call(_this, notice);
+			}, 'json');
+		}else{
+			try{
+				notice = JSON.parse(notice);
+				notice = this.merge(notice);
+			}catch(e){
+				notice = this.defaultNotice;
+			}
+			setstorage("notice", JSON.stringify(notice));
+			cb.call(this, notice);
+		}
+	},
+	update : function(notice){
+		//获取消息阅读量
+		$.get("?act=document&op=artlist&ac_code=message", function(result){
+			var data = result.datas, unread = [];
+			if(data.status){
+				artids = data.idlist.split(","), reads = notice.view_msgid ? notice.view_msgid.split(",") : [];
+				for(i=0;i<artids.length;i++){
+					if(!contains(reads, artids[i])){
+						unread.push(artids[i]);
+					}
+				}
+				if(unread.length){
+					var num = unread.length > 99 ? '99' : unread.length;
+					$("#J_noticeMsg").html(num).show();
+				}
+			}
+		}, 'json');
+
+		//获取订单、收入、团队
+		var group = ['Order','Income','Team'], _this = this, _cur = 0;
+		var timer = setInterval(function(){
+			if(_cur >= group.length) {
+				clearInterval(timer);
+				return;
+			}
+
+			var idx = group[_cur], timestamp = parseInt(notice["time_" + idx.toLowerCase()]);
+			if(isNaN(timestamp))
+				timestamp = 0;
+
+			_this.showRed(idx, timestamp);
+			_cur ++ ;
+		}, 30);
+	},
+	showRed : function(idx, timestamp){
+		$.get("?act=statist&op=" +idx.toLowerCase()+ "Red&uid=97&timestamp=" + timestamp, function(result){
+			var json = result.datas;
+			if(json.status && parseInt(json.data)){
+				$("#J_notice"+idx).html(json.data).show();
+			}
+		}, 'json');
+	},
+	setPoint: function(type, href){
+		var notice = JSON.parse(getstorage("notice")), data = {}, timestamp = (new Date().getTime())/1000;
+		if(type == "time_team" || type == "time_order" || type == "time_income"){
+			data[type] = 1;
+			$.post("?act=statist&op=setNotice&uid=97", data, function(result){
+				var json = result.datas;
+				if(json.status){
+					notice[type] = parseInt(timestamp);
+					setstorage("notice", JSON.stringify(notice));
+				}
+				location.href = href;
+			}, 'json');
+		}
+	}
+}
+
+Notice.init();
+</script>
+<script>
+
+
+var agent_id = "97";
+$.post("?act=wxCap&op=isSubscribe",{'agent_id':agent_id}, function(result){
+	var json = result.datas;
+	if(json.status){
+		$("#J-my-bank-alert").hide();
+	}else{
+		$("#J-my-bank-alert").show();
+// 		 var obox = document.getElementById("alt");
+//          obox.onclick = function () {
+//            window.location.href="http://mp.weixin.qq.com/s?__biz=MzA5Mzg3MTYzNw==&mid=200945736&idx=1&sn=cc010f559941cda1724b9818008a799e#rd";
+//          }
+	}
+}, 'json');
+
+</script>
+<script type="text/javascript">
+var title = ["易享微代千万红包全民抢，100%get！","就知道你花光一生的运气来认识我，送你个红包回回血吧！","我不勾引你！红包就在那，你自己看着办吧！","别说我没告诉你，点进来，微代红包100% get！","就算你再豪，这里有100%get的红包你能错过吗？"]; 
+var title_s = title[Math.floor(Math.random()*title.length)]; 
+var content_s = title[Math.floor(Math.random()*title.length)]; 
+window.shareData = {
+		"imgUrl": "http://img.exweixin.com/wd/v12/img/share_logored.jpg",
+		"timeLineLink": "http://wdts.wedai.net/wedai/red_packet/index.php?act=index&op=index&parent_id=97",
+		"sendFriendLink": "http://wdts.wedai.net/wedai/red_packet/index.php?act=index&op=index&parent_id=97",
+		"weiboLink": "http://wdts.wedai.net/wedai/red_packet/index.php?act=index&op=index&parent_id=97",
+		"tTitle": title_s,
+		"tContent": content_s,
+		"fTitle": title_s,
+		"fContent": content_s,
+		"wContent": content_s
+	};
+function onBridgeReady(){
+	// 发送给好友
+	WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+		WeixinJSBridge.invoke('sendAppMessage', {
+			"img_url": window.shareData.imgUrl,
+			"img_width": "640",
+			"img_height": "640",
+			"link": window.shareData.sendFriendLink,
+			"desc": window.shareData.fContent,
+			"title": window.shareData.fTitle
+		}, function (res) {
+			_report('send_msg', res.err_msg);
+		})
+	});
+
+	// 分享到朋友圈
+	WeixinJSBridge.on('menu:share:timeline', function (argv) {
+		WeixinJSBridge.invoke('shareTimeline', {
+			"img_url": window.shareData.imgUrl,
+			"img_width": "640",
+			"img_height": "640",
+			"link": window.shareData.timeLineLink,
+			"desc": window.shareData.tContent,
+			"title": window.shareData.tTitle
+		}, function (res) {
+			_report('timeline', res.err_msg);
+		});
+	});
+
+	// 分享到微博
+	WeixinJSBridge.on('menu:share:weibo', function (argv) {
+		WeixinJSBridge.invoke('shareWeibo', {
+			"content": window.shareData.wContent,
+			"url": window.shareData.weiboLink,
+		}, function (res) {
+			_report('weibo', res.err_msg);
+		});
+	});
+}
+
+function _report(v,s){}
+
+//分享
+if (typeof WeixinJSBridge == "undefined"){
+    if( document.addEventListener ){
+        document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+    }else if (document.attachEvent){
+        document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+        document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+    }
+}else{
+    onBridgeReady();
+}
+</script></body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)http://wdts.wedai.net/wedai/wap/index.php?act=agent_income&op=withdraw_list -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="telephone=no" name="format-detection">
+<meta name="format-detection" content="telephone=no">
+<title>提现明细</title>
+<link rel="stylesheet" href="http://js.exweixin.com/wd/v12/css/index.css?v20141215">
+</head>
+<body><div class="loading" id="J_loading" style="display: none; z-index: 9999;"><div class="load-gif"><img src="./提现明细1_files/load.gif" alt=""></div><p>正在加载...</p></div>
+<div class="box-wrap wrap-bg">
+    <section class="draw-money-list-wrap">
+        <section class="draw-money-form">
+            <div class="select-wrap">
+                <select class="select-draw-con" id="year">
+                                    <option value="2014">2014年</option>
+                                        <option value="2015" selected="selected">2015年</option>
+                                        <option value="2016">2016年</option>
+                                        <option value="2017">2017年</option>
+                                        <option value="2018">2018年</option>
+                                        <option value="2019">2019年</option>
+                                        <option value="2020">2020年</option>
+                                        <option value="2021">2021年</option>
+                                        <option value="2022">2022年</option>
+                                        <option value="2023">2023年</option>
+                                        <option value="2024">2024年</option>
+                                        <option value="2025">2025年</option>
+                                        <option value="2026">2026年</option>
+                                        <option value="2027">2027年</option>
+                                        <option value="2028">2028年</option>
+                                        <option value="2029">2029年</option>
+                                        <option value="2030">2030年</option>
+                                    </select>
+                <div class="logo">
+                    <span></span>
+                </div>
+            </div>
+            <div class="select-wrap">
+                <select class="select-draw-con" id="month">
+                    <option value="0">请选择月份</option>
+                                        <option value="1">1月</option>
+                                        <option value="2">2月</option>
+                                        <option value="3">3月</option>
+                                        <option value="4">4月</option>
+                                        <option value="5">5月</option>
+                                        <option value="6">6月</option>
+                                        <option value="7">7月</option>
+                                        <option value="8">8月</option>
+                                        <option value="9">9月</option>
+                                        <option value="10">10月</option>
+                                        <option value="11">11月</option>
+                                        <option value="12">12月</option>
+                                    </select>
+                <div class="logo">
+                    <span></span>
+                </div>
+            </div>
+            <button class="draw-money-btn" onclick="li()">查 询</button>
+        </section>
+        <ul class="draw-money-list">
+        <li><a href="http://wdts.wedai.net/wedai/wap/index.php?act=agent_income&op=withdraw_detail&apply_id=1"><p><span class="draw-money-true">提现成功</span><i>100.00元</i></p><p>2015-01-06 11:14:09</p></a></li></ul>
+ <div class="add-more"></div> 
+        <footer class="foot">
+            易享科技出品
+        </footer>
+    </section>
+</div>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/config.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/common.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/zepto.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://js.exweixin.com/wd/v12/js/notification.js" charset="utf-8"></script>
+<script type="text/javascript">
+var title = ["易享微代千万红包全民抢，100%get！","就知道你花光一生的运气来认识我，送你个红包回回血吧！","我不勾引你！红包就在那，你自己看着办吧！","别说我没告诉你，点进来，微代红包100% get！","就算你再豪，这里有100%get的红包你能错过吗？"]; 
+var title_s = title[Math.floor(Math.random()*title.length)]; 
+var content_s = title[Math.floor(Math.random()*title.length)]; 
+window.shareData = {
+		"imgUrl": "http://img.exweixin.com/wd/v12/img/share_logored.jpg",
+		"timeLineLink": "http://wdts.wedai.net/wedai/red_packet/index.php?act=index&op=index&parent_id=97",
+		"sendFriendLink": "http://wdts.wedai.net/wedai/red_packet/index.php?act=index&op=index&parent_id=97",
+		"weiboLink": "http://wdts.wedai.net/wedai/red_packet/index.php?act=index&op=index&parent_id=97",
+		"tTitle": title_s,
+		"tContent": content_s,
+		"fTitle": title_s,
+		"fContent": content_s,
+		"wContent": content_s
+	};
+function onBridgeReady(){
+	// 发送给好友
+	WeixinJSBridge.on('menu:share:appmessage', function (argv) {
+		WeixinJSBridge.invoke('sendAppMessage', {
+			"img_url": window.shareData.imgUrl,
+			"img_width": "640",
+			"img_height": "640",
+			"link": window.shareData.sendFriendLink,
+			"desc": window.shareData.fContent,
+			"title": window.shareData.fTitle
+		}, function (res) {
+			_report('send_msg', res.err_msg);
+		})
+	});
+
+	// 分享到朋友圈
+	WeixinJSBridge.on('menu:share:timeline', function (argv) {
+		WeixinJSBridge.invoke('shareTimeline', {
+			"img_url": window.shareData.imgUrl,
+			"img_width": "640",
+			"img_height": "640",
+			"link": window.shareData.timeLineLink,
+			"desc": window.shareData.tContent,
+			"title": window.shareData.tTitle
+		}, function (res) {
+			_report('timeline', res.err_msg);
+		});
+	});
+
+	// 分享到微博
+	WeixinJSBridge.on('menu:share:weibo', function (argv) {
+		WeixinJSBridge.invoke('shareWeibo', {
+			"content": window.shareData.wContent,
+			"url": window.shareData.weiboLink,
+		}, function (res) {
+			_report('weibo', res.err_msg);
+		});
+	});
+}
+
+function _report(v,s){}
+
+//分享
+if (typeof WeixinJSBridge == "undefined"){
+    if( document.addEventListener ){
+        document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+    }else if (document.attachEvent){
+        document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+        document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+    }
+}else{
+    onBridgeReady();
+}
+</script><script type="text/javascript">
+function li(){
+	$('.draw-money-btn').attr("onclick","");
+	getPageList(1,1);
+}
+var html = "";
+var more = 0;
+var pageCount=1;
+getPageList(1,0);
+$(window).scroll(function () {
+	var scrollTop = $(this).scrollTop();
+    var scrollHeight = $(document).height();
+    var windowHeight = $(this).height();
+     if (scrollTop + windowHeight >= scrollHeight && more<=pageCount) {
+ 	   getPageList(more);
+     }
+});
+function getPageList(page,count){
+	
+	$(".add-more").html('<img src="http://js.exweixin.com/wd/v12/img/load.gif?v20141215" alt="" class="add-gif"/> 正在加载...'); 
+	if(count == 1){
+		$(".draw-money-list").html("");
+	}
+	var year = $("#year").val();
+	var month = $("#month").val();
+	$.get("?act=agent_income&op=withdraw_list_ajax&year="+year+"&month="+month+"&curpage="+page, function(result){
+		var data = result.datas;
+		if(data.status){
+			var len = data.withdraw_list.length;
+			for(var i=0;i<len;i++){
+				var type = data.withdraw_list[i]['apply_status'];
+				var say = "";
+				var classs = ""
+				if(type == 1){
+					say = "提现成功";
+					classs ="draw-money-true";
+				}
+				
+				if(type == 2){
+					say = "提现失败";
+					classs ="draw-money-false";
+					}
+				html += '<li><a href="?act=agent_income&op=withdraw_detail&apply_id='+data.withdraw_list[i]['apply_id']+'"><p><span class='+classs+'>'+say+'</span><i>'+data.withdraw_list[i]['apply_money']+'元</i></p><p>'+data.withdraw_list[i]['apply_time']+'</p></a></li>';
+				}
+		}
+		if(data.withdraw_list.length == 0){
+			html = '<div class="indent-state indent-show-none">暂无记录</div>';
+			$(".add-more").html("");
+		}
+	$(".draw-money-list").append(html);
+	$('.draw-money-btn').attr("onclick","li()");
+	html = "";
+	pageCount=data.totalPage;
+	more = page+1;
+		if(page==pageCount){
+	        $(".add-more").html("");
+	        
+	    } 
+
+	}, 'json');
+}
+</script>
+
+</body></html>
