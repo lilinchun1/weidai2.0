@@ -204,6 +204,7 @@
 
 /*alert6 shop-show-alert*/
 .m-shop-show-alert{
+  display: none;
   position: fixed;
   bottom: 2.5rem;
   z-index: 9;
@@ -241,20 +242,42 @@
       color: $font-color999;
     }
   }
-  .show-alert-guige{
-    padding: .4rem 0 0 2.15rem;
-    overflow: hidden;
-    border-bottom: 1px dotted $border-color;
-    label{
-      margin-left: -2.15rem;
-      float: left;
-      width: 2.15rem;
-    }
-    .m-option{
-      margin-bottom: .35rem;
-      margin-right: .35rem;
-    }
+}
+.show-alert-guige{
+  padding: .4rem 0 0 2.15rem;
+  overflow: hidden;
+  border-bottom: 1px dotted $border-color;
+  label{
+    margin-left: -2.15rem;
+    float: left;
+    width: 2.15rem;
   }
-  .bdn{
-    border: 0 none;}
+  .m-option{
+    margin-bottom: .35rem;
+    margin-right: .35rem;
+  }
+  .last-number{
+    float: left;
+    padding-left: .4rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    font-size: $fz12;
+    color: $font-color999;
+  }
+}
+.bdn{
+  border: 0 none;}
+.pdb04{
+  padding-bottom: .4rem;
+}
+.close-btn{
+  position: absolute;
+  top: .25rem;
+  right: .25rem;
+  width: .7rem;
+  height: .7rem;
+  line-height: .7rem;
+  text-align: center;
+  color: $font-color666;
+  font-size: $fz16;
 }

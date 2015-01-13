@@ -291,6 +291,7 @@
     height: .8rem;
     line-height: .8rem;
     background-color: #ffffff;
+    overflow: hidden;
     em{
       position: relative;
       padding-left: .2rem;
@@ -302,7 +303,7 @@
       &:after{
         content: "";
         position: absolute;
-        top: 0;
+        top: 0.025rem;
         right: 0;
         border: .4rem solid transparent;
         border-right: .4rem solid #fff;
@@ -323,7 +324,7 @@
 }
 /*-----------------------shop-index.html end----------------------*/
 
-/*-----------------------search-list.html start----------------------*/
+/*-----------------------search-class.html start----------------------*/
 .search-list-wrap{
   @extend %wrap-640;
   background: $bg-color;
@@ -347,7 +348,7 @@
     }
   }
 }
-/*-----------------------search-list.html end----------------------*/
+/*-----------------------search-class.html end----------------------*/
 
 /*-----------------------about-us.html start----------------------*/
 .about-us-wrap{
@@ -653,3 +654,7 @@
 }
 
 /*-----------------------shop-show.html end----------------------*/
+
+/*-----------------------search-list-b start----------------------*/
+
+/*-----------------------search-list-b end----------------------*/
