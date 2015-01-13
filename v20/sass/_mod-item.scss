@@ -63,6 +63,10 @@
     width: 2.95rem;
     height: 2.95rem;
     border: 1px solid $border-color;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
   }
   .mlii-info{
     float: left;
@@ -73,6 +77,13 @@
   }
   p{
     color: $font-color999;
+    font-size: $fz12;
+  }
+  i{
+    margin-top: -.2rem;
+    color: $red;
+    font-size: $fz12;
+    float: left;
   }
   .mlii-number{
     float: right;

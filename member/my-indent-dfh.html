@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>我的订单-待发货</title>
+<link rel="stylesheet" href="../v20/css/member.css"/>
+</head>
+<body>
+<div class="g-wrap">
+    <div class="my-indent-dfh-wrap">
+        <ul class="dfh-list">
+            <li>
+                <label>订单状态：</label><span>待发货</span>
+            </li>
+            <li>
+                <label>订单编号：</label>20142545545855523
+            </li>
+            <li>
+                <label>下单时间：</label>2014-08-07   10:10:11
+            </li>
+            <li>
+                <label>订单金额：</label>&yen;4000.00
+            </li>
+            <li>
+                <label>运费：</label>&yen;4000.00
+            </li>
+            <li>
+                <label>实付款：</label>&yen;4000.00
+            </li>
+        </ul>
+        <div class="dfh-info">
+            <label>订单留言：</label>
+            <p>
+                请包装好，运送保鲜，请包装好，运送保鲜，请包装好，运送保鲜。
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>
