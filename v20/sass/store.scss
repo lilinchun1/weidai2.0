@@ -622,7 +622,13 @@
 .shop-show-tab{
   width: 100%;
   overflow: hidden;
+  .posf-t{
+    position: fixed;
+    top: 0;
+    z-index: 9;
+  }
   .m-tab-head{
+    background: #ffffff;
     li{
       width: 33.3%;
     }
@@ -658,6 +664,7 @@
 
 /*-----------------------search-list-b start----------------------*/
 .search-list-b-wrap{
+  padding-bottom: 2.5rem;
   .search-wrap{
     background: #f2f2f2;
   }
@@ -695,6 +702,60 @@
     height: 1rem;
     line-height: 1rem;
     text-align: center;
+    &:after{
+      content: "";
+      width: 0;
+      height: 0;
+      display: inline-block;
+      border: .25rem solid transparent;
+      border-bottom: .25rem solid #ccc;
+      border-right: .25rem solid #ccc;
+    }
   }
+}
+.search-list{
+  width: 100%;
+  li{
+    padding-bottom: .225rem;
+    margin: .65rem auto;
+    width: 15rem;
+    overflow: hidden;
+    border: 1px solid $border-color;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .search-pic{
+    margin: .225rem;
+    width: 14.5rem;
+    height: 14.5rem;
+    img{
+      width: 100%;
+    }
+  }
+  h2{
+    border-top: 1px solid $border-color;
+    padding: .2rem .225rem;
+    height: 2.1rem;
+    overflow: hidden;
+    a{
+      color: $font-color333;
+    }
+  }
+}
+.search-b-btn{
+  width: 6.8rem;
+  height: 1.9rem;
+  color: #ffffff;
+}
+.search-btn-l{
+  margin-left: .375em;
+  float: left;
+  background-color: $red;
+}
+.search-btn-r{
+  margin-right: .375em;
+  float: right;
+  background-color: $orange;
 }
 /*-----------------------search-list-b end----------------------*/

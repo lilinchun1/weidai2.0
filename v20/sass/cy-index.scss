@@ -41,6 +41,10 @@ img{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.or_height h2{
+  height: 2.6rem;
+  overflow: hidden;
+}
 .bor_bottom{
   border-bottom:1px solid $border-color;
 }
