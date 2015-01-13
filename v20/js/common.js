@@ -229,10 +229,10 @@ window.onload=function(){
 				//alert("iPad");
 			}
 		}else{
-			alert("pc端");
-			console.log(bs.versions);
+			//alert("pc端");
+			//console.log(bs.versions);
 		}
 	}else{
-		alert("微信浏览器");
+		//alert("微信浏览器");
 	}
 }

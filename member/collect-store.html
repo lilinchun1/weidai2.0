@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no">
+    <title>正在支付</title>
+    <link rel="stylesheet" href="../v20/css/cy-index.css"/>
+</head>
+<body>
+<div class="g-wrap"><!--外层wrap 640-->
+    <ul class="coll_top">
+        <li  class="coll_1"><a href="">店 铺 (<i>8</i>)</a></li>
+        <li><a href="">商 品 (<i>236</i>)</a></li>
+
+    </ul>
+
+<ul>
+    <li class="g-wrap-show or_logo bor_bottom_1"><!--店铺循环-->
+        <a>
+            <img src="../v20/img/or_img/img_0.jpg">
+            优衣库旗舰店
+            <span class="icon-red f_right">&#xf614;</span>
+        </a>
+
+    </li>
+    <li class="g-wrap-show or_logo bor_bottom_1"><!--店铺循环-->
+        <a>
+            <img src="../v20/img/or_img/img_0.jpg">
+            优衣库旗舰店
+            <span class="icon-red f_right">&#xf614;</span>
+        </a>
+
+    </li>
+    <li class="g-wrap-show or_logo bor_bottom_1"><!--店铺循环-->
+        <a>
+            <img src="../v20/img/or_img/img_0.jpg">
+            优衣库旗舰店
+            <span class="icon-red f_right">&#xf614;</span>
+        </a>
+
+    </li><li class="g-wrap-show or_logo bor_bottom_1"><!--店铺循环-->
+    <a>
+        <img src="../v20/img/or_img/img_0.jpg">
+        优衣库旗舰店
+        <span class="icon-red f_right">&#xf614;</span>
+    </a>
+
+</li>
+
+
+
+</ul>
+
+
+    <div class="footer-weidai icon-weidai po_ac">
+        &#xf652;
+    </div>
+</div>
+
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>

@@ -42,6 +42,9 @@ img{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.f_right{
+  float: right;
+}
 .or_height h2{
   height: 2.6rem;
   overflow: hidden;
@@ -64,8 +67,14 @@ img{
 .p_top{
   padding-top: .4rem;
 }
+.m_top{
+  margin-top: .4rem;
+}
 .m_bottom{
-  margin-bottom: .5rem;
+  margin-bottom: .4rem;
+}
+.m_top_2{
+  margin-top: .8rem;
 }
 .orange{
   background-color: #ff9900;
@@ -100,6 +109,9 @@ img{
   padding-top:.4rem;
   padding-bottom: .4rem;
   font-size: $fz18;
+  a{
+    color: $font-color333;
+  }
   img{
     width: 1.8rem;
     height: 1.8rem;
@@ -152,7 +164,7 @@ img{
 }
 .or_textBox{
   overflow: hidden;
-  margin-bottom: .2rem;
+  margin-bottom: .4rem;
   .or_text{
     width:2.5rem;
     float: left;
@@ -231,11 +243,14 @@ img{
   width: 100%;
   margin-bottom: .2rem;
 }
+.po_ac{
+  margin-bottom: .2rem;
+}
 /*-----------------------支付成功----------------------*/
 .icon-pay_s{
   font-size: 3.5rem;
   margin-top: 1rem;
-  color: #3fbd3f;
+  color:$green;
   text-align: center;
 
 }
@@ -264,6 +279,141 @@ img{
 .icon-pay_f{
   font-size: 3.5rem;
   margin-top: 1rem;
-  color: #c52924;
+  color:$red;
   text-align: center;
+}
+/*-----------------------我的收藏-店铺----------------------*/
+
+
+.coll_top{
+  width: 100%;
+  border-top: 1px solid $border-color;
+  overflow: hidden;
+  li{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-bottom: 1px solid $border-color;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-right: 1px solid $border-color;
+      height: 100%;
+    }
+    &:last-child:before{
+      border-right: 0 none;
+    }
+  }
+  .coll_1{
+    border-bottom: 1px solid $red;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHBAMAAADDgsFQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEUAAADQMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh0AAADcrmEfAAAADnRSTlMAA7c8fuQVQvy6GOe9gZdCRjsAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAALUlEQVQI12NgYBBgAAFlEMHyNAFIVrybwMDAte/dEwYGmXfvXhQw3Hv37t0uAKQaDb+LHVEFAAAAAElFTkSuQmCC) 50% 100% no-repeat;
+    -webkit-background-size: .25rem auto;
+    background-size: .25rem auto;
+  }
+  a{
+    display: block;
+    color: $font-color333;
+  }
+  i{
+    color: $red;
+
+  }
+}
+.icon-red{
+  line-height: 1.8rem;
+  color: $red;
+  font-size: .8rem;
+}
+/*-----------------------我的收藏-商品----------------------*/
+.coll_com{
+  font-size: .6rem;
+  line-height: .7rem;
+  color: $font-color333;
+  div{
+    height: 1.4rem;
+    overflow: hidden;
+  }
+  p{
+    font-size: .6rem;
+    line-height: .9rem;
+  }
+  em{
+    color: $red;
+  }
+}
+.icon-red_1{
+  line-height: 2.95rem;
+  color: $red;
+  font-size: .8rem;
+}
+/*-----------------------我的地址----------------------*/
+.my_site{
+  line-height: 2rem;
+}
+
+.my_ul{
+  overflow: hidden;
+  li{
+    float: left;
+    width: 100%;
+  }
+
+  .icon-my_s{
+    font-size: .6rem;
+    line-height: 1rem;
+    float: left;
+    color: $red;
+  }
+  .my_li_char{
+    float: left;
+    width:13rem;
+    line-height: 1rem;
+    margin-left: .4rem;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    color: $font-color333;
+  }
+  .my_li_r{
+    float: right;
+    line-height: 1rem;
+    font-size: .7rem;
+    color: $green;
+    span{
+      color: $font-color999;
+    }
+  }
+}
+.red{
+  background-color: $red;
+}
+/*-----------------------新增发票----------------------*/
+.bill_add_text{
+  width:3.5rem;
+  float: left;
+  line-height: 1.3rem;
+}
+.text_w_1{
+  width:11.5rem;
+  float: left;
+
+}
+/*-----------------------意见反馈----------------------*/
+.sec_lose{
+  width:50%;
+  height:3.5rem;
+  background:rgba(0,0,0,0.7);
+  position:fixed;
+  left:25%;
+  right: 25%;
+  top:15%;
+  text-align: center;color: #FFFFFF;
+  line-height: 3.5rem;
+
+
 }
