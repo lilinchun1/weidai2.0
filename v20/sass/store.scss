@@ -669,50 +669,7 @@
     background: #f2f2f2;
   }
 }
-.search-list-sort{
-  height: 2.25rem;
-  border-bottom: 1px solid $border-color;
-  background: #f9f9f9;
-  .search-list-l,
-  .search-list-r{
-    width: 1rem;
-    height: 1rem;
-    line-height: 1rem;
-    border: 1px solid $border-color;
-    border-radius: 5px;
-    background: linear-gradient(180deg,#fefefe,#e8e8e8);
-    color: $font-color999;
-    text-align: center;
-  }
-  .search-list-l{
-    margin: .65rem 0 0 .5rem;
-    padding-top: .2rem;
-    float: left;
-    line-height: .2rem;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  .search-list-r{
-    margin: .65rem .5rem 0 0;
-    float: right;
-  }
-  .search-list-sort-con{
-    padding-top: .65rem;
-    height: 1rem;
-    line-height: 1rem;
-    text-align: center;
-    &:after{
-      content: "";
-      width: 0;
-      height: 0;
-      display: inline-block;
-      border: .25rem solid transparent;
-      border-bottom: .25rem solid #ccc;
-      border-right: .25rem solid #ccc;
-    }
-  }
-}
+
 .search-list{
   width: 100%;
   li{
@@ -726,11 +683,46 @@
     box-sizing: border-box;
   }
   .search-pic{
+    position: relative;
     margin: .225rem;
     width: 14.5rem;
     height: 14.5rem;
     img{
       width: 100%;
+    }
+    .price{
+      position: absolute;
+      left: 0;
+      bottom: .5rem;
+      min-width: 10.5rem;
+      height: 1.6rem;
+      line-height: 1.6rem;
+      background: #ffffff;
+      em{
+        position: relative;
+        padding: 0 .75rem;
+        float: left;
+        background: $red;
+        font-size: $fz16;
+        color: #ffffff;
+        &:after{
+          content: "";
+          position: absolute;
+          right: -1.6rem;
+          top: 0;
+          border: .8rem solid transparent;
+          border-top: .8rem solid $red;
+          border-left: .8rem solid $red;
+        }
+      }
+      span{
+        font-size: $fz12;
+      }
+      i{
+        padding-left: 1.6rem;
+        padding-right: .75rem;
+        color: $font-color999;
+      }
     }
   }
   h2{
