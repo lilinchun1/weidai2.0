@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no">
+    <title>正在支付</title>
+    <link rel="stylesheet" href="../v20/css/cy-index.css"/>
+</head>
+<body>
+<body>
+<div class="g-wrap"><!--外层wrap 640-->
+    <div class="icon-pay_s">&#xf636;</div>
+    <div class="pay_s_char">恭喜您，订单支付成功</div>
+    <div class="pay_input">
+        <button type="button" class="m-button-k pay_l">继续购物</button>
+        <button type="button" class="m-button-k pay_r">查看订单</button>
+    </div>
+    <div class="pay_s_text">点此关注微代微信公众号：xxxxxx</div>
+
+</div>
+<div class="footer-weidai icon-weidai po_fi">
+    &#xf652;
+</div>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>

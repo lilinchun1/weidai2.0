@@ -1,12 +1,12 @@
-@charset "GBK";
-/** 
+@charset "UTF-8";
+/**
  * Created with IntelliJ IDEA. 
  * User: cy
  * Date: 2015/1/12 
  * Time: 11:05 
  * To change this template use File | Settings | File Templates. 
  */
-/* line 8, ../sass/cy-index.scss */
+/* line 9, ../sass/cy-index.scss */
 html {
   font-size: 40rem; }
 
@@ -307,7 +307,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
  * Time: 11:09 
  * To change this template use File | Settings | File Templates. 
  */
-/*input������*/
+/*input输入框*/
 /* line 14, ../sass/_input.scss */
 input[type="text"],
 input[type="tel"],
@@ -332,7 +332,7 @@ textarea {
   text-indent: .4rem;
   display: block; }
 
-/*textarea �ı���*/
+/*textarea 文本框*/
 /* line 37, ../sass/_input.scss */
 .m-textarea {
   border: 1px solid #cccccc;
@@ -359,7 +359,7 @@ input[type="checkbox"]:checked {
   -webkit-background-size: 100%;
   background-size: 100%; }
 
-/*select ������*/
+/*select 下拉框*/
 /* line 64, ../sass/_input.scss */
 .m-select-wrap {
   position: relative;
@@ -406,7 +406,7 @@ input[type="checkbox"]:checked {
     text-align: center;
     line-height: 1.3rem; }
 
-/*������*/
+/*搜索框*/
 /* line 112, ../sass/_input.scss */
 .search-wrap {
   height: 2.425rem;
@@ -451,7 +451,7 @@ button {
   border-radius: 2px;
   font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif; }
 
-/*ȫ��ʵ�İ�ť ��75*/
+/*全宽实心按钮 高75*/
 /* line 21, ../sass/_btns.scss */
 .m-button {
   width: 100%;
@@ -461,7 +461,7 @@ button {
   color: #ffffff;
   display: block; }
 
-/*��ʾ��ʵ�İ�ť ��55*/
+/*提示框实心按钮 高55*/
 /* line 31, ../sass/_btns.scss */
 .m-button-s {
   width: 3.55rem;
@@ -471,7 +471,7 @@ button {
   color: #ffffff;
   display: block; }
 
-/*���İ�ť*/
+/*空心按钮*/
 /* line 41, ../sass/_btns.scss */
 .m-button-k {
   width: 3.7rem;
@@ -524,7 +524,7 @@ button {
     -webkit-background-size: 100% auto;
     background-size: 100% auto; }
 
-/*�ڼ��ظ���*/
+/*在加载更多*/
 /* line 43, ../sass/_alert.scss */
 .add-more {
   padding-left: 46%;
@@ -536,7 +536,7 @@ button {
   font-size: 0.6rem;
   color: #999999; }
 
-/*alert1 ������ʾ*/
+/*alert1 文字提示*/
 /* line 57, ../sass/_alert.scss */
 .m-alert1 {
   display: none;
@@ -552,7 +552,7 @@ button {
   border-radius: 2px;
   background: rgba(0, 0, 0, 0.8); }
 
-/*alert2 ͼ����ʾ*/
+/*alert2 图文提示*/
 /* line 73, ../sass/_alert.scss */
 .m-alert-tw {
   display: none;
@@ -579,7 +579,7 @@ button {
   .m-alert-tw .m-button-s {
     margin: .75rem auto 0 auto; }
 
-/*alert3 ֧����ʾ��*/
+/*alert3 支付提示框*/
 /* line 100, ../sass/_alert.scss */
 .m-alert-pay {
   display: none;
@@ -779,40 +779,40 @@ button {
  * Time: 11:59 
  * To change this template use File | Settings | File Templates. 
  */
-/*-----------------------wrap����----------------------*/
-/*640��*/
-/*600��*/
-/*----------------------������----------------------*/
-/*input������*/
+/*-----------------------wrap布局----------------------*/
+/*640宽*/
+/*600宽*/
+/*----------------------输入框----------------------*/
+/*input输入框*/
 /* line 22, ../sass/_mod-item.scss */
 .m-input {
   width: 100%; }
 
-/*texarea �ı���*/
+/*texarea 文本框*/
 /* line 28, ../sass/_mod-item.scss */
 .m-textarea {
   width: 100%;
   height: 3.625rem; }
 
-/*----------------------��ť-----------------------*/
-/*ȫ��ʵ�İ�ť ��75*/
+/*----------------------按钮-----------------------*/
+/*全宽实心按钮 高75*/
 /* line 35, ../sass/_mod-item.scss */
 .m-button {
   background: #3db73e; }
 
-/*��ʾ��ʵ�İ�ť ��55*/
+/*提示框实心按钮 高55*/
 /* line 40, ../sass/_mod-item.scss */
 .m-button-s {
   background: #e02d2a; }
 
-/*���İ�ť ��40*/
+/*空心按钮 高40*/
 /* line 48, ../sass/_mod-item.scss */
 .red-k {
   border: 1px solid #e02d2a;
   color: #e02d2a; }
 
-/*----------------------������-----------------------*/
-/*�б�ͼ����Ϣ item*/
+/*----------------------组件项-----------------------*/
+/*列表图文信息 item*/
 /* line 56, ../sass/_mod-item.scss */
 .m-list-info-item {
   padding: .5rem 0;
@@ -843,7 +843,7 @@ button {
       font-size: .6rem;
       text-align: right; }
 
-/*�Ӽ�����item*/
+/*加减数量item*/
 /* line 88, ../sass/_mod-item.scss */
 .m-select-number {
   float: left;
@@ -878,7 +878,7 @@ button {
     text-align: center;
     color: #666666; }
 
-/*����ѡ��*/
+/*购买选项*/
 /* line 123, ../sass/_mod-item.scss */
 .m-option {
   position: relative;
@@ -903,7 +903,7 @@ button {
   .m-option-active a {
     color: #ffffff; }
 
-/*�ײ�*/
+/*底部*/
 /* line 147, ../sass/_mod-item.scss */
 .m-footer {
   height: 1.5rem;
@@ -915,7 +915,7 @@ button {
   .m-footer span {
     color: #2163bd; }
 
-/*�ײ�����*/
+/*底部导航*/
 /* line 158, ../sass/_mod-item.scss */
 .m-footer-nav {
   height: 1rem;
@@ -931,7 +931,7 @@ button {
     .m-footer-nav a:last-child {
       border: 0 none; }
 
-/*�ײ���ť*/
+/*底部按钮*/
 /* line 173, ../sass/_mod-item.scss */
 .m-footer-btn {
   position: fixed;
@@ -975,7 +975,7 @@ button {
     .m-footer-btn .active-footer-btn a {
       color: #e02d2a; }
 
-/*ѡ�ͷ��*/
+/*选项卡头部*/
 /* line 217, ../sass/_mod-item.scss */
 .m-tab-head {
   width: 100%;
@@ -1015,7 +1015,7 @@ button {
   .m-tab-head i {
     color: #e02d2a; }
 
-/*��������*/
+/*星星评级*/
 /* line 257, ../sass/_mod-item.scss */
 .star-level {
   padding: 0 .4rem;
@@ -1032,7 +1032,7 @@ button {
   .star-level .icon-start-active {
     color: #ff9900; }
 
-/*����ͷ��*/
+/*店铺头部*/
 /* line 274, ../sass/_mod-item.scss */
 .shop-index-head {
   padding: .4rem 0;
@@ -1075,7 +1075,7 @@ button {
   .shop-index-head .icon-sc {
     border-left: 1px solid #cccccc; }
 
-/*��Ʒ���� �ײ�*/
+/*商品详情 底部*/
 /* line 315, ../sass/_mod-item.scss */
 .m-shop-show-foot {
   position: fixed;
@@ -1110,7 +1110,7 @@ button {
     .m-shop-show-foot .m-shop-foot-btn:nth-of-type(2) {
       background: #e02d2a; }
 
-/*����footer*/
+/*买家footer*/
 /* line 349, ../sass/_mod-item.scss */
 .footer-weidai {
   height: 2rem;
@@ -1126,11 +1126,11 @@ button {
   font-weight: normal;
   font-style: normal; }
 
-/* line 27, ../sass/cy-index.scss */
+/* line 28, ../sass/cy-index.scss */
 img {
   width: 100%; }
 
-/* line 31, ../sass/cy-index.scss */
+/* line 32, ../sass/cy-index.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;
@@ -1143,79 +1143,79 @@ img {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 44, ../sass/cy-index.scss */
+/* line 45, ../sass/cy-index.scss */
 .or_height h2 {
   height: 2.6rem;
   overflow: hidden; }
 
-/* line 48, ../sass/cy-index.scss */
+/* line 49, ../sass/cy-index.scss */
 .bor_bottom {
   border-bottom: 1px solid #cccccc; }
 
-/* line 51, ../sass/cy-index.scss */
+/* line 52, ../sass/cy-index.scss */
 .bor_top {
   border-top: 1px solid #cccccc; }
 
-/* line 54, ../sass/cy-index.scss */
+/* line 55, ../sass/cy-index.scss */
 .hidden {
   height: 1.3rem; }
 
-/* line 57, ../sass/cy-index.scss */
+/* line 58, ../sass/cy-index.scss */
 .p_bottom {
   padding-bottom: .4rem; }
 
-/* line 60, ../sass/cy-index.scss */
+/* line 61, ../sass/cy-index.scss */
 .p_bottom_1 {
   padding-bottom: .2rem; }
 
-/* line 63, ../sass/cy-index.scss */
+/* line 64, ../sass/cy-index.scss */
 .p_top {
   padding-top: .4rem; }
 
-/* line 66, ../sass/cy-index.scss */
+/* line 67, ../sass/cy-index.scss */
 .m_bottom {
   margin-bottom: .5rem; }
 
-/* line 69, ../sass/cy-index.scss */
+/* line 70, ../sass/cy-index.scss */
 .orange {
   background-color: #ff9900; }
 
-/* line 72, ../sass/cy-index.scss */
+/* line 73, ../sass/cy-index.scss */
 .bor_bottom_1 {
   border-bottom: 1px #cccccc dashed; }
 
-/* line 75, ../sass/cy-index.scss */
+/* line 76, ../sass/cy-index.scss */
 .m_bootom_1 {
   margin-bottom: 2.6rem; }
 
 /*---------------------------------------------*/
-/* line 79, ../sass/cy-index.scss */
+/* line 80, ../sass/cy-index.scss */
 .or_top {
   overflow: hidden; }
 
-/* line 82, ../sass/cy-index.scss */
+/* line 83, ../sass/cy-index.scss */
 .or_top_char {
   color: #333333;
   font-size: 0.9rem;
   line-height: 2rem;
   float: left; }
 
-/* line 88, ../sass/cy-index.scss */
+/* line 89, ../sass/cy-index.scss */
 .or_top_null {
   float: right;
   font-size: 0.9rem;
   line-height: 2rem;
   color: #666666; }
-  /* line 93, ../sass/cy-index.scss */
+  /* line 94, ../sass/cy-index.scss */
   .or_top_null span {
     color: #d0321d; }
 
-/* line 98, ../sass/cy-index.scss */
+/* line 99, ../sass/cy-index.scss */
 .or_logo {
   padding-top: .4rem;
   padding-bottom: .4rem;
   font-size: 0.9rem; }
-  /* line 102, ../sass/cy-index.scss */
+  /* line 103, ../sass/cy-index.scss */
   .or_logo img {
     width: 1.8rem;
     height: 1.8rem;
@@ -1223,94 +1223,182 @@ img {
     -o-border-radius: 1.8rem;
     -moz-border-radius: 1.8rem;
     -webkit-border-radius: 1.8rem; }
-  /* line 110, ../sass/cy-index.scss */
+  /* line 111, ../sass/cy-index.scss */
   .or_logo span {
     color: #d0321d; }
 
-/* line 115, ../sass/cy-index.scss */
+/* line 116, ../sass/cy-index.scss */
 .or_img {
   padding: .1rem; }
 
-/* line 120, ../sass/cy-index.scss */
+/* line 121, ../sass/cy-index.scss */
 .or_count {
   padding-top: .3rem;
   padding-bottom: .3rem;
   overflow: hidden;
   border-bottom: 1px #cccccc dashed; }
-  /* line 125, ../sass/cy-index.scss */
+  /* line 126, ../sass/cy-index.scss */
   .or_count .or_count_1 {
     float: left;
     line-height: 1.2rem;
     color: #666666; }
-  /* line 130, ../sass/cy-index.scss */
+  /* line 131, ../sass/cy-index.scss */
   .or_count .or_count_2 {
     float: right;
     line-height: 1.2rem;
     color: #333333; }
 
-/* line 136, ../sass/cy-index.scss */
+/* line 137, ../sass/cy-index.scss */
 .or_char {
   overflow: hidden;
   line-height: 2rem; }
-  /* line 139, ../sass/cy-index.scss */
+  /* line 140, ../sass/cy-index.scss */
   .or_char .or_char_1 {
     float: left;
     color: #333333; }
-  /* line 143, ../sass/cy-index.scss */
+  /* line 144, ../sass/cy-index.scss */
   .or_char .or_char_2 {
     float: right;
     color: #666666; }
 
-/* line 148, ../sass/cy-index.scss */
+/* line 149, ../sass/cy-index.scss */
 .or_site {
   color: #333333;
   line-height: 1.8rem; }
 
-/* line 152, ../sass/cy-index.scss */
+/* line 153, ../sass/cy-index.scss */
 .or_textBox {
   overflow: hidden;
   margin-bottom: .2rem; }
-  /* line 155, ../sass/cy-index.scss */
+  /* line 156, ../sass/cy-index.scss */
   .or_textBox .or_text {
     width: 2.5rem;
     float: left;
     line-height: 1.3rem; }
-  /* line 160, ../sass/cy-index.scss */
+  /* line 161, ../sass/cy-index.scss */
   .or_textBox .text_w {
     width: 12.4rem;
     float: left; }
 
-/* line 165, ../sass/cy-index.scss */
+/* line 166, ../sass/cy-index.scss */
 .or_billBox {
   color: #333333;
   line-height: 1.5; }
 
-/* line 169, ../sass/cy-index.scss */
+/* line 170, ../sass/cy-index.scss */
 .or_bill {
   float: left;
   color: #333333;
   line-height: 2rem; }
 
-/* line 174, ../sass/cy-index.scss */
+/* line 175, ../sass/cy-index.scss */
 .or_bill_1 {
   float: right;
   line-height: 2rem;
   color: #999999; }
 
-/* line 179, ../sass/cy-index.scss */
+/* line 180, ../sass/cy-index.scss */
 .or {
   line-height: 2; }
 
 /*-----------------------发票地址----------------------*/
-/* line 183, ../sass/cy-index.scss */
+/* line 184, ../sass/cy-index.scss */
 .site_site {
   color: #666666;
   line-height: 1rem;
   float: left; }
 
-/* line 188, ../sass/cy-index.scss */
+/* line 189, ../sass/cy-index.scss */
 .site_site_0 {
   color: #333333;
   line-height: 2; }
+
+/* line 193, ../sass/cy-index.scss */
+.notice {
+  background-color: #fffcf1;
+  line-height: 1rem;
+  font-size: .6rem;
+  color: #666666;
+  padding: .4rem;
+  margin-bottom: .4rem; }
+
+/* line 201, ../sass/cy-index.scss */
+.footer-weidai {
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #e02d2a;
+  font-size: 6rem;
+  margin-bottom: 2.6rem; }
+
+/*-----------------------正在支付----------------------*/
+/* line 210, ../sass/cy-index.scss */
+.modBox {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 6rem;
+  height: 4rem;
+  position: fixed;
+  left: 30%;
+  top: 15%; }
+
+/* line 218, ../sass/cy-index.scss */
+.add-more {
+  width: 6rem;
+  background-position: center;
+  padding-left: 0; }
+
+/* line 223, ../sass/cy-index.scss */
+.mod_add {
+  font-size: 0.6rem;
+  color: #ffffff;
+  text-align: center; }
+
+/* line 228, ../sass/cy-index.scss */
+.po_fi {
+  position: fixed;
+  bottom: .2rem;
+  width: 100%;
+  margin-bottom: .2rem; }
+
+/*-----------------------支付成功----------------------*/
+/* line 235, ../sass/cy-index.scss */
+.icon-pay_s {
+  font-size: 3.5rem;
+  margin-top: 1rem;
+  color: #3fbd3f;
+  text-align: center; }
+
+/* line 242, ../sass/cy-index.scss */
+.pay_s_char {
+  color: #333333;
+  line-height: 2.5rem;
+  text-align: center; }
+
+/* line 247, ../sass/cy-index.scss */
+.pay_input {
+  overflow: hidden;
+  width: 50%;
+  margin: 0 auto; }
+  /* line 251, ../sass/cy-index.scss */
+  .pay_input .pay_l {
+    float: left; }
+  /* line 254, ../sass/cy-index.scss */
+  .pay_input .pay_r {
+    float: right; }
+
+/* line 257, ../sass/cy-index.scss */
+.pay_s_text {
+  margin-top: .8rem;
+  font-size: .6rem;
+  text-align: center;
+  color: #666666; }
+
+/*-----------------------支付失败----------------------*/
+/* line 264, ../sass/cy-index.scss */
+.icon-pay_f {
+  font-size: 3.5rem;
+  margin-top: 1rem;
+  color: #c52924;
+  text-align: center; }
 
 /*# sourceMappingURL=cy-index.css.map */
