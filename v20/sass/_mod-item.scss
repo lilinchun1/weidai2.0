@@ -211,6 +211,38 @@
       color: $red;
     }
   }
+  .icon-left-btn{
+    float: left;
+    width: 1.5rem;
+    line-height: 2.5rem;
+    color: #535353;
+    text-align: center;
+    font-size: .75rem;
+  }
+  .m-footer-search{
+    margin-top: .65rem;
+    float: left;
+    width: 11.75rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    background-color: #535353;
+    border: 0 none;
+    color: #ffffff;
+    text-indent: .4rem;
+  }
+  .m-footer-search::-webkit-input-placeholder{
+    color: #ffffff;
+    font-family: 'icomoon';
+  }
+  .m-footer-search-btn{
+    padding: 0;
+    margin-top: .65rem;
+    margin-left: .4rem;
+    width: 1.85rem;
+    height: 1.25rem;
+    background-color: $red;
+    color: #ffffff;
+  }
 }
 
 /*选项卡头部*/
@@ -421,4 +453,16 @@
 }
 .search-list-sort:target .sort-class{
   display: block;
+}
+
+.overly{
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  filter: alpha(opacity=10);
+  opacity: 10;
 }
