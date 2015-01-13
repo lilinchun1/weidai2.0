@@ -1,0 +1,189 @@
+/** 
+ * Created with IntelliJ IDEA. 
+ * User: cy
+ * Date: 2015/1/12 
+ * Time: 11:05 
+ * To change this template use File | Settings | File Templates. 
+ */
+html{
+  font-size: 40rem;
+}
+@import "var";
+@import "rest";
+@import "input";
+@import "btns";
+@import "alert";
+@import "mod-item";
+@font-face {
+  font-family: 'icomoon';
+  src:url('../img/fonts/icomoon.eot');
+  src:url('../img/fonts/icomoon.eot#iefix') format('embedded-opentype'),
+  url('../img/fonts/icomoon.woff') format('woff'),
+  url('../img/fonts/icomoon.ttf') format('truetype'),
+  url('../img/fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+img{
+  width: 100%;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bor_bottom{
+  border-bottom:1px solid $border-color;
+}
+.bor_top{
+  border-top:1px solid $border-color;
+}
+.hidden{
+  height: 1.3rem;
+}
+.p_bottom{
+  padding-bottom: .4rem;
+}
+.p_bottom_1{
+  padding-bottom: .2rem;
+}
+.p_top{
+  padding-top: .4rem;
+}
+.m_bottom{
+  margin-bottom: .5rem;
+}
+.orange{
+  background-color: #ff9900;
+}
+.bor_bottom_1{
+  border-bottom: 1px $border-color dashed;
+}
+.m_bootom_1{
+  margin-bottom: 2.6rem;
+}//用于底部控制高度
+/*---------------------------------------------*/
+.or_top{
+  overflow: hidden;
+}
+.or_top_char{
+  color:$font-color333;
+  font-size: $fz18;
+  line-height: 2rem;
+  float: left;
+}
+.or_top_null{
+  float: right;
+  font-size: $fz18;
+  line-height: 2rem;
+  color:$font-color666;
+  span{
+    color: #d0321d;
+  }
+
+}
+.or_logo{
+  padding-top:.4rem;
+  padding-bottom: .4rem;
+  font-size: $fz18;
+  img{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 1.8rem;
+    -o-border-radius: 1.8rem;
+    -moz-border-radius: 1.8rem;
+    -webkit-border-radius: 1.8rem;
+  }
+  span{
+    color: #d0321d;
+  }
+}
+
+.or_img{
+  padding: .1rem;
+
+}
+
+.or_count{
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  overflow: hidden;
+  border-bottom: 1px $border-color dashed;
+  .or_count_1{
+    float: left;
+    line-height: 1.2rem;
+    color: $font-color666;
+  }
+  .or_count_2{
+    float: right;
+    line-height: 1.2rem;
+    color: $font-color333;
+  }
+}
+.or_char{
+  overflow: hidden;
+  line-height: 2rem;
+  .or_char_1{
+    float: left;
+    color: $font-color333;
+  }
+  .or_char_2{
+    float: right;
+    color: $font-color666;
+  }
+}
+.or_site{
+  color: $font-color333;
+  line-height:1.8rem;
+}
+.or_textBox{
+  overflow: hidden;
+  margin-bottom: .2rem;
+  .or_text{
+    width:2.5rem;
+    float: left;
+    line-height: 1.3rem;
+  }
+  .text_w{
+    width:12.4rem;
+    float: left;
+  }
+}
+.or_billBox{
+  color: $font-color333;
+  line-height: 1.5;
+}
+.or_bill{
+  float: left;
+  color: $font-color333;
+  line-height: 2rem;
+}
+.or_bill_1{
+  float: right;
+  line-height: 2rem;
+  color: $font-color999;
+}
+.or{
+  line-height: 2;
+}
+/*-----------------------发票地址----------------------*/
+.site_site{
+  color: $font-color666;
+  line-height: 1rem;
+  float: left;
+}
+.site_site_0{
+  color: $font-color333;
+  line-height: 2;
+}
+
+
