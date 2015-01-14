@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>申请退款</title>
+<link rel="stylesheet" href="../v20/css/member.css"/>
+</head>
+<body>
+<div class="g-wrap">
+    <div class="g-wrap-show">
+            <div class="apply-refun-item">
+                <label>
+                    选择物流：
+                </label>
+                <div class="m-select-wrap">
+                    <select class="m-select-draw-con">
+                        <option>请选择</option>
+                        <option>2014</option>
+                    </select>
+                    <div class="m-logo">
+                        <div class="m-icon-arrow-down icon-down">
+                            &#xf642;
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="apply-refun-item">
+                <label>
+                    运单编号：
+                </label>
+                <input type="text" class="m-input apply-refun-input" placeholder="请输入内容"/>
+            </div>
+
+            <div class="apply-refun-item">
+                <label>
+                    退款金额：
+                </label>
+                <input type="text" class="m-input apply-refun-input" placeholder="请输入内容"/>
+            </div>
+
+            <div class="apply-refun-item">
+                <label>
+                    &nbsp;
+                </label>
+                <span>（最多138.00元，包括12.00元邮费）</span>
+            </div>
+
+            <div class="apply-refun-item">
+                <label>
+                    退货说明：
+                </label>
+                <textarea  class="m-textarea apply-refun-input" placeholder="请输入内容"></textarea>
+            </div>
+
+            <div class="apply-refun-item">
+                <p>为了能尽快处理您的申请，请先联系客服。</p>
+            </div>
+        <div class="footer-weidai icon-weidai foot-fxb">
+            &#xf652;
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

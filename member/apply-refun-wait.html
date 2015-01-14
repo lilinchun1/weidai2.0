@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>退款等待处理</title>
+    <link rel="stylesheet" href="../v20/css/member.css"/>
+</head>
+<body>
+<div class="g-wrap refun-wait-wrap">
+    <div class="refun-succeed-con">
+        <h2><span class="red-font">&#xf61d;</span>&nbsp;等待商家处理退款申请</h2>
+        <p>
+            如果商家同意：<em>申请将达成商家退款给您</em>
+        </p>
+        <p>
+            如果商家拒绝：<em>将需要您重新修改退款申请</em>
+        </p>
+        <div class="refun-wait-btns">
+            <button type="button" class="m-button-s rw-btn">修改退款申请</button>
+            <button type="button" class="m-button-s rw-btn">撤销退款申请</button>
+        </div>
+    </div>
+    <ul class="refun-succeed-list">
+        <li>
+            店铺名称：<em>志洋的小店</em>
+        </li>
+        <li>
+            退款类型：<em>仅退款</em>
+        </li>
+        <li>
+            退款金额：<em>180.00元</em>
+        </li>
+        <li>
+            退款原因：<em>不想买了</em>
+        </li>
+        <li>
+            退款说明：<em>不想买了</em>
+        </li>
+        <li>
+            退款编号：<em>00000000000000</em>
+        </li>
+        <li>
+            退款时间：<em>2014-12-12-15  12:14:55</em>
+        </li>
+    </ul>
+    <div class="rw-ifo">
+        退款/售后申请尽快联系客服操作！
+    </div>
+    <div class="footer-weidai icon-weidai">
+        &#xf652;
+    </div>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

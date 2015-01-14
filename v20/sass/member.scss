@@ -368,3 +368,96 @@
 }
 /*-----------------------logistics-info.html end----------------------*/
 
+/*-----------------------apply-refun.html start----------------------*/
+.apply-refun-item{
+  margin-top: .75rem;
+  width: 100%;
+  label{
+    float: left;
+    width: 3.5rem;
+  }
+  .apply-refun-input{
+    width: 11.5rem;
+  }
+  span{
+    font-size: $fz12;
+    color: $red;
+  }
+  p{
+    color: $font-color666;
+    font-size: $fz12;
+    text-align: center;
+  }
+}
+/*-----------------------apply-refun.html end----------------------*/
+
+/*-----------------------refun-succeed.html start----------------------*/
+.refun-succeed-con{
+  padding: 0 .5rem;
+  border-bottom: 1px solid $border-color;
+  h2{
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px dotted $border-color;
+    span{
+      font-size: $fz16;
+      font-family: 'icomoon';
+    }
+  }
+  p{
+    margin: .4rem 0;
+  }
+  .refun-succeed-btn{
+    margin-bottom: .5rem;
+    background-color: $red;
+  }
+  em{
+    color: $font-color666;
+  }
+}
+.refun-succeed-list{
+  @extend %wrap-600;
+  li{
+    height: 1.75rem;
+    line-height: 1.75rem;
+    border-bottom: 1px dotted $border-color;
+    em{
+      color: $font-color666;
+    }
+  }
+}
+/*-----------------------refun-succeed.html end----------------------*/
+
+/*-----------------------apply-refun-wait.html start----------------------*/
+.refun-wait-wrap{
+
+}
+.refun-wait-btns{
+  padding-bottom: .5rem;
+  @extend %wrap-600;
+  .rw-btn{
+    float: left;
+    margin-left: 1.3rem;
+    width: 5.5rem;
+  }
+}
+.rw-ifo{
+  padding-top: .7rem;
+  color: $font-color666;
+  font-size: $fz12;
+  text-align: center;
+}
+.rw-ifo2{
+  margin: .5rem 0;
+  text-align: center;
+  em{
+    color: $font-color666;
+  }
+}
+.rw-ifo3{
+  margin: .5rem 0;
+  text-align: center;
+  color: $font-color666;
+  font-size: $fz12;
+}
+/*-----------------------apply-refun-wait.html end----------------------*/
