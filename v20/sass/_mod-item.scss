@@ -57,13 +57,21 @@
   padding: .5rem 0;
   @extend %wrap-600;
   height: 3rem;
+  border-bottom: 1px dotted $border-color;
+  &:nth-last-of-type(1){
+    border: 0 none;
+  }
   .mlii-pic{
+    padding: .1rem;
     margin-right: .4rem;
     float: left;
     width: 2.95rem;
     height: 2.95rem;
     border: 1px solid $border-color;
     overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     img{
       width: 100%;
     }
@@ -74,6 +82,7 @@
   }
   h2{
     line-height: 1.3;
+    height: 1.8rem;
   }
   p{
     color: $font-color999;
@@ -92,6 +101,9 @@
       font-size: .6rem;
       text-align: right;
     }
+  }
+  .red-font{
+    color: $red;
   }
 }
 

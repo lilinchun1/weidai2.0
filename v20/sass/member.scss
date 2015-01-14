@@ -130,6 +130,137 @@
   }
   p{
     padding-left: 3.5rem;
+    color: $font-color666;
+  }
+}
+.dfh-btn{
+  @extend %btn-k;
+  width: 3rem;
+  height: 1rem;
+  line-height: 1rem;
+  border-color: $red;
+  color: $red;
+ }
+.dfh-info-in{
+  @extend %wrap-600;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  color: $font-color666;
+  a{
+    display: block;
+  }
+  span{
+    font-family: 'icomoon';
+    float: right;
+  }
+}
+.dfn-foot-btn{
+  height: 2.25rem;
+  background-color: #f8f8f8;
+  border-top: 1px solid $border-color;
+  .m-button-k{
+    margin: .55rem .3rem 0 0;
+    float: right;
   }
 }
 /*-----------------------my-indent-dfh.html----------------------*/
+
+/*-----------------------money-flowl.html start----------------------*/
+.money-flow-tt{
+  @extend %wrap-600;
+  height: 2rem;
+  line-height: 2rem;
+  border-bottom: 1px dotted $border-color;
+  span{
+    float: right;
+    color: $red;
+  }
+}
+.number-flow{
+  margin: 1.75rem auto 0 auto;
+  width: 11rem;
+  height: .8rem;
+  li{
+    position: relative;
+    z-index: 2;
+    float: left;
+    height: .8rem;
+    overflow: hidden;
+    &:after{
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: .35rem;
+      left: 0;
+      width: 100%;
+      height: .15rem;
+      background-color: #c4c0bc;
+    }
+    &:nth-of-type(1){
+      width: 2.75rem;
+      span{
+        float: left;
+      }
+    }
+    &:nth-of-type(2){
+      width: 5.5rem;
+      span{
+        margin: 0 auto;
+        display: block;
+      }
+    }
+    &:nth-of-type(3){
+      width: 2.75rem;
+      span{
+        float: right;
+      }
+    }
+    &:nth-of-type(4){
+
+    }
+  }
+  .active-number-flow{
+    span{
+      background-color: $green;
+    }
+    &:after{
+      background-color: $green;
+    }
+  }
+  span{
+    width: .8rem;
+    height: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    color: #ffffff;
+    background-color: #c4c0bc;
+    border-radius: .8rem;
+  }
+}
+.number-flow-info{
+  margin-top: .45rem;
+  width: 100%;
+  overflow: hidden;
+  li{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    overflow: hidden;
+  }
+  .active-number-flow-info{
+    color: $green;
+  }
+}
+/*-----------------------money-flowl.html end----------------------*/
+
+/*-----------------------evaluate.html start----------------------*/
+.evaluate-tt{
+  padding-left: .5rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  border-bottom: 1px solid $border-color;
+}
+.evaluate-item{
+  border-bottom: 1px solid $border-color;
+}
+/*-----------------------evaluate.html end----------------------*/

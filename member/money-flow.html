@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>流程</title>
+<link rel="stylesheet" href="../v20/css/member.css"/>
+</head>
+<body>
+<div class="g-wrap">
+    <div class="money-flow-tt">
+        招商银行（尾号 4888） <span>&yen;788.00</span>
+    </div>
+    <ul class="number-flow">
+        <li class="active-number-flow"><!--.active-number-flow 激活状态-->
+            <span>1</span>
+        </li>
+        <li>
+            <span>2</span>
+        </li>
+        <li>
+            <span>3</span>
+        </li>
+    </ul>
+    <ul class="number-flow-info">
+        <li class="active-number-flow-info"><!--.active-number-flow-info 激活状态-->
+            <p>商家退款</p>
+            <p>2014-12-22</p>
+            <p>5:23:33</p>
+        </li>
+        <li>
+            <p>银行受理中</p>
+            <p>2014-12-24</p>
+            <p>14:30:25</p>
+        </li>
+        <li>
+            <p>返回银行卡</p>
+            <p>2014-12-24</p>
+            <p>14:30:25</p>
+        </li>
+    </ul>
+    <div class="footer-weidai icon-weidai foot-fxb">
+        &#xf652;
+    </div>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>
