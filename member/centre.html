@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no">
+    <title>收货地址</title>
+    <link rel="stylesheet" href="../v20/css/cy-index.css"/>
+</head>
+<body>
+<div class="g-wrap"><!--外层wrap 640-->
+
+        <div class="cen_red">
+            <div class="cen_char">测试用户名字可以用多长的文字才能不串行</div>
+        </div>
+        <div class="cen_head">
+            <img src="../v20/img/or_img/img_0.jpg">
+        </div>
+    <div class="g-wrap-show">
+        <ul class="cen_top">
+            <li class="g-wrap-show bor_bottom icon-c"><!--店铺循环-->
+                <a>
+                    <div>
+                        &#xf65a;
+                        我的订单
+                    </div>
+
+                    <span class="f_right">&#xf634;</span>
+                    <i>0</i>
+                </a>
+
+            </li>
+            <li class="g-wrap-show bor_bottom icon-c"><!--店铺循环-->
+                <a>
+                   <div>
+                       &#xf623;
+                       我的地址
+                   </div>
+                    <span class="f_right">&#xf634;</span>
+                    <i>2</i>
+                </a>
+
+            </li>
+            <li class="g-wrap-show bor_bottom icon-c"><!--店铺循环-->
+                <a>
+                    <div>
+                        &#xf641;
+                        我的发票
+                    </div>
+
+                    <span class="f_right">&#xf634;</span>
+                    <i>2</i>
+                </a>
+
+            </li>
+            <li class="g-wrap-show bor_bottom icon-c"><!--店铺循环-->
+                <a>
+                    <div>
+                        &#xf614;
+                        我的收藏
+                    </div>
+                    <span class="f_right">&#xf634;</span>
+                    <i>12</i>
+                </a>
+
+            </li>
+            <li class="g-wrap-show bor_bottom icon-c"><!--店铺循环-->
+                <a>
+                    <div>
+                        &#xf665;
+                        意见反馈
+                    </div>
+                    <span class="f_right">&#xf634;</span>
+                    <i>2</i>
+                </a>
+
+            </li>
+        </ul>
+    </div>
+    <div class="footer-weidai icon-weidai po_fi">
+        &#xf652;
+    </div>
+</div>
+
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>

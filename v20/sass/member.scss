@@ -263,4 +263,37 @@
 .evaluate-item{
   border-bottom: 1px solid $border-color;
 }
+.evaluate-star{
+  @extend %wrap-600;
+  border-bottom: 1px dotted $border-color;
+  height: 1.75rem;
+  line-height: 1.75rem;
+  em{
+    float: left;
+  }
+}
+.evaluate-textarea{
+  margin: .5rem auto;
+  width: 15rem;
+}
+.evaluate-btn{
+  margin: .5rem auto;
+  width: 15rem;
+  background-color: $red;
+}
 /*-----------------------evaluate.html end----------------------*/
+
+/*-----------------------logistics-info.html start----------------------*/
+.logistics-info-tt{
+  height: 2.25rem;
+  border-bottom: 1px solid $border-color;
+  .logistics-pic{
+    margin: .4rem .6rem 0 .5rem;
+    float: left;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1.5rem;
+  }
+}
+/*-----------------------logistics-info.html end----------------------*/
+

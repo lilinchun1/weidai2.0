@@ -85,7 +85,7 @@ img{
 .m_bootom_1{
   margin-bottom: 2.6rem;
 }//用于底部控制高度
-/*---------------------------------------------*/
+/*------------------确认订单order-confitm or-co-site ---------------------------*/
 .or_top{
   overflow: hidden;
 }
@@ -192,7 +192,7 @@ img{
 .or{
   line-height: 2;
 }
-/*-----------------------发票地址----------------------*/
+/*-----------------------地址  mj-order-con.html ----------------------*/
 .site_site{
   color: $font-color666;
   line-height: 1rem;
@@ -218,7 +218,7 @@ img{
   font-size: 6rem;
   margin-bottom: 2.6rem;
 }
-/*-----------------------正在支付----------------------*/
+/*-----------------------正在支付 mj-ls-pay.html----------------------*/
 .modBox{
   background-color: rgba(0,0,0,0.7);
   width:6rem;
@@ -246,7 +246,7 @@ img{
 .po_ac{
   margin-bottom: .2rem;
 }
-/*-----------------------支付成功----------------------*/
+/*-----------------------支付成功 pay-success.html ----------------------*/
 .icon-pay_s{
   font-size: 3.5rem;
   margin-top: 1rem;
@@ -275,14 +275,14 @@ img{
   text-align: center;
   color: $font-color666;
 }
-/*-----------------------支付失败----------------------*/
+/*-----------------------支付失败 pay_failed.html ----------------------*/
 .icon-pay_f{
   font-size: 3.5rem;
   margin-top: 1rem;
   color:$red;
   text-align: center;
 }
-/*-----------------------我的收藏-店铺----------------------*/
+/*-----------------------我的收藏-店铺 collect-store.html----------------------*/
 
 
 .coll_top{
@@ -329,7 +329,7 @@ img{
   color: $red;
   font-size: .8rem;
 }
-/*-----------------------我的收藏-商品----------------------*/
+/*-----------------------我的收藏-商品 collect-comm.html----------------------*/
 .coll_com{
   font-size: .6rem;
   line-height: .7rem;
@@ -351,7 +351,7 @@ img{
   color: $red;
   font-size: .8rem;
 }
-/*-----------------------我的地址----------------------*/
+/*-----------------------我的地址 my-site.html----------------------*/
 .my_site{
   line-height: 2rem;
 }
@@ -392,7 +392,7 @@ img{
 .red{
   background-color: $red;
 }
-/*-----------------------新增发票----------------------*/
+/*-----------------------新增发票 bill-add.html----------------------*/
 .bill_add_text{
   width:3.5rem;
   float: left;
@@ -403,7 +403,7 @@ img{
   float: left;
 
 }
-/*-----------------------意见反馈----------------------*/
+/*-----------------------意见反馈 opinion.html ----------------------*/
 .sec_lose{
   width:50%;
   height:3.5rem;
@@ -415,5 +415,46 @@ img{
   text-align: center;color: #FFFFFF;
   line-height: 3.5rem;
 
+}
+/*-------------------卖家中心 centre.html--------------------------*/
+.cen_red{
+  background-color: $red;
+  height: 4rem;
 
+  .cen_char{
+    text-align: center;
+    color: #FFFFFF;
+    line-height: 2.5rem;
+    width: 14rem;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    text-shadow: 0px 1px 2px #000;
+    font-weight: bold;
+
+  }
+
+}
+.cen_head{
+  position: absolute;
+  top:2.4rem;
+  left: 6.3rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 3.2rem;
+  -o-border-radius: 3.2rem;
+  -moz-border-radius: 3.2rem;
+  -webkit-border-radius: 3.2rem;
+  border: 3px solid #FFFFFF;
+  img{
+   width: 100%;
+    border-radius: 3.2rem;
+    -o-border-radius: 3.2rem;
+    -moz-border-radius: 3.2rem;
+    -webkit-border-radius: 3.2rem;
+  }
+}
+.cen_top{
+  margin-top: 1.6rem;
 }
