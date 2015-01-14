@@ -16,7 +16,9 @@ button{
   border-radius: 2px;
   font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
 }
-
+button[disabled="disabled"]{
+  background-color: #cccccc;
+}
 /*全宽实心按钮 高75*/
 %btn-100{
   width: 100%;
