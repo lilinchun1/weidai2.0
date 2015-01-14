@@ -331,7 +331,7 @@ textarea {
   color: #666666; }
 
 /* line 27, ../sass/_input.scss */
-.m-input {
+.m-input, .m-input-1 {
   height: 1.3rem;
   border: 1px solid #cccccc;
   font-size: 0.7rem;
@@ -457,9 +457,13 @@ button {
   border-radius: 2px;
   font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif; }
 
+/* line 19, ../sass/_btns.scss */
+button[disabled="disabled"] {
+  background-color: #cccccc; }
+
 /*全宽实心按钮 高75*/
-/* line 21, ../sass/_btns.scss */
-.m-button {
+/* line 23, ../sass/_btns.scss */
+.m-button, .m-button-1 {
   width: 100%;
   height: 1.875rem;
   line-height: 1.875rem;
@@ -468,7 +472,7 @@ button {
   display: block; }
 
 /*提示框实心按钮 高55*/
-/* line 31, ../sass/_btns.scss */
+/* line 33, ../sass/_btns.scss */
 .m-button-s {
   width: 3.55rem;
   height: 1.375rem;
@@ -478,7 +482,7 @@ button {
   display: block; }
 
 /*空心按钮*/
-/* line 41, ../sass/_btns.scss */
+/* line 43, ../sass/_btns.scss */
 .m-button-k {
   width: 3.7rem;
   height: 1.35rem;
@@ -1286,93 +1290,99 @@ img {
   -moz-osx-font-smoothing: grayscale; }
 
 /* line 45, ../sass/cy-index.scss */
+button[disabled] {
+  cursor: default;
+  background-color: #cccccc;
+  color: #FFFFFF; }
+
+/* line 51, ../sass/cy-index.scss */
 .f_right {
   float: right; }
 
-/* line 48, ../sass/cy-index.scss */
+/* line 54, ../sass/cy-index.scss */
 .or_height h2 {
   height: 2.6rem;
   overflow: hidden; }
 
-/* line 52, ../sass/cy-index.scss */
+/* line 58, ../sass/cy-index.scss */
 .bor_bottom {
   border-bottom: 1px solid #cccccc; }
 
-/* line 55, ../sass/cy-index.scss */
+/* line 61, ../sass/cy-index.scss */
 .bor_top {
   border-top: 1px solid #cccccc; }
 
-/* line 58, ../sass/cy-index.scss */
+/* line 64, ../sass/cy-index.scss */
 .hidden {
   height: 1.3rem; }
 
-/* line 61, ../sass/cy-index.scss */
+/* line 67, ../sass/cy-index.scss */
 .p_bottom {
   padding-bottom: .4rem; }
 
-/* line 64, ../sass/cy-index.scss */
+/* line 70, ../sass/cy-index.scss */
 .p_bottom_1 {
   padding-bottom: .2rem; }
 
-/* line 67, ../sass/cy-index.scss */
+/* line 73, ../sass/cy-index.scss */
 .p_top {
   padding-top: .4rem; }
 
-/* line 70, ../sass/cy-index.scss */
+/* line 76, ../sass/cy-index.scss */
 .m_top {
   margin-top: .4rem; }
 
-/* line 73, ../sass/cy-index.scss */
+/* line 79, ../sass/cy-index.scss */
 .m_bottom {
   margin-bottom: .4rem; }
 
-/* line 76, ../sass/cy-index.scss */
+/* line 82, ../sass/cy-index.scss */
 .m_top_2 {
   margin-top: .8rem; }
 
-/* line 79, ../sass/cy-index.scss */
+/* line 85, ../sass/cy-index.scss */
 .orange {
   background-color: #ff9900; }
 
-/* line 82, ../sass/cy-index.scss */
+/* line 88, ../sass/cy-index.scss */
 .bor_bottom_1 {
   border-bottom: 1px #cccccc dashed; }
 
-/* line 85, ../sass/cy-index.scss */
+/* line 91, ../sass/cy-index.scss */
 .m_bootom_1 {
   margin-bottom: 2.6rem; }
 
 /*------------------确认订单order-confitm or-co-site ---------------------------*/
-/* line 89, ../sass/cy-index.scss */
+/* line 95, ../sass/cy-index.scss */
 .or_top {
   overflow: hidden; }
 
-/* line 92, ../sass/cy-index.scss */
+/* line 98, ../sass/cy-index.scss */
 .or_top_char {
   color: #333333;
   font-size: 0.9rem;
   line-height: 2rem;
   float: left; }
 
-/* line 98, ../sass/cy-index.scss */
+/* line 104, ../sass/cy-index.scss */
 .or_top_null {
   float: right;
   font-size: 0.9rem;
   line-height: 2rem;
   color: #666666; }
-  /* line 103, ../sass/cy-index.scss */
+  /* line 109, ../sass/cy-index.scss */
   .or_top_null span {
     color: #d0321d; }
 
-/* line 108, ../sass/cy-index.scss */
+/* line 114, ../sass/cy-index.scss */
 .or_logo {
   padding-top: .4rem;
   padding-bottom: .4rem;
   font-size: 0.9rem; }
-  /* line 112, ../sass/cy-index.scss */
+  /* line 118, ../sass/cy-index.scss */
   .or_logo a {
     color: #333333; }
-  /* line 115, ../sass/cy-index.scss */
+  /* line 121, ../sass/cy-index.scss */
   .or_logo img {
     width: 1.8rem;
     height: 1.8rem;
@@ -1380,97 +1390,105 @@ img {
     -o-border-radius: 1.8rem;
     -moz-border-radius: 1.8rem;
     -webkit-border-radius: 1.8rem; }
-  /* line 123, ../sass/cy-index.scss */
+  /* line 129, ../sass/cy-index.scss */
   .or_logo span {
     color: #d0321d; }
 
-/* line 128, ../sass/cy-index.scss */
+/* line 134, ../sass/cy-index.scss */
 .or_img {
   padding: .1rem; }
 
-/* line 133, ../sass/cy-index.scss */
+/* line 139, ../sass/cy-index.scss */
 .or_count {
   padding-top: .3rem;
   padding-bottom: .3rem;
   overflow: hidden;
   border-bottom: 1px #cccccc dashed; }
-  /* line 138, ../sass/cy-index.scss */
+  /* line 144, ../sass/cy-index.scss */
   .or_count .or_count_1 {
     float: left;
     line-height: 1.2rem;
     color: #666666; }
-  /* line 143, ../sass/cy-index.scss */
+  /* line 149, ../sass/cy-index.scss */
   .or_count .or_count_2 {
     float: right;
     line-height: 1.2rem;
     color: #333333; }
 
-/* line 149, ../sass/cy-index.scss */
+/* line 155, ../sass/cy-index.scss */
 .or_char {
   overflow: hidden;
   line-height: 2rem; }
-  /* line 152, ../sass/cy-index.scss */
+  /* line 158, ../sass/cy-index.scss */
   .or_char .or_char_1 {
     float: left;
     color: #333333; }
-  /* line 156, ../sass/cy-index.scss */
+  /* line 162, ../sass/cy-index.scss */
   .or_char .or_char_2 {
     float: right;
     color: #666666; }
 
-/* line 161, ../sass/cy-index.scss */
+/* line 167, ../sass/cy-index.scss */
 .or_site {
   color: #333333;
   line-height: 1.8rem; }
 
-/* line 165, ../sass/cy-index.scss */
+/* line 171, ../sass/cy-index.scss */
 .or_textBox {
   overflow: hidden;
   margin-bottom: .4rem; }
-  /* line 168, ../sass/cy-index.scss */
+  /* line 174, ../sass/cy-index.scss */
   .or_textBox .or_text {
     width: 2.5rem;
     float: left;
     line-height: 1.3rem; }
-  /* line 173, ../sass/cy-index.scss */
+  /* line 179, ../sass/cy-index.scss */
   .or_textBox .text_w {
     width: 12.4rem;
     float: left; }
 
-/* line 178, ../sass/cy-index.scss */
+/* line 184, ../sass/cy-index.scss */
 .or_billBox {
   color: #333333;
   line-height: 1.5; }
 
-/* line 182, ../sass/cy-index.scss */
+/* line 188, ../sass/cy-index.scss */
 .or_bill {
   float: left;
   color: #333333;
   line-height: 2rem; }
 
-/* line 187, ../sass/cy-index.scss */
+/* line 193, ../sass/cy-index.scss */
 .or_bill_1 {
   float: right;
   line-height: 2rem;
   color: #999999; }
 
-/* line 192, ../sass/cy-index.scss */
+/* line 198, ../sass/cy-index.scss */
 .or {
   line-height: 2; }
 
+/* line 201, ../sass/cy-index.scss */
+.red_char {
+  color: #e02d2a; }
+
+/* line 204, ../sass/cy-index.scss */
+.green_char {
+  color: #3db73e; }
+
 /*-----------------------地址  mj-order-con.html ----------------------*/
-/* line 196, ../sass/cy-index.scss */
+/* line 208, ../sass/cy-index.scss */
 .site_site {
   color: #666666;
   line-height: 1rem;
   float: left; }
 
-/* line 201, ../sass/cy-index.scss */
+/* line 213, ../sass/cy-index.scss */
 .site_site_0 {
   color: #333333;
   line-height: 2; }
 
-/* line 205, ../sass/cy-index.scss */
+/* line 217, ../sass/cy-index.scss */
 .notice {
   background-color: #fffcf1;
   line-height: 1rem;
@@ -1479,7 +1497,7 @@ img {
   padding: .4rem;
   margin-bottom: .4rem; }
 
-/* line 213, ../sass/cy-index.scss */
+/* line 225, ../sass/cy-index.scss */
 .footer-weidai {
   height: 2rem;
   line-height: 2rem;
@@ -1489,7 +1507,7 @@ img {
   margin-bottom: 2.6rem; }
 
 /*-----------------------正在支付 mj-ls-pay.html----------------------*/
-/* line 222, ../sass/cy-index.scss */
+/* line 234, ../sass/cy-index.scss */
 .modBox {
   background-color: rgba(0, 0, 0, 0.7);
   width: 6rem;
@@ -1498,56 +1516,56 @@ img {
   left: 30%;
   top: 15%; }
 
-/* line 230, ../sass/cy-index.scss */
+/* line 242, ../sass/cy-index.scss */
 .add-more {
   width: 6rem;
   background-position: center;
   padding-left: 0; }
 
-/* line 235, ../sass/cy-index.scss */
+/* line 247, ../sass/cy-index.scss */
 .mod_add {
   font-size: 0.6rem;
   color: #ffffff;
   text-align: center; }
 
-/* line 240, ../sass/cy-index.scss */
+/* line 252, ../sass/cy-index.scss */
 .po_fi {
   position: fixed;
   bottom: .2rem;
   width: 100%;
   margin-bottom: .2rem; }
 
-/* line 246, ../sass/cy-index.scss */
+/* line 258, ../sass/cy-index.scss */
 .po_ac {
   margin-bottom: .2rem; }
 
 /*-----------------------支付成功 pay-success.html ----------------------*/
-/* line 250, ../sass/cy-index.scss */
+/* line 262, ../sass/cy-index.scss */
 .icon-pay_s {
   font-size: 3.5rem;
   margin-top: 1rem;
   color: #3db73e;
   text-align: center; }
 
-/* line 257, ../sass/cy-index.scss */
+/* line 269, ../sass/cy-index.scss */
 .pay_s_char {
   color: #333333;
   line-height: 2.5rem;
   text-align: center; }
 
-/* line 262, ../sass/cy-index.scss */
+/* line 274, ../sass/cy-index.scss */
 .pay_input {
   overflow: hidden;
   width: 50%;
   margin: 0 auto; }
-  /* line 266, ../sass/cy-index.scss */
+  /* line 278, ../sass/cy-index.scss */
   .pay_input .pay_l {
     float: left; }
-  /* line 269, ../sass/cy-index.scss */
+  /* line 281, ../sass/cy-index.scss */
   .pay_input .pay_r {
     float: right; }
 
-/* line 272, ../sass/cy-index.scss */
+/* line 284, ../sass/cy-index.scss */
 .pay_s_text {
   margin-top: .8rem;
   font-size: .6rem;
@@ -1555,7 +1573,7 @@ img {
   color: #666666; }
 
 /*-----------------------支付失败 pay_failed.html ----------------------*/
-/* line 279, ../sass/cy-index.scss */
+/* line 291, ../sass/cy-index.scss */
 .icon-pay_f {
   font-size: 3.5rem;
   margin-top: 1rem;
@@ -1563,12 +1581,12 @@ img {
   text-align: center; }
 
 /*-----------------------我的收藏-店铺 collect-store.html----------------------*/
-/* line 288, ../sass/cy-index.scss */
+/* line 300, ../sass/cy-index.scss */
 .coll_top {
   width: 100%;
   border-top: 1px solid #cccccc;
   overflow: hidden; }
-  /* line 292, ../sass/cy-index.scss */
+  /* line 304, ../sass/cy-index.scss */
   .coll_top li {
     position: relative;
     float: left;
@@ -1577,7 +1595,7 @@ img {
     line-height: 2rem;
     text-align: center;
     border-bottom: 1px solid #cccccc; }
-    /* line 300, ../sass/cy-index.scss */
+    /* line 312, ../sass/cy-index.scss */
     .coll_top li:before {
       content: "";
       position: absolute;
@@ -1585,72 +1603,72 @@ img {
       right: 0;
       border-right: 1px solid #cccccc;
       height: 100%; }
-    /* line 308, ../sass/cy-index.scss */
+    /* line 320, ../sass/cy-index.scss */
     .coll_top li:last-child:before {
       border-right: 0 none; }
-  /* line 312, ../sass/cy-index.scss */
+  /* line 324, ../sass/cy-index.scss */
   .coll_top .coll_1 {
     border-bottom: 1px solid #e02d2a;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHBAMAAADDgsFQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEUAAADQMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh0AAADcrmEfAAAADnRSTlMAA7c8fuQVQvy6GOe9gZdCRjsAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAALUlEQVQI12NgYBBgAAFlEMHyNAFIVrybwMDAte/dEwYGmXfvXhQw3Hv37t0uAKQaDb+LHVEFAAAAAElFTkSuQmCC) 50% 100% no-repeat;
     -webkit-background-size: .25rem auto;
     background-size: .25rem auto; }
-  /* line 318, ../sass/cy-index.scss */
+  /* line 330, ../sass/cy-index.scss */
   .coll_top a {
     display: block;
     color: #333333; }
-  /* line 322, ../sass/cy-index.scss */
+  /* line 334, ../sass/cy-index.scss */
   .coll_top i {
     color: #e02d2a; }
 
-/* line 327, ../sass/cy-index.scss */
+/* line 339, ../sass/cy-index.scss */
 .icon-red {
   line-height: 1.8rem;
   color: #e02d2a;
   font-size: .8rem; }
 
 /*-----------------------我的收藏-商品 collect-comm.html----------------------*/
-/* line 333, ../sass/cy-index.scss */
+/* line 345, ../sass/cy-index.scss */
 .coll_com {
   font-size: .6rem;
   line-height: .7rem;
   color: #333333; }
-  /* line 337, ../sass/cy-index.scss */
+  /* line 349, ../sass/cy-index.scss */
   .coll_com div {
     height: 1.4rem;
     overflow: hidden; }
-  /* line 341, ../sass/cy-index.scss */
+  /* line 353, ../sass/cy-index.scss */
   .coll_com p {
     font-size: .6rem;
     line-height: .9rem; }
-  /* line 345, ../sass/cy-index.scss */
+  /* line 357, ../sass/cy-index.scss */
   .coll_com em {
     color: #e02d2a; }
 
-/* line 349, ../sass/cy-index.scss */
+/* line 361, ../sass/cy-index.scss */
 .icon-red_1 {
   line-height: 2.95rem;
   color: #e02d2a;
   font-size: .8rem; }
 
 /*-----------------------我的地址 my-site.html----------------------*/
-/* line 355, ../sass/cy-index.scss */
+/* line 367, ../sass/cy-index.scss */
 .my_site {
   line-height: 2rem; }
 
-/* line 359, ../sass/cy-index.scss */
+/* line 371, ../sass/cy-index.scss */
 .my_ul {
   overflow: hidden; }
-  /* line 361, ../sass/cy-index.scss */
+  /* line 373, ../sass/cy-index.scss */
   .my_ul li {
     float: left;
     width: 100%; }
-  /* line 366, ../sass/cy-index.scss */
+  /* line 378, ../sass/cy-index.scss */
   .my_ul .icon-my_s {
     font-size: .6rem;
     line-height: 1rem;
     float: left;
     color: #e02d2a; }
-  /* line 372, ../sass/cy-index.scss */
+  /* line 384, ../sass/cy-index.scss */
   .my_ul .my_li_char {
     float: left;
     width: 13rem;
@@ -1660,34 +1678,34 @@ img {
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #333333; }
-  /* line 382, ../sass/cy-index.scss */
+  /* line 394, ../sass/cy-index.scss */
   .my_ul .my_li_r {
     float: right;
     line-height: 1rem;
     font-size: .7rem;
     color: #3db73e; }
-    /* line 387, ../sass/cy-index.scss */
+    /* line 399, ../sass/cy-index.scss */
     .my_ul .my_li_r span {
       color: #999999; }
 
-/* line 392, ../sass/cy-index.scss */
+/* line 404, ../sass/cy-index.scss */
 .red {
   background-color: #e02d2a; }
 
 /*-----------------------新增发票 bill-add.html----------------------*/
-/* line 396, ../sass/cy-index.scss */
+/* line 408, ../sass/cy-index.scss */
 .bill_add_text {
   width: 3.5rem;
   float: left;
   line-height: 1.3rem; }
 
-/* line 401, ../sass/cy-index.scss */
+/* line 413, ../sass/cy-index.scss */
 .text_w_1 {
   width: 11.5rem;
   float: left; }
 
 /*-----------------------意见反馈 opinion.html ----------------------*/
-/* line 407, ../sass/cy-index.scss */
+/* line 419, ../sass/cy-index.scss */
 .sec_lose {
   width: 50%;
   height: 3.5rem;
@@ -1701,11 +1719,11 @@ img {
   line-height: 3.5rem; }
 
 /*-------------------卖家中心 centre.html--------------------------*/
-/* line 420, ../sass/cy-index.scss */
+/* line 432, ../sass/cy-index.scss */
 .cen_red {
   background-color: #e02d2a;
   height: 4rem; }
-  /* line 424, ../sass/cy-index.scss */
+  /* line 436, ../sass/cy-index.scss */
   .cen_red .cen_char {
     text-align: center;
     color: #FFFFFF;
@@ -1718,7 +1736,7 @@ img {
     text-shadow: 0px 1px 2px #000;
     font-weight: bold; }
 
-/* line 439, ../sass/cy-index.scss */
+/* line 451, ../sass/cy-index.scss */
 .cen_head {
   position: absolute;
   top: 2.4rem;
@@ -1730,7 +1748,7 @@ img {
   -moz-border-radius: 3.2rem;
   -webkit-border-radius: 3.2rem;
   border: 3px solid #FFFFFF; }
-  /* line 450, ../sass/cy-index.scss */
+  /* line 462, ../sass/cy-index.scss */
   .cen_head img {
     width: 100%;
     border-radius: 3.2rem;
@@ -1738,16 +1756,16 @@ img {
     -moz-border-radius: 3.2rem;
     -webkit-border-radius: 3.2rem; }
 
-/* line 458, ../sass/cy-index.scss */
+/* line 470, ../sass/cy-index.scss */
 .cen_top {
   margin-top: 1.6rem; }
 
-/* line 461, ../sass/cy-index.scss */
+/* line 473, ../sass/cy-index.scss */
 .icon-c {
   line-height: 1.7rem;
   color: #666666;
   font-size: .8rem; }
-  /* line 465, ../sass/cy-index.scss */
+  /* line 477, ../sass/cy-index.scss */
   .icon-c i {
     width: .8rem;
     height: .8rem;
@@ -1765,8 +1783,155 @@ img {
     float: left;
     margin-left: .4rem;
     letter-spacing: -.1rem; }
-  /* line 483, ../sass/cy-index.scss */
+  /* line 495, ../sass/cy-index.scss */
   .icon-c div {
     float: left; }
+
+/*------------------绑定银行卡 bind-card.html---------------------------*/
+/* line 501, ../sass/cy-index.scss */
+.bin-char {
+  text-align: center;
+  line-height: 2rem;
+  color: #333333; }
+
+/* line 506, ../sass/cy-index.scss */
+.bin_text {
+  overflow: hidden; }
+  /* line 508, ../sass/cy-index.scss */
+  .bin_text .bin_l {
+    width: 49%;
+    float: left;
+    line-height: 1.65rem;
+    height: 1.65rem; }
+
+/* line 516, ../sass/cy-index.scss */
+.m-input-1 {
+  width: 100%;
+  height: 1.65rem;
+  line-height: 1.65rem; }
+
+/* line 522, ../sass/cy-index.scss */
+.m-select-wrap-1 {
+  position: relative;
+  display: block;
+  height: 1.65rem;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  /* line 532, ../sass/cy-index.scss */
+  .m-select-wrap-1 .m-select-draw-con {
+    position: absolute;
+    z-index: 2;
+    width: 120%;
+    height: 1.65rem;
+    color: #666666;
+    text-indent: .4rem;
+    background-color: transparent;
+    border: 0 none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif; }
+  /* line 547, ../sass/cy-index.scss */
+  .m-select-wrap-1 .m-logo {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 1.3rem;
+    height: 1.65rem;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-left: 1px solid #cccccc; }
+  /* line 559, ../sass/cy-index.scss */
+  .m-select-wrap-1 .m-icon-arrow-down {
+    color: #bcbcbd;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 1.65rem; }
+
+/* line 567, ../sass/cy-index.scss */
+.m-button-1 {
+  background: #e02d2a;
+  width: 49%;
+  float: right;
+  line-height: 1.65rem;
+  height: 1.65rem; }
+
+/* line 575, ../sass/cy-index.scss */
+.bind_red {
+  color: #e02d2a;
+  font-size: .6rem; }
+
+/*-----------------------提现记录失败 wd-re-failure.html----------------------*/
+/* line 580, ../sass/cy-index.scss */
+.wd_top {
+  overflow: hidden;
+  line-height: 2.1rem; }
+  /* line 583, ../sass/cy-index.scss */
+  .wd_top .wd_top_l {
+    float: left;
+    -ms-text-align-last: right;
+    text-align: left; }
+  /* line 588, ../sass/cy-index.scss */
+  .wd_top .wd_top_r {
+    float: right;
+    text-align: right; }
+
+/* line 593, ../sass/cy-index.scss */
+.wd_bottom {
+  font-size: .6rem;
+  text-align: left; }
+
+/*---------------------提现记录 wd-record.html------------------------*/
+/* line 598, ../sass/cy-index.scss */
+.wd_w {
+  width: 13rem;
+  margin: 0 auto;
+  margin-top: .4rem; }
+
+/* line 603, ../sass/cy-index.scss */
+.wd_rebox {
+  overflow: hidden;
+  padding-top: .4rem;
+  padding-bottom: .4rem; }
+  /* line 608, ../sass/cy-index.scss */
+  .wd_rebox .wd_re_l {
+    float: left;
+    text-align: left;
+    line-height: 1rem;
+    color: #333333; }
+    /* line 613, ../sass/cy-index.scss */
+    .wd_rebox .wd_re_l span {
+      font-size: .6rem;
+      color: #666666; }
+  /* line 618, ../sass/cy-index.scss */
+  .wd_rebox .wd_re_r {
+    float: right;
+    text-align: right;
+    line-height: 2rem;
+    color: #666666; }
+
+/*-----------------申请提现 wd-apply.html----------------------------*/
+/* line 627, ../sass/cy-index.scss */
+.wd_app_char {
+  line-height: 2.7rem; }
+  /* line 629, ../sass/cy-index.scss */
+  .wd_app_char span {
+    color: #e02d2a;
+    margin-left: 1rem; }
+
+/* line 634, ../sass/cy-index.scss */
+.wd_app_b {
+  font-size: .6rem;
+  text-align: left;
+  margin-top: .6rem;
+  margin-bottom: .6rem; }
 
 /*# sourceMappingURL=cy-index.css.map */

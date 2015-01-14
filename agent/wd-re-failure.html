@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no">
+    <title>提现记录</title>
+    <link rel="stylesheet" href="../v20/css/cy-index.css"/>
+</head>
+<body>
+<div class="g-wrap bor_bottom"><!--外层wrap 640-->
+    <div class="g-wrap-show">
+        <div class="wd_top bor_bottom_1">
+            <div class="wd_top_l">申请人</div>
+            <div class="wd_top_r">张东平</div>
+        </div>
+        <div class="wd_top bor_bottom_1">
+            <div class="wd_top_l">申请金额</div>
+            <div class="wd_top_r">&yen;1000.00</div>
+        </div>
+        <div class="wd_top bor_bottom_1">
+            <div class="wd_top_l">提现银行卡</div>
+            <div class="wd_top_r">
+                广发银行  储蓄卡<br>
+                ****  ****  ****  6555<br>
+                张东平<br>
+
+            </div>
+        </div>
+        <div class="wd_top bor_bottom_1">
+            <div class="wd_top_l">申请时间
+            </div>
+            <div class="wd_top_r">2014-09-12  10:20:15</div>
+        </div>
+        <div class="wd_top bor_bottom_1">
+            <div class="wd_top_l">技术时间</div>
+            <div class="wd_top_r">2014-09-12  10:20:15</div>
+        </div>
+        <div class="wd_top bor_bottom_1">
+            <div class="wd_top_l">提现状态</div>
+            <div class="wd_top_r red_char">提现失败</div>
+        </div>
+        <div class="red_char wd_bottom p_top">
+            账户异常原因可能是开户人姓名与实际不符，请修改银行卡绑定信息！
+        </div>
+    </div>
+
+</div>
+<div class="g-wrap footer-weidai icon-weidai po_ac">
+    &#xf652;
+</div>
+
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>

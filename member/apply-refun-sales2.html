@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta content="telephone=no" name="format-detection">
     <meta name="format-detection" content="telephone=no">
-    <title>正在支付</title>
-    <link rel="stylesheet" href="../v20/css/cy-index.css"/>
+    <title>等待买家发货</title>
+    <link rel="stylesheet" href="../v20/css/member.css"/>
 </head>
 <body>
-<body>
-<div class="m-loading" style="display: block;">
-    <div class="m-load-gif">
-    </div>
-    <p>正在加载...</p>
-</div>
+<div class="g-wrap refun-wait-wrap">
+    <div class="refun-succeed-con">
+        <h2><span class="red-font">&#xf61d;</span>&nbsp;请等待商家收货并退款</h2>
+        <div class="rw-ifo2">
+            如果商家同意：<em>剩余03天00小时,逾期未修改申请将自动关闭</em>
+        </div>
+        <div class="rw-ifo2">
+            如果商家拒绝：<em>剩余10天00小时,逾期未处理您可以要求微代平台介入协助处理</em>
+        </div>
 
-<div class="footer-weidai icon-weidai po_fi">
-    &#xf652;
+        <div class="refun-wait-btns">
+            <button type="button" class="m-button-s rw-btn">查看退货物流信息</button>
+            <button type="button" class="m-button-s rw-btn" disabled="disabled">要求微代平台介入</button>
+        </div>
+    </div>
+
+    <div class="footer-weidai icon-weidai foot-fxb">
+        &#xf652;
+    </div>
 </div>
+</body>
 <script>
     (function (doc, win) {
         var docEl = doc.documentElement,
@@ -36,5 +46,4 @@
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
 </script>
-</body>
 </html>

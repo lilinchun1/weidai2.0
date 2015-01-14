@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>退款等待处理2</title>
+    <link rel="stylesheet" href="../v20/css/member.css"/>
+</head>
+<body>
+<div class="g-wrap refun-wait-wrap">
+    <div class="refun-succeed-con">
+        <h2><span class="red-font">&#xf61d;</span>&nbsp;请退回货品给商家</h2>
+        <div class="rw-ifo2">
+            填写物流信息时间：<em>剩余03天00小时,逾期未填写物流信息 申请将自动关闭</em>
+        </div>
+        <div class="rw-ifo3">
+            请买家自行联系物流公司进行退货
+        </div>
+    </div>
+    <div class="refun-sales-address">
+        <label>退货地址：</label>
+        <i>
+            辽宁省大连市沙河口区中龙园A206易享科技(座
+            机：84396907)(116000),张东平,15898162970
+        </i>
+    </div>
+    <div class="g-wrap-show">
+        <div class="apply-refun-item">
+            <label>
+                选择物流：
+            </label>
+            <div class="m-select-wrap">
+                <select class="m-select-draw-con">
+                    <option>请选择</option>
+                    <option>2014</option>
+                </select>
+                <div class="m-logo">
+                    <div class="m-icon-arrow-down icon-down">
+                        &#xf642;
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="apply-refun-item">
+            <label>
+                物流编号：
+            </label>
+            <input type="text" class="m-input apply-refun-input" placeholder="请输入内容"/>
+        </div>
+
+        <div class="apply-refun-item">
+            <label>
+                &nbsp;
+            </label>
+            <span>请正确填写，以保证商家能够快速退款给您</span>
+        </div>
+
+        <div class="apply-refun-item">
+            <label>
+                退货说明：
+            </label>
+            <textarea  class="m-textarea apply-refun-input" placeholder=""></textarea>
+        </div>
+        <div class="refun-wait-btns mgt30">
+            <button type="button" class="m-button-s rw-btn">修改退款申请</button>
+            <button type="button" class="m-button-s rw-btn" disabled="disabled">撤销退款申请</button>
+        </div>
+        <div class="rw-ifo">
+            退款/售后申请尽快联系客服操作！
+        </div>
+    </div>
+    <div class="footer-weidai icon-weidai">
+        &#xf652;
+    </div>
+</div>
+<div class="m-alert-submit" style="display: block;">
+    <p class="icon-submit">
+        &#xf636;
+    </p>
+    <p class="alert-affirm-info">
+        您已成功申请售后,请等待客服处理申请。
+    </p>
+    <button type="button" class="m-button-s">提交</button>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

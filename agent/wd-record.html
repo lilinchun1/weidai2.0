@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no">
+    <title>提现记录</title>
+    <link rel="stylesheet" href="../v20/css/cy-index.css"/>
+</head>
+<body>
+<div class="g-wrap bor_bottom p_bottom"><!--外层wrap 640-->
+    <div class="g-wrap-show">
+        <div class="m-select-wrap wd_w">
+            <select class="m-select-draw-con">
+                <option>请选择</option>
+                <option>2014</option>
+            </select>
+            <div class="m-logo">
+                <div class="m-icon-arrow-down icon-down">
+                    &#xf642;
+                </div>
+            </div>
+        </div>
+        <div class="m-select-wrap wd_w">
+            <select class="m-select-draw-con">
+                <option>请选择</option>
+                <option>2014</option>
+            </select>
+            <div class="m-logo">
+                <div class="m-icon-arrow-down icon-down">
+                    &#xf642;
+                </div>
+            </div>
+        </div>
+        <button class="m-button red wd_w" type="button">查 询</button>
+    </div>
+</div>
+<div class="g-wrap"><!--外层wrap 640-->
+    <div class="g-wrap-show">
+            <div class="bor_bottom_1 wd_rebox">
+                <a>
+                    <div class="wd_re_l">
+                        <p class="red_char">提现失败</p><!--red_char 控制字体颜色-->
+                        <span>2014-12-20  19:32:42</span>
+                    </div>
+                    <div class="icon-right wd_re_r">
+                        &yen;1000.00元 &#xf634;
+                    </div>
+                </a>
+            </div>
+        <div class="bor_bottom_1 wd_rebox">
+            <a>
+                <div class="wd_re_l">
+                    <p>提现成功</p>
+                    <span>2014-12-20  19:32:42</span>
+                </div>
+                <div class="icon-right wd_re_r">
+                    &yen;1000.00元 &#xf634;
+                </div>
+            </a>
+        </div>
+        <div class="bor_bottom_1 wd_rebox">
+            <a>
+                <div class="wd_re_l">
+                    <p class="red_char">提现失败</p>
+                    <span>2014-12-20  19:32:42</span>
+                </div>
+                <div class="icon-right wd_re_r">
+                    &yen;1000.00元 &#xf634;
+                </div>
+            </a>
+        </div>
+        <div class="bor_bottom_1 wd_rebox">
+            <a>
+                <div class="wd_re_l">
+                    <p class="red_char">提现失败</p>
+                    <span>2014-12-20  19:32:42</span>
+                </div>
+                <div class="icon-right wd_re_r">
+                    &yen;1000.00元 &#xf634;
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+<div class="g-wrap footer-weidai icon-weidai po_ac">
+    &#xf652;
+</div>
+
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>

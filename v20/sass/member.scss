@@ -461,3 +461,36 @@
   font-size: $fz12;
 }
 /*-----------------------apply-refun-wait.html end----------------------*/
+
+/*-----------------------apply-refun-sales.html start----------------------*/
+.refun-sales-address{
+  padding: .75rem .5rem;
+  border-bottom: 1px solid $border-color;
+  overflow: hidden;
+  label{
+    float: left;
+    width: 3.5rem;
+  }
+  i{
+    padding-left: 3.5rem;
+    display: block;
+    color: $font-color666;
+  }
+}
+/*-----------------------apply-refun-sales.html end----------------------*/
+
+/*-----------------------apply-refun-weixin.html start----------------------*/
+.ar-weixin{
+  p{
+    padding: .75rem 0;
+    color: $red;
+    font-size: $fz12;
+    text-align: center;
+  }
+  .ar-weixin-input{
+    height: 6.75rem;
+  }
+  .m-button{
+    background-color: $red;}
+}
+/*-----------------------apply-refun-weixin.html end----------------------*/

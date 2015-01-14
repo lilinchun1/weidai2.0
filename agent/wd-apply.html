@@ -7,20 +7,24 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta content="telephone=no" name="format-detection">
     <meta name="format-detection" content="telephone=no">
-    <title>正在支付</title>
+    <title>申请提现</title>
     <link rel="stylesheet" href="../v20/css/cy-index.css"/>
 </head>
 <body>
-<body>
-<div class="m-loading" style="display: block;">
-    <div class="m-load-gif">
+<div class="g-wrap"><!--外层wrap 640-->
+    <div class="g-wrap-show">
+        <div class="wd_app_char">账户余额 ( &yen; )<span>9500.00</span></div>
+        <input type="text" class="m-input" placeholder="请填写申请提现金额"/>
+        <div class="red_char wd_app_b p_top">
+            账户异常原因可能是开户人姓名与实际不符，请修改银行卡绑定信息！
+        </div>
     </div>
-    <p>正在加载...</p>
-</div>
 
-<div class="footer-weidai icon-weidai po_fi">
+</div>
+<div class="g-wrap footer-weidai icon-weidai po_fi">
     &#xf652;
 </div>
+
 <script>
     (function (doc, win) {
         var docEl = doc.documentElement,
