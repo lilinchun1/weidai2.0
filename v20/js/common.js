@@ -7,7 +7,7 @@ var ApiUrl    = "http://localhost/wedai/mobile";
 var StaticUrl = "http://localhost/wedai/wap/template";
 var pagesize  = 10;
 
-
+var ajax_alert=true;
 ;(function($){$.fn.picLazyLoad=function(settings){var $this=$(this),_winScrollTop=0,_winHeight=$(window).height();settings=$.extend({threshold:0,placeholder:'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC'},settings||{});lazyLoadPic();$(window).on('scroll',function(){_winScrollTop=$(window).scrollTop();lazyLoadPic();});function lazyLoadPic(){$this.each(function(){var $self=$(this);if($self.is('img')){if($self.attr('data-original')){var _offsetTop=$self.offset().top;if((_offsetTop-settings.threshold)<=(_winHeight+_winScrollTop)){$self.attr('src',$self.attr('data-original'));$self.removeAttr('data-original');}}}else{if($self.attr('data-original')){if($self.css('background-image')=='none'){$self.css('background-image','url('+settings.placeholder+')');}
 var _offsetTop=$self.offset().top;if((_offsetTop-settings.threshold)<=(_winHeight+_winScrollTop)){$self.css('background-image','url('+$self.attr('data-original')+')');$self.removeAttr('data-original');}}}});}}})(Zepto);
 
@@ -19,7 +19,9 @@ $(function(){
 	if(!$("#J_loading").length){
 		$('<div class="m-loading" id="J_loading" style="display: none;z-index: 9999"><div class="m-load-gif"></div><p>正在加载...</p></div>').prependTo("body");
 	}
+	
 	$(document).on("ajaxBeforeSend",function(e,xhr,options){
+	if(ajax_alert==true)
 		$("#J_loading").show();
 	}).on("ajaxComplete",function(e,xhr,options){
 		$("#J_loading").hide();

@@ -1,0 +1,383 @@
+@charset "utf-8";
+/**
+ * Created with IntelliJ IDEA.
+ * User: cy
+ * Date: 2015/1/12
+ * Time: 11:05
+ * To change this template use File | Settings | File Templates.
+ */
+html{
+  font-size: 40rem;
+}
+@import "var";
+@import "rest";
+@import "input";
+@import "btns";
+@import "alert";
+@import "mod-item";
+@font-face {
+  font-family: 'icomoon';
+  src:url('../img/fonts/icomoon.eot');
+  src:url('../img/fonts/icomoon.eot#iefix') format('embedded-opentype'),
+  url('../img/fonts/icomoon.woff') format('woff'),
+  url('../img/fonts/icomoon.ttf') format('truetype'),
+  url('../img/fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+img{
+  width: 100%;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+button[disabled],{
+  cursor: default;
+  background-color: $border-color;
+  color: #FFFFFF;
+
+}
+input[type="checkbox"] {
+  width:.6rem;
+  height: .6rem;
+  border: 1px solid $border-color;
+  border-radius:.1rem;
+  -o-border-radius:.1rem;
+  -moz-border-radius:.1rem;
+  -webkit-border-radius:.1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input[type="checkbox"]:checked {
+  background: image-url("../img/or_img/sus-checked.png") 0 0 no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+
+a{
+  display: block;
+}
+.dn{
+  display: none;
+}
+.f_right{
+  float: right;
+}
+.or_height h2{
+  height: 2.6rem;
+  overflow: hidden;
+}
+.bor_bottom{
+  border-bottom:1px solid $border-color;
+}
+.bor_top{
+  border-top:1px solid $border-color;
+}
+.hidden{
+  height: 1.3rem;
+}
+.p_bottom{
+  padding-bottom: .4rem;
+}
+.p_bottom_1{
+  padding-bottom: .2rem;
+}
+.p_top{
+  padding-top: .4rem;
+
+}
+.m_top{
+  margin-top: .4rem;
+}
+.m_bottom{
+  margin-bottom: .4rem;
+}
+.m_top_2{
+  margin-top: .8rem;
+}
+.orange{
+  background-color: #ff9900;
+}
+.bor_bottom_1{
+  border-bottom: 1px $border-color dashed;
+}
+.red_char{
+  color: $red;
+}
+.green_char{
+  color: $green;
+}
+.red{
+  background-color: $red;
+}
+.footer-weidai{
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #e02d2a;
+  font-size: 6rem;
+  margin-bottom: 2.6rem;
+}
+.po_fi{
+  position: fixed;
+  bottom:.2rem;
+  width: 100%;
+  margin-bottom: .2rem;
+}
+.po_ac{
+  margin-bottom: .2rem;
+}
+.po_ac_1{
+  margin-top: 14rem;
+  margin-bottom: .2rem;
+}
+.po_ac_2{
+  margin-top: 5rem;
+  margin-bottom: .2rem;
+}
+.po_ac_3{
+  margin-top: 12rem;
+  margin-bottom: .2rem;
+}
+.sec_lose{
+  width:50%;
+  height:3.5rem;
+  background:rgba(0,0,0,0.7);
+  position:fixed;
+  left:25%;
+  right: 25%;
+  top:30%;
+  text-align: center;color: #FFFFFF;
+  line-height: 3.5rem;
+
+}
+.m_bootom_1{
+  margin-bottom: 2.6rem;
+}//用于底部控制高度
+/*------------------绑定银行卡 bind-card.html---------------------------*/
+.bin-char{
+  text-align: center;
+  line-height: 2rem;
+  color: $font-color333;
+}
+.bin_text{
+  overflow: hidden;
+  .bin_l{
+    width: 59%;
+    float: left;
+    line-height: 1.65rem;
+    height: 1.65rem;
+  }
+
+}
+.m-input-1{
+  width: 100%;
+  @extend %input-text;
+  height: 1.72rem;
+  line-height: 1.72rem;
+  color: $font-color666;
+}
+.m-select-wrap-1 {
+  position: relative;
+  display: block;
+  height: 1.72rem;
+  overflow: hidden;
+  border: 1px solid $border-color;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  .m-select-draw-con {
+    position: absolute;
+    z-index: 2;
+    width: 120%;
+    height: 1.72rem;
+    color: $font-color666;
+    text-indent: .4rem;
+    background-color: transparent;
+    border: 0 none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  }
+  .m-logo {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 1.3rem;
+    height: 1.72rem;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-left: 1px solid $border-color;
+  }
+  .m-icon-arrow-down {
+    color: #bcbcbd;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 1.72rem;
+  }
+}
+.m-button-1{
+  @extend %btn-100;
+  background: $red;
+  width: 38%;
+  float: right;
+  line-height: 1.72rem;
+  height: 1.72rem;
+}
+.bind_red{
+  color: $red;
+  font-size: .6rem;
+}
+/*-----------------------提现记录失败 wd-re-failure.html----------------------*/
+.wd_top{
+  overflow: hidden;
+  line-height: 2.1rem;
+  .wd_top_l{
+    float: left;
+    -ms-text-align-last: right;
+    text-align:left;
+  }
+  .wd_top_r{
+    float:right;
+    text-align: right;
+  }
+}
+.wd_bottom{
+  font-size: .6rem;
+  text-align: left;
+}
+/*---------------------提现记录 wd-record.html------------------------*/
+.wd_w{
+  width: 13rem;
+  margin: 0 auto;
+  margin-top: .4rem;
+}
+.wd_rebox{
+  overflow: hidden;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+
+  .wd_re_l{
+    float: left;
+    text-align:left;
+    line-height: 1rem;
+    color: $font-color333;
+    span{
+      font-size: .6rem;
+      color: $font-color666;
+    }
+  }
+  .wd_re_r{
+    float:right;
+    text-align: right;
+    line-height: 2rem;
+    color: $font-color666;
+  }
+
+}
+/*-----------------申请提现 wd-apply.html----------------------------*/
+.wd_app_char{
+  line-height: 2.7rem;
+  span{
+    color: $red;
+    margin-left: 1rem;
+  }
+}
+.wd_app_b{
+  font-size: .6rem;
+  text-align: left;
+  margin-top: .6rem;
+  margin-bottom: .6rem;
+}
+/*-----------------------申请开店----------------------*/
+.sus_logo{
+  margin-top: 2rem;
+}
+.sue_red{
+  font-size: .6rem;
+  color: $red;
+  text-align: center;
+  line-height:1.8rem;
+}
+.s_bottom{
+  margin-bottom:.6rem;
+}
+.sus-weidai{
+  height: 4rem;
+  line-height: 2rem;
+  text-align: center;
+  color: $red;
+  font-size: 10rem;
+}
+.sus_input{
+  line-height: 1.7rem;
+  color: #818181;
+  font-size: .6rem;
+  span{
+    color:#fdc270;
+  }
+
+}
+/*-----------------------登陆 register.html----------------------*/
+.re_top{
+  margin-top: 5rem;
+}
+.re_w_show{
+  width: 14rem;
+  margin: 0 auto;
+}
+.re_icon{
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  height: 1.72rem;
+  line-height: 1.72rem;
+  color: $font-color666;
+  .icon-re_icon{
+    width: .7rem;
+    float: left;
+    height: 1.72rem;
+    line-height: 1.72rem;
+  }
+  .re_w{
+    width: 13rem;
+    @extend %input-text;
+    border: none;
+    float: left;
+    height: 1.72rem;
+    line-height: 1.72rem;
+
+  }
+}
+.re_char{
+  line-height: 1.5rem;
+  overflow: hidden;
+  .re_char_l{
+    float: left;
+    color: $font-color666;
+  }
+  .re_char_r{
+    float: right;
+    color: $blue;
+  }
+}
