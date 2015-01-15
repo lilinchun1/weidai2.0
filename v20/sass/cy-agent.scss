@@ -49,8 +49,8 @@ button[disabled],{
 
 }
 input[type="checkbox"] {
-  width:.6rem;
-  height: .6rem;
+  width:.5rem;
+  height: .5rem;
   border: 1px solid $border-color;
   border-radius:.1rem;
   -o-border-radius:.1rem;
@@ -108,6 +108,9 @@ a{
 }
 .m_top_2{
   margin-top: .8rem;
+}
+.m_bottom_2{
+  margin-bottom: .8rem;
 }
 .orange{
   background-color: #ff9900;
@@ -177,10 +180,10 @@ a{
 .bin_text{
   overflow: hidden;
   .bin_l{
-    width: 59%;
+    width: 10rem;
     float: left;
-    line-height: 1.65rem;
-    height: 1.65rem;
+    line-height: 1.72rem;
+    height: 1.72rem;
   }
 
 }
@@ -239,7 +242,7 @@ a{
 .m-button-1{
   @extend %btn-100;
   background: $red;
-  width: 38%;
+  width:4.5rem;
   float: right;
   line-height: 1.72rem;
   height: 1.72rem;
@@ -309,7 +312,7 @@ a{
   margin-top: .6rem;
   margin-bottom: .6rem;
 }
-/*-----------------------申请开店----------------------*/
+/*-----------------------申请开店 sus-apply.html----------------------*/
 .sus_logo{
   margin-top: 2rem;
 }
@@ -379,5 +382,16 @@ a{
   .re_char_r{
     float: right;
     color: $blue;
+  }
+}
+/*----------------找回密码 find-code.html-----------------------------*/
+.find-img{
+  width:4.5rem;
+  float:right;
+  border: 1px solid $border-color;
+  height: 1.72rem;
+  img{
+    width:4.5rem;
+
   }
 }
