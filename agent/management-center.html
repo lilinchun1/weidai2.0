@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>管理中心</title>
+    <link rel="stylesheet" href="../v20/css/agent.css"/>
+</head>
+<body>
+<div class="g-wrap">
+    <header class="management-center-head">
+        <div class="head-tool">
+            <div class="tool-item icon-msg">
+                &#xf645;
+                <span>99</span>
+            </div>
+            <div class="tool-item icon-set">
+                &#xf63d;
+                <span>12</span>
+            </div>
+        </div>
+        <div class="head-info">
+            <div class="head-info-pic">
+                <img src="../v20/img/test_img/head-pic.jpg" alt=""/>
+                <span class="icon-lvs">
+                    &#xf600;
+                    <!--
+                        lv1:&#xf600;
+                        lv2:&#xf601;
+                        lv3:&#xf602;
+                        lv4:&#xf603;
+                        lv5:&#xf604;
+                        lv6:&#xf605;
+                    -->
+                </span>
+            </div>
+            <h1>Anglebaby 微代小店</h1>
+            <em>积分：5000</em>
+            <em>余额：5000.00</em>
+        </div>
+    </header>
+    <ul class="tab-lab">
+        <li>
+            <b>5,645</b>
+
+            <p>我的业绩</p>
+        </li>
+        <li>
+            <b>564,554</b>
+
+            <p>团队业绩</p>
+        </li>
+        <li>
+            <b>5,645.00</b>
+
+            <p>我的收入</p>
+        </li>
+    </ul>
+    <ul class="function-list">
+        <li>
+            <a href="">
+                <div class="icon-logos">
+                    &#xf640;
+                </div>
+                <p>
+                    我的店铺
+                </p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <div class="icon-logos">
+                    &#xf61c;
+                </div>
+                <p>
+                    我的仓库
+                </p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <div class="icon-logos">
+                    &#xf65a;
+                </div>
+                <p>
+                    订单管理
+                </p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <div class="icon-logos">
+                    &#xf619;
+                </div>
+                <p>
+                    我的团队
+                </p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <div class="icon-logos">
+                    &#xf632;
+                </div>
+                <p>
+                    我的收入
+                </p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <div class="icon-logos">
+                    &#xf646;
+                </div>
+                <p>
+                    销售管理
+                </p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <div class="icon-logos">
+                    &#xf63c;
+                </div>
+                <p>
+                    任务中心
+                </p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <div class="icon-logos">
+                    &#xf608;
+                </div>
+                <p>
+                    新手宝典
+                </p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <div class="icon-logos">
+                    &#xf610;
+                </div>
+                <p>
+                    活动大厅
+                </p>
+            </a>
+        </li>
+    </ul>
+    <div class="footer-weidai icon-weidai">
+        &#xf652;
+    </div>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>
