@@ -54,11 +54,6 @@ input[type="checkbox"] {
   outline: none;
 }
 
-input[type="checkbox"]:checked {
-  background: image-url("checked.png") 0 0 no-repeat;
-  -webkit-background-size: 100%;
-  background-size: 100%;
-}
 
 /*select 下拉框*/
 .m-select-wrap {

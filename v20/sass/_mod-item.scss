@@ -235,6 +235,18 @@
       color: $red;
     }
   }
+
+}
+.m-footer-btn2{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  z-index: 9;
+  width: 100%;
+  height: 2.5rem;
+  background: #222222;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
   .icon-left-btn{
     float: left;
     width: 1.5rem;
@@ -268,7 +280,9 @@
     color: #ffffff;
   }
 }
-
+.m-footer-btn:target .m-footer-btn2{
+  display: block;
+}
 /*选项卡头部*/
 .m-tab-head{
   width: 100%;
@@ -471,6 +485,32 @@
       border-bottom: 1px solid $border-color;
       a{
         display: block;
+      }
+    }
+  }
+  .left-list{
+    display: none;
+    position: absolute;
+    top: 2.25rem;
+    z-index: 9;
+    left: 0;
+    width: 8rem;
+    background: #f9f9f9;
+    border-top: 1px solid $border-color;
+    li{
+      height: 1.8rem;
+      line-height: 1.8rem;
+      border-bottom: 1px solid $border-color;
+      overflow: hidden;
+      a{
+        display: block;
+        text-indent: .5rem;
+      }
+      span{
+        margin-right: .5rem;
+        float: right;
+        font-size: $fz12;
+        font-family: 'icomoon';
       }
     }
   }
