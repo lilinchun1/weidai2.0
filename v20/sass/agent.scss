@@ -347,3 +347,189 @@
   }
 }
 /*-----------------------personal-data.html end----------------------*/
+
+/*-----------------------my-shop.html start----------------------*/
+.my-shop-head{
+  height: 4.5rem;
+  background-color: $red;
+  .my-shop-head-pic{
+    float: left;
+    margin: .5rem .625rem 0 .625rem;
+    width: 3.15rem;
+    height: 3.15rem;
+    border-radius: 3.15rem;
+    border: 2px solid #fff;
+    overflow: hidden;
+    img{
+      width: 100%;
+      border-radius: 3.15rem;
+    }
+  }
+  h2{
+    padding-top: 1rem;
+    font-size: $fz16;
+    color: #ffffff;
+  }
+
+  a{
+    display: block;
+    color: #ffffff;
+    font-family: icomoon;
+  }
+}
+.column{
+  @extend %wrap-600;
+  height: 1.95rem;
+  line-height: 1.95rem;
+  border-bottom: 1px solid $border-color;
+  .column-item{
+    margin-top: .3rem;
+    float: left;
+    width: 5rem;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    text-align: center;
+    font-family: icomoon;
+    &:nth-of-type(1),
+    &:nth-of-type(3){
+      width: 4.7rem;
+    }
+    &:nth-of-type(2){
+      position: relative;
+      width: 5.6rem;
+      &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        border-left: 1px solid $border-color;
+      }
+      &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        border-right: 1px solid $border-color;
+      }
+    }
+    span{
+      width: 2.8rem;
+      &:nth-of-type(1){
+        float: left;
+        &:after{
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 2.8rem;
+          height: 100%;
+          border-left: 1px solid $border-color;
+        }
+      }
+      &:nth-of-type(2){
+        float: right;
+      }
+    }
+    i{
+      font-size: $fz12;}
+  }
+}
+.shop-item-wrap{
+  padding: .45rem 0;
+  @extend %wrap-600;
+  border-bottom: 1px dotted $border-color;
+  .shop-item-pic{
+    float: left;
+    margin-right: .45rem;
+    padding: .1rem;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid $border-color;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    img{
+      width: 100%;
+    }
+  }
+  h2,
+  p{
+    margin-bottom: .34rem;
+    height: .75rem;
+    line-height: .75rem;
+    overflow: hidden;
+  }
+  span{
+    margin-right: .3rem;
+  }
+}
+.my-shop-add{
+  @extend %wrap-600;
+  margin-top: .4rem;
+  height: 5.5rem;
+  border: 1px dotted $border-color;
+  text-align: center;
+  h2{
+    color: #ccc;
+    font-size: 2.75rem;
+    font-family: icomoon;
+  }
+  p{
+    color: $font-color666;
+  }
+}
+.share-wrap{
+  @extend %wrap-600;
+  margin-top: .1rem;
+  h2{
+    padding: 1rem 0;
+    text-align: center;
+  }
+  .share-list{
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid $border-color;
+    li{
+      margin: 0 .5rem 1rem .5rem;
+      float: left;
+      width: 2.5rem;
+      &:nth-of-type(1) .icon-shares{
+        background-color: #43a639;
+      }
+      &:nth-of-type(2) .icon-shares{
+        background-color: #1675ba;
+      }
+      &:nth-of-type(3) .icon-shares{
+        background-color: #eca618;
+      }
+      &:nth-of-type(4) .icon-shares{
+        background-color: #f1bd24;
+      }
+      &:nth-of-type(5) .icon-shares{
+        background-color: #2abae5;
+      }
+      &:nth-of-type(6) .icon-shares{
+        background-color: #619234;
+      }
+      p{
+        text-align: center;
+        font-size: $fz12;
+      }
+    }
+    .icon-shares{
+      width: 2.5rem;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      border-radius: 2.5rem;
+      text-align: center;
+      color: #fcfffc;
+      font-size: 1.3rem;
+    }
+  }
+  .my-shop-add-clear{
+    text-align: center;
+    line-height: 2;
+  }
+}
+/*-----------------------my-shop.html end----------------------*/
