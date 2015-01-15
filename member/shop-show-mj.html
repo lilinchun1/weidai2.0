@@ -26,9 +26,38 @@
         </div>
     </header>
     <section class="shop-tw">
-        <div class="shop-tw-pic">
-            <img src="../v20/img/test_img/banner.jpg" alt=""/>
-        </div>
+        <section class="shop-banner">
+            <div class="slide" id="slide3">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="../v20/img/test_img/banner.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../v20/img/test_img/banner.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../v20/img/test_img/banner.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../v20/img/test_img/banner.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="dot">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
         <div class="shop-tw-info">
             <p>
                 薇薇卡2014冬装新款 澳洲羊羔毛皮毛一体女皮草外套长款大衣 0026
@@ -186,5 +215,18 @@
         win.addEventListener(resizeEvt, recalc, false);
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
+</script>
+<script src="../v20/js/zepto.min.js"></script>
+<script src="../v20/js/swipeSlide.min.js"></script>
+<script>
+    $(function () {
+        $('#slide3').swipeSlide({
+            continuousScroll: true,
+            speed: 3000,
+            transitionType: 'cubic-bezier(0.22, 0.69, 0.72, 0.88)'
+        }, function (i) {
+            $('.dot').children().eq(i).addClass('cur').siblings().removeClass('cur');
+        });
+    });
 </script>
 </html>

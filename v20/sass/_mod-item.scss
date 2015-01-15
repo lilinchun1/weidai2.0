@@ -254,6 +254,9 @@
     color: #535353;
     text-align: center;
     font-size: .75rem;
+    a{
+      display: block;
+    }
   }
   .m-footer-search{
     margin-top: .65rem;
@@ -280,8 +283,11 @@
     color: #ffffff;
   }
 }
-.m-footer-btn:target .m-footer-btn2{
+.m-footer-btn2:target{
   display: block;
+}
+.m-footer-btn:target .m-footer-btn2{
+  display: none;
 }
 /*选项卡头部*/
 .m-tab-head{
