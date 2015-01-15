@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>素材库</title>
+<link rel="stylesheet" href="../v20/css/agent.css"/>
+</head>
+<body>
+<div class="g-wrap">
+    <ul class="material-list">
+        <li>
+            <a href="">
+                <img src="../v20/img/test_img/banner.jpg" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="../v20/img/test_img/head-pic.jpg" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="../v20/img/test_img/2.png" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="../v20/img/test_img/1.png" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="../v20/img/test_img/head-pic.jpg" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="../v20/img/test_img/2.png" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="../v20/img/test_img/banner.jpg" alt=""/>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="../v20/img/test_img/1.png" alt=""/>
+
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="../v20/img/test_img/2.png" alt=""/>
+            </a>
+        </li>
+    </ul>
+    <footer class="m-footer">
+        © <span>微代</span> 技术支持
+    </footer>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>
