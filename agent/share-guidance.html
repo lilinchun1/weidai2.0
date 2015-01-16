@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>分享引导页</title>
+<link rel="stylesheet" href="../v20/css/agent.css"/>
+</head>
+<body>
+<div class="share-guidance-wrap">
+    <div class="share-guidance-con">
+        <p class="share-guidance-info">
+            请点击右上角 <br/>
+            将它发送给指定朋友<br/>
+            或分享到朋友圈
+        </p>
+        <p>
+            他们的支持才是你赚钱的原动力！
+        </p>
+        <button type="button" class="share-guidance-btn">我知道了</button>
+    </div>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>
