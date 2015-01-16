@@ -367,6 +367,17 @@
 /*-----------------------about-us.html start----------------------*/
 .about-us-wrap{
   background-color: $bg-color;
+  h1{
+    padding: .8rem 0 0 0;
+    text-align: center;
+    font-size: $fz18;
+  }
+  h2{
+    padding-bottom: .5rem;
+    color: $font-color999;
+    text-align: center;
+    border-bottom: 1px dotted $border-color;
+  }
   p{
     padding: .7em 0;
     text-indent: 2em;
@@ -421,6 +432,11 @@
     border-bottom: 1px dotted $border-color;
     a{
       display: block;
+    }
+    .icon-r{
+      float: right;
+      height: 1.75rem;
+      line-height: 1.75rem;
     }
   }
 }
