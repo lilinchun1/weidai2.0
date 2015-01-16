@@ -536,3 +536,42 @@
   filter: alpha(opacity=10);
   opacity: 10;
 }
+
+/*列表内容块2*/
+.brand-show-item{
+  padding: .5rem 0;
+  width: 100%;
+  border-bottom: 1px dotted $border-color;
+  overflow: hidden;
+  .brand-show-pic{
+    float: left;
+    margin-right: .75rem;
+    padding: .1rem;
+    width: 5.1rem;
+    height: 5.1rem;
+    border: 1px solid $border-color;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    img{
+      width: 100%;
+    }
+  }
+  h2{
+    height: 2rem;
+    overflow: hidden;
+  }
+  p{
+    font-size: $fz12;
+  }
+  .brand-show-item-btn{
+    margin-right: .5rem;
+    width: 3.75rem;
+    height: 1.25rem;
+    background-color: $red;
+    color: #ffffff;
+    &:nth-of-type(1){
+      background-color: #f2a44a;
+    }
+  }
+}
