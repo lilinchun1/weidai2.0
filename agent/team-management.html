@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>团队管理</title>
+<link rel="stylesheet" href="../v20/css/agent.css"/>
+</head>
+<body>
+<div class="g-wrap team-management-wrap">
+    <div class="team-management-item">
+        <h2>今日</h2>
+        <div class="management-item-left">
+            <p>团队人数</p>
+            <b>20</b>
+        </div>
+        <div class="management-item-right">
+            <p>团队业绩 (￥)</p>
+            <b>2000.00</b>
+        </div>
+    </div>
+    <div class="team-management-item">
+        <h2>本周</h2>
+        <div class="management-item-left">
+            <p>团队人数</p>
+            <b>20</b>
+        </div>
+        <div class="management-item-right">
+            <p>团队业绩 (￥)</p>
+            <b>2000.00</b>
+        </div>
+    </div>
+    <div class="team-management-item">
+        <h2>本月</h2>
+        <div class="management-item-left">
+            <p>团队人数</p>
+            <b>20</b>
+        </div>
+        <div class="management-item-right">
+            <p>团队业绩 (￥)</p>
+            <b>2000.00</b>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

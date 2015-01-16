@@ -877,3 +877,45 @@
   }
 }
 /*-----------------------income-detail.html end----------------------*/
+
+/*-----------------------team-management-wrap.html start----------------------*/
+
+.team-management-item{
+  padding: 0 .5rem;
+  border-bottom: 1px solid $border-color;
+  overflow: hidden;
+  h2{
+    height: 2.2rem;
+    line-height: 2.2rem;
+    border-bottom: 1px solid $border-color;
+  }
+  .management-item-left,
+  .management-item-right{
+    margin: .35rem 0;
+    float: left;
+    width: 50%;
+    height: 2.75rem;
+    text-align: center;
+  }
+  .management-item-left{
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 2.75rem;
+      background: $border-color;
+    }
+  }
+  p{
+    color: $font-color666;
+  }
+  b{
+    color: $red;
+    font-size: $fz18;
+  }
+}
+
+/*-----------------------team-management-wrap.html end----------------------*/
