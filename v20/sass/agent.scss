@@ -666,3 +666,142 @@
   
 }
 /*-----------------------cloud-brand-show.html end----------------------*/
+
+/*-----------------------activity-center.html start----------------------*/
+.activity-banner{
+  width: 100%;
+  img{
+    width: 100%;}
+}
+.activity-list{
+  @extend %wrap-600;
+  li{
+    position: relative;
+    margin-top: .5rem;
+    height: 4.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+    a{
+      display: block;
+    }
+    span{
+      position: absolute;
+      top: 2rem;
+      right: .75rem;
+      width: .8rem;
+      height: .8rem;
+      line-height: .8rem;
+      border: 2px solid $red;
+      border-radius: .8rem;
+      color: $red;
+      text-align: center;
+      font-family: icomoon;
+    }
+    &:nth-of-type(2) span{
+      border: 2px solid $orange;
+      color: $orange;
+    }
+    &:nth-of-type(3) span{
+      border: 2px solid $blue;
+      color: $blue;
+    }
+  }
+}
+/*-----------------------activity-center.html end----------------------*/
+
+/*-----------------------how-levelup.html start----------------------*/
+.how-leveup-item{
+  width: 100%;
+  border-bottom: 1px solid $border-color;
+  h2{
+    @extend %wrap-600;
+    height: 2.1rem;
+    line-height: 2.1rem;
+    font-size: $fz16;
+    border-bottom: 1px dotted $border-color;
+  }
+  p{
+    padding: .4rem 0;
+    @extend %wrap-600;
+  }
+  em{
+    float: left;
+    width: 2.5rem;
+  }
+  i{
+    float: right;
+    color: $font-color999;
+  }
+  span{
+    margin-left: 3.5rem;
+    float: left;
+    width: 3rem;
+    text-align: center;
+  }
+}
+/*-----------------------how-levelup.html end----------------------*/
+
+/*-----------------------sales-management.html start----------------------*/
+.sales-item{
+  width: 100%;
+  border-bottom: 1px solid $border-color;
+  h2{
+    @extend %wrap-600;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: $fz16;
+    border-bottom: 1px solid $border-color;
+  }
+  p{
+    @extend %wrap-600;
+    height: 1.55rem;
+    line-height: 1.55rem;
+    &:nth-of-type(1){
+      border-bottom: 1px solid $border-color;
+    }
+    &:nth-of-type(2){
+      border-bottom: 1px dotted $border-color;
+    }
+  }
+  span,
+  b{
+    float: left;
+    width: 3.7rem;
+    height: 1.55rem;
+    text-align: center;
+  }
+  .tacr{
+    text-align: right;
+  }
+  .w100{
+    width: 2.5rem;
+  }
+  .w196{
+    width: 4.9rem;
+  }
+  .bdlr{
+    position: relative;
+    &:after{
+      content: "";
+      height: .65rem;
+      position: absolute;
+      top: .45rem;
+      right: 0;
+      width: 1px;
+      background-color: $border-color;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      top: .45rem;
+      left: 0;
+      height: .65rem;
+      width: 1px;
+      background-color: $border-color;
+    }
+  }
+}
+/*-----------------------sales-management.html end----------------------*/

@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>如何升级</title>
+<link rel="stylesheet" href="../v20/css/agent.css"/>
+</head>
+<body>
+<div class="g-wrap">
+    <div class="how-leveup-item">
+        <h2>1.如何升级？</h2>
+        <p>
+            <em>V1</em>
+            <i>注册申请开</i>
+        </p>
+
+        <p>
+            <em> V1~V2</em>
+            <i>业绩大于0且发展5个直属团</i>
+        </p>
+
+        <p>
+            <em>V2~V3</em>
+            <i>业绩累计达到9000</i>
+        </p>
+
+        <p>
+            <em>V3~V4</em>
+            <i>业绩累积达到105000</i>
+        </p>
+
+        <p>
+            <em>V4~V5</em>
+            <i>培养5个直属团队V4等级成</i>
+        </p>
+
+        <p>
+            <em>V5~V6</em>
+            <i>培养5个直属团队V5等级成</i>
+        </p>
+    </div>
+    <div class="how-leveup-item">
+        <h2>2.升级有什么好处？</h2>
+        <p>
+            个人店铺佣金收入比例
+        </p>
+        <p>
+            <em>V1</em>
+            <i>佣金比例</i>
+        </p>
+
+        <p>
+            <em> V1</em>
+            <i>个人业绩的20%</i>
+        </p>
+
+        <p>
+            <em>V2</em>
+            <i>个人业绩的21%</i>
+        </p>
+
+        <p>
+            <em>V3</em>
+            <i>个人业绩的22%</i>
+        </p>
+
+        <p>
+            <em>V4</em>
+            <i>个人业绩的23%</i>
+        </p>
+
+        <p>
+            <em>V5</em>
+            <i>个人业绩的24%</i>
+        </p>
+        <p>
+            <em>V6</em>
+            <i>个人业绩的25%</i>
+        </p>
+    </div>
+    <div class="how-leveup-item">
+        <h2>3.团对佣金收入比例</h2>
+        <p>
+            <em>级别</em>
+            <span>直属团队</span>
+            <i>扩展团队</i>
+        </p>
+
+        <p>
+            <em> V1</em>
+            <span>——</span>
+            <i>——</i>
+        </p>
+
+        <p>
+            <em>V2</em>
+            <span>3%</span>
+            <i>——</i>
+        </p>
+
+        <p>
+            <em>V3</em>
+            <span>4%</span>
+            <i>2%</i>
+        </p>
+
+        <p>
+            <em>V4</em>
+            <span>5%</span>
+            <i>3%</i>
+        </p>
+
+        <p>
+            <em>V5</em>
+            <span>6%</span>
+            <i>5%</i>
+        </p>
+        <p>
+            <em>V6</em>
+            <span>7%</span>
+            <i>6%</i>
+        </p>
+    </div>
+    <div class="footer-weidai icon-weidai">
+        &#xf652;
+    </div>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>
