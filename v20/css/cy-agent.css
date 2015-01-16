@@ -315,6 +315,10 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #e02d2a; }
 
 /* line 303, ../sass/_rest.scss */
+.c99-font {
+  color: #999999; }
+
+/* line 306, ../sass/_rest.scss */
 .mgt30 {
   margin-top: .75rem; }
 
@@ -335,7 +339,7 @@ textarea {
   -moz-appearance: none;
   appearance: none;
   outline: none;
-  border-radius: 0;
+  border-radius: 2px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1327,6 +1331,45 @@ button[disabled="disabled"] {
   filter: alpha(opacity=10);
   opacity: 10; }
 
+/*列表内容块2*/
+/* line 541, ../sass/_mod-item.scss */
+.brand-show-item {
+  padding: .5rem 0;
+  width: 100%;
+  border-bottom: 1px dotted #cccccc;
+  overflow: hidden; }
+  /* line 546, ../sass/_mod-item.scss */
+  .brand-show-item .brand-show-pic {
+    float: left;
+    margin-right: .75rem;
+    padding: .1rem;
+    width: 5.1rem;
+    height: 5.1rem;
+    border: 1px solid #cccccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    /* line 556, ../sass/_mod-item.scss */
+    .brand-show-item .brand-show-pic img {
+      width: 100%; }
+  /* line 560, ../sass/_mod-item.scss */
+  .brand-show-item h2 {
+    height: 2rem;
+    overflow: hidden; }
+  /* line 564, ../sass/_mod-item.scss */
+  .brand-show-item p {
+    font-size: 0.6rem; }
+  /* line 567, ../sass/_mod-item.scss */
+  .brand-show-item .brand-show-item-btn {
+    margin-right: .5rem;
+    width: 3.75rem;
+    height: 1.25rem;
+    background-color: #e02d2a;
+    color: #ffffff; }
+    /* line 573, ../sass/_mod-item.scss */
+    .brand-show-item .brand-show-item-btn:nth-of-type(1) {
+      background-color: #f2a44a; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../img/fonts/icomoon.eot");
@@ -1742,5 +1785,222 @@ a {
   /* line 393, ../sass/cy-agent.scss */
   .find-img img {
     width: 4.5rem; }
+
+/*-----------------------代理详情 ag-details.html----------------------*/
+/* line 399, ../sass/cy-agent.scss */
+.ag_de_char {
+  height: 12rem;
+  overflow: hidden;
+  color: #666666;
+  text-indent: 1.5rem;
+  line-height: 1.1rem;
+  border-bottom: 1px dashed #cccccc; }
+
+/* line 407, ../sass/cy-agent.scss */
+.icon-button {
+  text-align: center;
+  border: 1px solid #cccccc;
+  border-top: none;
+  background-color: #fff;
+  color: #cccccc;
+  font-size: 1rem;
+  width: 2rem;
+  line-height: 1rem;
+  margin-left: 6.5rem;
+  margin-bottom: 1rem; }
+
+/*-----------------------代理详情 ag-details-two.html----------------------*/
+/* line 422, ../sass/cy-agent.scss */
+.ag_two_char h2 {
+  color: #333333;
+  border-bottom: 1px dashed #cccccc;
+  line-height: 1.5rem; }
+/* line 428, ../sass/cy-agent.scss */
+.ag_two_char p {
+  text-indent: 1.5rem;
+  line-height: 1.3rem;
+  color: #333333; }
+
+/*-----------------------任务管理 task-failure.html----------------------*/
+/* line 435, ../sass/cy-agent.scss */
+.coll_top {
+  width: 100%;
+  border-top: 1px solid #cccccc;
+  overflow: hidden; }
+  /* line 439, ../sass/cy-agent.scss */
+  .coll_top li {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #cccccc; }
+    /* line 447, ../sass/cy-agent.scss */
+    .coll_top li:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-right: 1px solid #cccccc;
+      height: 100%; }
+    /* line 455, ../sass/cy-agent.scss */
+    .coll_top li:last-child:before {
+      border-right: 0 none; }
+  /* line 459, ../sass/cy-agent.scss */
+  .coll_top .coll_1 {
+    border-bottom: 1px solid #e02d2a;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHBAMAAADDgsFQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEUAAADQMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh0AAADcrmEfAAAADnRSTlMAA7c8fuQVQvy6GOe9gZdCRjsAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAALUlEQVQI12NgYBBgAAFlEMHyNAFIVrybwMDAte/dEwYGmXfvXhQw3Hv37t0uAKQaDb+LHVEFAAAAAElFTkSuQmCC) 50% 100% no-repeat;
+    -webkit-background-size: .25rem auto;
+    background-size: .25rem auto; }
+    /* line 464, ../sass/cy-agent.scss */
+    .coll_top .coll_1 a {
+      color: #e02d2a; }
+  /* line 469, ../sass/cy-agent.scss */
+  .coll_top a {
+    display: block;
+    color: #333333; }
+
+/* line 474, ../sass/cy-agent.scss */
+.task_top {
+  line-height: 2rem;
+  text-align: left; }
+
+/* line 478, ../sass/cy-agent.scss */
+.task_bodyBox {
+  position: relative; }
+  /* line 480, ../sass/cy-agent.scss */
+  .task_bodyBox .task_body {
+    overflow: hidden;
+    color: #666666; }
+    /* line 483, ../sass/cy-agent.scss */
+    .task_bodyBox .task_body .task_l {
+      float: left;
+      width: 2.5rem;
+      line-height: 1rem; }
+    /* line 488, ../sass/cy-agent.scss */
+    .task_bodyBox .task_body .task_r {
+      float: right;
+      width: 12.4rem;
+      line-height: 1rem; }
+  /* line 494, ../sass/cy-agent.scss */
+  .task_bodyBox .task_buttonBox {
+    position: absolute;
+    right: 0;
+    bottom: .2rem;
+    width: 3.8rem; }
+    /* line 500, ../sass/cy-agent.scss */
+    .task_bodyBox .task_buttonBox .task_button {
+      width: 3.8rem;
+      height: 1.3rem;
+      line-height: 1.3rem;
+      background-color: #e02d2a;
+      font-size: .6rem;
+      color: #fff;
+      text-align: center;
+      border: none; }
+
+/*-----------------------我的仓库 my-entrepot.html----------------------*/
+/* line 513, ../sass/cy-agent.scss */
+.my_en_top {
+  background-color: #f8f8f8;
+  margin: 0 auto;
+  width: 16rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid #cccccc;
+  position: relative;
+  height: 1.5rem; }
+  /* line 523, ../sass/cy-agent.scss */
+  .my_en_top .my_en_top_1 .my_en_l {
+    float: left;
+    width: 2.5rem;
+    border: transparent 0 solid;
+    line-height: 1.5rem; }
+  /* line 529, ../sass/cy-agent.scss */
+  .my_en_top .my_en_top_1 .my_en_r {
+    float: left;
+    width: 12.4rem; }
+    /* line 532, ../sass/cy-agent.scss */
+    .my_en_top .my_en_top_1 .my_en_r .my_en_search {
+      width: 10rem;
+      line-height: 1.5rem;
+      height: 1.5rem;
+      float: left;
+      border: 1px solid #cccccc;
+      border-right: none;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    /* line 541, ../sass/cy-agent.scss */
+    .my_en_top .my_en_top_1 .my_en_r .icon_my_en {
+      width: 2.3rem;
+      background-color: #FFFFFF;
+      color: #333333;
+      line-height: 1.5rem;
+      height: 1.5rem;
+      float: left;
+      border: 1px solid #cccccc;
+      border-left: none;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+  /* line 555, ../sass/cy-agent.scss */
+  .my_en_top .my_en_list {
+    display: none;
+    position: absolute;
+    top: 2.1rem;
+    z-index: 99;
+    left: 0;
+    width: 16rem;
+    border-top: 1px solid #ccc;
+    background-color: #f8f8f8; }
+    /* line 564, ../sass/cy-agent.scss */
+    .my_en_top .my_en_list a {
+      display: block;
+      text-indent: .5rem; }
+      /* line 567, ../sass/cy-agent.scss */
+      .my_en_top .my_en_list a span {
+        float: right;
+        color: #3db73e; }
+    /* line 572, ../sass/cy-agent.scss */
+    .my_en_top .my_en_list li {
+      height: 1.8rem;
+      line-height: 1.8rem;
+      border-bottom: 1px solid #ccc;
+      overflow: hidden; }
+
+/* line 581, ../sass/cy-agent.scss */
+.my_en_top_1 .my_en_l a:after {
+  content: "";
+  width: 0;
+  height: 0;
+  margin-left: .2rem;
+  display: inline-block;
+  border: .25rem solid transparent;
+  border-bottom: .25rem solid #ccc;
+  border-right: .25rem solid #ccc; }
+
+/* line 591, ../sass/cy-agent.scss */
+.gray {
+  background-color: #cccccc;
+  color: #666666; }
+
+/* line 595, ../sass/cy-agent.scss */
+.brand-show-item .brand-show-item-btn:nth-of-type(1) {
+  background-color: #e02d2a; }
+
+/* line 598, ../sass/cy-agent.scss */
+.brand-show-item .brand-show-item-btn:nth-of-type(2) {
+  background-color: #cccccc;
+  color: #666666; }
+
+/* line 604, ../sass/cy-agent.scss */
+.brand-show-item .brand-show-item-btn-1 {
+  margin-right: .5rem;
+  width: 3.75rem;
+  height: 1.25rem;
+  background-color: #f2a44a;
+  color: #ffffff; }
 
 /*# sourceMappingURL=cy-agent.css.map */

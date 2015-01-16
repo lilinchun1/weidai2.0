@@ -1040,7 +1040,10 @@ button[disabled="disabled"] {
     color: #535353;
     text-align: center;
     font-size: .75rem; }
-  /* line 258, ../sass/_mod-item.scss */
+    /* line 257, ../sass/_mod-item.scss */
+    .m-footer-btn2 .icon-left-btn a {
+      display: block; }
+  /* line 261, ../sass/_mod-item.scss */
   .m-footer-btn2 .m-footer-search {
     margin-top: .65rem;
     float: left;
@@ -1051,11 +1054,11 @@ button[disabled="disabled"] {
     border: 0 none;
     color: #ffffff;
     text-indent: .4rem; }
-  /* line 269, ../sass/_mod-item.scss */
+  /* line 272, ../sass/_mod-item.scss */
   .m-footer-btn2 .m-footer-search::-webkit-input-placeholder {
     color: #ffffff;
     font-family: 'icomoon'; }
-  /* line 273, ../sass/_mod-item.scss */
+  /* line 276, ../sass/_mod-item.scss */
   .m-footer-btn2 .m-footer-search-btn {
     padding: 0;
     margin-top: .65rem;
@@ -1065,17 +1068,21 @@ button[disabled="disabled"] {
     background-color: #e02d2a;
     color: #ffffff; }
 
-/* line 283, ../sass/_mod-item.scss */
-.m-footer-btn:target .m-footer-btn2 {
+/* line 286, ../sass/_mod-item.scss */
+.m-footer-btn2:target {
   display: block; }
 
+/* line 289, ../sass/_mod-item.scss */
+.m-footer-btn:target .m-footer-btn2 {
+  display: none; }
+
 /*选项卡头部*/
-/* line 287, ../sass/_mod-item.scss */
+/* line 293, ../sass/_mod-item.scss */
 .m-tab-head {
   width: 100%;
   border-top: 1px solid #cccccc;
   overflow: hidden; }
-  /* line 291, ../sass/_mod-item.scss */
+  /* line 297, ../sass/_mod-item.scss */
   .m-tab-head li {
     position: relative;
     float: left;
@@ -1084,7 +1091,7 @@ button[disabled="disabled"] {
     line-height: 2rem;
     text-align: center;
     border-bottom: 1px solid #cccccc; }
-    /* line 299, ../sass/_mod-item.scss */
+    /* line 305, ../sass/_mod-item.scss */
     .m-tab-head li:before {
       content: "";
       position: absolute;
@@ -1092,47 +1099,47 @@ button[disabled="disabled"] {
       right: 0;
       border-right: 1px solid #cccccc;
       height: 100%; }
-    /* line 307, ../sass/_mod-item.scss */
+    /* line 313, ../sass/_mod-item.scss */
     .m-tab-head li:last-child:before {
       border-right: 0 none; }
-  /* line 311, ../sass/_mod-item.scss */
+  /* line 317, ../sass/_mod-item.scss */
   .m-tab-head .active-tab {
     border-bottom: 1px solid #e02d2a;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHBAMAAADDgsFQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEUAAADQMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh0AAADcrmEfAAAADnRSTlMAA7c8fuQVQvy6GOe9gZdCRjsAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAALUlEQVQI12NgYBBgAAFlEMHyNAFIVrybwMDAte/dEwYGmXfvXhQw3Hv37t0uAKQaDb+LHVEFAAAAAElFTkSuQmCC) 50% 100% no-repeat;
     -webkit-background-size: .25rem auto;
     background-size: .25rem auto; }
-  /* line 317, ../sass/_mod-item.scss */
+  /* line 323, ../sass/_mod-item.scss */
   .m-tab-head a {
     display: block;
     color: #333333; }
-  /* line 321, ../sass/_mod-item.scss */
+  /* line 327, ../sass/_mod-item.scss */
   .m-tab-head i {
     color: #e02d2a; }
 
 /*星星评级*/
-/* line 327, ../sass/_mod-item.scss */
+/* line 333, ../sass/_mod-item.scss */
 .star-level {
   padding: 0 .4rem;
   float: left;
   width: 4rem; }
-  /* line 331, ../sass/_mod-item.scss */
+  /* line 337, ../sass/_mod-item.scss */
   .star-level li {
     float: left;
     height: 1.75rem;
     line-height: 1.75rem;
     border-bottom: 0 none;
     color: #dddddd; }
-  /* line 338, ../sass/_mod-item.scss */
+  /* line 344, ../sass/_mod-item.scss */
   .star-level .icon-start-active {
     color: #ff9900; }
 
 /*店铺头部*/
-/* line 344, ../sass/_mod-item.scss */
+/* line 350, ../sass/_mod-item.scss */
 .shop-index-head {
   padding: .4rem 0;
   height: 1.55rem;
   border: 1px solid #cccccc; }
-  /* line 348, ../sass/_mod-item.scss */
+  /* line 354, ../sass/_mod-item.scss */
   .shop-index-head .shop-logo {
     float: left;
     margin: 0 .6rem 0 .3rem;
@@ -1140,37 +1147,37 @@ button[disabled="disabled"] {
     height: 1.6rem;
     border-radius: 1.6rem;
     border: 1px solid #fff; }
-  /* line 356, ../sass/_mod-item.scss */
+  /* line 362, ../sass/_mod-item.scss */
   .shop-index-head h2 {
     float: left;
     height: 1.55rem;
     line-height: 1.55rem;
     color: #333333; }
-  /* line 363, ../sass/_mod-item.scss */
+  /* line 369, ../sass/_mod-item.scss */
   .shop-index-head .icon-gz,
   .shop-index-head .icon-sc {
     float: right;
     margin-top: .15rem;
     width: 2.05rem;
     text-align: center; }
-    /* line 369, ../sass/_mod-item.scss */
+    /* line 375, ../sass/_mod-item.scss */
     .shop-index-head .icon-gz a,
     .shop-index-head .icon-sc a {
       display: block; }
-    /* line 372, ../sass/_mod-item.scss */
+    /* line 378, ../sass/_mod-item.scss */
     .shop-index-head .icon-gz p,
     .shop-index-head .icon-sc p {
       font-size: .6rem; }
-      /* line 374, ../sass/_mod-item.scss */
+      /* line 380, ../sass/_mod-item.scss */
       .shop-index-head .icon-gz p:nth-of-type(1),
       .shop-index-head .icon-sc p:nth-of-type(1) {
         color: #e02d2a; }
-  /* line 379, ../sass/_mod-item.scss */
+  /* line 385, ../sass/_mod-item.scss */
   .shop-index-head .icon-sc {
     border-left: 1px solid #cccccc; }
 
 /*商品详情 底部*/
-/* line 385, ../sass/_mod-item.scss */
+/* line 391, ../sass/_mod-item.scss */
 .m-shop-show-foot {
   position: fixed;
   bottom: 0;
@@ -1178,7 +1185,7 @@ button[disabled="disabled"] {
   width: 100%;
   height: 2.5rem;
   background-color: #000000; }
-  /* line 393, ../sass/_mod-item.scss */
+  /* line 399, ../sass/_mod-item.scss */
   .m-shop-show-foot .icon-shoucang,
   .m-shop-show-foot .icon-gouwuche {
     width: 2.8rem;
@@ -1186,26 +1193,26 @@ button[disabled="disabled"] {
     line-height: 2.5rem;
     font-size: 1rem;
     text-align: center; }
-    /* line 399, ../sass/_mod-item.scss */
+    /* line 405, ../sass/_mod-item.scss */
     .m-shop-show-foot .icon-shoucang a,
     .m-shop-show-foot .icon-gouwuche a {
       display: block;
       color: #ffffff; }
-  /* line 404, ../sass/_mod-item.scss */
+  /* line 410, ../sass/_mod-item.scss */
   .m-shop-show-foot .m-shop-foot-btn {
     margin-top: .55rem;
     width: 4.75rem;
     height: 1.45rem;
     color: #ffffff; }
-    /* line 409, ../sass/_mod-item.scss */
+    /* line 415, ../sass/_mod-item.scss */
     .m-shop-show-foot .m-shop-foot-btn:nth-of-type(1) {
       background: #ff9900; }
-    /* line 412, ../sass/_mod-item.scss */
+    /* line 418, ../sass/_mod-item.scss */
     .m-shop-show-foot .m-shop-foot-btn:nth-of-type(2) {
       background: #e02d2a; }
 
 /*买家footer*/
-/* line 419, ../sass/_mod-item.scss */
+/* line 425, ../sass/_mod-item.scss */
 .footer-weidai {
   height: 2rem;
   line-height: 2rem;
@@ -1214,13 +1221,13 @@ button[disabled="disabled"] {
   font-size: 6rem; }
 
 /*排序item*/
-/* line 430, ../sass/_mod-item.scss */
+/* line 436, ../sass/_mod-item.scss */
 .search-list-sort {
   position: relative;
   height: 2.25rem;
   border-bottom: 1px solid #cccccc;
   background: #f9f9f9; }
-  /* line 436, ../sass/_mod-item.scss */
+  /* line 442, ../sass/_mod-item.scss */
   .search-list-sort .search-list-l,
   .search-list-sort .search-list-r {
     width: 1rem;
@@ -1232,7 +1239,7 @@ button[disabled="disabled"] {
     background: linear-gradient(180deg, #fefefe, #e8e8e8);
     color: #999999;
     text-align: center; }
-  /* line 446, ../sass/_mod-item.scss */
+  /* line 452, ../sass/_mod-item.scss */
   .search-list-sort .search-list-l {
     margin: .65rem 0 0 .5rem;
     padding-top: .2rem;
@@ -1241,17 +1248,17 @@ button[disabled="disabled"] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-  /* line 455, ../sass/_mod-item.scss */
+  /* line 461, ../sass/_mod-item.scss */
   .search-list-sort .search-list-r {
     margin: .65rem .5rem 0 0;
     float: right; }
-  /* line 459, ../sass/_mod-item.scss */
+  /* line 465, ../sass/_mod-item.scss */
   .search-list-sort .search-list-sort-con {
     padding-top: .65rem;
     height: 1rem;
     line-height: 1rem;
     text-align: center; }
-    /* line 464, ../sass/_mod-item.scss */
+    /* line 470, ../sass/_mod-item.scss */
     .search-list-sort .search-list-sort-con:after {
       content: "";
       width: 0;
@@ -1260,7 +1267,7 @@ button[disabled="disabled"] {
       border: .25rem solid transparent;
       border-bottom: .25rem solid #ccc;
       border-right: .25rem solid #ccc; }
-  /* line 474, ../sass/_mod-item.scss */
+  /* line 480, ../sass/_mod-item.scss */
   .search-list-sort .sort-class {
     display: none;
     position: relative;
@@ -1268,16 +1275,16 @@ button[disabled="disabled"] {
     z-index: 9;
     width: 100%;
     background: #f9f9f9; }
-    /* line 481, ../sass/_mod-item.scss */
+    /* line 487, ../sass/_mod-item.scss */
     .search-list-sort .sort-class li {
       height: 1.65rem;
       line-height: 1.65rem;
       text-align: center;
       border-bottom: 1px solid #cccccc; }
-      /* line 486, ../sass/_mod-item.scss */
+      /* line 492, ../sass/_mod-item.scss */
       .search-list-sort .sort-class li a {
         display: block; }
-  /* line 491, ../sass/_mod-item.scss */
+  /* line 497, ../sass/_mod-item.scss */
   .search-list-sort .left-list {
     display: none;
     position: absolute;
@@ -1287,28 +1294,28 @@ button[disabled="disabled"] {
     width: 8rem;
     background: #f9f9f9;
     border-top: 1px solid #cccccc; }
-    /* line 500, ../sass/_mod-item.scss */
+    /* line 506, ../sass/_mod-item.scss */
     .search-list-sort .left-list li {
       height: 1.8rem;
       line-height: 1.8rem;
       border-bottom: 1px solid #cccccc;
       overflow: hidden; }
-      /* line 505, ../sass/_mod-item.scss */
+      /* line 511, ../sass/_mod-item.scss */
       .search-list-sort .left-list li a {
         display: block;
         text-indent: .5rem; }
-      /* line 509, ../sass/_mod-item.scss */
+      /* line 515, ../sass/_mod-item.scss */
       .search-list-sort .left-list li span {
         margin-right: .5rem;
         float: right;
         font-size: 0.6rem;
         font-family: 'icomoon'; }
 
-/* line 518, ../sass/_mod-item.scss */
+/* line 524, ../sass/_mod-item.scss */
 .search-list-sort:target .sort-class {
   display: block; }
 
-/* line 522, ../sass/_mod-item.scss */
+/* line 528, ../sass/_mod-item.scss */
 .overly {
   display: none;
   width: 100%;
@@ -1702,63 +1709,66 @@ a {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHBAMAAADDgsFQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEUAAADQMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh0AAADcrmEfAAAADnRSTlMAA7c8fuQVQvy6GOe9gZdCRjsAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAALUlEQVQI12NgYBBgAAFlEMHyNAFIVrybwMDAte/dEwYGmXfvXhQw3Hv37t0uAKQaDb+LHVEFAAAAAElFTkSuQmCC) 50% 100% no-repeat;
     -webkit-background-size: .25rem auto;
     background-size: .25rem auto; }
-  /* line 362, ../sass/cy-index.scss */
+    /* line 361, ../sass/cy-index.scss */
+    .coll_top .coll_1 a {
+      color: #e02d2a; }
+  /* line 365, ../sass/cy-index.scss */
   .coll_top a {
     display: block;
     color: #333333; }
-  /* line 366, ../sass/cy-index.scss */
+  /* line 369, ../sass/cy-index.scss */
   .coll_top i {
     color: #e02d2a; }
 
-/* line 371, ../sass/cy-index.scss */
+/* line 374, ../sass/cy-index.scss */
 .icon-red {
   line-height: 1.8rem;
   color: #e02d2a;
   font-size: .8rem; }
 
 /*-----------------------我的收藏-商品 collect-comm.html----------------------*/
-/* line 377, ../sass/cy-index.scss */
+/* line 380, ../sass/cy-index.scss */
 .coll_com {
   font-size: .6rem;
   line-height: .7rem;
   color: #333333; }
-  /* line 381, ../sass/cy-index.scss */
+  /* line 384, ../sass/cy-index.scss */
   .coll_com div {
     height: 1.4rem;
     overflow: hidden; }
-  /* line 385, ../sass/cy-index.scss */
+  /* line 388, ../sass/cy-index.scss */
   .coll_com p {
     font-size: .6rem;
     line-height: .9rem; }
-  /* line 389, ../sass/cy-index.scss */
+  /* line 392, ../sass/cy-index.scss */
   .coll_com em {
     color: #e02d2a; }
 
-/* line 393, ../sass/cy-index.scss */
+/* line 396, ../sass/cy-index.scss */
 .icon-red_1 {
   line-height: 2.95rem;
   color: #e02d2a;
   font-size: .8rem; }
 
 /*-----------------------我的地址 my-site.html----------------------*/
-/* line 399, ../sass/cy-index.scss */
+/* line 402, ../sass/cy-index.scss */
 .my_site {
   line-height: 2rem; }
 
-/* line 403, ../sass/cy-index.scss */
+/* line 406, ../sass/cy-index.scss */
 .my_ul {
   overflow: hidden; }
-  /* line 405, ../sass/cy-index.scss */
+  /* line 408, ../sass/cy-index.scss */
   .my_ul li {
     float: left;
     width: 100%; }
-  /* line 410, ../sass/cy-index.scss */
+  /* line 413, ../sass/cy-index.scss */
   .my_ul .icon-my_s {
     font-size: .6rem;
     line-height: 1rem;
     float: left;
     color: #e02d2a; }
-  /* line 416, ../sass/cy-index.scss */
+  /* line 419, ../sass/cy-index.scss */
   .my_ul .my_li_char {
     float: left;
     width: 13rem;
@@ -1768,34 +1778,34 @@ a {
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #333333; }
-  /* line 426, ../sass/cy-index.scss */
+  /* line 429, ../sass/cy-index.scss */
   .my_ul .my_li_r {
     float: right;
     line-height: 1rem;
     font-size: .7rem;
     color: #3db73e; }
-    /* line 431, ../sass/cy-index.scss */
+    /* line 434, ../sass/cy-index.scss */
     .my_ul .my_li_r span {
       color: #999999; }
 
-/* line 436, ../sass/cy-index.scss */
+/* line 439, ../sass/cy-index.scss */
 .red {
   background-color: #e02d2a; }
 
 /*-----------------------新增发票 bill-add.html----------------------*/
-/* line 440, ../sass/cy-index.scss */
+/* line 443, ../sass/cy-index.scss */
 .bill_add_text {
   width: 3.5rem;
   float: left;
   line-height: 1.3rem; }
 
-/* line 445, ../sass/cy-index.scss */
+/* line 448, ../sass/cy-index.scss */
 .text_w_1 {
   width: 11.5rem;
   float: left; }
 
 /*-----------------------意见反馈 opinion.html ----------------------*/
-/* line 451, ../sass/cy-index.scss */
+/* line 454, ../sass/cy-index.scss */
 .sec_lose {
   width: 50%;
   height: 3.5rem;
@@ -1809,11 +1819,11 @@ a {
   line-height: 3.5rem; }
 
 /*-------------------卖家中心 centre.html--------------------------*/
-/* line 464, ../sass/cy-index.scss */
+/* line 467, ../sass/cy-index.scss */
 .cen_red {
   background-color: #e02d2a;
   height: 4rem; }
-  /* line 468, ../sass/cy-index.scss */
+  /* line 471, ../sass/cy-index.scss */
   .cen_red .cen_char {
     text-align: center;
     color: #FFFFFF;
@@ -1826,7 +1836,7 @@ a {
     text-shadow: 0px 1px 2px #000;
     font-weight: bold; }
 
-/* line 483, ../sass/cy-index.scss */
+/* line 486, ../sass/cy-index.scss */
 .cen_head {
   position: absolute;
   top: 2.4rem;
@@ -1838,7 +1848,7 @@ a {
   -moz-border-radius: 3.2rem;
   -webkit-border-radius: 3.2rem;
   border: 3px solid #FFFFFF; }
-  /* line 494, ../sass/cy-index.scss */
+  /* line 497, ../sass/cy-index.scss */
   .cen_head img {
     width: 100%;
     border-radius: 3.2rem;
@@ -1846,20 +1856,20 @@ a {
     -moz-border-radius: 3.2rem;
     -webkit-border-radius: 3.2rem; }
 
-/* line 502, ../sass/cy-index.scss */
+/* line 505, ../sass/cy-index.scss */
 .cen_top {
   margin-top: 1.6rem; }
 
-/* line 505, ../sass/cy-index.scss */
+/* line 508, ../sass/cy-index.scss */
 .icon-c {
   line-height: 1.7rem;
   color: #666666;
   font-size: .8rem; }
-  /* line 509, ../sass/cy-index.scss */
+  /* line 512, ../sass/cy-index.scss */
   .icon-c a {
     display: block;
     height: 1.7rem; }
-  /* line 513, ../sass/cy-index.scss */
+  /* line 516, ../sass/cy-index.scss */
   .icon-c i {
     width: .8rem;
     height: .8rem;
@@ -1877,7 +1887,7 @@ a {
     float: left;
     margin-left: .4rem;
     letter-spacing: -.1rem; }
-  /* line 531, ../sass/cy-index.scss */
+  /* line 534, ../sass/cy-index.scss */
   .icon-c div {
     float: left; }
 

@@ -8,14 +8,15 @@ var pageCount="";
 var ajax_inspect=2//用于防止json重复提交;
 function ajax_page(){
     $.ajax({
-        url: 'http://localhost/wedai/wap/index.php/shop/agent/goods.do',
+        url: '/wedai/wap/index.php/agent_shop/index/goods.do?curpage='+curpage,
         dataType: "json",
         type: 'post',
-        data: {'curpage': curpage,'agent_id':10},
+        data: {'agent_id':agent_id},
         success: function (result) {   //成功后回调
             var data=result['datas'];
             pageCount=result['pages'];//总页数
             curpage=result['curpage'];//当前页
+		
             $.each(data['goods'], function (key, val) {
                 var image_url=val.goods_image_url;//图片地址
                 //var goods_commend=val['goods_commend'];//是否特价,有值为特价;
@@ -23,12 +24,13 @@ function ajax_page(){
                 var goods_price=val['goods_price'];//价格.
                 var goods_marketprice=val['goods_marketprice'];//原价
                 var goods_id=val['goods_id'];//商品ID
+				var goods_agent_id =val['agent_id'];
                 $(".search-list").append('<li>' +
-                    '<div class="search-pic">' +
-                        '<img src="http://localhost/wedai/wap/template/v20/img/grey.gif" data-original="'+image_url+'" alt=""/>' +
+                    '<a href="'+goods_agent_id+'/'+goods_id+'"><div class="search-pic">' +
+                        '<img src="/wedai/wap/template/v20/img/grey.gif" data-original="'+image_url+'" alt=""/>' +
                         '<div class="price"><em><span>&yen;</span>'+goods_price+'</em><i>原价：'+goods_marketprice+'</i></div>' +
                     '</div>' +
-                    '<h2><a href="">'+goods_name+'</a></h2>' +
+                    '<h2><a href="">'+goods_name+'</a></h2></a>' +
                     '<button type="button" class="search-b-btn search-btn-l">立即购买</button>' +
                     '</li>');
             });

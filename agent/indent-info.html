@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>订单详情-已完成</title>
+    <link rel="stylesheet" href="../v20/css/member.css"/>
+</head>
+<body>
+<div class="g-wrap">
+    <div class="my-indent-dfh-wrap">
+        <ul class="dfh-list">
+            <li>
+                <label>订单状态：</label><span class="red-font">已完成</span>
+            </li>
+            <li>
+                <label>订单编号：</label>20142545545855523
+            </li>
+            <li>
+                <label>下单时间：</label>2014-08-07   10:10:11
+            </li>
+            <li>
+                <label>订单金额：</label>&yen;4000.00
+            </li>
+            <li>
+                <label>运费：</label>&yen;4000.00
+            </li>
+            <li>
+                <label>实付款：</label>&yen;4000.00
+            </li>
+        </ul>
+        <div class="dfh-info">
+            <label>订单留言：</label>
+            <p>
+                请包装好，运送保鲜，请包装好，运送保鲜，请包装好，运送保鲜。
+            </p>
+        </div>
+    </div>
+    <div class="my-indent-dfh-wrap">
+        <div class="dfh-info">
+            <label>联系人：</label>
+            <p>
+                张某
+            </p>
+        </div>
+        <div class="dfh-info">
+            <label>电话：</label>
+            <p>
+                15898162970
+            </p>
+        </div>
+        <div class="dfh-info">
+            <label>收货地址：</label>
+            <p>
+                辽宁省大连市沙河口区A206
+            </p>
+        </div>
+    </div>
+    <div class="my-indent-dfh-wrap">
+        <div class="dfh-info">
+            <label>发票类型：</label>
+            <p>
+                单位
+            </p>
+        </div>
+        <div class="dfh-info">
+            <label>发票抬头：</label>
+            <p>
+                易享科技（大连）有限公司
+            </p>
+        </div>
+        <div class="dfh-info">
+            <label>明细：</label>
+            <p>
+                食品
+            </p>
+        </div>
+    </div>
+
+    <div class="my-indent-dfh-wrap">
+        <div class="m-list-info-item">
+            <div class="mlii-pic">
+                <img src="../v20/img/test_img/head-pic.jpg" alt=""/>
+            </div>
+            <div class="mlii-info">
+                <h2>
+                    <a href="">
+                        INSUN恩裳2014秋冬新款毛织衫针织衫女9406645
+                    </a>
+                </h2>
+                <p>
+                    规格：M码 枣红色
+                </p>
+            </div>
+            <div class="mlii-number">
+                <p>
+                    &yen;599.00
+                </p>
+                <p>
+                    X2
+                </p>
+                <p class="red-font">
+                    退款申请中
+                </p>
+            </div>
+        </div>
+        <div class="m-list-info-item">
+            <div class="mlii-pic">
+                <img src="../v20/img/test_img/head-pic.jpg" alt=""/>
+            </div>
+            <div class="mlii-info">
+                <h2>
+                    <a href="">
+                        INSUN恩裳2014秋冬新款毛织衫针织衫女9406645
+                    </a>
+                </h2>
+                <p>
+                    规格：M码 枣红色
+                </p>
+            </div>
+            <div class="mlii-number">
+                <p>
+                    &yen;599.00
+                </p>
+                <p>
+                    X2
+                </p>
+                <p>
+                    <button type="button" class="dfh-btn">退款申请</button>
+                </p>
+            </div>
+        </div>
+        <div class="dfh-info-in">
+            <a href="">
+                退款详情
+                <span>&#xf634;</span>
+            </a>
+        </div>
+    </div>
+    <div class="footer-weidai icon-weidai">
+        &#xf652;
+    </div>
+    <div class="dfn-foot-btn">
+        <button type="button" class="m-button-k">查看物流</button>
+    </div>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

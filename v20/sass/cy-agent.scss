@@ -395,3 +395,219 @@ a{
 
   }
 }
+/*-----------------------代理详情 ag-details.html----------------------*/
+.ag_de_char{
+  height:12rem;
+  overflow: hidden;
+  color: $font-color666;
+  text-indent:1.5rem;
+  line-height: 1.1rem;
+  border-bottom: 1px dashed $border-color;
+}
+.icon-button{
+  text-align: center;
+  border: 1px solid $border-color;
+  border-top:none;
+  background-color:#fff;
+  color: $border-color;
+  font-size: 1rem;
+  width:2rem;
+  line-height: 1rem;
+  margin-left:6.5rem;
+  margin-bottom: 1rem;
+
+}
+/*-----------------------代理详情 ag-details-two.html----------------------*/
+.ag_two_char{
+  h2{
+    color: $font-color333;
+    border-bottom: 1px dashed $border-color;
+
+    line-height: 1.5rem;
+  }
+  p{
+    text-indent:1.5rem;
+    line-height: 1.3rem;
+    color: $font-color333;
+  }
+}
+/*-----------------------任务管理 task-failure.html----------------------*/
+.coll_top{
+  width: 100%;
+  border-top: 1px solid $border-color;
+  overflow: hidden;
+  li{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-bottom: 1px solid $border-color;
+    &:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-right: 1px solid $border-color;
+      height: 100%;
+    }
+    &:last-child:before{
+      border-right: 0 none;
+    }
+  }
+  .coll_1{
+    border-bottom: 1px solid $red;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHBAMAAADDgsFQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEUAAADQMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh0AAADcrmEfAAAADnRSTlMAA7c8fuQVQvy6GOe9gZdCRjsAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAALUlEQVQI12NgYBBgAAFlEMHyNAFIVrybwMDAte/dEwYGmXfvXhQw3Hv37t0uAKQaDb+LHVEFAAAAAElFTkSuQmCC) 50% 100% no-repeat;
+    -webkit-background-size: .25rem auto;
+    background-size: .25rem auto;
+    a{
+      color: $red;
+    }
+
+  }
+  a{
+    display: block;
+    color: $font-color333;
+  }
+}
+.task_top{
+  line-height: 2rem;
+  text-align: left;
+}
+.task_bodyBox{
+  position: relative;
+  .task_body{
+    overflow: hidden;
+    color: $font-color666;
+    .task_l{
+      float: left;
+      width: 2.5rem;
+      line-height: 1rem;
+    }
+    .task_r{
+      float: right;
+      width: 12.4rem;
+      line-height: 1rem;
+    }
+  }
+  .task_buttonBox{
+    position: absolute;
+    right: 0;
+    bottom: .2rem;
+    width:3.8rem;
+
+    .task_button{
+      width:3.8rem;
+      height: 1.3rem;
+      line-height: 1.3rem;
+      background-color: $red;
+      font-size: .6rem;
+      color: #fff;
+      text-align: center;
+      border: none;
+    }
+  }
+}
+/*-----------------------我的仓库 my-entrepot.html----------------------*/
+.my_en_top {
+  background-color: #f8f8f8;
+  margin: 0 auto;
+  width: 16rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid $border-color;
+  position: relative;
+  height:1.5rem;
+  .my_en_top_1 {
+    .my_en_l {
+      float: left;
+      width: 2.5rem;
+      border: transparent 0 solid;
+      line-height: 1.5rem;
+    }
+    .my_en_r{
+      float: left;
+      width: 12.4rem;
+      .my_en_search {
+        width: 10rem;
+        line-height: 1.5rem;
+        height: 1.5rem;
+        float: left;
+        border: 1px solid $border-color;
+        border-right: none;
+        box-sizing: border-box;
+      }
+      .icon_my_en{
+        width: 2.3rem;
+        background-color: #FFFFFF;
+        color: $font-color333;
+        line-height: 1.5rem;
+        height: 1.5rem;
+        float: left;
+        border: 1px solid $border-color;
+        border-left: none;
+        box-sizing: border-box;
+
+      }
+    }
+  }
+  .my_en_list{
+    display: none;
+    position: absolute;
+    top: 2.1rem;
+    z-index: 99;
+    left: 0;
+    width: 16rem;
+    border-top: 1px solid #ccc;
+    background-color: #f8f8f8;
+    a{
+      display: block;
+      text-indent: .5rem;
+      span{
+        float: right;
+        color: $green;
+      }
+    }
+    li{
+      height: 1.8rem;
+      line-height: 1.8rem;
+      border-bottom: 1px solid #ccc;
+      overflow: hidden;
+    }
+  }
+
+}
+.my_en_top_1 .my_en_l a:after{
+  content: "";
+  width: 0;
+  height: 0;
+  margin-left: .2rem;
+  display: inline-block;
+  border: .25rem solid transparent;
+  border-bottom: .25rem solid #ccc;
+  border-right: .25rem solid #ccc;
+}
+.gray{
+  background-color: #cccccc;
+  color:$font-color666;
+}
+.brand-show-item .brand-show-item-btn:nth-of-type(1){
+  background-color: $red;
+}
+.brand-show-item .brand-show-item-btn:nth-of-type(2){
+  background-color: #cccccc;
+  color:$font-color666;
+
+}
+
+.brand-show-item .brand-show-item-btn-1 {
+  margin-right: .5rem;
+  width: 3.75rem;
+  height: 1.25rem;
+  background-color: #f2a44a;
+  color: #ffffff;
+}
+
+
+
