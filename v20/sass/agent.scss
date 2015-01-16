@@ -745,6 +745,7 @@
 /*-----------------------how-levelup.html end----------------------*/
 
 /*-----------------------sales-management.html start----------------------*/
+
 .sales-item{
   width: 100%;
   border-bottom: 1px solid $border-color;
@@ -806,3 +807,73 @@
 }
 /*-----------------------sales-management.html end----------------------*/
 
+/*-----------------------income.html start----------------------*/
+.income-wrap{
+  background-color: $bg-color;
+}
+.income-item{
+  margin-top: .75rem;
+  padding: 0 .5rem;
+  background-color: #ffffff;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  .income-item-block{
+    height: 2.15rem;
+    line-height: 2.15rem;
+    border-bottom: 1px solid $border-color;
+    overflow: hidden;
+    em{
+      float: right;
+      color: $font-color999;
+    }
+    .icon-r{
+      font-size: $fz12;
+    }
+  }
+  .bdn{
+    border: 0 none;
+  }
+  p{
+    padding: .65rem 0;
+    color: $font-color666;
+  }
+  strong{
+    color: $font-color333;
+  }
+}
+/*-----------------------income.html end----------------------*/
+
+/*-----------------------income-detail.html start----------------------*/
+.income-tab{
+    li{
+      width: 33.3%;
+    }
+}
+.income-list{
+  @extend %wrap-600;
+  li{
+    position: relative;
+    height: 2.5rem;
+    border-bottom: 1px dotted $border-color;
+    p{
+      padding-top: .2rem;
+    }
+    i{
+      position: absolute;
+      top: .9rem;
+      right: 0;
+      font-family: icomoon;
+      color: $font-color666;
+      font-size: $fz14;
+    }
+    time{
+      color: $font-color666;
+      font-size: $fz12;
+    }
+    span{
+      color: $font-color999;
+      font-size: $fz12;
+    }
+  }
+}
+/*-----------------------income-detail.html end----------------------*/
