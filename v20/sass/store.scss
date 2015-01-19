@@ -344,21 +344,51 @@
   background: $bg-color;
 }
 .search-list-con{
+  padding-bottom: 1.5rem;
   width: 100%;
   li{
-    padding: .6rem 2rem .6rem .5rem;
+    position: relative;
+    padding: .6rem 2rem 0 .5rem;
     overflow: hidden;
     border-bottom: 1px solid $border-color;
     h2{
       color: #333333;
     }
     p{
+      padding: .3rem 0;
       font-size: $fz12;
       a{
         padding-right: .6rem;
         color: $font-color999;
         white-space: nowrap;
       }
+    }
+    .icon-ud{
+      position: absolute;
+      top: .8rem;
+      right: .65rem;
+      color: $font-color666;
+    }
+  }
+}
+.search-list-con2{
+  @extend %wrap-600;
+  li{
+    padding: .4rem 0;
+    border-bottom: 1px solid $border-color;
+    font-size: $fz12;
+    &:nth-of-type(1){
+      border-top: 1px solid $border-color;
+    }
+    &:nth-last-child(1){
+      border-bottom: 0 none;
+    }
+    em{
+      color: $font-color666;
+    }
+    a{
+      padding-right: .6rem;
+      color: $font-color999;
     }
   }
 }

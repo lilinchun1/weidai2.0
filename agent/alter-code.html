@@ -1,4 +1,4 @@
-
+<!doctype html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -7,22 +7,20 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta content="telephone=no" name="format-detection">
     <meta name="format-detection" content="telephone=no">
-    <title>找回密码</title>
+    <title>重设密码</title>
     <link rel="stylesheet" href="../v20/css/cy-agent.css"/>
 </head>
 <body>
 <div class="g-wrap"><!--外层wrap 640-->
     <div class="g-wrap-show m_top">
-        <input type="tel" class="m-input-1 s_bottom m_top" placeholder="请输入验证码"/>
-        <div class="bin_text s_bottom">
-            <input type="text" class="m-input bin_l" placeholder="请输入手机号"/>
-            <div class="find-img"><img src="../v20/img/or_img/code.png"> </div>
-        </div>
+        <input type="password" class="m-input-1 m_bottom" placeholder="请填写当前密码"/>
+        <input type="password" class="m-input-1 m_bottom m_top" placeholder="请设置6-16位新密码"/>
+        <input type="password" class="m-input-1 m_bottom" placeholder="请重复输入一遍新密码"/>
 
-        <button class="m-button red" type="button">下一步</button>
-
+        <button class="m-button red" type="button">确 定</button>
     </div>
-    <div class="footer-weidai icon-wei po_ac_1">
+
+    <div class="footer-weidai icon-wei po_ac_3">
         &#xf652;
     </div>
 </div>
@@ -43,9 +41,5 @@
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
 </script>
-</body>
-</html>
-<body>
-
 </body>
 </html>

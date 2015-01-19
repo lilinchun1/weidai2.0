@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>Document</title>
+<link rel="stylesheet" href="../v20/css/cy-agent.css"/>
+</head>
+<body>
+<div class="g-wrap">
+    <div class="lnvite_topBox bor_bottom_1">
+        <div class="lnvite_top">
+            <img src="../v20/img/or_img/img_0.jpg">
+            <span class="icon-">&#xf600;</span>
+            <!--
+            lv1:&#xf600;
+            lv2:&#xf601;
+            lv3:&#xf602;
+            lv4:&#xf603;
+            lv5:&#xf604;
+            lv6:&#xf605;
+            -->
+        </div>
+            <p>张东平</p>
+            <p>邀请你加盟微代事业~~</p>
+    </div>
+
+</div>
+
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

@@ -8,7 +8,7 @@ var pageCount="";
 var ajax_inspect=2//用于防止json重复提交;
 function ajax_page(){
     $.ajax({
-        url: '/wedai/wap/index.php/agent_shop/index/goods.do?curpage='+curpage,
+		url: "<?=wapUrl('agent_shop/index/goods.do?curpage=');?>"+curpage,
         dataType: "json",
         type: 'post',
         data: {'agent_id':agent_id},
