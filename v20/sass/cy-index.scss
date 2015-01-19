@@ -70,6 +70,13 @@ input[type="checkbox"]:checked {
 a{
   display: block;
 }
+input::-webkit-input-placeholder{
+  color: #666;
+}
+input::-moz-placeholder{
+  color: #666;
+}
+
 .dn{
   display: none;
 }
@@ -98,6 +105,9 @@ a{
 .p_top{
   padding-top: .4rem;
 
+}
+.s_bottom{
+  margin-bottom:.6rem;
 }
 .m_top{
   margin-top: .4rem;
@@ -537,4 +547,45 @@ a{
   }
 
 }
+/*-----------------------升级代理商 agency-up.html----------------------*/
+.bin_text{
+  overflow: hidden;
+  .bin_l{
+    width: 10rem;
+    float: left;
+    line-height: 1.72rem;
+    height: 1.72rem;
+  }
 
+}
+.m-input-1{
+  width: 100%;
+  @extend %input-text;
+  height: 1.72rem;
+  line-height: 1.72rem;
+  color: $font-color666;
+
+}
+.m-button-1{
+  @extend %btn-100;
+  background: $red;
+  width:4.5rem;
+  float: right;
+  line-height: 1.72rem;
+  height: 1.72rem;
+  color: $font-color666;
+}
+.up_top{
+  font-size: .6rem;
+  line-height: 2rem;
+  text-align: left;
+  color: $font-color333;
+}
+.up_code{
+  display: block;
+  width:2.5rem;
+  color: $blue;
+  font-size: .6rem;
+  float: right;
+
+}
