@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no">
+    <title>验证</title>
+    <link rel="stylesheet" href="../v20/css/cy-index.css"/>
+</head>
+<body>
+<div class="g-wrap"><!--外层wrap 640-->
+    <div class="g-wrap-show m_top">
+        <div class="reg-weidai icon-wei sus_logo re_top">
+            &#xf652;
+        </div>
+        <div class="reg_top m_bottom">
+            您已有帐号，请输入密码登录
+        </div>
+        <div class="up_top">
+            您当前帐号：15898162970
+        </div>
+        <input type="tel" class="m-input-1 s_bottom" placeholder="请输入密码"/>
+        <button class="m-button red" type="button">完 成</button>
+
+        <a href="" class="up_code">找回密码</a>
+
+    </div>
+
+</div>
+
+
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>

@@ -2076,10 +2076,27 @@ input::-moz-placeholder {
 
 /* line 584, ../sass/cy-index.scss */
 .up_code {
+  margin-top: .4rem;
   display: block;
   width: 2.5rem;
   color: #2163bd;
   font-size: .6rem;
   float: right; }
+
+/*-----------------------代理商登录-完成注册 agency-register.html----------------------*/
+/* line 594, ../sass/cy-index.scss */
+.reg-weidai {
+  margin-top: 2rem;
+  height: 4rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #e02d2a;
+  font-size: 10rem; }
+
+/* line 602, ../sass/cy-index.scss */
+.reg_top {
+  color: #666;
+  line-height: 1rem;
+  text-align: left; }
 
 /*# sourceMappingURL=cy-index.css.map */

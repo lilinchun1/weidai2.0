@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>素材库-图片</title>
+    <link rel="stylesheet" href="../v20/css/agent.css"/>
+    <style>
+        html{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="g-wrap photo-show-wrap">
+    <div class="show-pic-con">
+        <img src="../v20/img/test_img/banner.jpg" alt=""/>
+    </div>
+    <ul class="photo-show2">
+        <li>
+            <a href="">
+                &#xf637;
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <span class="play-btn">&#xf648;</span>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                &#xf62e;
+            </a>
+        </li>
+        <li>
+            <a href="">
+                &#xf62f;
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

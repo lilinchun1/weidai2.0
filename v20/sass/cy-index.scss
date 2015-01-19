@@ -582,10 +582,25 @@ input::-moz-placeholder{
   color: $font-color333;
 }
 .up_code{
+  margin-top: .4rem;
   display: block;
   width:2.5rem;
   color: $blue;
   font-size: .6rem;
   float: right;
 
+}
+/*-----------------------代理商登录-完成注册 agency-register.html----------------------*/
+.reg-weidai{
+  margin-top: 2rem;
+  height: 4rem;
+  line-height: 2rem;
+  text-align: center;
+  color: $red;
+  font-size: 10rem;
+}
+.reg_top{
+  color: $font-color666;
+  line-height: 1rem;
+  text-align: left;
 }
