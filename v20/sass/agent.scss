@@ -301,7 +301,7 @@
           float: left;
           width: 10%;
           height: 100%;
-          background-color: #f7774a;
+          background-color: #ff9900;
         }
       }
       &:nth-of-type(2){
@@ -454,9 +454,50 @@
       }
     }
     i{
-      font-size: $fz12;}
+        position: relative;
+        float: right;
+        width: .45rem;
+        height: 1.3rem;
+        font-size: $fz14;
+        &:after{
+          content: "\f64a";
+          position: absolute;
+          top: -.15rem;
+          right: .3rem;
+          font-size: $fz14;
+          font-family: icomoon;
+          color: #666;
+        }
+        &:before{
+          content: "\f64b";
+          position: absolute;
+          top: .15rem;
+          right: .3rem;
+          font-size: $fz14;
+          font-family: icomoon;
+          color: #666;
+        }
+      }
+  }
+  .active-down{
+    i{
+      &:before{
+        color: $red;
+      }
+    }
+  }
+  .active-up{
+    i{
+      &:after{
+        color: $red;
+      }
+    }
+  }
+  .active-ft{
+    color: $red;
   }
 }
+
 .shop-item-wrap{
   padding: .45rem 0;
   @extend %wrap-600;
