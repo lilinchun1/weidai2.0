@@ -236,10 +236,26 @@ window.onload=function(){
 
 
 //wapUrl
-function wapUrl(url, url2){
-	if(url2){
-		return wdApp.siteUrl + "/" + url + url2 + "&sid=" + wdApp.sessionId;
+function wapUrl(url, params){
+	if(params){
+		var list="";
+　　　　for(var key in params){ 
+			list=list+key+"="+encodeURIComponent(params[key])+"&";
+		} 
+		return wdApp.siteUrl + "/" + url + "?" + list + "sid=" + wdApp.sessionId;
 	}else{
 		return wdApp.siteUrl + "/" + url + "?sid=" + wdApp.sessionId;
+	}
+}
+
+
+function wapRedirect(url, params, timeout){
+	url = wapUrl(url, params);
+	if(timeout){
+		setTimeout(function(){
+			window.location.href=url;
+		}, timeout);
+	}else{
+		window.location.href=url;
 	}
 }

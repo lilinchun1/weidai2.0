@@ -359,7 +359,7 @@ textarea {
   color: #666; }
 
 /* line 27, ../sass/_input.scss */
-.m-input, .m-input-1 {
+.m-input, .m-input-1, .re_icon .re_w {
   height: 1.3rem;
   border: 1px solid #ccc;
   font-size: 0.7rem;
@@ -726,19 +726,15 @@ button[disabled="disabled"] {
 /*alert6 shop-show-alert*/
 /* line 206, ../sass/_alert.scss */
 .m-shop-show-alert {
-  display: none;
-  position: fixed;
-  bottom: 2.5rem;
-  z-index: 9;
+  display: block;
   width: 100%;
-  min-height: 13.25rem;
-  background: #f8f8f8; }
+  min-height: 13.25rem; }
 
-/* line 217, ../sass/_alert.scss */
+/* line 213, ../sass/_alert.scss */
 .show-alert-con .show-alert-info {
   height: 3.8rem;
   border-bottom: 1px solid #ccc; }
-  /* line 220, ../sass/_alert.scss */
+  /* line 216, ../sass/_alert.scss */
   .show-alert-con .show-alert-info span {
     margin-top: .35rem;
     margin-right: .55rem;
@@ -750,51 +746,51 @@ button[disabled="disabled"] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-    /* line 231, ../sass/_alert.scss */
+    /* line 227, ../sass/_alert.scss */
     .show-alert-con .show-alert-info span img {
       width: 100%; }
-  /* line 235, ../sass/_alert.scss */
+  /* line 231, ../sass/_alert.scss */
   .show-alert-con .show-alert-info h2 {
     padding-top: .6rem;
     font-size: 0.9rem;
     color: #e02d2a; }
-  /* line 240, ../sass/_alert.scss */
+  /* line 236, ../sass/_alert.scss */
   .show-alert-con .show-alert-info p {
     font-size: 0.6rem;
     color: #999; }
 
-/* line 246, ../sass/_alert.scss */
+/* line 242, ../sass/_alert.scss */
 .show-alert-guige {
   padding: .4rem 0 0 2.15rem;
   overflow: hidden;
   border-bottom: 1px dotted #ccc; }
-  /* line 250, ../sass/_alert.scss */
+  /* line 246, ../sass/_alert.scss */
   .show-alert-guige label {
     margin-left: -2.15rem;
     float: left;
     width: 2.15rem; }
-  /* line 255, ../sass/_alert.scss */
+  /* line 251, ../sass/_alert.scss */
   .show-alert-guige .m-option {
     margin-bottom: .35rem;
     margin-right: .35rem; }
-  /* line 259, ../sass/_alert.scss */
+  /* line 255, ../sass/_alert.scss */
   .show-alert-guige .last-number {
     float: left;
     padding-left: .4rem;
-    height: 1.2rem;
-    line-height: 1.2rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
     font-size: 0.6rem;
     color: #999; }
 
-/* line 268, ../sass/_alert.scss */
+/* line 264, ../sass/_alert.scss */
 .bdn {
   border: 0 none; }
 
-/* line 270, ../sass/_alert.scss */
+/* line 266, ../sass/_alert.scss */
 .pdb04 {
   padding-bottom: .4rem; }
 
-/* line 273, ../sass/_alert.scss */
+/* line 269, ../sass/_alert.scss */
 .close-btn {
   position: absolute;
   top: .25rem;
@@ -806,7 +802,7 @@ button[disabled="disabled"] {
   color: #666;
   font-size: 0.8rem; }
 
-/* line 285, ../sass/_alert.scss */
+/* line 281, ../sass/_alert.scss */
 .dn {
   display: none; }
 
@@ -914,15 +910,15 @@ button[disabled="disabled"] {
 /* line 117, ../sass/_mod-item.scss */
 .m-select-number {
   float: left;
-  width: 4.35rem;
-  height: 1.2rem;
-  line-height: 1.2rem;
+  width: 6.5rem;
+  height: 1.7rem;
+  line-height: 1.7rem;
   text-align: center;
   border: 1px solid #ccc; }
   /* line 124, ../sass/_mod-item.scss */
   .m-select-number span {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.7rem;
+    height: 1.7rem;
     float: left; }
   /* line 129, ../sass/_mod-item.scss */
   .m-select-number .m-left {
@@ -934,13 +930,13 @@ button[disabled="disabled"] {
   .m-select-number .m-left,
   .m-select-number .m-right {
     text-align: center;
-    line-height: 1.2rem;
+    line-height: 1.7rem;
     color: #999; }
   /* line 141, ../sass/_mod-item.scss */
   .m-select-number .m-select-number-input {
     float: left;
-    width: 1.8rem;
-    height: 1.2rem;
+    width: 3rem;
+    height: 1.7rem;
     border: 0 none;
     text-align: center;
     color: #666; }
@@ -2098,5 +2094,50 @@ input::-moz-placeholder {
   color: #666;
   line-height: 1rem;
   text-align: left; }
+
+/*-------------------登陆 st-register.html--------------------------*/
+/* line 608, ../sass/cy-index.scss */
+.re_top {
+  margin-top: 5rem; }
+
+/* line 611, ../sass/cy-index.scss */
+.re_w_show {
+  width: 14rem;
+  margin: 0 auto; }
+
+/* line 615, ../sass/cy-index.scss */
+.re_icon {
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  height: 1.72rem;
+  line-height: 1.72rem;
+  color: #666; }
+  /* line 622, ../sass/cy-index.scss */
+  .re_icon .icon-re_icon {
+    width: .7rem;
+    float: left;
+    height: 1.72rem;
+    line-height: 1.72rem; }
+  /* line 628, ../sass/cy-index.scss */
+  .re_icon .re_w {
+    width: 13rem;
+    border: none;
+    float: left;
+    height: 1.72rem;
+    line-height: 1.72rem; }
+
+/* line 638, ../sass/cy-index.scss */
+.re_char {
+  line-height: 1.5rem;
+  overflow: hidden; }
+  /* line 641, ../sass/cy-index.scss */
+  .re_char .re_char_l {
+    float: left;
+    color: #666; }
+  /* line 645, ../sass/cy-index.scss */
+  .re_char .re_char_r {
+    float: right;
+    color: #2163bd; }
 
 /*# sourceMappingURL=cy-index.css.map */

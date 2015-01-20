@@ -592,7 +592,7 @@ input::-moz-placeholder{
 }
 /*-----------------------代理商登录-完成注册 agency-register.html----------------------*/
 .reg-weidai{
-  margin-top: 2rem;
+  margin-top:2rem;
   height: 4rem;
   line-height: 2rem;
   text-align: center;
@@ -603,4 +603,47 @@ input::-moz-placeholder{
   color: $font-color666;
   line-height: 1rem;
   text-align: left;
+}
+/*-------------------登陆 st-register.html--------------------------*/
+.re_top{
+  margin-top: 5rem;
+}
+.re_w_show{
+  width: 14rem;
+  margin: 0 auto;
+}
+.re_icon{
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  height: 1.72rem;
+  line-height: 1.72rem;
+  color: $font-color666;
+  .icon-re_icon{
+    width: .7rem;
+    float: left;
+    height: 1.72rem;
+    line-height: 1.72rem;
+  }
+  .re_w{
+    width: 13rem;
+    @extend %input-text;
+    border: none;
+    float: left;
+    height: 1.72rem;
+    line-height: 1.72rem;
+
+  }
+}
+.re_char{
+  line-height: 1.5rem;
+  overflow: hidden;
+  .re_char_l{
+    float: left;
+    color: $font-color666;
+  }
+  .re_char_r{
+    float: right;
+    color: $blue;
+  }
 }
