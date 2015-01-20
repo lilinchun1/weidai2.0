@@ -233,13 +233,21 @@
     border-bottom: 1px solid $border-color;
     overflow: hidden;
   }
-  span{
-    font-size: $fz16;
-    color: #ffb301;
-  }
   a{
     float: right;
     color: $blue;
+  }
+  .icon-lv-span{
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    background: $lvbg;
+    font-size: $fz12;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    color: #ffffff;
+    display: inline-block;
   }
 }
 .level-bar-info{
@@ -249,22 +257,36 @@
   .level-bar{
     width: 100%;
     &:before{
-      content: "\f64a";
+      content: "\f600";
       font-family: icomoon;
       position: absolute;
       left: 0;
-      top: .5rem;
-      font-size: $fz16;
-      color: #ffb301;
+      top: .6rem;
+      width: 1rem;
+      height: 1rem;
+      line-height: 1rem;
+      text-align: center;
+      font-size: $fz12;
+      color: #fff;
+      background: $lvbg;
+      -webkit-background-size: 100% auto;
+      background-size: 100% auto;
     }
     &:after{
-      content: "\f64f";
+      content: "\f605";
       font-family: icomoon;
       position: absolute;
-      top: .5rem;
+      top: .6rem;
       right: 0;
-      font-size: $fz16;
-      color: #ffb301;
+      width: 1rem;
+      height: 1rem;
+      line-height: 1rem;
+      text-align: center;
+      font-size: $fz12;
+      color: #fff;
+      background: $lvbg;
+      -webkit-background-size: 100% auto;
+      background-size: 100% auto;
     }
     li{
       &:nth-of-type(1) {

@@ -295,9 +295,24 @@ input::-moz-placeholder{
   margin-bottom: .2rem;
 }
 .po_ac_1{
-  position: absolute;
-  bottom: .4rem;
-  margin-bottom: 0;
+  margin-top: 14rem;
+  margin-bottom: .2rem;
+}
+.po_ac_2{
+  margin-top: 5rem;
+  margin-bottom: .2rem;
+}
+.po_ac_3{
+  margin-top: 12rem;
+  margin-bottom: .2rem;
+}
+.po_ac_4{
+  margin-top: 9rem;
+  margin-bottom: .2rem;
+}
+.po_ac_5{
+  margin-top: 10.5rem;
+  margin-bottom: .2rem;
 }
 /*-----------------------支付成功 pay-success.html ----------------------*/
 .icon-pay_s{
@@ -575,7 +590,7 @@ input::-moz-placeholder{
 }
 .up_top{
   font-size: .6rem;
-  line-height: 2rem;
+  line-height:2rem;
   text-align: left;
   color: $font-color333;
 }
@@ -643,5 +658,103 @@ input::-moz-placeholder{
   .re_char_r{
     float: right;
     color: $blue;
+  }
+}/*-----------------------搜索结果 search-result.html----------------------*/
+.my_en_top {
+  background-color: #f8f8f8;
+  margin: 0 auto;
+  width: 16rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid $border-color;
+  position: relative;
+  height:1.5rem;
+  .my_en_top_1 {
+    .my_en_r{
+      float: left;
+      width: 16rem;
+      .my_en_search {
+        width: 13.5rem;
+        line-height: 1.5rem;
+        height: 1.5rem;
+        float: left;
+        border: 1px solid $border-color;
+        border-right: none;
+        box-sizing: border-box;
+      }
+      .icon_my_en{
+        width:1.5rem;
+        background-color: #FFFFFF;
+        color: $font-color333;
+        line-height: 1.5rem;
+        height: 1.5rem;
+        float: left;
+        border: 1px solid $border-color;
+        border-left: none;
+        box-sizing: border-box;
+
+      }
+    }
+  }
+  .my_en_list{
+    display: none;
+    position: absolute;
+    top: 2.1rem;
+    z-index: 99;
+    left: 0;
+    width: 16rem;
+    border-top: 1px solid #ccc;
+    background-color: #f8f8f8;
+    a{
+      display: block;
+      text-indent: .5rem;
+      span{
+        float: right;
+        color: $green;
+      }
+    }
+    li{
+      height: 1.8rem;
+      line-height: 1.8rem;
+      border-bottom: 1px solid #ccc;
+      overflow: hidden;
+    }
+  }
+
+}
+.my_en_top_1 .my_en_l a:after{
+  content: "";
+  width: 0;
+  height: 0;
+  margin-left: .2rem;
+  display: inline-block;
+  border: .25rem solid transparent;
+  border-bottom: .25rem solid #ccc;
+  border-right: .25rem solid #ccc;
+}
+.gray{
+  background-color: #cccccc;
+  color:$font-color666;
+}
+.brand-show-item .brand-show-item-btn:nth-of-type(1){
+  background-color: $red;
+}
+.brand-show-item .brand-show-item-btn:nth-of-type(2){
+  background-color: #cccccc;
+  color:$font-color666;
+
+}
+.sr_char{
+  line-height:1.6rem;
+  .ser-font{
+    float: left;
+    color: $red;
+  }
+  .sr-font{
+    float: left;
+    color:$font-color999;
+    margin-left: .4rem;
+    text-decoration:line-through;
+
   }
 }

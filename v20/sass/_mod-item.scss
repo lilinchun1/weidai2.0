@@ -230,6 +230,19 @@
     &:last-child:before{
       border-right: 0 none;
     }
+    span{
+      position: absolute;
+      top: .1rem;
+      right: .8rem;
+      width: .8rem;
+      height: .8rem;
+      line-height: .8rem;
+      border-radius: .8rem;
+      background-color: $red;
+      color: #ffffff;
+      font-size: $fz12;
+      text-align: center;
+    }
   }
   .icon-a{
     padding-top: .3rem;
@@ -406,6 +419,7 @@
   background-color: #000000;
   .icon-shoucang,
   .icon-gouwuche{
+    position: relative;
     width: 2.8rem;
     height: 2.5rem;
     line-height: 2.5rem;
@@ -414,6 +428,19 @@
     a{
       display: block;
       color: #ffffff;
+    }
+    span{
+      position: absolute;
+      top: .3rem;
+      right: .3rem;
+      width: .8rem;
+      height: .8rem;
+      line-height: .8rem;
+      border-radius: .8rem;
+      background-color: $red;
+      color: #ffffff;
+      font-size: $fz12;
+      text-align: center;
     }
   }
   .m-shop-foot-btn{
@@ -576,12 +603,14 @@
     span{
       position: relative;
       float: right;
+      width: .45rem;
+      height: 1.3rem;
       font-size: $fz14;
       &:after{
         content: "\f64a";
         position: absolute;
         top: -.15rem;
-        right: 0;
+        right: .3rem;
         font-size: $fz14;
         font-family: icomoon;
         color: #666;
@@ -590,7 +619,7 @@
         content: "\f64b";
         position: absolute;
         top: .15rem;
-        right: 0;
+        right: .3rem;
         font-size: $fz14;
         font-family: icomoon;
         color: #666;
