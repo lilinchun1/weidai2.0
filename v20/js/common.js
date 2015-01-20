@@ -20,6 +20,8 @@ $(function(){
 		$("#J_loading").show();
 	}).on("ajaxComplete",function(e,xhr,options){
 		$("#J_loading").hide();
+	}).on("ajaxError",function(){
+		floatNotify.simple("请求有误，请稍后");
 	});
 });
 

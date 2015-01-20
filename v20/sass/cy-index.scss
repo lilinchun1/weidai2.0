@@ -67,9 +67,7 @@ input[type="checkbox"]:checked {
   -webkit-background-size: 100%;
   background-size: 100%;
 }
-a{
-  display: block;
-}
+
 input::-webkit-input-placeholder{
   color: #666;
 }
@@ -180,12 +178,12 @@ input::-moz-placeholder{
   border-bottom: 1px $border-color dashed;
   .or_count_1{
     float: left;
-    line-height: 1.2rem;
+    line-height: 1.7rem;
     color: $font-color666;
   }
   .or_count_2{
     float: right;
-    line-height: 1.2rem;
+    line-height: 1.7rem;
     color: $font-color333;
   }
 }
@@ -254,7 +252,7 @@ input::-moz-placeholder{
 .notice{
   background-color: #fffcf1;
   line-height: 1rem;
-  font-size: .6rem;
+  font-size: .7rem;
   color: $font-color666;
   padding: .4rem;
   margin-bottom: .4rem;
