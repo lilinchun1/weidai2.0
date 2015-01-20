@@ -570,7 +570,25 @@
       display: block;
     }
     span{
-      font-size: $fz12;
+      position: relative;
+      float: right;
+      font-size: $fz14;
+      &:after{
+        content: "\f64a";
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: $fz14;
+        font-family: icomoon;
+      }
+      &:before{
+        content: "\f64b";
+        position: absolute;
+        top: .25rem;
+        right: 0;
+        font-size: $fz14;
+        font-family: icomoon;
+      }
     }
     .search-list-r{
       width: 1rem;
