@@ -580,20 +580,23 @@
       &:after{
         content: "\f64a";
         position: absolute;
-        top: 0;
+        top: -.15rem;
         right: 0;
         font-size: $fz14;
         font-family: icomoon;
+        color: #666;
       }
       &:before{
         content: "\f64b";
         position: absolute;
-        top: .25rem;
+        top: .15rem;
         right: 0;
         font-size: $fz14;
         font-family: icomoon;
+        color: #666;
       }
     }
+
     .search-list-r{
       width: 1rem;
       height: 1rem;
@@ -605,6 +608,23 @@
       text-align: center;
       display: inline-block;
     }
+  }
+  .active-down{
+    span{
+      &:before{
+        color: $red;
+      }
+    }
+  }
+  .active-up{
+    span{
+      &:after{
+        color: $red;
+      }
+    }
+  }
+  .active-ft a{
+    color: $red;
   }
 }
 
