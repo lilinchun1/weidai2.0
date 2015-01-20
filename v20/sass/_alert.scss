@@ -204,13 +204,9 @@
 
 /*alert6 shop-show-alert*/
 .m-shop-show-alert{
-  display: none;
-  position: fixed;
-  bottom: 2.5rem;
-  z-index: 9;
+  display: block;
   width: 100%;
   min-height: 13.25rem;
-  background: #f8f8f8;
 }
 .show-alert-con{
   @extend %wrap-600;
@@ -259,8 +255,8 @@
   .last-number{
     float: left;
     padding-left: .4rem;
-    height: 1.2rem;
-    line-height: 1.2rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
     font-size: $fz12;
     color: $font-color999;
   }
