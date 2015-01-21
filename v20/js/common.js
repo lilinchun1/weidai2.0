@@ -113,6 +113,7 @@ function contains(arr, str) {
 
 //确认提示框   方法
 function floatNotify_yes(img_font,floatNotify_title,button_left,button_right,execute){
+	$('body').append('<div id="js_moban" class="overly"></div>');
 	$("#js_moban").show();
 	$('body').append('<div class="m-alert-affirm" style="display:block"><p class="icon-affirm">'+img_font+'</p><p class="alert-affirm-info">'+floatNotify_title+'</p><button type="button" class="button_left m-button-s">'+button_left+'</button><button type="button" class="button_right m-button-s bgccc">'+button_right+'</button></div>');
 	$('.button_left').click(function(){
@@ -129,6 +130,7 @@ function floatNotify_yes(img_font,floatNotify_title,button_left,button_right,exe
 
 //单提示框   方法
 function floatNotify_one(img_font,floatNotify_title,button_met){
+	$('body').append('<div id="js_moban" class="overly"></div>');
 	$("#js_moban").show();
 	$('body').append('<div class="m-alert-submit" style="display:block"><p class="icon-submit">'+img_font+'</p><p class="alert-affirm-info">'+floatNotify_title+'</p><button type="button" class="button_met m-button-s">'+button_met+'</button></div>');
 	$('.button_met').click(function(){

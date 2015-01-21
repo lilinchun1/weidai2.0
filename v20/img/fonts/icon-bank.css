@@ -1,0 +1,75 @@
+@font-face {
+	font-family: 'icon-bank';
+	src:url('icon-bank.eot');
+	src:url('icon-bank.eot#iefix') format('embedded-opentype'),
+		url('icon-bank.woff') format('woff'),
+		url('icon-bank.ttf') format('truetype'),
+		url('icon-bank.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon2-"], [class*=" icon2-"] {
+	font-family: 'icon-bank';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon2-gongshang:before {
+	content: "\f700";
+}
+
+.icon2-guangfa:before {
+	content: "\f701";
+}
+
+.icon2-jianshe:before {
+	content: "\f702";
+}
+
+.icon2-jiaotong:before {
+	content: "\f703";
+}
+
+.icon2-mingsheng .path1:before {
+	content: "\f704";
+	color: rgb(53, 130, 167);
+}
+.icon2-mingsheng .path2:before {
+	content: "\f705";
+	margin-left: -1em;
+	color: rgb(53, 136, 177);
+}
+
+.icon2-nongye:before {
+	content: "\f706";
+}
+
+.icon2-pingan:before {
+	content: "\f707";
+}
+
+.icon2-pufa:before {
+	content: "\f708";
+}
+
+.icon2-shenfa:before {
+	content: "\f709";
+}
+
+.icon2-zhaoshang:before {
+	content: "\f70a";
+}
+
+.icon2-zhongxin:before {
+	content: "\f70b";
+}
+
