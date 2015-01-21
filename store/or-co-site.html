@@ -17,8 +17,10 @@
             购物清单
         </div>
         <div class="or_top_null">
-            实付款:<span>&yen;2000.00</span>
+            合计:<span>&yen;2000.00</span>
+            <div class="or_yun">运费：20.00元</div>
         </div>
+
     </div>
 </div>
 <div class="g-wrap bor_bottom"><!--外层wrap 640-->
@@ -27,13 +29,13 @@
         优衣库旗舰店<span class="icon-red">&#xf634;</span>
     </div>
 </div>
-<div class="g-wrap "><!--外层wrap 640-->
+<div class="g-wrap bor_bottom"><!--外层wrap 640-->
     <div class="g-wrap-show">
         <div class="m-list-info-item bor_bottom_1">
             <div class="mlii-pic or_img">
                 <img src="../v20/img/or_img/or_ing_1.png" alt=""/>
             </div>
-            <div class="mlii-info">
+            <div class="mlii-info or_height">
                 <h2>
                     <a href="">
                         INSUN恩裳2014秋冬新款毛织衫针织衫女9406645
@@ -62,19 +64,13 @@
             <div class="or_count_2">购买数量：</div>
 
         </div>
-        <a class="or_char">
-            <div class="or_char_1">配送方式</div>
-            <div class="or_char_2">顺丰速运包邮</div>
-        </a>
-    </div>
-</div>
-<div class="g-wrap bor_top bor_bottom"><!--外层wrap 640-->
-    <div class="g-wrap-show">
+
+
         <div class="m-list-info-item bor_bottom_1">
             <div class="mlii-pic or_img">
                 <img src="../v20/img/or_img/or_ing_1.png" alt=""/>
             </div>
-            <div class="mlii-info">
+            <div class="mlii-info or_height">
                 <h2>
                     <a href="">
                         INSUN恩裳2014秋冬新款毛织衫针织衫女9406645
@@ -155,12 +151,8 @@
         <div class="or">订单留言</div>
 
         <textarea  class="m-textarea m_bottom" placeholder="请输入内容"></textarea>
-        <div class="notice">
-            运费收取：建议大订单客户选择物流运输，这样可以有效降低运输成本，我们会给大订单客户一个最低的不含运费的产品报价，运费是客户提货时支付给物流公司
-        </div>
         <button type="button" class="m-button m_bottom orange">支付宝安全支付</button>
         <button type="button" class="m-button m_bottom">微信安全支付</button>
-
         <nav class="m-footer-nav">
             <a href="">店铺首页</a>
             <a href="">会员中心</a>
@@ -171,7 +163,18 @@
         </footer>
     </div>
 </div>
-<div class="m-footer-btn">
+<!-------------底部按钮 开始------------------>
+<div class="m-footer-btn" id="foot-search-none">
+    <div class="m-footer-btn-item">
+        <a href="#foot-search">
+            <div class="icon-a">
+                &#xf639;
+            </div>
+            <p>
+                搜索
+            </p>
+        </a>
+    </div>
     <div class="m-footer-btn-item active-footer-btn">
         <a href="">
             <div class="icon-a">
@@ -179,16 +182,6 @@
             </div>
             <p>
                 首 页
-            </p>
-        </a>
-    </div>
-    <div class="m-footer-btn-item">
-        <a href="">
-            <div class="icon-a">
-                &#xf639;
-            </div>
-            <p>
-                分类搜索
             </p>
         </a>
     </div>
@@ -212,7 +205,17 @@
             </p>
         </a>
     </div>
+    <div class="m-footer-btn2"  id="foot-search">
+        <div class="icon-left-btn">
+            <a href="#foot-search-none">
+                &#xf60a;
+            </a>
+        </div>
+        <input type="text" name="" id="" class="m-footer-search" placeholder="&#xf639; | 搜索您想要的商品"/>
+        <button type="button" class="m-footer-search-btn">搜索</button>
+    </div>
 </div>
+<!-------------底部按钮 结束------------------>
 <script>
     (function (doc, win) {
         var docEl = doc.documentElement,

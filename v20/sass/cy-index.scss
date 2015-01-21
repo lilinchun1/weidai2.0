@@ -128,6 +128,8 @@ input::-moz-placeholder{
 /*------------------确认订单order-confitm or-co-site ---------------------------*/
 .or_top{
   overflow: hidden;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
 }
 .or_top_char{
   color:$font-color333;
@@ -137,8 +139,8 @@ input::-moz-placeholder{
 }
 .or_top_null{
   float: right;
-  font-size: $fz18;
-  line-height: 2rem;
+  font-size: $fz16;
+  line-height: 1rem;
   color:$font-color666;
   span{
     color: #d0321d;
@@ -238,6 +240,12 @@ input::-moz-placeholder{
 }
 .green_char{
   color: $green;
+}
+.or_yun{
+  text-align: right;
+  color: $font-color666;
+  font-size: .6rem;
+
 }
 /*-----------------------地址  mj-order-con.html ----------------------*/
 .site_site{
