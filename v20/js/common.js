@@ -113,12 +113,22 @@ function contains(arr, str) {
 
 //确认提示框   方法
 function floatNotify_yes(img_font,floatNotify_title,button_left,button_right,execute){
-	$('body').append('<div id="js_moban" class="overly"></div>');
+	if(!$("#js_moban").length){
+		$('body').append('<div id="js_moban" class="overly"></div>');
+	}
 	$("#js_moban").show();
+	
+	if($(".m-alert-affirm").length){
+		$(".m-alert-affirm").remove();
+	}
 	$('body').append('<div class="m-alert-affirm" style="display:block"><p class="icon-affirm">'+img_font+'</p><p class="alert-affirm-info">'+floatNotify_title+'</p><button type="button" class="button_left m-button-s">'+button_left+'</button><button type="button" class="button_right m-button-s bgccc">'+button_right+'</button></div>');
 	$('.button_left').click(function(){
-		var func=new Function(execute);
-		func();
+		if($.isFunction(execute)){
+			execute.call();
+		}else{
+			var func=new Function(execute);
+			func();
+		}
 		$(this).parent('.m-alert-affirm').remove();
 		$("#js_moban").hide();
 	})
@@ -130,8 +140,14 @@ function floatNotify_yes(img_font,floatNotify_title,button_left,button_right,exe
 
 //单提示框   方法
 function floatNotify_one(img_font,floatNotify_title,button_met){
-	$('body').append('<div id="js_moban" class="overly"></div>');
+	if(!$("#js_moban").length){
+		$('body').append('<div id="js_moban" class="overly"></div>');
+	}
 	$("#js_moban").show();
+	
+	if($(".m-alert-submit").length){
+		$(".m-alert-submit").remove();
+	}
 	$('body').append('<div class="m-alert-submit" style="display:block"><p class="icon-submit">'+img_font+'</p><p class="alert-affirm-info">'+floatNotify_title+'</p><button type="button" class="button_met m-button-s">'+button_met+'</button></div>');
 	$('.button_met').click(function(){
 		$(this).parent('.m-alert-submit').remove();

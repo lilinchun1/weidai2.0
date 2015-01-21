@@ -82,7 +82,7 @@ input::-moz-placeholder{
   float: right;
 }
 .or_height h2{
-  height: 2.6rem;
+  height: 2.3rem;
   overflow: hidden;
 }
 .bor_bottom{
@@ -467,6 +467,9 @@ input::-moz-placeholder{
     line-height: 1rem;
     font-size: .7rem;
     color: $green;
+    a{
+      color: $green;
+    }
     span{
       color: $font-color999;
     }
@@ -474,6 +477,14 @@ input::-moz-placeholder{
 }
 .red{
   background-color: $red;
+}
+.m-list-info-item .icon-or{
+  line-height:1.7rem;
+  color: $font-color999;
+  text-align: right;
+  display: block;
+  float: right;
+
 }
 /*-----------------------新增发票 bill-add.html----------------------*/
 .bill_add_text{
