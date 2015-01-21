@@ -744,3 +744,125 @@
   }
 }
 /*-----------------------share-guidance.html end----------------------*/
+
+/*-----------------------null.html start----------------------*/
+.null-wrap{
+  padding: 4rem 0;
+  width: 100%;
+  p{
+    text-align: center;
+    font-size: $fz16;
+    color: $font-color666;
+  }
+  span{
+    position: relative;
+    margin: 0 auto;
+    width: 7rem;
+    height: 7rem;
+    display: block;
+    &:after{
+      position: absolute;
+      top: -1.75rem;
+      left: 0;
+      content: "";
+      font-family: icomoon;
+      font-size: 7rem;
+      color: #cccccc;
+    }
+  }
+  .fapiao-btn{
+    display: none;
+  }
+}
+//订单管理
+.dingdan{
+  span{
+    &:after{
+      content: "\f65a";
+    }
+  }
+}
+//发票
+.fapiao{
+  span{
+    display: none;
+  }
+  .fapiao-btn{
+    @extend %wrap-600;
+    margin-top: .5rem;
+    display: block;
+  }
+}
+//购物车
+.gouwuche{
+  span{
+    &:after{
+      content: "\f60b";
+    }
+  }
+}
+//收入明细
+.shouru{
+  span{
+    &:after{
+      content: "\f633";
+    }
+  }
+}
+//素材库
+.sucai{
+  span{
+    &:after{
+      content: "\f655";
+    }
+  }
+}
+//搜索结果
+.sousuo{
+  span{
+    &:after{
+      content: "\f63a";
+    }
+  }
+}
+//商品
+.shangpin{
+  span{
+    &:after{
+      content: "\f65c";
+    }
+  }
+}
+//收藏
+.shoucang{
+  span{
+    &:after{
+      content: "\f614";
+    }
+  }
+}
+//团队成员
+.tuanduichengyuan{
+  span{
+    &:after{
+      content: "\f618";
+    }
+  }
+}
+//介绍
+.jieshao{
+  span{
+    &:after{
+      content: "\f65b";
+    }
+  }
+}
+//消息
+.xiaoxi{
+  span{
+    &:after{
+      content: "\f608";
+    }
+  }
+}
+/*-----------------------null.html end----------------------*/
