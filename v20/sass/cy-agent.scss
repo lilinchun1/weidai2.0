@@ -755,6 +755,7 @@ a{
 .lnvite_topBox{
   margin-top: .4rem;
   padding-bottom: .4rem;
+
   .lnvite_top{
     position: relative;
     margin: 0 1.1rem 0 0;
@@ -789,13 +790,53 @@ a{
 
 }
 /*-----------------------我的银行卡----------------------*/
-.icon2-my_img{
+.lnvite_topBox_1{
+  margin-top: .4rem;
+  padding-bottom: .4rem;
+  overflow: hidden;
+}
+  .icon2-my_img{
   color: $red;
   font-size:3.5rem;
   line-height:3rem;
+  width: 4rem;
   float: left;
+  position: relative;
+
+
+  span{
+    position: absolute;
+    top:0;
+    left:0;
+    float: left;
+  }
 }
 .my_card_char{
   color:$red;
   font-size: .6rem;
+}
+.my_c_r{
+  float: left;
+  margin-left: 4rem;
+}
+/*-----------------------团队-收人明细 team-income.html----------------------*/
+.ti_Box{
+  overflow: hidden;
+  line-height: 2rem;
+  color: $font-color333;
+  .ti_l{
+    float: left;
+    
+  }
+  .ti_r{
+    float: right;
+
+  }
+  span{
+    color: $red;
+  }
+  i{
+    color: $font-color999;
+  }
+
 }

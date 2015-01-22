@@ -30,7 +30,7 @@
 }
 .ident-item-wrap{
   @extend %wrap-640;
-  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color;
   .m-list-info-item{
     border-bottom: 1px dotted $border-color;
     &:nth-last-of-type(1){
@@ -117,7 +117,7 @@
     border-bottom: 1px dotted $border-color;
     label{
       float: left;
-      width: 3.5rem;
+      width: 3.6rem;
     }
   }
   .bdn{
@@ -128,7 +128,7 @@
   padding: .5rem 0;
   label{
     float: left;
-    width: 3.5rem;
+    width: 3.6rem;
   }
   p{
     padding-left: 3.5rem;
@@ -150,6 +150,7 @@
   color: $font-color666;
   a{
     display: block;
+    color: $font-color666;
   }
   span{
     font-family: 'icomoon';
