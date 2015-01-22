@@ -25,10 +25,21 @@
 }
 
 /*texarea 文本框*/
+.textarea-wrap{
+  position: relative;
+  width: 100%;
+}
 .m-textarea{
   width: 100%;
-  height: 3.625rem;
+  height: 2.6rem;
   @extend %input-textarea;
+}
+.m-textarea + p{
+  position: absolute;
+  bottom: .3rem;
+  right: .4rem;
+  font-size: $fz12;
+  color: $font-color999;
 }
 /*----------------------按钮-----------------------*/
 /*全宽实心按钮 高75*/

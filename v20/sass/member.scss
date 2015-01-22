@@ -282,7 +282,6 @@
 .evaluate-textarea{
   margin: .5rem auto;
   width: 15rem;
-  height: 2.6rem;
 }
 .evaluate-btn{
   margin: .5rem auto;
@@ -354,6 +353,7 @@
       border: .075rem solid #eee;
       background-color: #eee;
     }
+
     &:nth-of-type(1){
       &:before{
         background-color: $green;
@@ -371,6 +371,12 @@
         width: .22rem;
         height: 100%;
       }
+    }
+  }
+  .green-font{
+    p,
+    time{
+      color: $green;
     }
   }
 }

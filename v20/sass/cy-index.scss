@@ -206,6 +206,7 @@ input::-moz-placeholder{
   line-height:1.8rem;
 }
 .or_textBox{
+  width:100%;
   overflow: hidden;
   margin-bottom: .4rem;
   .or_text{
@@ -214,7 +215,7 @@ input::-moz-placeholder{
     line-height: 1.3rem;
   }
   .text_w{
-    width:12.4rem;
+    width:12.3rem;
     float: left;
   }
 }
@@ -249,6 +250,9 @@ input::-moz-placeholder{
 }
 .mlii-info a{
   color: $font-color666;
+}
+.mlii-info p{
+  margin-top: 1rem;
 }
 /*-----------------------地址  mj-order-con.html ----------------------*/
 .site_site{
@@ -310,7 +314,7 @@ input::-moz-placeholder{
   margin-bottom: .2rem;
 }
 .po_ac_2{
-  margin-top: 5rem;
+  margin-top: 4.5rem;
   margin-bottom: .2rem;
 }
 .po_ac_3{
@@ -328,7 +332,7 @@ input::-moz-placeholder{
 /*-----------------------支付成功 pay-success.html ----------------------*/
 .icon-pay_s{
   font-size: 3.5rem;
-  margin-top: 1rem;
+  margin-top:2rem;
   color:$green;
   text-align: center;
 
@@ -337,10 +341,12 @@ input::-moz-placeholder{
   color: $font-color333;
   line-height: 2.5rem;
   text-align: center;
+  margin-top:1.5rem;
+  margin-bottom: 1.5rem;
 }
 .pay_input{
   overflow: hidden;
-  width: 50%;
+  width:55%;
   margin: 0 auto;
   .pay_l{
     float: left;
@@ -357,7 +363,7 @@ input::-moz-placeholder{
 /*-----------------------支付失败 pay_failed.html ----------------------*/
 .icon-pay_f{
   font-size: 3.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   color:$red;
   text-align: center;
 }
