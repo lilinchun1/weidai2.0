@@ -351,11 +351,14 @@
   width: 100%;
   li{
     position: relative;
-    padding: .6rem 2rem 0 .5rem;
+    //padding: .3rem 2rem .3rem .5rem;
+    padding: .3rem 0;
     overflow: hidden;
     border-bottom: 1px solid $border-color;
     h2{
+      padding: .3rem 0;
       color: #333333;
+      text-indent: .8rem;
     }
     p{
       padding: .3rem 0;
@@ -375,24 +378,30 @@
   }
 }
 .search-list-con2{
-  @extend %wrap-600;
+  @extend %wrap-640;
+  border-top: 1px solid $border-color;
   li{
     padding: .4rem 0;
-    border-bottom: 1px solid $border-color;
+    @extend %wrap-600;
+    border-bottom: 1px dotted $border-color;
     font-size: $fz12;
-    &:nth-of-type(1){
-      border-top: 1px solid $border-color;
-    }
+
     &:nth-last-child(1){
       border-bottom: 0 none;
     }
     em{
-      color: $font-color666;
+      padding-left: .4rem;
+      color: $font-color999;
     }
     a{
       padding-right: .6rem;
       color: $font-color999;
     }
+  }
+  .icon-right{
+    float: right;
+    color: $green;
+    line-height: .9rem;
   }
 }
 /*-----------------------search-class.html end----------------------*/
