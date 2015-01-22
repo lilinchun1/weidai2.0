@@ -388,14 +388,16 @@
   width: 100%;
   label{
     float: left;
-    width: 3.5rem;
+    width: 3.6rem;
   }
   .apply-refun-input{
-    width: 11.5rem;
+    width: 11.4rem;
   }
   span{
     font-size: $fz12;
     color: $red;
+    display: block;
+    text-align: left;
   }
   p{
     color: $font-color666;
@@ -412,9 +414,10 @@
   h2{
     height: 2rem;
     line-height: 2rem;
+    font-size: $fz18;
     border-bottom: 1px dotted $border-color;
     span{
-      font-size: $fz16;
+      font-size: $fz18;
       font-family: 'icomoon';
     }
   }
@@ -454,6 +457,9 @@
     margin-left: 1.3rem;
     width: 6rem;
   }
+  .bgccc{
+    background-color: #cccccc;
+  }
 }
 .rw-ifo{
   padding-top: .7rem;
@@ -491,6 +497,26 @@
     color: $font-color666;
   }
 }
+.refun-sales2-con{
+  em{
+    padding-left: 5rem;
+    display: block;
+    text-align: left;
+  }
+  span{
+    float: left;
+  }
+}
+.refun-sales-con{
+  span{
+    float: left;
+  }
+  em{
+    padding-left: 6.4rem;
+    display: block;
+    text-align: left;
+  }
+}
 /*-----------------------apply-refun-sales.html end----------------------*/
 
 /*-----------------------apply-refun-weixin.html start----------------------*/
@@ -503,7 +529,9 @@
   }
   .ar-weixin-input{
     height: 6.75rem;
+    display: inline;
   }
+
   .m-button{
     background-color: $red;}
 }
