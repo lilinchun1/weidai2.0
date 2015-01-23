@@ -28,9 +28,11 @@ input[type="checkbox"] {
 }
 input::-webkit-input-placeholder{
   color: #666;
+  text-indent:.4rem;
 }
 input::-moz-placeholder{
   color: #666;
+  text-indent:.4rem;
 }
 input[type="checkbox"]:checked {
   background: image-url("../img/or_img/sus-checked.png") 0 0 no-repeat;
@@ -131,7 +133,6 @@ input[type="checkbox"]:checked {
   .bin_l{
     width: 10rem;
     float: left;
-    line-height: 1.72rem;
     height: 1.72rem;
   }
 
