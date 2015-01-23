@@ -35,6 +35,26 @@ $(function(){
 	}).on("ajaxError",function(){
 		floatNotify.simple("请求有误，请稍后");
 	});
+	
+	
+	//自动链接
+	$(".J_link").click(function(){
+		var arr=new Array(),link = $(this).data("link");
+		arr=link.split('!');
+		link = arr[0];
+		if(arr[1]) 
+			arr = eval('(' +  arr[1] + ')');
+		else 
+			arr = null;
+		wapRedirect(link, arr);
+	});
+	
+	$("a").each(function(){
+		if(!$(this).attr("href") && $(this).data("link")){
+			var link = $(this).data("link");
+			$(this).attr("href", wapUrl(link));
+		}
+	});
 });
 
 //自适应宽度

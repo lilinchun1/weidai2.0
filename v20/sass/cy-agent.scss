@@ -840,3 +840,104 @@ a{
   }
 
 }
+/*-----------------------22 任务记录 task-record.html----------------------*/
+.tr_head{
+  line-height: 2.1rem;
+  .tr_h_l{
+    float: left;
+    color: $font-color333;
+  }
+  .icon-tr_r{
+    float: right;
+    color: $red;
+    line-height: 2.1rem;
+    display: block;
+  }
+
+}
+.task_body_1{
+  overflow: hidden;
+  text-align: center;
+
+  .task_r_l{
+    float: left;
+    color: $font-color333;
+    line-height: 2rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right:1px $border-color dashed;
+    width: 50%;
+    span{
+      color: $orange;
+    }
+  }
+  .task_r_r{
+    float: right;
+    width: 50%;
+    color: $font-color333;
+    line-height: 2rem;
+    span{
+      color: $red;
+
+    }
+  }
+}
+.task_buttonBox_1{
+  border-top:1px $border-color dashed;
+  padding-bottom: .4rem;
+  padding-top: .4rem;
+  overflow: hidden;
+
+.task_r_button{
+  float: right;
+  background-color: $red;
+  border-radius: .1rem;
+  -moz-border-radius: .1rem;
+  -webkit-border-radius: .1rem;
+  width: 3.8rem;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  font-size:.6rem;
+  color:  #ffffff;
+}
+  .task_r_button_1{
+    float: right;
+    background-color: #1c9cd8;
+    border-radius: .1rem;
+    -moz-border-radius: .1rem;
+    -webkit-border-radius: .1rem;
+    width: 3.8rem;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    font-size:.6rem;
+    color:  #ffffff;
+    margin-right: .4rem;
+  }
+
+}
+/*------------------任务教程 task-count.html---------------------------*/
+.tc_top{
+  line-height: 2.9rem;
+  font-size: 1rem;
+  color: $font-color333;
+  text-align: center;
+}
+.tc_text{
+  text-indent:1.5rem;
+  color: $font-color666;
+}
+.tc_button{
+  width: 11.5rem;
+  height: 1.65rem;
+  color: $red;
+  line-height: 1.65rem;
+  border:1px solid $red;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: .6rem;
+  display: block;
+
+
+}
