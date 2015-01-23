@@ -1006,11 +1006,39 @@ a{
 }
 /*-----------------------获取积分 total-conver.html----------------------*/
 .toc_button{
-  ackground-color: $red;
+  background-color: $red;
   width: 3.7rem;
   border-radius: 2px;
   color: #ffffff;
-  height: 1.65rem;
+  height: 1.1rem;
+  line-height: 1.1rem;
   float: right;
-  margin-top: .2rem;
+  margin-top: .45rem;
+}
+.icon-toc{
+  color: $font-color333;
+  line-height: 1.5rem;
+  text-align: left;
+  span{
+    color: $red;
+  }
+}
+.toc_bottom{
+  overflow: hidden;
+  .toc_bottom_l{
+    float: left;
+    color: $orange;
+    line-height: 1.5rem;
+    font-size: .6rem;
+    span{
+      color: $font-color999;
+    }
+  }
+  .toc_bottom_r{
+    float: right;
+    font-size: .6rem;
+    color: $font-color999;
+    line-height: 1rem;
+    margin-top: .5rem;
+  }
 }

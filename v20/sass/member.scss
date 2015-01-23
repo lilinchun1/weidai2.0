@@ -115,9 +115,11 @@
     height: 1.45rem;
     line-height: 1.45rem;
     border-bottom: 1px dotted $border-color;
+    color: $font-color999;
     label{
       float: left;
       width: 3.6rem;
+      color: $font-color333;
     }
   }
   .bdn{
