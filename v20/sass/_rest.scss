@@ -228,18 +228,23 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   color: $font-color666;
   text-indent: .4rem;
   //font-size: .7rem;
+  line-height: normal;
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: $font-color666;
   text-indent: .4rem;
   //font-size: .7rem;
+  line-height: normal;
+
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: $font-color666;
   text-indent: .4rem;
   //font-size: .7rem;
+  line-height: normal;
+
 }
 
 
