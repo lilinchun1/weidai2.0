@@ -281,3 +281,21 @@
 .dn{
   display: none;
 }
+
+/*-----------------------alert-7 start----------------------*/
+.m-alert-7{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  span{
+    padding-left: .5em;
+    color: $red;
+  }
+}
+/*-----------------------alert-7 end----------------------*/
