@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no">
+    <title>任务管理</title>
+    <link rel="stylesheet" href="../v20/css/cy-agent.css"/>
+</head>
+<body>
+<div class="g-wrap bor_bottom">
+    <div class="g-wrap-show">
+    <div class="tr_head">
+        <div class="tr_h_l">当前积分：1000</div>
+        <a href="#" class="icon-tr_r">积分管理&#xf634;</a>
+    </div>
+  </div>
+</div>
+<div class="g-wrap">
+    <ul class="g-wrap-show">
+            <li class="bor_bottom_1 tt_li">
+                <a href="#">
+                    <div class="tt_li_img"><img src="../v20/img/or_img/task_1.png"> </div>
+                    <div class="tt_li_r">
+                        <div class="tt_r_text"><span>【店铺橱窗】</span>在原来10个橱窗的基础上在增加5个店铺橱窗，让你的店铺商品更加丰富。</div>
+                        <p>100积分</p>
+                        <p class="tt_r_char">已有100人兑换</p>
+                        <div class="tt_r_buttonBox">
+                            <button type="button" class="tt_r_button">立即兑换</button>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        <li class="bor_bottom_1 tt_li">
+            <a href="#">
+                <div class="tt_li_img"><img src="../v20/img/or_img/task_1.png"> </div>
+                <div class="tt_li_r">
+                    <div class="tt_r_text"><span>【店铺橱窗】</span>在原来10个橱窗的基础上在增加5个店铺橱窗，让你的店铺商品更加丰富。</div>
+                    <p>100积分</p>
+                    <p class="tt_r_char">已有100人兑换</p>
+                    <div class="tt_r_buttonBox">
+                        <button type="button" class="tt_r_button" disabled="disabled">立即兑换</button>
+                    </div>
+                </div>
+            </a>
+        </li>
+        </ul>
+</div>
+<div class="g-wrap footer-weidai icon-wei po_ac">
+    &#xf652;
+</div>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>
