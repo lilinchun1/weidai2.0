@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="format-detection" content="telephone=no">
+    <title>任务管理</title>
+    <link rel="stylesheet" href="../v20/css/cy-agent.css"/>
+</head>
+<body>
+<div class="g-wrap">
+    <div class="g-wrap-show">
+        <div class="tc_top">如何分享？</div>
+       <div class="tc_text"> 一说起中国功夫必让老外们肃然起敬！这天上飞的、水上跑的、手心里冒烟的、脑头上闪着光的……我们不管他是吊钢丝来的手心里冒烟的、脑头上闪着光的一说起中国功夫必让老外们肃然起敬！这天上飞的、水上跑的、手心里冒烟的、脑头上闪着光的我们不管他是吊钢丝来的手心里冒烟的、脑头上闪着光的我们不管他是吊钢丝来的手心里冒烟的、脑头上闪着光的我们不管他是吊钢丝来的。</div>
+        <img src="../v20/img/or_img/task.png">
+        <div class="tc_text">
+            一说起中国功夫必让老外们肃然起敬！这天上飞的、水上跑的、手心里冒烟的、脑头上闪着光的……我们不管他是吊钢丝来的手心里冒烟的、脑头上闪着光的一说起中国功一说起中国功夫必让老外们肃然起敬！这天上飞的、水上跑的、手心里冒烟的、脑头上闪着光的……我们不管他是吊钢丝来的手心里冒烟的、脑头上闪着光的一说起中国功夫烟的、脑头上闪着光的我们不管他是吊钢丝来的。
+        </div>
+        <button type="button" class="tc_button">去完成</button>
+    </div>
+</div>
+
+<div class="g-wrap footer-weidai icon-wei po_ac">
+    &#xf652;
+</div>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>
