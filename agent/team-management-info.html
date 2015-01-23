@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>收入明细</title>
+<link rel="stylesheet" href="../v20/css/agent.css"/>
+</head>
+<body>
+<div class="g-wrap">
+    <header class="team-m-info">
+        <div class="my-team-pic">
+            <img src="../v20/img/test_img/head-pic.jpg" alt=""/>
+            <span class="icon-">&#xf600;</span>
+            <!--
+            lv1:&#xf600;
+            lv2:&#xf601;
+            lv3:&#xf602;
+            lv4:&#xf603;
+            lv5:&#xf604;
+            lv6:&#xf605;
+            -->
+        </div>
+        <p>
+            张某
+        </p>
+        <p>
+            类别：生鲜
+        </p>
+
+    </header>
+    <ul class="team-m-list">
+        <li>
+            手机号
+            <span>138/8888888</span>
+        </li>
+        <li>
+            业绩(￥)
+            <span class="red-font">58.00</span>
+        </li>
+        <li>
+            加入时间
+            <span class="c99-font">2014-12-26  13:37:49</span>
+        </li>
+    </ul>
+    <div class="footer-weidai icon-wei foot-fxb">
+        &#xf652;
+    </div>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

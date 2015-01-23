@@ -1056,35 +1056,36 @@
       line-height: 2.75rem;
     }
   }
-  .my-team-pic{
-    position: relative;
-    margin: 0 1.1rem 0 0;
-    float: left;
+
+}
+.my-team-pic{
+  position: relative;
+  margin: 0 1.1rem 0 0;
+  float: left;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 2.1rem;
+  border: 1px solid #fff;
+  box-shadow: 1px 2px 3px #c0c0c0;
+  img{
     width: 2.1rem;
     height: 2.1rem;
     border-radius: 2.1rem;
-    border: 1px solid #fff;
-    box-shadow: 1px 2px 3px #c0c0c0;
-    img{
-      width: 2.1rem;
-      height: 2.1rem;
-      border-radius: 2.1rem;
-    }
-    span{
-      position: absolute;
-      top: -.2rem;
-      right: -.2rem;
-      width: .9rem;
-      height: .9rem;
-      line-height: .85rem;
-      display: block;
-      background: $lvbg;
-      -webkit-background-size: 100% auto;
-      background-size: 100% auto;
-      font-size: $fz12;
-      text-align: center;
-      color: #ffffff;
-    }
+  }
+  span{
+    position: absolute;
+    top: -.2rem;
+    right: -.2rem;
+    width: .9rem;
+    height: .9rem;
+    line-height: .85rem;
+    display: block;
+    background: $lvbg;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    font-size: $fz12;
+    text-align: center;
+    color: #ffffff;
   }
 }
 /*-----------------------my-team.html end----------------------*/
@@ -1169,3 +1170,32 @@
   }
 }
 /*-----------------------material-library-show.html end----------------------*/
+
+/*-----------------------team-management-info.html start----------------------*/
+.team-m-info{
+  @extend %wrap-600;
+  position: relative;
+  padding: .3rem 0;
+  overflow: hidden;
+  border-bottom: 1px solid $border-color;
+  i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 2.75rem;
+  }
+}
+.team-m-list{
+  @extend %wrap-600;
+  li{
+    height: 1.85rem;
+    line-height: 1.85rem;
+    border-bottom: 1px dotted $border-color;
+    overflow: hidden;
+    span{
+      float: right;
+      line-height: 1.85rem;
+    }
+  }
+}
+/*-----------------------team-management-info.html end----------------------*/
