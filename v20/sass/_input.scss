@@ -68,6 +68,7 @@ input[type="checkbox"]:checked {
   height: 1.3rem;
   overflow: hidden;
   border: 1px solid $border-color;
+  border-radius: 2px;
   background: #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

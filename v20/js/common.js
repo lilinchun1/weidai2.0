@@ -51,8 +51,14 @@ $(function(){
 	
 	$("a").each(function(){
 		if(!$(this).attr("href") && $(this).data("link")){
-			var link = $(this).data("link");
-			$(this).attr("href", wapUrl(link));
+			var arr=new Array(),link = $(this).data("link");
+			arr=link.split('!');
+			link = arr[0];
+			if(arr[1]) 
+				arr = eval('(' +  arr[1] + ')');
+			else 
+				arr = null;
+			$(this).attr("href", wapUrl(link, arr));
 		}
 	});
 });
