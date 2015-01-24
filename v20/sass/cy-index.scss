@@ -70,7 +70,7 @@ input[type="checkbox"]:checked {
 
 input::-webkit-input-placeholder{
   color: #666;
- 
+
 }
 input::-moz-placeholder{
   color: #666;
@@ -512,6 +512,9 @@ input::-moz-placeholder{
   height: 1.72rem;
   line-height: 1.72rem;
   color: $font-color666;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .m-select-wrap-1 {
   position: relative;
@@ -661,6 +664,9 @@ input::-moz-placeholder{
   height: 1.72rem;
   line-height: 1.72rem;
   color: $font-color666;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
 }
 .m-button-1{

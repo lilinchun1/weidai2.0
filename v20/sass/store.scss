@@ -558,6 +558,7 @@
       border-bottom: 1px dotted $border-color;
       &:nth-last-of-type(1){
         border: 0 none;
+        font-size: $fz12;
       }
       em{
         font-size: $fz18;
@@ -638,6 +639,7 @@
       margin-left: 1rem;
       float: right;
       color: $font-color666;
+      font-size: $fz12;
     }
   }
 }
