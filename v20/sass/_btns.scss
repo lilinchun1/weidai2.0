@@ -16,6 +16,7 @@ button{
   border: 0 none;
   border-radius: 2px;
   font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+  font-size: $fz14;
 }
 button[disabled="disabled"]{
   background-color: #cccccc !important;
@@ -49,7 +50,7 @@ button[disabled="disabled"]{
   text-align: center;
   border: 1px solid $border-color;
   color: #999;
-  font-size: $fz12;
+  font-size: $fz14;
   background-color: transparent;
   display: block;
 }

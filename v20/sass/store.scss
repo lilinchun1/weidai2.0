@@ -425,6 +425,7 @@
     font-size: $fz16;
   }
   h2{
+    padding-top:.5rem;
     padding-bottom: .5rem;
     color: $font-color999;
     text-align: center;
@@ -523,7 +524,7 @@
     }
   }
   .comment-inof{
-    height: 2rem;
+    height: 1.9rem;
     overflow: hidden;
     a{
       color: $font-color666;
@@ -560,7 +561,7 @@
         border: 0 none;
       }
       em{
-        font-size: $fz14;
+        font-size: $fz16;
         color: $red;
       }
       span{
@@ -602,7 +603,7 @@
     span{
       padding-right: .2rem;
       float: right;
-      font-size: $fz14;
+      font-size: $fz12;
       line-height: 1.85rem;
       color: $red;
       &:after{
