@@ -245,7 +245,7 @@
       background: $red;
       text-align: center;
       color: #ffffff;
-      font-size: $fz16;
+      font-size: $fz14;
     }
     i{
       font-size: $fz12;
@@ -324,7 +324,7 @@
       background-color: $red;
       float: left;
       color: #ffffff;
-      font-size: $fz14;
+      font-size: $fz12;
       &:after{
         content: "";
         position: absolute;
@@ -422,7 +422,7 @@
   h1{
     padding: .8rem 0 0 0;
     text-align: center;
-    font-size: $fz18;
+    font-size: $fz16;
   }
   h2{
     padding-bottom: .5rem;
@@ -445,7 +445,7 @@
 .contact-tt{
   height: 1.75rem;
   line-height: 1.75rem;
-  font-size: $fz16;
+  font-size: $fz14;
   color: $font-color333;
   border-bottom: 1px solid $border-color;
 }
@@ -554,13 +554,13 @@
     @extend %wrap-600;
     p{
       padding: .6rem 0;
-      font-size: $fz16;
+      font-size: $fz14;
       border-bottom: 1px dotted $border-color;
       &:nth-last-of-type(1){
         border: 0 none;
       }
       em{
-        font-size: $fz16;
+        font-size: $fz14;
         color: $red;
       }
       span{
@@ -602,7 +602,7 @@
     span{
       padding-right: .2rem;
       float: right;
-      font-size: $fz16;
+      font-size: $fz14;
       line-height: 1.85rem;
       color: $red;
       &:after{
@@ -809,7 +809,7 @@
         padding: 0 .75rem;
         float: left;
         background: $red;
-        font-size: $fz16;
+        font-size: $fz14;
         color: #ffffff;
         &:after{
           content: "";
