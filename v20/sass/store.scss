@@ -48,7 +48,6 @@
 }
 
 .shop-banner{
-  margin-top: .075rem;
   height: 7rem;
 }
 .slide
@@ -554,14 +553,14 @@
   .shop-tw-info{
     @extend %wrap-600;
     p{
-      padding: .6rem 0;
+      padding: .35rem 0;
       font-size: $fz14;
       border-bottom: 1px dotted $border-color;
       &:nth-last-of-type(1){
         border: 0 none;
       }
       em{
-        font-size: $fz16;
+        font-size: $fz18;
         color: $red;
       }
       span{
@@ -614,6 +613,10 @@
         line-height: 2rem;
       }
     }
+    i{
+      font-size: $fz16;
+      line-height:1.85rem;
+    }
   }
 }
 .comment-con{
@@ -627,6 +630,9 @@
     h1{
       padding-left: .2rem;
       border-left: 2px solid $red;
+      font-size: $fz14;
+      height: .7rem;
+      line-height: .7rem;
     }
     span{
       margin-left: 1rem;
@@ -650,11 +656,15 @@
 .guess-wrap-tt{
   padding: .6rem 0;
   width: 100%;
+  font-size: $fz14;
   border: 1px solid $border-color;
   h1{
     @extend %wrap-600;
     padding-left: .2rem;
     border-left: 2px solid $red;
+    font-size: $fz14;
+    height: .7rem;
+    line-height: .7rem;
   }
 }
 .guess-list{
@@ -666,18 +676,20 @@
     margin-bottom: .35rem;
     float: left;
     width: 4.75rem;
-    height: 6.5rem;
+    height: 6.85rem;
     overflow: hidden;
     background-color: #ffffff;
-    border: 1px solid $border-color;
+    border: 1px solid #eeeeee;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     p{
-      padding: .075rem .1rem;
-      border-top: 1px solid $border-color;
+      padding: .25rem .2rem 0 .2rem;
+      height:1.7rem;
+      border-top: 1px solid #eeeeee;
       font-size: $fz12;
       line-height: 1.4;
+      overflow: hidden;
     }
     a{
       color: $font-color333;
@@ -686,9 +698,9 @@
   }
   .guess-pic{
     position: relative;
-    margin: .075rem .1rem;
-    width: 4.5rem;
-    height: 4.5rem;
+    margin: .1rem 0 .1rem .1rem;
+    width: 4.45rem;
+    height: 4.45rem;
     overflow: hidden;
     img{
       width: 100%;
@@ -755,7 +767,7 @@
 .shop-show-btn{
   margin: 1rem auto;
   width: 8.75rem;
-  height: 1.25rem;
+  height: 1.4rem;
   background-color: transparent;
   border: 1px solid $red;
   display: block;

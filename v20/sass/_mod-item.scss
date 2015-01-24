@@ -418,11 +418,11 @@
       display: block;
     }
     p{
-      font-size: $fz12;
+      font-size: $fz10;
       color: $font-color333;
       &:nth-of-type(1){
         color: $red;
-        font-size: $fz14;
+        font-size: $fz16;
       }
     }
   }
@@ -461,7 +461,7 @@
       border-radius: .8rem;
       background-color: $red;
       color: #ffffff;
-      font-size: $fz12;
+      font-size: $fz10;
       text-align: center;
     }
   }
