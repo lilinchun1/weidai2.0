@@ -22,7 +22,7 @@
   overflow: hidden;
   li{
     height: 1.85rem;
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
     line-height: 1.85rem;
   }
   span{
@@ -392,7 +392,7 @@
   li{
     padding: .4rem 0;
     @extend %wrap-600;
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
     font-size: $fz12;
 
     &:nth-last-child(1){
@@ -428,7 +428,7 @@
     padding-bottom: .5rem;
     color: $font-color999;
     text-align: center;
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
   }
   p{
     padding: .7em 0;
@@ -481,7 +481,7 @@
   li{
     height: 1.75rem;
     line-height: 1.75rem;
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
     a{
       display: block;
       color: $font-color333;
@@ -501,7 +501,7 @@
 .comment-list{
   @extend %wrap-600;
   li{
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
   }
   .comment-tt{
     height: 1.75rem;
@@ -555,7 +555,7 @@
     p{
       padding: .35rem 0;
       font-size: $fz14;
-      border-bottom: 1px dotted $border-color;
+      border-bottom: 1px dotted $border-color2;
       &:nth-last-of-type(1){
         border: 0 none;
         font-size: $fz12;

@@ -32,7 +32,7 @@
   @extend %wrap-640;
   border-top: 1px solid $border-color;
   .m-list-info-item{
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
     &:nth-last-of-type(1){
       border: 0 none;
     }
@@ -42,7 +42,7 @@
   @extend %wrap-600;
   height: 2.35rem;
   line-height: 2.35rem;
-  border-bottom: 1px dotted $border-color;
+  border-bottom: 1px dotted $border-color2;
   .indent-item-pic{
     margin-top: .4rem;
     margin-right: .5rem;
@@ -114,7 +114,7 @@
   li{
     height: 1.45rem;
     line-height: 1.45rem;
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
     color: $font-color999;
     label{
       float: left;
@@ -179,7 +179,7 @@
   @extend %wrap-600;
   height: 2rem;
   line-height: 2rem;
-  border-bottom: 1px dotted $border-color;
+  border-bottom: 1px dotted $border-color2;
   span{
     float: right;
     color: $red;
@@ -274,7 +274,7 @@
 }
 .evaluate-star{
   @extend %wrap-600;
-  border-bottom: 1px dotted $border-color;
+  border-bottom: 1px dotted $border-color2;
   height: 1.75rem;
   line-height: 1.75rem;
   em{
@@ -331,7 +331,7 @@
 .logistics-item-tt{
     height: 2rem;
     line-height: 2rem;
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
 }
 .logistics-list{
   padding-left: 1.1rem;
@@ -426,7 +426,7 @@
     height: 2rem;
     line-height: 2rem;
     font-size: $fz16;
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
     span{
       font-size: $fz16;
       font-family: 'icomoon';
@@ -448,7 +448,7 @@
   li{
     height: 1.75rem;
     line-height: 1.75rem;
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
     em{
       color: $font-color666;
     }

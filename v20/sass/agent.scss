@@ -501,7 +501,7 @@
 .shop-item-wrap{
   padding: .45rem 0;
   @extend %wrap-600;
-  border-bottom: 1px dotted $border-color;
+  border-bottom: 1px dotted $border-color2;
   .shop-item-pic{
     float: left;
     margin-right: .45rem;
@@ -531,7 +531,7 @@
   @extend %wrap-600;
   margin-top: .4rem;
   height: 5.5rem;
-  border: 1px dotted $border-color;
+  border: 1px dotted $border-color2;
   text-align: center;
   h2{
     color: #ccc;
@@ -784,7 +784,7 @@
     height: 2.1rem;
     line-height: 2.1rem;
     font-size: $fz12;
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
   }
   p{
     padding: .4rem 0;
@@ -827,7 +827,7 @@
       border-bottom: 1px solid $border-color;
     }
     &:nth-of-type(2){
-      border-bottom: 1px dotted $border-color;
+      border-bottom: 1px dotted $border-color2;
     }
   }
   span,
@@ -921,7 +921,7 @@
   li{
     position: relative;
     height: 2.5rem;
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
     p{
       padding-top: .2rem;
     }
@@ -996,7 +996,7 @@
     height: 2rem;
     line-height: 2rem;
     font-size: $fz12;
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
   }
   p{
     @extend %wrap-600;
@@ -1015,7 +1015,7 @@
   }
   h2{
     @extend %wrap-600;
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
     a{
       float: right;
       width: 1rem;
@@ -1052,7 +1052,7 @@
     position: relative;
     padding: .3rem 0;
     overflow: hidden;
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
     i{
       position: absolute;
       top: 0;
@@ -1194,7 +1194,7 @@
   li{
     height: 1.85rem;
     line-height: 1.85rem;
-    border-bottom: 1px dotted $border-color;
+    border-bottom: 1px dotted $border-color2;
     overflow: hidden;
     span{
       float: right;
