@@ -146,7 +146,7 @@
       display: block;
     }
     b{
-      font-size: $fz12;
+      font-size: $fz16;
     }
     p{
       color: $font-color999;
@@ -362,6 +362,7 @@
     }
     a{
       display: block;
+      color: $font-color666;
     }
     em{
       font-size: $fz12;
@@ -522,6 +523,7 @@
     height: .75rem;
     line-height: .75rem;
     overflow: hidden;
+    color: $font-color333;
   }
   span{
     margin-right: .3rem;
@@ -537,6 +539,7 @@
     color: #ccc;
     font-size: 2.75rem;
     font-family: icomoon;
+    color: $font-color999;
   }
   p{
     color: $font-color666;
@@ -1053,11 +1056,15 @@
     padding: .3rem 0;
     overflow: hidden;
     border-bottom: 1px dotted $border-color2;
+    p{
+      color: $font-color666;
+    }
     i{
       position: absolute;
       top: 0;
       right: 0;
       line-height: 2.75rem;
+      color: $font-color666;
     }
   }
 
@@ -1123,7 +1130,7 @@
   .play-btn{
     position: relative;
     &:before{
-      content: "\f649";
+      content: "\f648";
       position: absolute;
     }
   }
@@ -1168,7 +1175,7 @@
   .play-btn{
     position: relative;
     &:before{
-      content: "\f649";
+      content: "\f648";
       position: absolute;
     }
   }
