@@ -891,12 +891,11 @@ button[disabled="disabled"] {
     width: 8rem; }
     /* line 94, ../sass/_mod-item.scss */
     .m-list-info-item .mlii-info p {
-      margin-top: -.2rem;
       color: #999;
       font-size: 0.6rem; }
   /* line 100, ../sass/_mod-item.scss */
   .m-list-info-item h2 {
-    line-height: 1.2;
+    line-height: 1.4;
     height: 1.6rem;
     overflow: hidden; }
     /* line 104, ../sass/_mod-item.scss */
@@ -1589,6 +1588,14 @@ button[disabled="disabled"] {
   display: block; }
 
 /*-----------------------null.html end----------------------*/
+/* line 811, ../sass/_mod-item.scss */
+.comment-read-more {
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.6rem; }
+
 @font-face {
   font-family: 'icon-bank';
   src: url("../img/fonts/icon-bank.eot");
@@ -2019,7 +2026,7 @@ a {
 /*-----------------------代理详情 ag-details.html----------------------*/
 /* line 420, ../sass/cy-agent.scss */
 .ag_de_char {
-  height: 12rem;
+  min-height: 10rem;
   overflow: hidden;
   color: #666;
   text-indent: 1.5rem;
@@ -2028,6 +2035,9 @@ a {
 
 /* line 428, ../sass/cy-agent.scss */
 .icon-button {
+  position: relative;
+  top: 0;
+  left: 50%;
   text-align: center;
   border: 1px solid #ececec;
   border-top: none;
@@ -2036,28 +2046,29 @@ a {
   font-size: 1rem;
   width: 2rem;
   line-height: 1rem;
-  margin-left: 6.5rem;
+  margin-left: -1rem;
   margin-bottom: 1rem; }
 
 /*-----------------------代理详情 ag-details-two.html----------------------*/
-/* line 443, ../sass/cy-agent.scss */
+/* line 446, ../sass/cy-agent.scss */
 .ag_two_char h2 {
   color: #333;
   border-bottom: 1px dashed #ececec;
+  text-align: center;
   line-height: 1.5rem; }
-/* line 449, ../sass/cy-agent.scss */
+/* line 452, ../sass/cy-agent.scss */
 .ag_two_char p {
   text-indent: 1.5rem;
   line-height: 1.3rem;
   color: #333; }
 
 /*-----------------------任务管理 task-failure.html----------------------*/
-/* line 456, ../sass/cy-agent.scss */
+/* line 459, ../sass/cy-agent.scss */
 .coll_top {
   width: 100%;
   border-top: 1px solid #ececec;
   overflow: hidden; }
-  /* line 460, ../sass/cy-agent.scss */
+  /* line 463, ../sass/cy-agent.scss */
   .coll_top li {
     position: relative;
     float: left;
@@ -2066,7 +2077,7 @@ a {
     line-height: 2rem;
     text-align: center;
     border-bottom: 1px solid #ececec; }
-    /* line 468, ../sass/cy-agent.scss */
+    /* line 471, ../sass/cy-agent.scss */
     .coll_top li:before {
       content: "";
       position: absolute;
@@ -2074,51 +2085,51 @@ a {
       right: 0;
       border-right: 1px solid #ececec;
       height: 100%; }
-    /* line 476, ../sass/cy-agent.scss */
+    /* line 479, ../sass/cy-agent.scss */
     .coll_top li:last-child:before {
       border-right: 0 none; }
-  /* line 480, ../sass/cy-agent.scss */
+  /* line 483, ../sass/cy-agent.scss */
   .coll_top .coll_1 {
     border-bottom: 1px solid #e02d2a;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHBAMAAADDgsFQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAMFBMVEUAAADQMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh3QMh0AAADcrmEfAAAADnRSTlMAA7c8fuQVQvy6GOe9gZdCRjsAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAALUlEQVQI12NgYBBgAAFlEMHyNAFIVrybwMDAte/dEwYGmXfvXhQw3Hv37t0uAKQaDb+LHVEFAAAAAElFTkSuQmCC) 50% 100% no-repeat;
     background-size: .25rem auto; }
-    /* line 485, ../sass/cy-agent.scss */
+    /* line 488, ../sass/cy-agent.scss */
     .coll_top .coll_1 a {
       color: #e02d2a; }
-  /* line 490, ../sass/cy-agent.scss */
+  /* line 493, ../sass/cy-agent.scss */
   .coll_top a {
     display: block;
     color: #333; }
 
-/* line 495, ../sass/cy-agent.scss */
+/* line 498, ../sass/cy-agent.scss */
 .task_top {
   line-height: 2rem;
   text-align: left; }
 
-/* line 499, ../sass/cy-agent.scss */
+/* line 502, ../sass/cy-agent.scss */
 .task_bodyBox {
   position: relative; }
-  /* line 501, ../sass/cy-agent.scss */
+  /* line 504, ../sass/cy-agent.scss */
   .task_bodyBox .task_body {
     overflow: hidden;
     color: #666; }
-    /* line 504, ../sass/cy-agent.scss */
+    /* line 507, ../sass/cy-agent.scss */
     .task_bodyBox .task_body .task_l {
       float: left;
       width: 2.5rem;
       line-height: 1rem; }
-    /* line 509, ../sass/cy-agent.scss */
+    /* line 512, ../sass/cy-agent.scss */
     .task_bodyBox .task_body .task_r {
       float: right;
       width: 12.4rem;
       line-height: 1rem; }
-  /* line 515, ../sass/cy-agent.scss */
+  /* line 518, ../sass/cy-agent.scss */
   .task_bodyBox .task_buttonBox {
     position: absolute;
     right: 0;
     bottom: .2rem;
     width: 3.8rem; }
-    /* line 521, ../sass/cy-agent.scss */
+    /* line 524, ../sass/cy-agent.scss */
     .task_bodyBox .task_buttonBox .task_button {
       width: 3.8rem;
       height: 1.3rem;
@@ -2130,7 +2141,7 @@ a {
       border: none; }
 
 /*-----------------------我的仓库 my-entrepot.html----------------------*/
-/* line 534, ../sass/cy-agent.scss */
+/* line 537, ../sass/cy-agent.scss */
 .my_en_top {
   background-color: #f8f8f8;
   margin: 0 auto;
@@ -2140,17 +2151,17 @@ a {
   border-bottom: 1px solid #ececec;
   position: relative;
   height: 1.5rem; }
-  /* line 544, ../sass/cy-agent.scss */
+  /* line 547, ../sass/cy-agent.scss */
   .my_en_top .my_en_top_1 .my_en_l {
     float: left;
     width: 2.5rem;
     border: transparent 0 solid;
     line-height: 1.5rem; }
-  /* line 550, ../sass/cy-agent.scss */
+  /* line 553, ../sass/cy-agent.scss */
   .my_en_top .my_en_top_1 .my_en_r {
     float: left;
     width: 12.4rem; }
-    /* line 553, ../sass/cy-agent.scss */
+    /* line 556, ../sass/cy-agent.scss */
     .my_en_top .my_en_top_1 .my_en_r .my_en_search {
       width: 10.9rem;
       height: 1.5rem;
@@ -2158,7 +2169,7 @@ a {
       border: 1px solid #ececec;
       border-right: none;
       box-sizing: border-box; }
-    /* line 561, ../sass/cy-agent.scss */
+    /* line 564, ../sass/cy-agent.scss */
     .my_en_top .my_en_top_1 .my_en_r .icon_my_en {
       width: 1.5rem;
       background-color: #FFFFFF;
@@ -2169,7 +2180,7 @@ a {
       border: 1px solid #ececec;
       border-left: none;
       box-sizing: border-box; }
-  /* line 575, ../sass/cy-agent.scss */
+  /* line 578, ../sass/cy-agent.scss */
   .my_en_top .my_en_list {
     display: none;
     position: absolute;
@@ -2179,22 +2190,22 @@ a {
     width: 16rem;
     border-top: 1px solid #ccc;
     background-color: #f8f8f8; }
-    /* line 584, ../sass/cy-agent.scss */
+    /* line 587, ../sass/cy-agent.scss */
     .my_en_top .my_en_list a {
       display: block;
       text-indent: .5rem; }
-      /* line 587, ../sass/cy-agent.scss */
+      /* line 590, ../sass/cy-agent.scss */
       .my_en_top .my_en_list a span {
         float: right;
         color: #3db73e; }
-    /* line 592, ../sass/cy-agent.scss */
+    /* line 595, ../sass/cy-agent.scss */
     .my_en_top .my_en_list li {
       height: 1.8rem;
       line-height: 1.8rem;
       border-bottom: 1px solid #ccc;
       overflow: hidden; }
 
-/* line 601, ../sass/cy-agent.scss */
+/* line 604, ../sass/cy-agent.scss */
 .my_en_top_1 .my_en_l a:after {
   content: "";
   width: 0;
@@ -2205,21 +2216,21 @@ a {
   border-bottom: .25rem solid #ccc;
   border-right: .25rem solid #ccc; }
 
-/* line 611, ../sass/cy-agent.scss */
+/* line 614, ../sass/cy-agent.scss */
 .gray {
   background-color: #cccccc;
   color: #666; }
 
-/* line 615, ../sass/cy-agent.scss */
+/* line 618, ../sass/cy-agent.scss */
 .brand-show-item .brand-show-item-btn-0:nth-of-type(1) {
   background-color: #e02d2a; }
 
-/* line 618, ../sass/cy-agent.scss */
+/* line 621, ../sass/cy-agent.scss */
 .brand-show-item .brand-show-item-btn:nth-of-type(2) {
   background-color: #cccccc;
   color: #666; }
 
-/* line 624, ../sass/cy-agent.scss */
+/* line 627, ../sass/cy-agent.scss */
 .brand-show-item .brand-show-item-btn-1 {
   margin-right: .5rem;
   width: 3.75rem;
@@ -2227,7 +2238,7 @@ a {
   background-color: #f2a44a;
   color: #ffffff; }
 
-/* line 631, ../sass/cy-agent.scss */
+/* line 634, ../sass/cy-agent.scss */
 .brand-show-item .brand-show-item-btn-0 {
   margin-right: .5rem;
   width: 3.75rem;
@@ -2235,7 +2246,7 @@ a {
   background-color: #e02d2a;
   color: #ffffff; }
 
-/* line 640, ../sass/cy-agent.scss */
+/* line 643, ../sass/cy-agent.scss */
 .brand-show-item .brand-show-pic {
   float: left;
   margin-right: .75rem;
@@ -2245,7 +2256,7 @@ a {
   border: 1px solid #ccc;
   box-sizing: border-box;
   position: relative; }
-  /* line 649, ../sass/cy-agent.scss */
+  /* line 652, ../sass/cy-agent.scss */
   .brand-show-item .brand-show-pic div {
     position: absolute;
     top: .1rem;
@@ -2257,7 +2268,7 @@ a {
     font-size: 1rem;
     color: #999;
     width: 4.8rem; }
-  /* line 661, ../sass/cy-agent.scss */
+  /* line 664, ../sass/cy-agent.scss */
   .brand-show-item .brand-show-pic p {
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -2273,21 +2284,21 @@ a {
     font-size: .6rem; }
 
 /*-----------------------修改店名 alter-tn.html----------------------*/
-/* line 683, ../sass/cy-agent.scss */
+/* line 686, ../sass/cy-agent.scss */
 .alt-text {
   line-height: 1rem;
   color: #999;
   border-bottom: 1px solid #ececec;
   font-size: .6rem; }
 
-/* line 689, ../sass/cy-agent.scss */
+/* line 692, ../sass/cy-agent.scss */
 .alt_char {
   font-size: .6rem;
   line-height: 1rem;
   color: #e02d2a; }
 
 /*-----------------------邀请加盟-失败 lnvite-failure.html----------------------*/
-/* line 695, ../sass/cy-agent.scss */
+/* line 698, ../sass/cy-agent.scss */
 .lnv_char {
   color: #666;
   line-height: 1rem;
@@ -2296,24 +2307,24 @@ a {
   margin-top: 1rem;
   margin-bottom: 1rem; }
 
-/* line 703, ../sass/cy-agent.scss */
+/* line 706, ../sass/cy-agent.scss */
 .icon-pay_f {
   font-size: 3.5rem;
   margin-top: 1rem;
   color: #e02d2a;
   text-align: center; }
 
-/* line 709, ../sass/cy-agent.scss */
+/* line 712, ../sass/cy-agent.scss */
 .lnv_text {
   margin-top: 1.5rem;
   font-size: .6rem;
   text-align: center;
   color: #666; }
-  /* line 714, ../sass/cy-agent.scss */
+  /* line 717, ../sass/cy-agent.scss */
   .lnv_text span {
     color: #2163bd; }
 
-/* line 718, ../sass/cy-agent.scss */
+/* line 721, ../sass/cy-agent.scss */
 .lnv_button {
   width: 6.2rem;
   color: #666;
@@ -2323,7 +2334,7 @@ a {
   margin-top: 2rem; }
 
 /*----------------------邀请加盟-成功 lnvite-succeed.html-----------------------*/
-/* line 728, ../sass/cy-agent.scss */
+/* line 731, ../sass/cy-agent.scss */
 .icon-pay_s {
   font-size: 3.5rem;
   margin-top: 1rem;
@@ -2331,11 +2342,11 @@ a {
   text-align: center; }
 
 /*-----------------------邀请加盟 lnvite.html----------------------*/
-/* line 736, ../sass/cy-agent.scss */
+/* line 739, ../sass/cy-agent.scss */
 .lnvite_topBox {
   margin-top: .4rem;
   padding-bottom: .4rem; }
-  /* line 740, ../sass/cy-agent.scss */
+  /* line 743, ../sass/cy-agent.scss */
   .lnvite_topBox .lnvite_top {
     position: relative;
     margin: 0 1.1rem 0 0;
@@ -2345,12 +2356,12 @@ a {
     border-radius: 2.1rem;
     border: 1px solid #fff;
     box-shadow: 1px 2px 3px #c0c0c0; }
-    /* line 749, ../sass/cy-agent.scss */
+    /* line 752, ../sass/cy-agent.scss */
     .lnvite_topBox .lnvite_top img {
       width: 2.1rem;
       height: 2.1rem;
       border-radius: 2.1rem; }
-    /* line 754, ../sass/cy-agent.scss */
+    /* line 757, ../sass/cy-agent.scss */
     .lnvite_topBox .lnvite_top span {
       position: absolute;
       top: -.2rem;
@@ -2364,18 +2375,18 @@ a {
       font-size: 0.6rem;
       text-align: center;
       color: #ffffff; }
-  /* line 770, ../sass/cy-agent.scss */
+  /* line 773, ../sass/cy-agent.scss */
   .lnvite_topBox p {
     color: #999; }
 
 /*-----------------------我的银行卡----------------------*/
-/* line 774, ../sass/cy-agent.scss */
+/* line 777, ../sass/cy-agent.scss */
 .lnvite_topBox_1 {
   margin-top: .4rem;
   padding-bottom: .4rem;
   overflow: hidden; }
 
-/* line 779, ../sass/cy-agent.scss */
+/* line 782, ../sass/cy-agent.scss */
 .icon2-my_img {
   color: #e02d2a;
   font-size: 3.5rem;
@@ -2383,65 +2394,65 @@ a {
   width: 4rem;
   float: left;
   position: relative; }
-  /* line 788, ../sass/cy-agent.scss */
+  /* line 791, ../sass/cy-agent.scss */
   .icon2-my_img span {
     position: absolute;
     top: 0;
     left: 0;
     float: left; }
 
-/* line 795, ../sass/cy-agent.scss */
+/* line 798, ../sass/cy-agent.scss */
 .my_card_char {
   color: #e02d2a;
   font-size: .6rem; }
 
-/* line 799, ../sass/cy-agent.scss */
+/* line 802, ../sass/cy-agent.scss */
 .my_c_r {
   float: left;
   margin-left: 4rem; }
 
 /*-----------------------团队-收人明细 team-income.html----------------------*/
-/* line 804, ../sass/cy-agent.scss */
+/* line 807, ../sass/cy-agent.scss */
 .ti_Box {
   overflow: hidden;
   line-height: 2rem;
   color: #333; }
-  /* line 808, ../sass/cy-agent.scss */
+  /* line 811, ../sass/cy-agent.scss */
   .ti_Box .ti_l {
     float: left; }
-  /* line 812, ../sass/cy-agent.scss */
+  /* line 815, ../sass/cy-agent.scss */
   .ti_Box .ti_r {
     float: right; }
-  /* line 816, ../sass/cy-agent.scss */
+  /* line 819, ../sass/cy-agent.scss */
   .ti_Box span {
     color: #e02d2a; }
-  /* line 819, ../sass/cy-agent.scss */
+  /* line 822, ../sass/cy-agent.scss */
   .ti_Box i {
     color: #999; }
 
 /*-----------------------22 任务记录 task-record.html----------------------*/
-/* line 825, ../sass/cy-agent.scss */
+/* line 828, ../sass/cy-agent.scss */
 .tr_head {
   line-height: 2.1rem; }
-  /* line 827, ../sass/cy-agent.scss */
+  /* line 830, ../sass/cy-agent.scss */
   .tr_head .tr_h_l {
     float: left;
     color: #333; }
-    /* line 830, ../sass/cy-agent.scss */
+    /* line 833, ../sass/cy-agent.scss */
     .tr_head .tr_h_l span {
       color: #e02d2a; }
-  /* line 834, ../sass/cy-agent.scss */
+  /* line 837, ../sass/cy-agent.scss */
   .tr_head .icon-tr_r {
     float: right;
     color: #e02d2a;
     line-height: 2.1rem;
     display: block; }
 
-/* line 842, ../sass/cy-agent.scss */
+/* line 845, ../sass/cy-agent.scss */
 .task_body_1 {
   overflow: hidden;
   text-align: center; }
-  /* line 846, ../sass/cy-agent.scss */
+  /* line 849, ../sass/cy-agent.scss */
   .task_body_1 .task_r_l {
     float: left;
     color: #333;
@@ -2449,26 +2460,26 @@ a {
     box-sizing: border-box;
     border-right: 1px #ececec dashed;
     width: 50%; }
-    /* line 855, ../sass/cy-agent.scss */
+    /* line 858, ../sass/cy-agent.scss */
     .task_body_1 .task_r_l span {
       color: #ff9900; }
-  /* line 859, ../sass/cy-agent.scss */
+  /* line 862, ../sass/cy-agent.scss */
   .task_body_1 .task_r_r {
     float: right;
     width: 50%;
     color: #333;
     line-height: 2rem; }
-    /* line 864, ../sass/cy-agent.scss */
+    /* line 867, ../sass/cy-agent.scss */
     .task_body_1 .task_r_r span {
       color: #e02d2a; }
 
-/* line 870, ../sass/cy-agent.scss */
+/* line 873, ../sass/cy-agent.scss */
 .task_buttonBox_1 {
   border-top: 1px #ececec dashed;
   padding-bottom: .4rem;
   padding-top: .4rem;
   overflow: hidden; }
-  /* line 876, ../sass/cy-agent.scss */
+  /* line 879, ../sass/cy-agent.scss */
   .task_buttonBox_1 .task_r_button {
     float: right;
     background-color: #e02d2a;
@@ -2480,7 +2491,7 @@ a {
     line-height: 1.3rem;
     font-size: .6rem;
     color: #ffffff; }
-  /* line 888, ../sass/cy-agent.scss */
+  /* line 891, ../sass/cy-agent.scss */
   .task_buttonBox_1 .task_r_button_1 {
     float: right;
     background-color: #1c9cd8;
@@ -2495,19 +2506,19 @@ a {
     margin-right: .4rem; }
 
 /*------------------任务教程 task-count.html---------------------------*/
-/* line 904, ../sass/cy-agent.scss */
+/* line 907, ../sass/cy-agent.scss */
 .tc_top {
   line-height: 2.9rem;
   font-size: 1rem;
   color: #333;
   text-align: center; }
 
-/* line 910, ../sass/cy-agent.scss */
+/* line 913, ../sass/cy-agent.scss */
 .tc_text {
   text-indent: 1.5rem;
   color: #666; }
 
-/* line 914, ../sass/cy-agent.scss */
+/* line 917, ../sass/cy-agent.scss */
 .tc_button {
   width: 11.5rem;
   height: 1.65rem;
@@ -2521,13 +2532,13 @@ a {
   display: block; }
 
 /*-------------------获取积分 task-total.html--------------------------*/
-/* line 929, ../sass/cy-agent.scss */
+/* line 932, ../sass/cy-agent.scss */
 .tt_li {
   overflow: hidden; }
-  /* line 932, ../sass/cy-agent.scss */
+  /* line 935, ../sass/cy-agent.scss */
   .tt_li a {
     display: block; }
-    /* line 934, ../sass/cy-agent.scss */
+    /* line 937, ../sass/cy-agent.scss */
     .tt_li a .tt_li_img {
       float: left;
       padding: .2rem;
@@ -2538,38 +2549,38 @@ a {
       margin-right: .4rem;
       margin-top: .6rem;
       margin-bottom: .6rem; }
-    /* line 947, ../sass/cy-agent.scss */
+    /* line 950, ../sass/cy-agent.scss */
     .tt_li a .tt_li_r {
       float: left;
       width: 9.6rem;
       margin-top: .5rem;
       margin-bottom: .6rem;
       position: relative; }
-      /* line 953, ../sass/cy-agent.scss */
+      /* line 956, ../sass/cy-agent.scss */
       .tt_li a .tt_li_r .tt_r_text {
         height: 2.4rem;
         overflow: hidden;
         font-size: .6rem;
         line-height: .7rem;
         color: #333; }
-        /* line 959, ../sass/cy-agent.scss */
+        /* line 962, ../sass/cy-agent.scss */
         .tt_li a .tt_li_r .tt_r_text span {
           color: #e02d2a; }
-      /* line 963, ../sass/cy-agent.scss */
+      /* line 966, ../sass/cy-agent.scss */
       .tt_li a .tt_li_r p {
         color: #e02d2a;
         line-height: 1.4rem; }
-      /* line 967, ../sass/cy-agent.scss */
+      /* line 970, ../sass/cy-agent.scss */
       .tt_li a .tt_li_r .tt_r_char {
         color: #999;
         font-size: .6rem;
         line-height: 1rem; }
-      /* line 972, ../sass/cy-agent.scss */
+      /* line 975, ../sass/cy-agent.scss */
       .tt_li a .tt_li_r .tt_r_buttonBox {
         position: absolute;
         bottom: .6rem;
         right: 0px; }
-        /* line 976, ../sass/cy-agent.scss */
+        /* line 979, ../sass/cy-agent.scss */
         .tt_li a .tt_li_r .tt_r_buttonBox .tt_r_button {
           background-color: #e02d2a;
           width: 3.7rem;
@@ -2578,7 +2589,7 @@ a {
           height: 1.65rem; }
 
 /*-----------------------获取积分 total-conver.html----------------------*/
-/* line 989, ../sass/cy-agent.scss */
+/* line 992, ../sass/cy-agent.scss */
 .toc_button {
   background-color: #e02d2a;
   width: 3.7rem;
@@ -2589,28 +2600,28 @@ a {
   float: right;
   margin-top: .45rem; }
 
-/* line 999, ../sass/cy-agent.scss */
+/* line 1002, ../sass/cy-agent.scss */
 .icon-toc {
   color: #333;
   line-height: 1.5rem;
   text-align: left; }
-  /* line 1003, ../sass/cy-agent.scss */
+  /* line 1006, ../sass/cy-agent.scss */
   .icon-toc span {
     color: #e02d2a; }
 
-/* line 1007, ../sass/cy-agent.scss */
+/* line 1010, ../sass/cy-agent.scss */
 .toc_bottom {
   overflow: hidden; }
-  /* line 1009, ../sass/cy-agent.scss */
+  /* line 1012, ../sass/cy-agent.scss */
   .toc_bottom .toc_bottom_l {
     float: left;
     color: #ff9900;
     line-height: 1.5rem;
     font-size: .6rem; }
-    /* line 1014, ../sass/cy-agent.scss */
+    /* line 1017, ../sass/cy-agent.scss */
     .toc_bottom .toc_bottom_l span {
       color: #999; }
-  /* line 1018, ../sass/cy-agent.scss */
+  /* line 1021, ../sass/cy-agent.scss */
   .toc_bottom .toc_bottom_r {
     float: right;
     font-size: .6rem;

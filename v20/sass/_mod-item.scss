@@ -92,13 +92,13 @@
     float: left;
     width: 8rem;
     p{
-      margin-top: -.2rem;
+      //margin-top: -.2rem;
       color: $font-color999;
       font-size: $fz12;
     }
   }
   h2{
-    line-height: 1.2;
+    line-height: 1.4;
     height: 1.6rem;
     overflow: hidden;
     a{
@@ -806,3 +806,12 @@
 }
 
 /*-----------------------null.html end----------------------*/
+
+//查看更多
+.comment-read-more{
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: $font-color666;
+  font-size: $fz12;
+}
