@@ -80,8 +80,10 @@
 }
 .ident-btns-wrap{
   position: relative;
-  height: 2.95rem;
+  padding-bottom: .5rem;
+  min-height: 1rem;
   border-top: 1px solid $border-color;
+  overflow: hidden;
   .down-btn{
     position: absolute;
     top: 0;
