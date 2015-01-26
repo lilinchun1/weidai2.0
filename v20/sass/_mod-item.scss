@@ -274,7 +274,10 @@
   .active-footer-btn{
     background: #000;
     a{
-      color: $red;
+      .icon-a,
+      p{
+        color: $red;
+      }
     }
   }
 
