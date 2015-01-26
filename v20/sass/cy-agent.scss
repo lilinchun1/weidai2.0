@@ -421,7 +421,7 @@ a{
   min-height:10rem;
   overflow: hidden;
   color: $font-color666;
-  text-indent:1.5rem;
+  text-indent:1.2rem;
   line-height: 1.1rem;
   border-bottom: 1px dashed $border-color;
 }
@@ -439,7 +439,7 @@ a{
   line-height: 1rem;
   margin-left:-1rem;
   margin-bottom: 1rem;
-
+  display: block;
 }
 /*-----------------------代理详情 ag-details-two.html----------------------*/
 .ag_two_char{
