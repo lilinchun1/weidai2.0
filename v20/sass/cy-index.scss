@@ -448,7 +448,7 @@ input::-moz-placeholder{
   }
 }
 .icon-red_1{
-  line-height: 2.95rem;
+  line-height:1.8rem;
   color: $red;
   font-size: .8rem;
 }
@@ -665,7 +665,6 @@ input::-moz-placeholder{
   .bin_l{
     width: 10rem;
     float: left;
-    line-height: 1.72rem;
     height: 1.72rem;
   }
 
@@ -674,7 +673,6 @@ input::-moz-placeholder{
   width: 100%;
   @extend %input-text;
   height: 1.72rem;
-  line-height: 1.72rem;
   color: $font-color666;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -686,7 +684,6 @@ input::-moz-placeholder{
   background: $red;
   width:4.5rem;
   float: right;
-  line-height: 1.72rem;
   height: 1.72rem;
   color: $font-color666;
 }
@@ -696,7 +693,7 @@ input::-moz-placeholder{
   text-align: left;
   color: $font-color333;
 }
-.up_code{
+a.up_code{
   margin-top: .4rem;
   display: block;
   width:2.5rem;
@@ -735,18 +732,19 @@ input::-moz-placeholder{
   line-height: 1.72rem;
   color: $font-color666;
   .icon-re_icon{
-    width: .7rem;
+    width: 1rem;
     float: left;
+    font-size: 1rem;
     height: 1.72rem;
     line-height: 1.72rem;
   }
   .re_w{
-    width: 13rem;
+    width: 12rem;
     @extend %input-text;
     border: none;
     float: left;
     height: 1.72rem;
-    line-height: 1.72rem;
+
 
   }
 }
