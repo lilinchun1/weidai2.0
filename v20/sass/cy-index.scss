@@ -127,6 +127,18 @@ input::-moz-placeholder{
   margin-bottom: 2.6rem;
 }//用于底部控制高度
 /*------------------确认订单order-confitm or-co-site ---------------------------*/
+.po_fi_top{
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 2rem;
+  background-color: #fff;
+  z-index: 7;
+}
+.po_top{
+  margin-top:2rem;
+
+}
 .or_top{
   overflow: hidden;
   padding-top: .4rem;
@@ -134,13 +146,13 @@ input::-moz-placeholder{
 }
 .or_top_char{
   color:$font-color333;
-  font-size: $fz18;
-  line-height: 2rem;
+  font-size:.8rem;
   float: left;
+  line-height: 2rem;
 }
 .or_top_null{
   float: right;
-  font-size: $fz16;
+  font-size:.7rem ;
   line-height: 1rem;
   color:$font-color666;
   span{
