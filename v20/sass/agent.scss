@@ -256,7 +256,7 @@
   width: 100%;
   .level-bar{
     width: 100%;
-    &:before{
+    /*&:before{
       content: "\f600";
       font-family: icomoon;
       position: absolute;
@@ -271,8 +271,8 @@
       background: $lvbg;
       -webkit-background-size: 100% auto;
       background-size: 100% auto;
-    }
-    &:after{
+    }*/
+    /*&:after{
       content: "\f605";
       font-family: icomoon;
       position: absolute;
@@ -287,7 +287,7 @@
       background: $lvbg;
       -webkit-background-size: 100% auto;
       background-size: 100% auto;
-    }
+    }*/
     li{
       &:nth-of-type(1) {
         position: relative;
@@ -308,7 +308,7 @@
       &:nth-of-type(2){
         position: absolute;
         left: 32%;
-        margin-top: .3rem;
+        margin-top: .5rem;
         padding: 0 .3rem;
         height: .75rem;
         line-height: .75rem;
@@ -343,6 +343,36 @@
           border: .3rem solid transparent;
           border-bottom: .3rem solid $border-color;
         }
+      }
+      &:nth-of-type(3){
+        font-family: icomoon;
+        position: absolute;
+        left: 0;
+        top: .6rem;
+        width: 1rem;
+        height: 1rem;
+        line-height: 1rem;
+        text-align: center;
+        font-size: $fz12;
+        color: #fff;
+        background: $lvbg;
+        -webkit-background-size: 100% auto;
+        background-size: 100% auto;
+      }
+      &:nth-of-type(4){
+        font-family: icomoon;
+        position: absolute;
+        top: .6rem;
+        right: 0;
+        width: 1rem;
+        height: 1rem;
+        line-height: 1rem;
+        text-align: center;
+        font-size: $fz12;
+        color: #fff;
+        background: $lvbg;
+        -webkit-background-size: 100% auto;
+        background-size: 100% auto;
       }
     }
   }
