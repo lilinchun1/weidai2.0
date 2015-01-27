@@ -141,12 +141,11 @@ input::-moz-placeholder{
 }
 .or_top{
   overflow: hidden;
-  padding-top: .4rem;
-  padding-bottom: .4rem;
+
 }
 .or_top_char{
   color:$font-color333;
-  font-size:.8rem;
+  font-size:.7rem;
   float: left;
   line-height: 2rem;
 }
@@ -163,7 +162,7 @@ input::-moz-placeholder{
 .or_logo{
   padding-top:.4rem;
   padding-bottom: .4rem;
-  font-size: $fz18;
+  font-size:.8rem;
   a{
     color: $font-color333;
     display: block;
@@ -265,7 +264,7 @@ input::-moz-placeholder{
   color: $font-color666;
 }
 .mlii-info p{
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 /*-----------------------地址  mj-order-con.html ----------------------*/
 .site_site{
@@ -716,6 +715,34 @@ a.up_code{
   line-height: 1rem;
   text-align: left;
 }
+.sus_logo{
+  margin-top: 2rem;
+}
+.sue_red{
+  font-size: .6rem;
+  color: $red;
+  text-align: center;
+  line-height:1.8rem;
+}
+.s_bottom{
+  margin-bottom:.6rem;
+}
+.sus-weidai{
+  height: 4rem;
+  line-height: 2rem;
+  text-align: center;
+  color: $red;
+  font-size: 10rem;
+}
+.sus_input{
+  line-height: 1.7rem;
+  color: #818181;
+  font-size: .6rem;
+  a{
+    color:$blue;
+  }
+
+}
 /*-------------------登陆 st-register.html--------------------------*/
 .re_top{
   margin-top: 5rem;
@@ -744,8 +771,6 @@ a.up_code{
     border: none;
     float: left;
     height: 1.72rem;
-
-
   }
 }
 .re_char{

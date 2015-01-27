@@ -115,8 +115,8 @@
 .dfh-list{
   @extend %wrap-600;
   li{
-    height: 1.45rem;
-    line-height: 1.45rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
     border-bottom: 1px dotted $border-color2;
     color: $font-color999;
     label{
@@ -130,7 +130,7 @@
 }
 .dfh-info{
   @extend %wrap-600;
-  padding: .275rem 0;
+  padding: .3rem 0;
   label{
     float: left;
     width: 3.6rem;
@@ -271,6 +271,7 @@
   height: 1.875rem;
   line-height: 1.875rem;
   border-bottom: 1px solid $border-color;
+  font-size: $fz14;
 }
 .evaluate-item{
   border-bottom: 1px solid $border-color;
@@ -385,6 +386,14 @@
     }
   }
 }
+.gz-wl{
+  @extend %wrap-600;
+  height: 2rem;
+  line-height:2rem;
+  border-bottom: 1px dotted $border-color2;
+  font-size: $fz14;
+  color: $font-color333;
+}
 /*-----------------------logistics-info.html end----------------------*/
 
 /*-----------------------apply-refun.html start----------------------*/
@@ -430,9 +439,12 @@
     line-height: 2rem;
     font-size: $fz16;
     border-bottom: 1px dotted $border-color2;
+    overflow: hidden;
     span{
-      font-size: $fz16;
+      float: left;
+      font-size: $fz20;
       font-family: 'icomoon';
+      line-height: 2rem;
     }
   }
   p{
@@ -465,10 +477,11 @@
 }
 .refun-wait-btns{
   padding-bottom: .5rem;
+  padding-left: .6rem;
   @extend %wrap-600;
   .rw-btn{
     float: left;
-    margin-left: 1.3rem;
+    margin-left: .6rem;
     width: 6rem;
   }
   .bgccc{

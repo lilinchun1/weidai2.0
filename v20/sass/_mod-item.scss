@@ -505,7 +505,7 @@
     height: 1rem;
     line-height: 1rem;
     border: 1px solid $border-color;
-    border-radius: 5px;
+    border-radius: .1rem;
     background: linear-gradient(180deg,#fefefe,#e8e8e8);
     color: $font-color999;
     text-align: center;
@@ -624,6 +624,7 @@
     }
     a{
       display: block;
+      color: $font-color666;
     }
     span{
       position: relative;
@@ -656,7 +657,7 @@
       height: 1rem;
       line-height: 1rem;
       border: 1px solid $border-color;
-      border-radius: 5px;
+      border-radius: .1rem;
       background: linear-gradient(180deg,#fefefe,#e8e8e8);
       color: $font-color999;
       text-align: center;
