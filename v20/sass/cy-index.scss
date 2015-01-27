@@ -434,6 +434,8 @@ input::-moz-placeholder{
   font-size: .6rem;
   line-height: .7rem;
   color: $font-color333;
+  float: left;
+  width: 9rem;
   div{
     height: 1.4rem;
     overflow: hidden;
@@ -447,7 +449,7 @@ input::-moz-placeholder{
   }
 }
 .icon-red_1{
-  line-height:1.8rem;
+  line-height:3rem;
   color: $red;
   font-size: .8rem;
 }
