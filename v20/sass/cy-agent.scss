@@ -560,6 +560,10 @@ a{
         border: 1px solid $border-color;
         border-right: none;
         box-sizing: border-box;
+        border-radius:.1rem;
+        -o-border-radius:.1rem;
+        -moz-border-radius:.1rem;
+        -webkit-border-radius:.1rem;
       }
       .icon_my_en{
         width:1.5rem;
@@ -693,7 +697,10 @@ a{
   font-size: .6rem;
   line-height: 1rem;
   color:$red;
+  margin-top: .8rem;
+  margin-bottom: .8rem;
 }
+
 /*-----------------------邀请加盟-失败 lnvite-failure.html----------------------*/
 .lnv_char{
   color: $font-color666;
