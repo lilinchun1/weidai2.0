@@ -118,7 +118,7 @@
     height: 1.5rem;
     line-height: 1.5rem;
     border-bottom: 1px dotted $border-color2;
-    color: $font-color999;
+    color: $font-color333;
     label{
       float: left;
       width: 3.6rem;
@@ -137,7 +137,7 @@
   }
   p{
     padding-left: 3.5rem;
-    color: $font-color666;
+    color: $font-color999;
   }
 }
 .dfh-btn{
@@ -171,7 +171,7 @@
   background-color: #f8f8f8;
   border-top: 1px solid $border-color;
   .m-button-k{
-    margin: .55rem .3rem 0 0;
+    margin: .35rem .3rem 0 0;
     float: right;
   }
 }
@@ -564,3 +564,7 @@
     background-color: $red;}
 }
 /*-----------------------apply-refun-weixin.html end----------------------*/
+
+/*-----------------------indent-info.html start----------------------*/
+
+/*-----------------------indent-info.html end----------------------*/
