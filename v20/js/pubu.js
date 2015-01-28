@@ -39,3 +39,4 @@ function min (heightAarry) {
 	return minColumn;
 }
 
+window.onresize = function(){show();};
