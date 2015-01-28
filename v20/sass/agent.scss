@@ -1142,20 +1142,42 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 1.1rem;
+  height: 2.2rem;
   background-color: $font-color333;
   border-top: 1px solid #222222;
   overflow: hidden;
   li{
     float: left;
     width: 20%;
-    height: 1.1rem;
-    line-height: 1.1rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
     text-align: center;
     font-family: icomoon;
     a{
+      position: relative;
       display: block;
       color: #ffffff;
+      font-size: 1.6rem;
+      &:after{
+        content: "";
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 1px;
+        height: 80%;
+        background-color: #414141;
+      }
+    }
+    &:last-of-type a{
+      &:after{
+        content: "";
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 1px;
+        height: 80%;
+        background-color: transparent;
+      }
     }
   }
   .play-btn{
@@ -1187,21 +1209,42 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 1.1rem;
+  height: 2.2rem;
   background-color: $font-color333;
   border-top: 1px solid #222222;
   overflow: hidden;
   li{
     float: left;
     width: 25%;
-    height: 1.1rem;
-    line-height: 1.1rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
     text-align: center;
     font-family: icomoon;
     a{
+      position: relative;
       display: block;
       color: #ffffff;
-      font-size: $fz20;
+      font-size: 1.6rem;
+      &:after{
+        content: "";
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 1px;
+        height: 80%;
+        background-color: #414141;
+      }
+    }
+    &:last-of-type a{
+      &:after{
+        content: "";
+        position: absolute;
+        top: 10%;
+        right: 0;
+        width: 1px;
+        height: 80%;
+        background-color: transparent;
+      }
     }
   }
   .play-btn{
