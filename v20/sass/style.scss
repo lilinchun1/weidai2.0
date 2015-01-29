@@ -152,7 +152,7 @@ input[type="checkbox"]:checked {
   float: right;
   line-height: 1.72rem;
   height: 1.72rem;
-  color: $font-color666;
+  color:#fff;
 }
 .up_top{
   font-size: .6rem;
@@ -228,4 +228,14 @@ a.up_code{
   background-color: transparent;
   font-size: 2rem;
   margin-top: .4rem;
+}
+.po_fi{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -2;
+}
+.bcw{
+  background-color: #fff;
+
 }
