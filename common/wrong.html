@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>空页面</title>
+    <link rel="stylesheet" href="../v20/css/agent.css"/>
+</head>
+<body>
+<div class="null-wrap dlyc">
+    <!--
+        登陆状态异常    &#xf61d;    .dlyc  需要在 .null-wrap 后面增加此样式
+        系统错误        &#xf61d;    在span标签中替换内容 下同
+        商品详情        &#xf637;
+        访问地址不存在    &#xf637;
+        <p>标签内容</p> 根据需要替换
+    -->
+    <span>&#xf61d;</span>
+    <!--<p>系统出现错误 请稍后再试！</p>-->
+    <p>您的登陆状态异常，正在重新登录...</p>
+    <!--<p>访问地址不存在！</p>-->
+    <!--<p>抱歉，您查看的商品不存在！</p>-->
+    <button type="button" class="dlyc-btn">重新加载</button>
+    <div class="footer-weidai icon-weidai foot-fxb">
+        &#xf652;
+    </div>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

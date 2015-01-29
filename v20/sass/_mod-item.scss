@@ -777,6 +777,7 @@
   padding: 4rem 0;
   width: 100%;
   p{
+    margin: 1rem;
     text-align: center;
     font-size: $fz14;
     color: $font-color666;
@@ -795,6 +796,9 @@
   .fapiao-btn{
     display: none;
   }
+  .dlyc-btn{
+    display: none;
+  }
 }
 
 //发票
@@ -808,7 +812,17 @@
     display: block;
   }
 }
-
+//登陆异常
+.dlyc{
+  .dlyc-btn{
+    margin: 0 auto;
+    @extend %btn-k;
+    width: 6.15rem;
+    height: 1.625rem;
+    color: $font-color666;
+    display: block;
+  }
+}
 /*-----------------------null.html end----------------------*/
 
 //查看更多

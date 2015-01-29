@@ -24,26 +24,86 @@
 }
 
 .icon-v1:before {
-	content: "\f600";
+	content: "\f5f1";
 }
 
 .icon-v2:before {
-	content: "\f601";
+	content: "\f5f2";
 }
 
 .icon-v3:before {
-	content: "\f602";
+	content: "\f5f3";
 }
 
 .icon-v4:before {
-	content: "\f603";
+	content: "\f5f4";
 }
 
 .icon-v5:before {
-	content: "\f604";
+	content: "\f5f5";
 }
 
 .icon-v6:before {
+	content: "\f5f6";
+}
+
+.icon-v7:before {
+	content: "\f5f7";
+}
+
+.icon-v8:before {
+	content: "\f5f8";
+}
+
+.icon-v9:before {
+	content: "\f5f9";
+}
+
+.icon-iconfont-voicefill:before {
+	content: "\f5fa";
+}
+
+.icon-iconfont-cascades:before {
+	content: "\f5fb";
+}
+
+.icon-iconfont-appreciate:before {
+	content: "\f5fc";
+}
+
+.icon-iconfont-commentfill:before {
+	content: "\f5fd";
+}
+
+.icon-iconfont-discover:before {
+	content: "\f5fe";
+}
+
+.icon-iconfont-female:before {
+	content: "\f5ff";
+}
+
+.icon-iconfont-emoji:before {
+	content: "\f600";
+}
+
+.icon-iconfont-male:before {
+	content: "\f601";
+}
+
+.icon-iconfont-service:before {
+	content: "\f602";
+}
+
+.icon-iconfont-send:before {
+	content: "\f603";
+}
+
+.icon-iconfont-upstage:before {
+	content: "\f604";
+}
+
+.icon-iconfont-upstagefill:before {
 	content: "\f605";
 }
 
