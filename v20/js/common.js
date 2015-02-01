@@ -155,7 +155,7 @@ function contains(arr, str) {
 
 
 //确认提示框   方法
-function floatNotify_yes(img_font,floatNotify_title,button_left,button_right,execute){
+function floatNotify_yes(img_font,title,butLeft,butRight,funcLeft,funcRight){
 	if(!$("#js_moban").length){
 		$('body').append('<div id="js_moban" class="overly"></div>');
 	}
@@ -164,25 +164,35 @@ function floatNotify_yes(img_font,floatNotify_title,button_left,button_right,exe
 	if($(".m-alert-affirm").length){
 		$(".m-alert-affirm").remove();
 	}
-	$('body').append('<div class="m-alert-affirm" style="display:block"><p class="icon-affirm">'+img_font+'</p><p class="alert-affirm-info">'+floatNotify_title+'</p><button type="button" class="button_left m-button-s">'+button_left+'</button><button type="button" class="button_right m-button-s bgccc">'+button_right+'</button></div>');
-	$('.button_left').click(function(){
-		if($.isFunction(execute)){
-			execute.call();
-		}else{
-			var func=new Function(execute);
-			func();
+	$('body').append('<div class="m-alert-affirm" style="display:block"><p class="icon-affirm">'+img_font+'</p><p class="alert-affirm-info">'+title+'</p><button type="button" class="button_left m-button-s">'+butLeft+'</button><button type="button" class="button_right m-button-s bgccc">'+butRight+'</button></div>');
+	$('.button_left').click(function(e){
+		if(funcLeft){
+			if($.isFunction(funcLeft)){
+				funcLeft.call(e);
+			}else{
+				var func=new Function(funcLeft);
+				func(e);
+			}
 		}
 		$(this).parent('.m-alert-affirm').remove();
 		$("#js_moban").hide();
 	})
-	$('.button_right').click(function(){
+	$('.button_right').click(function(e){
+		if(funcRight){
+			if($.isFunction(funcRight)){
+				funcRight.call(e);
+			}else{
+				var func=new Function(funcRight);
+				func(e);
+			}
+		}
 		$(this).parent('.m-alert-affirm').remove();
 		$("#js_moban").hide();
 	});
 }
 
 //单提示框   方法
-function floatNotify_one(img_font,floatNotify_title,button_met){
+function floatNotify_one(img_font,title,butMet,funcMet){
 	if(!$("#js_moban").length){
 		$('body').append('<div id="js_moban" class="overly"></div>');
 	}
@@ -191,8 +201,16 @@ function floatNotify_one(img_font,floatNotify_title,button_met){
 	if($(".m-alert-submit").length){
 		$(".m-alert-submit").remove();
 	}
-	$('body').append('<div class="m-alert-submit" style="display:block"><p class="icon-submit">'+img_font+'</p><p class="alert-affirm-info">'+floatNotify_title+'</p><button type="button" class="button_met m-button-s">'+button_met+'</button></div>');
+	$('body').append('<div class="m-alert-submit" style="display:block"><p class="icon-submit">'+img_font+'</p><p class="alert-affirm-info">'+title+'</p><button type="button" class="button_met m-button-s">'+butMet+'</button></div>');
 	$('.button_met').click(function(){
+		if(funcMet){
+			if($.isFunction(funcMet)){
+				funcMet.call(e);
+			}else{
+				var func=new Function(funcMet);
+				func(e);
+			}
+		}
 		$(this).parent('.m-alert-submit').remove();
 		$("#js_moban").hide();
 	});
@@ -213,15 +231,26 @@ function isWeiXin(){
 
 
 //wapUrl
-function wapUrl(url, params){
+function wapUrl(url, params, hide_sid){
+	if(/^(store)?\d+/.test(url)){
+		hide_sid = true;
+	}
+
+	if(!hide_sid){
+		if(!params){
+			params = {};
+		}
+		params.sid = wdApp.sessionId;
+	}
+	
 	if(params){
 		var list="";
 　　　　for(var key in params){ 
 			list=list+key+"="+encodeURIComponent(params[key])+"&";
 		} 
-		return wdApp.siteUrl + "/" + url + "?" + list + "sid=" + wdApp.sessionId;
+		return wdApp.siteUrl + "/" + url + "?" + list;
 	}else{
-		return wdApp.siteUrl + "/" + url + "?sid=" + wdApp.sessionId;
+		return wdApp.siteUrl + "/" + url;
 	}
 }
 
