@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>Document</title>
+<link rel="stylesheet" href="../v20/css/cy-agent.css"/>
+</head>
+<body>
+<div class="g-wrap"><!--外层wrap 640-->
+    <a href="#" class="activity_head"><img src="../v20/img/test_img/3.png" alt=""/></a>
+    <div class="g-wrap-show">
+        <a href="" class="m_top"><img src="../v20/img/test_img/activity_1.png" alt=""/></a>
+        <a href="" class="m_top"><img src="../v20/img/test_img/activity_2.png" alt=""/></a>
+        <a href="" class="m_top"><img src="../v20/img/test_img/activity_3.png" alt=""/></a>
+        <div class="footer-weidai icon-wei po_ac">
+            &#xf652;
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

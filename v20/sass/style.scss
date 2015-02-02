@@ -52,6 +52,7 @@ input[type="checkbox"]:checked {
   text-align: center;
   color: $red;
   font-size: 10rem;
+  overflow: hidden;
 }
 .reg_top{
   color: $font-color666;

@@ -33,6 +33,7 @@ $(function(){
 	}).on("ajaxComplete",function(e,xhr,options){
 		$("#J_loading").hide();
 	}).on("ajaxError",function(){
+		alert('AJAX 有误');
 		floatNotify.simple("请求有误，请稍后");
 	});
 	
@@ -50,7 +51,7 @@ $(function(){
 	});
 	
 	$("a").each(function(){
-		if(!$(this).attr("href") && $(this).data("link")){
+		if(!$(this).attr("href") && !$(this).data("prevent") && $(this).data("link")){
 			var arr=new Array(),link = $(this).data("link");
 			arr=link.split('!');
 			link = arr[0];
