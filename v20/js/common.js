@@ -300,9 +300,26 @@ function buy_goods(type,type_id,goods_id,goods_num){
 				}
 			}
 		}
-	});
-		
+	});	
+}
+
+function agent_goods(goto_target,dealer_goods){
 	
-	
-	
+	if(wdApp.memberId>0){
+		if(!wdApp.isAgent){
+			floatNotify_yes('&#xf61d;','买家需要升级为微代才能进行代理，确定要升级吗?','确定','取消',function(){
+				wapRedirect('front/login/upgrade', {goto:'agent_dealer:'+goto_target});
+			});
+		}else if(wdApp.isAgent==1 || wdApp.isAgent==2){
+			floatNotify_yes('&#xf61d;','确定要代理该产品吗?','确定','取消',function(){
+				wapRedirect('agent/warehouse', {dealer_goods:dealer_goods});
+			});
+		}else{
+			floatNotify_one('&#xf636;','无法进行代理操作','确定');
+		}
+	}else{
+		floatNotify_yes('&#xf61d;','需要注册为微代才能进行代理，确定要注册吗?','确定','取消',function(){
+			wapRedirect('front/login', {goto:'agent_dealer:'+goto_target});
+		});
+	}
 }

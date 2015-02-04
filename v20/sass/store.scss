@@ -49,6 +49,7 @@
 
 .shop-banner{
   height: 7rem;
+  overflow: hidden;
 }
 .slide
 {
@@ -84,7 +85,8 @@
 
 .slide li img
 {
-  width:100%;
+  //width:100%;
+  height: 100%;
   display:block;
   border:none;
   margin:0 auto;
