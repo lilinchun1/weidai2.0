@@ -394,7 +394,7 @@
 /*店铺头部*/
 .shop-index-head{
   padding: .2rem 0;
-  height: 1.55rem;
+  height: 1.6rem;
   border: 1px solid $border-color;
   .shop-logo{
     float: left;
@@ -413,7 +413,7 @@
   .icon-gz,
   .icon-sc{
     float: right;
-    margin-top: .15rem;
+    //margin-top: .10rem;
     width: 2.05rem;
     //height: 1.55rem;
     text-align: center;
@@ -425,7 +425,7 @@
       color: $font-color333;
       &:nth-of-type(1){
         color: $red;
-        font-size: $fz16;
+        font-size: $fz18;
       }
     }
   }
