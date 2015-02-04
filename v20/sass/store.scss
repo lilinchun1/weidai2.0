@@ -904,6 +904,7 @@
 .search-b-btn{
   width: 6.8rem;
   height: 1.9rem;
+  line-height: 1.9rem;
   color: #ffffff;
 }
 .search-btn-l{
@@ -960,7 +961,7 @@
         &:after{
           content: "";
           position: absolute;
-          right: -.8rem;
+          right: -.77rem;
           top: 0;
           border: .4rem solid transparent;
           border-top: .4rem solid $red;
@@ -973,7 +974,7 @@
       i{
         float: left;
         font-size: .5rem;
-        padding-left: .8rem;
+        padding-left: .6rem;
         padding-right: .2rem;
         color: $font-color999;
       }
@@ -995,6 +996,7 @@
     padding: 0;
     width: 3rem;
     height: 1rem;
+    line-height: 1rem;
     color: #ffffff;
     font-size: $fz12;
   }

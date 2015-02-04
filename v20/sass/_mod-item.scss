@@ -473,6 +473,7 @@
     width: 4.75rem;
     height: 1.45rem;
     color: #ffffff;
+    font-size: $fz14;
     &:nth-of-type(1) {
       background: $orange;
     }
@@ -727,6 +728,7 @@
     margin-right: .5rem;
     width: 3.75rem;
     height: 1.25rem;
+    line-height: 1.25rem;
     background-color: $red;
     color: #ffffff;
     &:nth-of-type(1){
