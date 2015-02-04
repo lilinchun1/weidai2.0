@@ -501,13 +501,14 @@ input::-moz-placeholder{
 .red{
   background-color: $red;
 }
-.m-list-info-item .icon-or{
-  line-height:1.7rem;
+.m-list-info-item button{
+  line-height:2rem;
   color: $font-color999;
   text-align: right;
   display: block;
   float: right;
-  width: .8rem;
+  width: 1rem;
+  background-color: #fff;
 
 }
 /*-----------------------新增发票 bill-add.html----------------------*/
