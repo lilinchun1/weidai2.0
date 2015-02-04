@@ -266,3 +266,43 @@ function wapRedirect(url, params, timeout){
 		window.location.href=url;
 	}
 }
+
+function buy_goods(type,type_id,goods_id,goods_num){
+	var goto_target = type+'-'+type_id+','+goods_id+','+goods_num;
+	var goods_storage = 0;
+	$.ajax({
+		url:wapUrl('store_shop/goods/quantity.do'),
+		data:{goods_id:goods_id,quantity:goods_num},
+		type:"post",
+		success:function (result){
+			if(result.error){
+				floatNotify.simple(result.error);
+			}else{
+				if(result.datas.error){
+					floatNotify.simple(result.datas.error);
+				}else{
+					
+					goods_storage = result.datas.goods_storage;
+					
+					if(parseInt(goods_storage) > 0 && (parseInt(goods_storage) >= goods_num) && goods_num>0){
+						if(wdApp.memberId>0){
+							wapRedirect('front/login', {goto:'buy_goods:'+goto_target});
+						}else{
+							floatNotify_yes('&#xf61d;','需要登录后才能购买吗?','确定','取消',function(){
+								wapRedirect('front/login', {goto:'buy_goods:'+goto_target});
+							});
+						}	
+					}else{
+						floatNotify.simple('库存不足');
+						return false;
+					}
+					
+				}
+			}
+		}
+	});
+		
+	
+	
+	
+}

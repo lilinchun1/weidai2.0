@@ -47,6 +47,7 @@
 .m-button{
   @extend %btn-100;
   background: $green;
+  font-size: $fz14;
 }
 /*提示框实心按钮 高55*/
 .m-button-s{
