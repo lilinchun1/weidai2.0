@@ -229,7 +229,22 @@ function isWeiXin(){
         return false;
     }
 }
+//收藏
 
+function j_favorite(type,agent_id,goods_id,favorite_type){
+	var url=wapUrl('member/favorite/'+favorite_type+'.do',{'fav':type+'-'+agent_id+','+goods_id});
+	$.ajax({
+		url: url,
+        dataType: "json",
+        type: 'post',
+        success: function (result) {   //成功后回调
+			
+        },
+        error: function (e) {    //失败后回调
+            floatNotify.simple("请求有误，请稍后重试");
+        }
+    });
+}
 
 //wapUrl
 function wapUrl(url, params, hide_sid){
