@@ -422,12 +422,12 @@
       display: block;
     }
     p{
-      font-size: $fz10;
-      color: $font-color333;
-      &:nth-of-type(1){
         color: $red;
         font-size: $fz18;
-      }
+    }
+    label{
+      font-size: $fz10;
+      color: $font-color333;
     }
   }
   .icon-sc{

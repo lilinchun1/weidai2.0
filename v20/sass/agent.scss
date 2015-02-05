@@ -992,6 +992,8 @@
     height: 2.2rem;
     line-height: 2.2rem;
     border-bottom: 1px solid $border-color;
+    font-weight: bold;
+    font-size: $fz14;
   }
   .management-item-left,
   .management-item-right{
@@ -1018,7 +1020,7 @@
   }
   b{
     color: $red;
-    font-size: $fz12;
+    font-size: $fz16;
   }
 }
 
@@ -1032,7 +1034,8 @@
     @extend %wrap-600;
     height: 2rem;
     line-height: 2rem;
-    font-size: $fz12;
+    font-size: $fz14;
+    font-weight: bold;
     border-bottom: 1px dotted $border-color2;
   }
   p{
