@@ -1049,14 +1049,15 @@
   h2,h3{
     height: 2.2rem;
     line-height: 2.2rem;
+    font-size: $fz14;
   }
   h2{
     @extend %wrap-600;
     border-bottom: 1px dotted $border-color2;
     a{
       float: right;
-      width: 1rem;
       height: 2.2rem;
+      font-size: $fz12;
       line-height: 2.2rem;
       text-align: right;
     }
@@ -1067,6 +1068,7 @@
   }
   span{
     padding-left: .5rem;
+    font-size: $fz16;
   }
 }
 .team-btn-wrap{
@@ -1079,7 +1081,7 @@
   display: inline-block;
   background-color: $red;
   &:nth-of-type(2){
-    background-color: $green;
+    background-color: $orange;
     float: right;
   }
 }

@@ -229,20 +229,34 @@ function isWeiXin(){
         return false;
     }
 }
-//收藏
-
-function j_favorite(type,agent_id,goods_id,favorite_type){
-	var url=wapUrl('member/favorite/'+favorite_type+'.do',{'fav':type+'-'+agent_id+','+goods_id});
+/*收藏
+//act: add/del
+//fav: store-10		Store  store_id
+	   agent-10		Agent  agent_id
+	   store-10,1000	Goods   store store_id  goods_id
+	   agent-10,1000	Goods   agent agent_id  goods_id
+*/
+function wapFavorite(act, fav,obj){
+	
+	if(act != 'add' && act != 'del') return;
+	var url=wapUrl('member/favorite/'+act+'.do',{'fav':fav});
 	$.ajax({
 		url: url,
         dataType: "json",
         type: 'post',
         success: function (result) {   //成功后回调
-			
+        	if(result.datas){
+        		
+        		$(obj).find('p').html('&#xf621;');
+        	}else{
+        		floatNotify.simple(result.error);
+        	}
+        	
         },
         error: function (e) {    //失败后回调
             floatNotify.simple("请求有误，请稍后重试");
         }
+     
     });
 }
 
