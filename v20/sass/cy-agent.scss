@@ -494,6 +494,7 @@ a{
   a{
     display: block;
     color: $font-color333;
+    font-size: $fz14;
   }
 }
 .task_top{
@@ -838,6 +839,7 @@ a{
   .tr_h_l{
     float: left;
     color: $font-color333;
+    font-size: $fz14;
     span{
       color: $red;
     }
@@ -1013,6 +1015,7 @@ a{
   text-align: left;
   span{
     color: $red;
+    font-size: $fz14;
   }
 }
 .toc_bottom{
