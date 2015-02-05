@@ -16,6 +16,11 @@ html {
   font-size: 20px;
 }
 
+@media screen and (min-width: 768px){
+  html{
+    font-size: 40px;
+  }
+}
 body {
   margin: 0;
   font-size: .6rem;
@@ -60,7 +65,7 @@ a:active {
 }
 
 a:active {
-  color: #006699;
+  color: $font-color666;
 }
 
 abbr[title] {
