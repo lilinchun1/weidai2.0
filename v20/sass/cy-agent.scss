@@ -186,6 +186,8 @@ a{
   text-align: center;
   line-height: 2rem;
   color: $font-color333;
+  font-weight: bold;
+  font-size: $fz14;
 }
 .bin_text{
   overflow: hidden;
@@ -446,6 +448,7 @@ a{
     border-bottom: 1px dashed $border-color;
     text-align: center;
     line-height: 1.5rem;
+    font-size: $fz14;
   }
   p{
     text-indent:1.5rem;
