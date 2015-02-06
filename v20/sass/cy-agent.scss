@@ -749,8 +749,9 @@ a{
 }
 /*-----------------------邀请加盟 lnvite.html----------------------*/
 .lnvite_topBox{
-  margin-top: .4rem;
+  padding-top: .4rem;
   padding-bottom: .4rem;
+  overflow: hidden;
 
   .lnvite_top{
     position: relative;
