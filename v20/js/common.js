@@ -229,36 +229,7 @@ function isWeiXin(){
         return false;
     }
 }
-/*收藏
-//act: add/del
-//fav: store-10		Store  store_id
-	   agent-10		Agent  agent_id
-	   store-10,1000	Goods   store store_id  goods_id
-	   agent-10,1000	Goods   agent agent_id  goods_id
-*/
-function wapFavorite(act, fav,obj){
-	
-	if(act != 'add' && act != 'del') return;
-	var url=wapUrl('member/favorite/'+act+'.do',{'fav':fav});
-	$.ajax({
-		url: url,
-        dataType: "json",
-        type: 'post',
-        success: function (result) {   //成功后回调
-        	if(result.datas){
-        		
-        		$(obj).find('p').html('&#xf621;');
-        	}else{
-        		floatNotify.simple(result.error);
-        	}
-        	
-        },
-        error: function (e) {    //失败后回调
-            floatNotify.simple("请求有误，请稍后重试");
-        }
-     
-    });
-}
+
 
 //wapUrl
 function wapUrl(url, params, hide_sid){
@@ -284,7 +255,6 @@ function wapUrl(url, params, hide_sid){
 	}
 }
 
-
 function wapRedirect(url, params, timeout){
 	url = wapUrl(url, params);
 	if(timeout){
@@ -296,9 +266,44 @@ function wapRedirect(url, params, timeout){
 	}
 }
 
-function buy_goods(type,type_id,goods_id,goods_num){
-	var goto_target = type+'-'+type_id+','+goods_id+','+goods_num;
-	var goods_storage = 0;
+/** 
+ * 加入/取消收藏
+ *
+ * @param object 对象
+ * @param shop_tag 店铺标志
+ *			store-<store_id> 旗舰店id
+ *	    	agent-<agent_id> 微代id
+ * @param goods_id 产品id
+ */
+function wapFavorite(obj, shop_tag, goods_id){
+	var goto_target = goods_id ? [shop_tag, goods_id].join(",") : shop_tag;
+
+	var isfavorited = $(this).data("favorited");
+	$.post(wapUrl('member/favorite/fav.do'), {fav:goto_target}, function (result) {   //成功后回调
+    	if(result.error){
+    		floatNotify.simple(result.error);
+    	}else{
+    		if(result.datas.isfavorited == '1'){
+    			$(obj).html('&#xf615;');
+    		}else{
+    			$(obj).html('&#xf614;');
+    		}
+    	}
+    },'json');
+}
+
+/**
+ * 立即购买
+ *
+ * @param shop_tag 店铺标志
+ *			store-<store_id> 旗舰店id
+ *	    	agent-<agent_id> 微代id
+ * @param goods_id 产品id
+ * @param goods_num 产品数量，默认为1
+ */
+function wapBuyGoods(shop_tag,goods_id,goods_num){
+	if(goods_num <0) goods_num = 1;
+	var goto_target = [shop_tag, goods_id, goods_num].join(","), goods_storage = 0;
 	$.ajax({
 		url:wapUrl('store_shop/goods/quantity.do'),
 		data:{goods_id:goods_id,quantity:goods_num},
@@ -310,9 +315,8 @@ function buy_goods(type,type_id,goods_id,goods_num){
 				if(result.datas.error){
 					floatNotify.simple(result.datas.error);
 				}else{
-					
 					goods_storage = result.datas.goods_storage;
-					
+
 					if(parseInt(goods_storage) > 0 && (parseInt(goods_storage) >= goods_num) && goods_num>0){
 						if(wdApp.memberId>0){
 							wapRedirect('front/login', {goto:'buy_goods:'+goto_target});
@@ -320,20 +324,26 @@ function buy_goods(type,type_id,goods_id,goods_num){
 							floatNotify_yes('&#xf61d;','需要登录后才能购买吗?','确定','取消',function(){
 								wapRedirect('front/login', {goto:'buy_goods:'+goto_target});
 							});
-						}	
+						}
 					}else{
 						floatNotify.simple('库存不足');
 						return false;
 					}
-					
 				}
 			}
 		}
 	});	
 }
-
+/**
+ * 立即购买
+ *
+ * @param shop_tag 店铺标志
+ *			store-<store_id> 旗舰店id
+ *	    	agent-<agent_id> 微代id
+ * @param goods_id 产品id
+ * @param goods_num 产品数量，默认为1
+ */
 function agent_goods(goto_target,dealer_goods){
-	
 	if(wdApp.memberId>0){
 		if(!wdApp.isAgent){
 			floatNotify_yes('&#xf61d;','买家需要升级为微代才能进行代理，确定要升级吗?','确定','取消',function(){
