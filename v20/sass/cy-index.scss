@@ -161,9 +161,17 @@ input::-moz-placeholder{
   padding-top:.4rem;
   padding-bottom: .4rem;
   font-size:.8rem;
-  a{
+  overflow: hidden;
+
+  a:first-child{
     color: $font-color333;
-    display: block;
+    width: 12rem;
+    float: left;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -ms-text-align-last: right;
+    text-align: left;
   }
   img{
     width: 1.8rem;
@@ -426,6 +434,10 @@ input::-moz-placeholder{
   line-height: 1.8rem;
   color: $red;
   font-size: .8rem;
+  width:1.5rem;
+  float: right;
+  text-align: center;
+  display: block;
 }
 /*-----------------------我的收藏-商品 collect-comm.html----------------------*/
 .coll_com{
@@ -450,6 +462,16 @@ input::-moz-placeholder{
   line-height:3rem;
   color: $red;
   font-size: .8rem;
+  display: block;
+  width:1.5rem;
+  float: right;
+  text-align: center;
+}
+.coll_a{
+  float: left;
+  display: block;
+  width: 12rem;
+
 }
 /*-----------------------我的地址 my-site.html----------------------*/
 .my_site{

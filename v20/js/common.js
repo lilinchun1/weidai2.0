@@ -335,15 +335,16 @@ function wapBuyGoods(shop_tag,goods_id,goods_num){
 	});	
 }
 /**
- * 立即购买
+ * 我要代理
  *
  * @param shop_tag 店铺标志
  *			store-<store_id> 旗舰店id
  *	    	agent-<agent_id> 微代id
  * @param goods_id 产品id
- * @param goods_num 产品数量，默认为1
+ * @param dealer_goods 产品id，一个加密码
  */
-function agent_goods(goto_target,dealer_goods){
+function wapAgentGoods(shop_tag, goods_id, dealer_goods){
+	var goto_target = shop_tag+","+goods_id;
 	if(wdApp.memberId>0){
 		if(!wdApp.isAgent){
 			floatNotify_yes('&#xf61d;','买家需要升级为微代才能进行代理，确定要升级吗?','确定','取消',function(){
