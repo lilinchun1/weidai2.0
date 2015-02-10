@@ -1049,3 +1049,8 @@ a{
     width: 100%;
   }
 }
+.g-wrap-show{
+  li:last-of-type{
+    border-bottom: 0 none;
+  }
+}
