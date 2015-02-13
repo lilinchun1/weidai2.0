@@ -42,7 +42,7 @@ $(function(){
 	
 	//自动链接
 	$(".J_link").click(function(){
-		var arr=new Array(),link = $(this).data("link");
+		var arr=new Array(),link = $(this).data("link")+"";
 		arr=link.split('!');
 		link = arr[0];
 		if(arr[1]) 
@@ -54,7 +54,7 @@ $(function(){
 	
 	$("a").each(function(){
 		if(!$(this).attr("href") && !$(this).data("prevent") && $(this).data("link")){
-			var arr=new Array(),link = $(this).data("link");
+			var arr=new Array(),link = $(this).data("link")+"";
 			arr=link.split('!');
 			link = arr[0];
 			if(arr[1]) 
@@ -306,36 +306,61 @@ function wapFavorite(obj, shop_tag, goods_id){
 function wapBuyGoods(shop_tag,goods_id,goods_num){
 	if(goods_num <0) goods_num = 1;
 	var goto_target = [shop_tag, goods_id, goods_num].join(","), goods_storage = 0;
-	$.ajax({
-		url:wapUrl('store_shop/goods/quantity.do'),
-		data:{goods_id:goods_id,quantity:goods_num},
-		type:"post",
-		success:function (result){
-			if(result.error){
-				floatNotify.simple(result.error);
+	$.post(wapUrl("store_shop/goods/quantity.do"), {goods_id:goods_id, quantity:goods_num}, function (result){
+		if(result.error){
+			floatNotify.simple(result.error);
+		}else{
+			if(result.datas.error){
+				floatNotify.simple(result.datas.error);
 			}else{
-				if(result.datas.error){
-					floatNotify.simple(result.datas.error);
-				}else{
-					goods_storage = result.datas.goods_storage;
+				goods_storage = result.datas.goods_storage;
 
-					if(parseInt(goods_storage) > 0 && (parseInt(goods_storage) >= goods_num) && goods_num>0){
-						if(wdApp.memberId>0){
-							wapRedirect('front/login', {goto:'buy_goods:'+goto_target});
-						}else{
-							floatNotify_yes('&#xf61d;','需要登录后才能购买吗?','确定','取消',function(){
-								wapRedirect('front/login', {goto:'buy_goods:'+goto_target});
-							});
-						}
+				if(parseInt(goods_storage) > 0 && (parseInt(goods_storage) >= goods_num) && goods_num>0){
+					if(wdApp.memberId>0){
+						wapRedirect('passport/login', {goto:'buy_goods:'+goto_target});
 					}else{
-						floatNotify.simple('库存不足');
-						return false;
+						floatNotify_yes('&#xf61d;','需要登录后才能购买吗?','确定','取消',function(){
+							wapRedirect('passport/login', {goto:'buy_goods:'+goto_target});
+						});
 					}
+				}else{
+					floatNotify.simple('库存不足');
+					return false;
 				}
 			}
 		}
-	});	
+	},'json');
 }
+
+/**
+ * 修改产品数量
+ *
+ * @param type 操作模式 plus 或 minus
+ * @param goods_id 产品id
+ */
+function wapGoodsNum(type, goods_id){
+	var $inputObj = $(".m-select-number-input"), cartNum = parseInt($inputObj.val()), maxNum = parseInt($('.surplus_num').text());
+	if(type=='plus'){
+		if(cartNum < maxNum)
+			$inputObj.val(cartNum+1);
+	}
+	if(type=='minus'){
+		if(cartNum > 1)
+			$inputObj.val(cartNum-1);
+	}
+	$.post(wapUrl('store_shop/goods/quantity.do'), {goods_id:goods_id,quantity:$inputObj.val()}, function (result){
+		if(result.error){
+			floatNotify.simple(result.error);
+  		}else{
+			if(result.datas.error){
+				floatNotify.simple(result.datas.error);
+			}else{
+				$('.surplus_num').text(result.datas.goods_storage);
+			}
+		}
+	}, 'json');
+}
+
 /**
  * 我要代理
  *
@@ -350,7 +375,7 @@ function wapAgentGoods(shop_tag, goods_id, dealer_goods){
 	if(wdApp.memberId>0){
 		if(!wdApp.isAgent){
 			floatNotify_yes('&#xf61d;','买家需要升级为微代才能进行代理，确定要升级吗?','确定','取消',function(){
-				wapRedirect('front/login/upgrade', {goto:'agent_dealer:'+goto_target});
+				wapRedirect('passport/upgrade', {goto:'agent_dealer:'+goto_target});
 			});
 		}else if(wdApp.isAgent==1 || wdApp.isAgent==2){
 			floatNotify_yes('&#xf61d;','确定要代理该产品吗?','确定','取消',function(){
@@ -361,7 +386,41 @@ function wapAgentGoods(shop_tag, goods_id, dealer_goods){
 		}
 	}else{
 		floatNotify_yes('&#xf61d;','需要注册为微代才能进行代理，确定要注册吗?','确定','取消',function(){
-			wapRedirect('front/login', {goto:'agent_dealer:'+goto_target});
+			wapRedirect('passport/login', {goto:'agent_dealer:'+goto_target});
 		});
 	}
+}
+
+//加入购物车效果
+function tipsBox(options) {
+    options = $.extend({
+        obj: $('#J_cartpin'),  //jq对象，要在那个html标签上显示
+        str: "+1",  //字符串，要显示的内容;也可以传一段html，如: "<b style='font-family:Microsoft YaHei;'>+1</b>"
+        startSize: "12px",  //动画开始的文字大小
+        endSize: "30px",    //动画结束的文字大小
+        interval: 800,  //动画时间间隔
+        color: "red",    //文字颜色
+        callback: function() {}    //回调函数
+    }, options);
+    $("body").append("<span class='num'>"+ options.str +"</span>");
+    var box = $(".num");
+    var left = options.obj.offset().left + options.obj.width() / 2;
+    var top = options.obj.offset().top - options.obj.height();
+    box.css({
+        "position": "absolute",
+        "left": left + "px",
+        "top": top + "px",
+        "z-index": 9999,
+        "font-size": options.startSize,
+        "line-height": options.endSize,
+        "color": options.color
+    });
+    box.animate({
+        "font-size": options.endSize,
+        "opacity": "0",
+        "top": top - parseInt(options.endSize) + "px"
+    }, options.interval , function() {
+        box.remove();
+        options.callback();
+    });
 }

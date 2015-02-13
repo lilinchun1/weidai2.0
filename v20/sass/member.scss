@@ -401,12 +401,17 @@
 .apply-refun-item{
   margin-top: .75rem;
   width: 100%;
+  overflow: hidden;
   label{
     float: left;
     width: 3.6rem;
+    line-height: 1.75rem;
   }
   .apply-refun-input{
     width: 11.4rem;
+  }
+  .textarea-apply-refun{
+    height: 4.5rem;
   }
   span{
     padding-left: 3.6rem;
@@ -416,9 +421,11 @@
     text-align: left;
   }
   p{
+    padding: 0.3rem 0;
     color: $font-color666;
     font-size: $fz12;
     text-align: center;
+    background: #fffcf1;
   }
 }
 .foot-ac{
@@ -447,6 +454,10 @@
       font-size: $fz20;
       font-family: 'icomoon';
       line-height: 2rem;
+    }
+    a{
+      @extend .blue-font;
+      font-size: $fz12;
     }
   }
   p{
@@ -566,6 +577,7 @@
 }
 /*-----------------------apply-refun-weixin.html end----------------------*/
 
-/*-----------------------indent-info.html start----------------------*/
-
-/*-----------------------indent-info.html end----------------------*/
+.btn-wp{
+  margin: 0 auto;
+  width: 11rem;
+}
