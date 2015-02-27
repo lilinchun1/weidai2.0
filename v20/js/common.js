@@ -247,11 +247,11 @@ function wapUrl(url, params, hide_sid){
 	}
 	
 	if(params){
-		var list="";
-　　　　for(var key in params){ 
-			list=list+key+"="+encodeURIComponent(params[key])+"&";
+		var query = "", dot = "?";
+		for(var key in params){ 
+			query += dot + key + "=" + encodeURIComponent(params[key]), dot = "&";
 		} 
-		return wdApp.siteUrl + "/" + url + "?" + list;
+		return wdApp.siteUrl + "/" + url + query;
 	}else{
 		return wdApp.siteUrl + "/" + url;
 	}
@@ -423,4 +423,19 @@ function tipsBox(options) {
         box.remove();
         options.callback();
     });
+}
+
+//禁止浏览器滚动开关
+function roll_switch(switch_in){
+	if(switch_in==0){
+		$('html,body').css({
+			"height":"100%",
+			"overflow":"hidden"
+		});
+	}else{
+		$('html,body').css({
+			"height":"100%",
+			"overflow":"initial"
+		});
+	}
 }

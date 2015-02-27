@@ -865,3 +865,26 @@
 .hide{
   display: none;
 }
+
+
+/*-----------------------aside-item start----------------------*/
+.aside-item{
+  position: fixed;
+  z-index: 9;
+  right: 0;
+  top: 50%;
+  width: 1rem;
+  .icon-aside{
+    margin-bottom: .1rem;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: $fz16;
+    background-color: rgba(0,0,0,0.6) ;
+  }
+
+}
+
+/*-----------------------aside-item end----------------------*/
