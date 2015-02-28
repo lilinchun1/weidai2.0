@@ -869,6 +869,7 @@
       height: 1.6rem;
       line-height: 1.6rem;
       background: #ffffff;
+      overflow: hidden;
       em{
         position: relative;
         padding: 0 .75rem;
@@ -975,6 +976,7 @@
         position: relative;
         padding: 0 .2rem;
         float: left;
+        height: .8rem;
         background: $red;
         font-size: $fz12;
         color: #ffffff;
