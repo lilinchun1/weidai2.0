@@ -439,3 +439,14 @@ function roll_switch(switch_in){
 		});
 	}
 }
+
+//列表侧边栏
+$('.asid_top').hide(); 
+$('.asid_top').css("top",window.screen.availHeight/2-100+"px");
+$(window).scroll(function() {		
+	if($(window).scrollTop() >= 500){
+		$('.asid_top').show(); 
+	}else{    
+		$('.asid_top').hide();    
+	}  
+});
