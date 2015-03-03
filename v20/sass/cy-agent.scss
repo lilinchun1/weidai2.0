@@ -616,6 +616,7 @@ a{
         border: 1px solid $border-color;
         border-left: none;
         box-sizing: border-box;
+        font-size: $fz14;
 
       }
     }
@@ -1058,6 +1059,7 @@ a{
   span{
     color: $red;
     font-size: $fz16;
+    vertical-align: middle;
   }
 }
 .toc_bottom{

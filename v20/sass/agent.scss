@@ -22,12 +22,16 @@
 }
 .head-tool{
   padding: 0 .5rem;
-  height: 1.75rem;
+  height: 1.85rem;
   border-bottom: 1px solid #c80000;
   overflow: hidden;
+  a{
+    height: 100%;
+    width: 20%;
+  }
   .tool-item{
     position: relative;
-    margin-top: .4em;
+    margin-top: .6em;
     width: 1.1rem;
     height: 1.1rem;
     line-height: 1.1rem;
@@ -35,6 +39,7 @@
     color: #ffffff;
     border-radius: 1.1rem;
     border: 1px solid #ca1919;
+    font-size: $fz16;
     span{
       position: absolute;
       top: -.3rem;
@@ -46,7 +51,7 @@
       text-align: center;
       background-color: #ffffff;
       color: $red;
-      font-size: $fz12;
+      font-size: $fz10;
     }
   }
   .icon-msg{
@@ -87,10 +92,9 @@
     }
   }
   h1{
-    margin-top: .8rem;
-    font-size: $fz12;
+    margin-top: .6rem;
     color: #ffffff;
-    font-size: $fz14;
+    font-size: $fz16;
     font-weight: bold;
   }
   em{
@@ -148,7 +152,7 @@
       display: block;
     }
     b{
-      font-size: $fz16;
+      font-size: .7rem;
     }
     p{
       color: $font-color999;
@@ -216,7 +220,7 @@
         line-height: 1rem;
         border-radius: 1rem;
         text-align: center;
-        font-size: $fz12;
+        font-size: $fz10;
         color: #ffffff;
         background-color: $red;
     }
@@ -250,6 +254,7 @@
     background-size: 100% auto;
     color: #ffffff;
     display: inline-block;
+    vertical-align: middle;
   }
 }
 .level-bar-info{
@@ -350,7 +355,7 @@
         font-family: icomoon;
         position: absolute;
         left: 0;
-        top: .6rem;
+        top: .7rem;
         width: 1rem;
         height: 1rem;
         line-height: 1rem;
@@ -364,7 +369,7 @@
       &:nth-of-type(4){
         font-family: icomoon;
         position: absolute;
-        top: .6rem;
+        top: .7rem;
         right: 0;
         width: 1rem;
         height: 1rem;
@@ -398,7 +403,8 @@
       color: $font-color666;
     }
     em{
-      font-size: $fz16;
+      font-size: 1rem;
+      vertical-align: middle;
     }
   }
 }
@@ -410,7 +416,7 @@
   background-color: $red;
   .my-shop-head-pic{
     float: left;
-    margin: .5rem .625rem 0 .625rem;
+    margin: .5rem .9rem 0 .625rem;
     width: 3.15rem;
     height: 3.15rem;
     border-radius: 3.15rem;
@@ -444,6 +450,7 @@
     float: left;
     width: 5rem;
     height: 1.3rem;
+    font-size: $fz14;
     line-height: 1.3rem;
     text-align: center;
     font-family: icomoon;
