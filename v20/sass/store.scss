@@ -1102,6 +1102,9 @@
   li{
     height: 3rem;
     border-bottom: 1px dotted $border-color;
+    .active{
+      color: $font-color999;
+    }
     h2{
       margin-top: .7rem;
       font-size:$fz14;

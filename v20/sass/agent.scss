@@ -978,6 +978,23 @@
       width: 33.3%;
     }
 }
+.daishou-tab{
+  li{
+    width: 50%;
+  }
+}
+.daishou-list{
+  position: relative;
+  &:after{
+    position: absolute;
+    top: .6rem;
+    right: 0;
+    content: "\f634";
+    font-family: icomoon;
+    color: $font-color999;
+    font-size: $fz16;
+  }
+}
 .income-list{
   @extend %wrap-600;
   li{
@@ -987,12 +1004,17 @@
     p{
       padding-top: .2rem;
     }
+    strong{
+      float: right;
+      margin-right: 1rem;
+      color: $red;
+    }
     i{
       position: absolute;
-      top: .9rem;
+      top: 1rem;
       right: 0;
       font-family: icomoon;
-      color: $font-color666;
+      color: $red;
       font-size: $fz12;
     }
     time{
