@@ -647,6 +647,10 @@
       font-size: $fz16;
       line-height:1.85rem;
     }
+    strong{
+      font-size: $fz16;
+      vertical-align: bottom;
+    }
   }
 }
 .comment-con{
@@ -1040,10 +1044,30 @@
 /*-----------------------shop-index-mj.html start----------------------*/
 
 .mj-shop-index-wrap{
-
+  .flg{
+    height: 2.2rem;
+    border-bottom: 1px solid $border-color;
+    overflow: hidden;
+    li{
+      float: left;
+      width: 25%;
+      height: 2.2rem;
+      line-height: 2.2rem;
+      text-align: center;
+    }
+    span{
+      vertical-align: middle;
+    }
+    img{
+      width: .7rem;
+      height: .7rem;
+      overflow: hidden;
+    }
+  }
   .shop-index-head{
     height: auto;
     overflow: hidden;
+    background: $bg-color;
     .shop-logo{
       width: 1.8rem;
       height: 1.8rem;
@@ -1103,4 +1127,7 @@
   a{
     display: block;
   }
+}
+.lh17{
+  line-height: 1.7rem;
 }
