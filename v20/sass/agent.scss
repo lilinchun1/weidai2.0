@@ -985,14 +985,16 @@
 }
 .daishou-list{
   position: relative;
-  &:after{
-    position: absolute;
-    top: .6rem;
-    right: 0;
-    content: "\f634";
-    font-family: icomoon;
-    color: $font-color999;
-    font-size: $fz16;
+  li{
+    &:after{
+      position: absolute;
+      top: .6rem;
+      right: 0;
+      content: "\f634";
+      font-family: icomoon;
+      color: $font-color999;
+      font-size: $fz16;
+    }
   }
 }
 .income-list{
