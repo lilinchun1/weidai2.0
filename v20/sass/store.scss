@@ -381,6 +381,9 @@
 .search-list-wrap{
   @extend %wrap-640;
   background: $bg-color;
+  .search-list-con a{
+    display: block;
+  }
 }
 .search-list-con{
   padding-bottom: 1.5rem;
