@@ -67,8 +67,19 @@ $(function(){
 });
 
 //自适应宽度
-(function (doc, win) {
-	var docEl = doc.documentElement,
+function IsPC()
+{
+	var userAgentInfo = navigator.userAgent;
+	var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+	var flag = true;
+	for (var v = 0; v < Agents.length; v++) {
+		if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }
+	}
+	return flag;
+}
+if(!IsPC()) {
+	(function (doc, win) {
+		var docEl = doc.documentElement,
 			resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
 			recalc = function () {
 				var clientWidth = docEl.clientWidth;
@@ -76,10 +87,11 @@ $(function(){
 				docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
 			};
 
-	if (!doc.addEventListener) return;
-	win.addEventListener(resizeEvt, recalc, false);
-	doc.addEventListener('DOMContentLoaded', recalc, false);
-})(document, window);
+		if (!doc.addEventListener) return;
+		win.addEventListener(resizeEvt, recalc, false);
+		doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+}
 
 function getQueryString(name){
 	var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
@@ -219,7 +231,10 @@ function floatNotify_one(img_font,title,butMet,funcMet){
 	});
 }
 
-// 判断浏览器版本
+// 上部提示框   方法
+function floatNotify_top(text){
+	$('body').append('<div class="m-alert-7 icon-" style="display: block;"><span>&#xf61d;</span>'+text+'<i onclick="$(this).parent().remove()">&#xf60e;</i></div>');
+}
 
 //判断是否是微信浏览器
 function isWeiXin(){

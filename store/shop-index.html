@@ -290,21 +290,7 @@
     <!-------------底部按钮 结束------------------>
 </div>
 </body>
-<script>
-    (function (doc, win) {
-        var docEl = doc.documentElement,
-                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-                recalc = function () {
-                    var clientWidth = docEl.clientWidth;
-                    if (!clientWidth) return;
-                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
-                };
 
-        if (!doc.addEventListener) return;
-        win.addEventListener(resizeEvt, recalc, false);
-        doc.addEventListener('DOMContentLoaded', recalc, false);
-    })(document, window);
-</script>
 <script src="../v20/js/common.js"></script>
 <script src="../v20/js/swipeSlide.min.js"></script>
 <script>

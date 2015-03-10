@@ -225,7 +225,7 @@
   position: fixed;
   bottom: 0;
   z-index: 9;
-  width: 100%;
+  width: 16rem;
   height: 2.5rem;
   background: #222222;
   border-top: 1px solid #000;
@@ -233,7 +233,7 @@
   .m-footer-btn-item{
     position: relative;
     float: left;
-    width: 25%;
+    width: 4rem;
     height: 100%;
     text-align: center;
     color: $font-color666;
@@ -289,7 +289,7 @@
   position: fixed;
   bottom: 0;
   z-index: 9;
-  width: 100%;
+  width: 16rem;
   height: 2.5rem;
   background: #222222;
   border-top: 1px solid #000;
@@ -337,7 +337,7 @@
 }
 /*选项卡头部*/
 .m-tab-head{
-  width: 100%;
+  width: 16rem;
   border-top: 1px solid $border-color;
   overflow: hidden;
   li{
