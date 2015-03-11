@@ -246,7 +246,13 @@ function isWeiXin(){
         return false;
     }
 }
-
+if(isWeiXin()){
+	$("#wx").show();
+}else if(IsPC()){
+	$("#pc").show();
+}else{
+	$("#ph").show();
+}
 
 //wapUrl
 function wapUrl(url, params, hide_sid){
