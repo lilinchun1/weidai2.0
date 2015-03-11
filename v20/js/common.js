@@ -302,8 +302,10 @@ function wapFavorite(obj, shop_tag, goods_id){
     	}else{
     		if(result.datas.isfavorited == '1'){
     			$(obj).html('&#xf615;');
+				floatNotify.simple("添加收藏成功");
     		}else{
     			$(obj).html('&#xf614;');
+				floatNotify.simple("取消收藏成功");
     		}
     	}
     },'json');

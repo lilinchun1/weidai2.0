@@ -12,6 +12,7 @@
         html{
             height: 100%;
         }
+
     </style>
 </head>
 <body>
@@ -43,6 +44,7 @@
     </ul>
 </div>
 </body>
+<script src="../v20/js/jquery-1.8.3.min.js"></script>
 <script>
     (function (doc, win) {
         var docEl = doc.documentElement,
@@ -57,5 +59,8 @@
         win.addEventListener(resizeEvt, recalc, false);
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
+    var heigth=$(window).height();
+    $('html,body,.photo-show-wrap').css("height",heigth+"px");
+
 </script>
 </html>
