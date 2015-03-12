@@ -142,7 +142,7 @@ input::-moz-placeholder{
 
 }
 .or_top_char{
-  color:$font-color333;
+  color:#000;
   font-size:.7rem;
   float: left;
   line-height: 2rem;
@@ -160,7 +160,7 @@ input::-moz-placeholder{
 .or_logo{
   padding-top:.4rem;
   padding-bottom: .4rem;
-  font-size:.8rem;
+  font-size:.7rem;
   overflow: hidden;
 
   a:first-child{
@@ -230,7 +230,7 @@ input::-moz-placeholder{
   .or_text{
     width:2.5rem;
     float: left;
-    line-height: 1.3rem;
+    line-height: 1.7rem;
   }
   .text_w{
     width:12.3rem;
@@ -432,13 +432,13 @@ input::-moz-placeholder{
   }
 }
 .icon-red{
-  line-height: 1.8rem;
+  //line-height: 1.8rem;
   color: $red;
-  font-size: .8rem;
+  font-size: .6rem;
   width:1.5rem;
-  float: right;
+  //float: right;
   text-align: center;
-  display: block;
+  display: inline;
 }
 /*-----------------------我的收藏-商品 collect-comm.html----------------------*/
 .coll_com{
