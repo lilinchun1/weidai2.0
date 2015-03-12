@@ -72,6 +72,9 @@
     height: 3.15rem;
     border-radius: 3.15rem;
     border: 2px solid #fff;
+    a:visited{
+      color: #ffffff;
+    }
     img{
       width: 100%;
       border-radius: 3.15rem;
@@ -200,6 +203,9 @@
     a{
       display: block;
       color: $font-color333;
+      &:visited{
+        color: $font-color333;
+      }
     }
   }
   .icon-logos{
