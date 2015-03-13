@@ -715,7 +715,20 @@
 /*-----------------------cloud-brand-list.html end----------------------*/
 
 /*-----------------------cloud-brand-show.html start----------------------*/
-
+.search-wrap{
+  background: #f2f2f2;
+}
+.search-item{
+  @extend %wrap-600;
+  margin-top: .5rem;
+  border-radius: 2px;
+  border: 1px solid $border-color;
+}
+.head-brand-show2 {
+  .share-list li p{
+    margin-top: 0;
+  }
+}
 .ident-btns-wrap{
   position: relative;
   height: 1.7rem;
