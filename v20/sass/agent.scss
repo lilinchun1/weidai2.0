@@ -629,39 +629,39 @@
     float: left;
     width: 2.5rem;
     &:nth-of-type(n+1) .icon-shares{
-      background-color: #43a639;
+      background-color: #dd2f2f;
     }
-    &:nth-of-type(2n+1) .icon-shares{
-      background-color: #1675ba;
+    &:nth-of-type(n+2) .icon-shares{
+      background-color: #7cca5a;
     }
-    &:nth-of-type(3n+1) .icon-shares{
-      background-color: #eca618;
+    &:nth-of-type(n+3) .icon-shares{
+      background-color: #e058d9;
     }
-    &:nth-of-type(4n+1) .icon-shares{
-      background-color: #f1bd24;
+    &:nth-of-type(n+4) .icon-shares{
+      background-color: #629ee9;
     }
-    &:nth-of-type(5n+1) .icon-shares{
+    &:nth-of-type(n+5) .icon-shares{
       background-color: #2abae5;
     }
-    &:nth-of-type(6n+1) .icon-shares{
+    &:nth-of-type(n+6) .icon-shares{
       background-color: #619234;
     }
-    &:nth-of-type(7n+1) .icon-shares{
+    &:nth-of-type(n+7) .icon-shares{
       background-color: #4b89dc;
     }
-    &:nth-of-type(8n+1) .icon-shares{
+    &:nth-of-type(n+8) .icon-shares{
       background-color: #967bdc;
     }
-    &:nth-of-type(9n+1) .icon-shares{
+    &:nth-of-type(n+9) .icon-shares{
       background-color: #d870ad;
     }
-    &:nth-of-type(10n+1) .icon-shares{
+    &:nth-of-type(n+10) .icon-shares{
       background-color: #eb9532;
     }
-    &:nth-of-type(11n+1) .icon-shares{
+    &:nth-of-type(n+11) .icon-shares{
       background-color: #f76a10;
     }
-    &:nth-of-type(12n+1) .icon-shares{
+    &:nth-of-type(n+12) .icon-shares{
       background-color: #35d6b5;
     }
     p{
