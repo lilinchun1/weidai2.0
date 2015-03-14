@@ -955,6 +955,7 @@
 /*-----------------------income.html start----------------------*/
 .income-wrap{
   background-color: $bg-color;
+  height: 100vh;
 }
 .income-item{
   margin-top: .75rem;
@@ -967,6 +968,7 @@
     line-height: 2.15rem;
     border-bottom: 1px solid $border-color;
     overflow: hidden;
+    font-size: .6rem;
     em{
       float: right;
       color: $font-color999;
@@ -976,7 +978,9 @@
     }
     .icon-{
       font-size: $fz16;
-      vertical-align: middle;
+      //vertical-align: middle;
+      float: left;
+      margin-top: .65rem;
     }
   }
   .bdn{

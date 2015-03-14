@@ -16,11 +16,7 @@ html {
   font-size: 20px;
 }
 
-@media screen and (min-width: 768px){
-  html{
-    font-size: 40px;
-  }
-}
+v
 body {
   margin: 0;
   font-size: .6rem;
@@ -68,9 +64,9 @@ a:active {
   color: $font-color666;
 }
 
-a:visited {
+/*a:visited {
   color: $font-color666;
-}
+}*/
 
 abbr[title] {
   border-bottom: 1px dotted;
