@@ -361,7 +361,7 @@
       background-color: #eee;
     }
 
-    &:last-of-type{
+    &:first-of-type{
       &:before{
         background-color: $green;
         border: .075rem solid #94d8b6;
