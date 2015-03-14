@@ -1389,7 +1389,7 @@
 .list-3row,
 .list-2row,
 .list-1row{
-  display: none;
+  display: block;
 
 }
 .head-brand-show2 {
@@ -1401,4 +1401,7 @@
       display: none;
     }
   }
+}
+.head-brand-show2 .share-list li{
+  padding-top: .4rem;
 }
