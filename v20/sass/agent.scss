@@ -1390,4 +1390,15 @@
 .list-2row,
 .list-1row{
   display: none;
+
+}
+.head-brand-show2 {
+  .list-4row,
+  .list-3row,
+  .list-2row,
+  .list-1row{
+    .active-brand-tab:after{
+      display: none;
+    }
+  }
 }
