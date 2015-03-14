@@ -319,3 +319,9 @@
 .button_left{
   float: left;
 }
+
+.m-alert-affirm{
+  button:nth-of-type(2) {
+    color: #666666;
+  }
+}
